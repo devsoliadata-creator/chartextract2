@@ -263,7 +263,7 @@ def _point_evidence_status(point):
     if point.get("manual") or point.get("assigned_by") == "human" or point.get("source") == "human_review":
         return "manual"
     value = str(point.get("evidence_kind") or point.get("evidence_type") or "").strip().lower()
-    return {
+    status = {
         "native_visible": "visible marker",
         "visible_marker": "visible marker",
         "partial_marker": "partially visible marker",
@@ -272,6 +272,13 @@ def _point_evidence_status(point):
         "estimated_marker": "estimated marker",
         "line_sample": "line sample",
     }.get(value, "unclassified")
+    if point.get("source") == "dense_ribbon":
+        status += " (ribbon resolver)"
+    if point.get("on_series_ink") is False:
+        status += " - off series colour"
+    if point.get("carried_from_agent03"):
+        status += " - carried from Agent 03"
+    return status
 
 
 def _tick_residual_label(calibration, axis):

@@ -55,6 +55,7 @@ solution.
 | `marker_assignment.py` | Decides which series owns a marker when colors overlap (shape, color, trajectory scores) |
 | `series_gate.py` | Separates same-color series by curve position (agent 01 anchors, agent 02 `curve_points` / `y_bands`) |
 | `dense_regions.py` | Crowded low-pressure regions: validates agent regions, resolves marker cores, lists unresolved slots |
+| `dense_ribbon.py` | Crowded regions, second pass: tracks each series' colour ribbon (same-hue shades included), scores centres by ink and glyph template, bounds the count by ink mass, places the shortfall at visible setpoints; also the on-ink check (`on_series_ink=false`) used by every stage and the audited pruning of rows on another series' colour |
 | `template_fill.py` | Places a series' legend template on unresolved crowded slots (`template_fit` / inferred `template_fill`) |
 | `region_strategies.py` | Applies agent 02's coaching inside the extraction: color sampling at a marker, `ignore`, `split_filled_open`, `sample_band_at_columns` |
 | `hard_checks.py` | Checks the numbers: value range vs printed axes and frame (blocking), redraw recall/precision + diff image, physics flags |

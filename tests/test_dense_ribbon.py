@@ -3,9 +3,13 @@ from __future__ import annotations
 
 import json
 
+import pathlib
+
 import cv2
 
 from src.tools import dense_ribbon, stage_artifacts
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 
 def _inputs(saved_panel):
@@ -59,3 +63,69 @@ def test_prune_only_removes_rows_on_another_series_ink(saved_panel):
     for label, items in audit["dropped"].items():
         for item in items:
             assert item["on_ink_of"] != label and item["on_ink_of"]
+
+
+def test_ribbon_rows_round_trip_through_the_agent04_validator(saved_panel, tmp_path):
+    """Rows the resolver writes must satisfy the final CSV contract unchanged."""
+    import copy
+    import csv
+    import io
+
+    from src.tools import qa_csv
+
+    spec, extraction = _inputs(saved_panel)
+    dense_ribbon.resolve(extraction, spec, cv2.imread(spec["image"]))
+    candidate, rows, _ = stage_artifacts.build_candidate(extraction, spec, "fig3a", "a")
+    marker_rows = [row for row in rows if row["evidence_type"] in qa_csv._MARKER_EVIDENCE_TYPES]
+    deletes = [row["point_id"] for row in rows if row["point_id"] not in {r["point_id"] for r in marker_rows}]
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(buffer, fieldnames=stage_artifacts.STAGE_COLUMNS, lineterminator="\n")
+    writer.writeheader()
+    writer.writerows(marker_rows)
+    path = tmp_path / "final.csv"
+    path.write_text(buffer.getvalue(), encoding="utf-8")
+    report = {
+        "verdict": "review",
+        "series": [{"label": s["label"], "coverage": "uncertain",
+                    "final_count": sum(r["series_name"] == s["label"] for r in marker_rows), "comment": ""}
+                   for s in candidate["series"]],
+        "row_count": len(marker_rows),
+        "changes": [{"action": "delete", "point_id": pid, "reason": "trace row", "source_evidence": "line ink"} for pid in deletes],
+        "calibration": copy.deepcopy(candidate["calibration"]),
+        "unresolved_slots": {"total": 0, "by_series": {}, "slots": []},
+        "uncertainties": [],
+    }
+    final, out_rows, audit = qa_csv.load_final_csv(path, report, candidate, spec, "fig3a", "a", reconcile_bookkeeping=True)
+    assert len(out_rows) == len(marker_rows)
+    assert audit.get("rejected_rows", []) == []
+
+
+def test_contract_documents_every_notes_key_the_host_writes():
+    import json
+
+    contract = json.loads((ROOT / "schemas" / "points_csv.contract.json").read_text(encoding="utf-8"))
+    documented = set()
+    for key in contract["notes_keys"]:
+        documented.update(part.strip() for part in key.split(","))
+    written = {"branch", "overlap_flag", "mask_warning", "assigned_by", "source", "evidence_kind", "evidence_ref",
+               "source_evidence", "uncertainty_px", "segment_id", "trace_order", "on_series_ink",
+               "carried_from_agent03", "reviewer_asserted_marker", "origin_estimate"}
+    assert written <= documented, written - documented
+    assert contract["schema_version"] == "4.2"
+
+
+def test_example_csv_matches_contract_columns():
+    import csv
+
+    with open(ROOT / "examples" / "points.example.csv", newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        assert reader.fieldnames == stage_artifacts.STAGE_COLUMNS
+        rows = list(reader)
+    sources = {row["notes"] for row in rows}
+    assert any("source=dense_ribbon" in note and "evidence_kind=partial_marker" in note for note in sources)
+    assert any("source=dense_ribbon" in note and "evidence_kind=estimated" in note for note in sources)
+    assert any("on_series_ink=false" in note for note in sources)
+    for row in rows:
+        if row["evidence_type"] == "estimated_marker":
+            assert row["is_inferred"] == "true" and row["confidence"] == "low"
+            assert row["uncertainty_x"] and row["uncertainty_y"]

@@ -25,6 +25,8 @@ $extraction_status
 
 ```json
 $python_result
+
+Rows whose notes carry `source=dense_ribbon` were proposed by the host's dense-region ribbon tracker (shape-supported `partial_marker` centres, or count-based `estimated` placements); `calibration.misassigned_row_pruning` lists detector rows the host removed because they sat on another series' colour. Judge both against the source like any other Python output.
 ```
 
 ## Review instructions

@@ -59,6 +59,8 @@ Source pixels remain the authoritative evidence. Python detections, overlays, re
 
 The structure and candidate table from Agent 02's latest checked round stay together. Python round scores are diagnostics; they cannot restore an earlier spec or override the reviewer. Agent 02 makes one complete plan and may issue one final targeted patch; Python executes that patch once before independent review.
 
+Crowded regions are resolved by `src/tools/dense_ribbon.py`: each series' colour ribbon (same-hue shades included) is tracked leftward from its clean markers, centres are scored by ink and glyph-template correlation, the marker count is bounded by ink mass, and the shortfall is placed at the chart's visible pressure setpoints. Added rows carry `source=dense_ribbon` and a native citation. Every stage also flags rows that do not sit on their own series' colour (`on_series_ink=false`), and the Python stage prunes rows that sit on another series' colour instead, with each drop audited in `calibration.misassigned_row_pruning`.
+
 Dense continuous bands are saved separately as `python/supporting_traces.json`, with native segment order and uncertainty. They do not add experimental marker rows. Agents 03/04 use this evidence to inspect crowded regions and recover actual markers. A trace retained by Agent 04 uses `evidence_type=line_sample`, `marker_shape=none`, low confidence, and inferred status; optional `segment_id` and `trace_order` notes define a reviewed path. Final reconstructions keep those lines separate from marker glyphs and do not join markers across unresolved gaps.
 
 ## Useful commands

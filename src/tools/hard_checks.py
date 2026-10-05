@@ -264,9 +264,16 @@ def run(extraction: dict, spec: dict, panel_dir=None, stage: str = "python") -> 
         physics = {"error": str(error)}
     unresolved = extraction.get("unresolved_slots") or {}
     detector = (extraction.get("calibration") or {}).get("dense_circle_detector") or {}
+    points = [point for series in extraction.get("series", []) for point in series.get("points", [])]
+    ribbon = (extraction.get("calibration") or {}).get("dense_ribbon_resolver") or {}
+    pruning = (extraction.get("calibration") or {}).get("misassigned_row_pruning") or {}
     limitations = {
         "unresolved_slots": int(unresolved.get("total", 0)),
         "dense_regions_with_no_distinct_centres": int(detector.get("unresolved_fused_regions", 0)),
+        "off_ink_rows": int(sum(1 for point in points if point.get("on_series_ink") is False)),
+        "dense_ribbon_rows": int(sum(1 for point in points if point.get("source") == "dense_ribbon")),
+        "pruned_misassigned_rows": int(pruning.get("dropped_total", 0) or 0),
+        "dense_ribbon_added": int(ribbon.get("added_total", 0) or 0),
         "note": "ink coverage is not marker completeness; unresolved dense evidence requires review",
     }
     report = {
@@ -299,4 +306,9 @@ def summary_line(report: dict) -> str:
     redraw_ = report.get("redraw") or {}
     if redraw_.get("recall") is not None:
         parts.append(f"redraw recall {redraw_['recall']:.2f}, precision {redraw_['precision']:.2f}")
+    limits = report.get("limitations") or {}
+    if limits.get("off_ink_rows"):
+        parts.append(f"{limits['off_ink_rows']} rows flagged on_series_ink=false")
+    if limits.get("dense_ribbon_rows"):
+        parts.append(f"{limits['dense_ribbon_rows']} dense-ribbon rows")
     return ("PASS" if report["passed"] else "FAIL") + ": " + "; ".join(parts)

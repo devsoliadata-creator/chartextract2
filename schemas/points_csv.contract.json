@@ -1,5 +1,5 @@
 {
-  "schema_version": "4.1",
+  "schema_version": "4.2",
   "core_columns": [
     "figure_id",
     "panel_id",
@@ -47,7 +47,10 @@
     "uncertainty_x/y optional, finite nonnegative, in reported data units; do not manufacture certainty.",
     "Native reviewer evidence kind, item reference, source description, and raw uncertainty_px are retained in stage metadata and notes. uncertainty_x/y are the calibrated axis-unit projection of uncertainty_px when calibration is valid.",
     "normalized_x/y optional. Populate only through documented conditional conversions, with conversion_id(s).",
-    "line_sample rows, when present in earlier diagnostic stages, require marker_shape=none, is_inferred=true, and confidence=low. Agent 04 final CSVs never include sampled trace ink."
+    "line_sample rows, when present in earlier diagnostic stages, require marker_shape=none, is_inferred=true, and confidence=low. Agent 04 final CSVs never include sampled trace ink.",
+    "Rows with source=dense_ribbon in notes are host proposals from the dense-region ribbon resolver (src/tools/dense_ribbon.py): evidence_kind=partial_marker rows are shape-supported centres (partially_visible_marker, medium confidence); evidence_kind=estimated rows are count-based placements on the tracked ribbon (estimated_marker, is_inferred=true, confidence=low, nonblank uncertainty_x/uncertainty_y). Reviewers confirm, move, or delete them like any other row.",
+    "Rows with on_series_ink=false in notes failed the host's on-ink check: a 1.1 r disc around the native pixel does not carry the series colour (judged against the series' own confident markers; darker or lighter shades of a coloured series count as its ink). The flag marks a likely mis-assignment or stale position; it never removes a row by itself. The Python stage additionally prunes a row that is off its own series' colour but on another eligible series' colour, recorded in calibration.misassigned_row_pruning.",
+    "Rows with carried_from_agent03=true in notes were re-validated from the Agent 03 table by the host because Agent 04's correction attempt omitted or returned an invalid row for that point_id; they keep their Agent 03 values and require review."
   ],
   "confidence": [
     "high",
@@ -72,5 +75,21 @@
     "reviewer_asserted_marker",
     "reported_numeric",
     "manual"
-  ]
+  ],
+  "notes_keys": {
+    "branch": "adsorption/desorption branch when the chart has both",
+    "overlap_flag": "true when the instance is in a crowded or overlapping region",
+    "mask_warning": "true when the native pixel lies inside a configured source mask (retained for review)",
+    "assigned_by": "which pass assigned the series (color, joint_assignment, dense_region, dense_ribbon, ...)",
+    "source": "origin of the row: auto, template_fit, template_fill, curve, grid, dense_ribbon, agent04, ...",
+    "evidence_kind": "native_visible | partial_marker | estimated | native_trace",
+    "evidence_ref": "panel.png or a supplied native item_id",
+    "source_evidence": "concrete description of the native evidence (commas, not semicolons)",
+    "uncertainty_px": "positive native-pixel positional uncertainty",
+    "segment_id, trace_order": "line_sample rows only: reviewed trace path identity and order",
+    "on_series_ink": "false when the host found no series-colour ink under the row (suspect)",
+    "carried_from_agent03": "true when the host re-validated the Agent 03 row after an invalid Agent 04 version",
+    "reviewer_asserted_marker": "true on an uncited Agent 04 addition",
+    "origin_estimate": "true on the explicit shared-zero estimate"
+  }
 }

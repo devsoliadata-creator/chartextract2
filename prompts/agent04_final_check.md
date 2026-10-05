@@ -113,6 +113,8 @@ For every new or moved row, include semicolon-separated notes with:
 - concrete `source_evidence` describing location, glyph/line evidence, ownership, and material alternatives;
 - positive `uncertainty_px` in native pixels.
 
+If the host's correction request carries over Agent 03 rows for IDs you omitted or returned invalidly, those rows arrive in the final table with `carried_from_agent03=true` in notes and keep their Agent 03 values; they always require review.
+
 For your own crops, cite `panel.png` and describe the native ROI/center, so the reference remains usable after temporary crops disappear. Reassignments and cited evidence-type changes also need evidence kind, reference, and source description. Preserve unchanged notes. When changing evidence type, replace contradictory old notes and use `source=agent04` with the appropriate marker evidence kind. Do not leave duplicate contradictory note keys. Propagate native uncertainty through the actual final calibration, including its nonlinear transform for log axes. Uncited reviewer-asserted additions are the sole exception to native citation notes; their classification and low confidence must remain explicit.
 
 Use the source-supported series marker shape for every marker row. Do not create `template_fill` rows from model fits, counts, or unobserved slots.
