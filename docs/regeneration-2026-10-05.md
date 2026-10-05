@@ -50,3 +50,18 @@ Per-series detail: `regeneration_summary.json` (sent with the overlays).
 | combined_03/fig2b | 119 | 2 | 0 |
 
 The clump of black 273K squares on neighbouring curves is gone from the recreation.
+
+## Third pass: hue-aware ink mask (same day)
+
+Why the red 303K and green 323K bands on combined_03/fig2b were missed: the fused bands are
+drawn a darker shade of the series colour (lightness 84 vs 132 for red, 92 vs 130 for green),
+so the full-Lab distance (41 to 58 units) failed the 34-unit mask and the tracker stopped after
+one marker. The mask now also accepts same-hue shades (hue angle within 18 degrees, chroma at
+least 40% of the marker's); grey and black series keep the full Lab test.
+
+| panel | new Python rows | ribbon added | notes |
+|---|---|---|---|
+| combined_03/fig2b | 150 (was 117) | 45 | 303K 22 -> 31, 323K 19 -> 32, 373K 18 -> 30: all three bands traced to the origin |
+| combined_05/fig2a | 381 | 39 | off-ink flags fall to 3 because shades now count as the series' ink |
+| combined_04/fig2a | 338 | 37 | a few series lose 2 to 5 rows to pruning; see the audit before trusting them |
+| combined_04/fig3a | 60 | 1 | unchanged |
