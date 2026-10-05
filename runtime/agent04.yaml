@@ -4,6 +4,9 @@ version: 1
 # Uploaded files are placed flat in Code Interpreter's /mnt/data directory.
 files:
   - root: panel
+    path: panel.png
+    required: true
+  - root: panel
     path: spec.json
     required: true
 
@@ -13,6 +16,11 @@ files:
   - root: panel
     path: agent03/points.csv
     upload_as: agent03_points.csv
+    required: true
+
+  - root: panel
+    path: agent03/points.json
+    upload_as: agent03_points.json
     required: true
 
   - root: panel

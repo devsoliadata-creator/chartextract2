@@ -75,12 +75,28 @@ python scripts/rebuild_table.py
 Auth: `az login`, identity needs **Azure AI User** role on the Foundry project.
 Or `FOUNDRY_AUTH_MODE=api_key` + `FOUNDRY_PROJECT_API_KEY`.
 
+## Repo layout decision (2026-10-05)
+
+- `chartextract2` (this repo) is the WORKING repo: all fixes land here.
+- `julliamckenna/chart_extract_v5.1` is READ-ONLY upstream: pull from it, never
+  push to it or open PRs there. Imported at upstream commit 1958958.
+- Full diagnosis of the point-loss / error problems: `docs/diagnosis-2026-10-05.md`.
+- Dev loop: create a venv, `pip install -r requirements.txt`, `python -m pytest -q`.
+  A dry run (`CHART_EXTRACT_DRY_RUN=1 python main.py --run <image>`) exercises the
+  graph without Azure; it stops at Python calibration when the example answers do
+  not match the image, which is expected.
+
 ## Known state / gaps (as of 2026-10-05)
 
-- The GitHub repo is MISSING `schemas/`, `tests/`, `data/`, `evaluations/`.
-  `workflow.yaml` references `schemas/*.schema.json`, so a real run cannot
-  work from the GitHub clone alone. These dirs exist in the original Windows
-  workspace and were not committed. No `.gitignore` in the repo either.
+- Fixed here (see CHANGELOG 2026-10-05): publish gate rejecting every Agent 04
+  table, fatal single-cell CSV validation, Agent 04 missing `panel.png` input.
+- Still open from the diagnosis: Agent 03 has no table authority (diff-only ops,
+  measured centers never become rows), `accept`/DONE unreachable by design,
+  Agent 02 round 2 forces review, prompts too long and contradictory, Python
+  extractor recall.
+- `schemas/` now present. `tests/` from the original workspace never arrived;
+  the `tests/` here were written fresh in this repo. `data/` and `evaluations/`
+  are still absent. No `.gitignore` in the repo.
 - Open problem being worked: dense/overlapping marker extraction
   (see `docs/domain/density_fix_handoff.md`). Agent 03/04 prompts were
   rewritten 2026-09-28 to do independent native measurement.

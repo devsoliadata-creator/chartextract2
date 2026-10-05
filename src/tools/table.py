@@ -296,6 +296,30 @@ def _points_csv_contract_fingerprint():
     }
 
 
+# Agent 04 stage authorities whose points.csv is a validated final inventory.
+FINAL_AUTHORITIES = frozenset({
+    "agent04_inline_csv",            # current transport: CSV returned inline in the JSON report
+    "agent04_code_interpreter_csv",  # earlier transport: CSV downloaded from Code Interpreter
+    "agent03_inventory_repair_fallback",
+})
+
+
+def _contract_version_compatible(recorded, current):
+    """Accept an Agent 04 stage written under the same major contract version.
+
+    The byte-level sha256 is still recorded in the audit for traceability, but a
+    wording or whitespace edit to the contract file must not silently discard
+    every validated table that was authored before it.
+    """
+    if not isinstance(recorded, dict) or not isinstance(current, dict):
+        return True
+    recorded_version = str(recorded.get("schema_version") or "")
+    current_version = str(current.get("schema_version") or "")
+    if not recorded_version or not current_version:
+        return True
+    return recorded_version.split(".")[0] == current_version.split(".")[0]
+
+
 def _invalid_legacy_trace_rows(rows):
     """Return malformed trace rows authored before the no-marker trace contract.
 
@@ -315,24 +339,33 @@ def _invalid_legacy_trace_rows(rows):
 
 
 def _final_rows(panel_dir):
-    """Read only a validated Agent 04 stage committed alongside its audit."""
+    """Read a validated Agent 04 stage committed alongside its audit.
+
+    Returns ``(rows, source, flags)``.  ``rows`` is empty only when no usable
+    Agent 04 stage exists.  ``flags`` records conditions that keep the stage in
+    review without discarding it: failed Python hard checks and legacy trace
+    rows that were dropped from the export.
+    """
+    flags = {"hard_checks_failed": False, "dropped_legacy_trace_rows": 0, "reason": ""}
     path = layout.step_file(panel_dir, "agent04", "points.csv")
     audit_path = layout.step_file(panel_dir, "agent04", "audit.json")
     if not path.exists() or not audit_path.exists():
-        return [], str(path)
+        return [], str(path), flags
     try:
         audit = json.loads(audit_path.read_text(encoding="utf-8")) or {}
     except (OSError, ValueError, TypeError):
-        return [], str(path)
+        flags["reason"] = "agent04/audit.json could not be read"
+        return [], f"{path}: {flags['reason']}", flags
     metadata = audit.get("metadata") or {}
-    if (metadata.get("authority") not in {
-                "agent04_code_interpreter_csv", "agent03_inventory_repair_fallback",
-            }
-            or metadata.get("status") not in {
-                "complete_against_reviewed_evidence", "partial_review_required",
-            }
-            or not (audit.get("hard_checks") or {}).get("passed")):
-        return [], str(path)
+    if metadata.get("authority") not in FINAL_AUTHORITIES:
+        flags["reason"] = f"unknown Agent 04 stage authority {metadata.get('authority')!r}"
+        return [], f"{path}: {flags['reason']}", flags
+    if metadata.get("status") not in {"complete_against_reviewed_evidence", "partial_review_required"}:
+        flags["reason"] = f"Agent 04 stage status {metadata.get('status')!r} is not publishable"
+        return [], f"{path}: {flags['reason']}", flags
+    # A failed Python hard check is a diagnostic on the reviewer's inventory, not a
+    # reason to discard it (agent04_final_check keeps the table and flags review).
+    flags["hard_checks_failed"] = not (audit.get("hard_checks") or {}).get("passed", True)
     log_path = layout.log_file(panel_dir)
     try:
         attempts = [entry for entry in (json.loads(log_path.read_text(encoding="utf-8")).get("entries") or [])
@@ -343,21 +376,23 @@ def _final_rows(panel_dir):
     attempt_dirs = sorted((path.parent / "cited").glob("attempt-*") if (path.parent / "cited").exists() else [])
     if attempt_dirs and attempts:
         latest_attempt = len(attempts)
-        if metadata.get("artifact_attempt") != latest_attempt:
-            return [], str(path)
+        recorded_attempt = metadata.get("artifact_attempt", metadata.get("response_attempt"))
+        if recorded_attempt != latest_attempt:
+            flags["reason"] = "agent04 stage does not belong to the latest Agent 04 attempt"
+            return [], f"{path}: {flags['reason']}", flags
     rows = _read_csv(path)
     if metadata.get("row_count") != len(rows):
-        return [], str(path)
-    fingerprint = metadata.get("points_csv_contract")
-    if fingerprint is not None and fingerprint != _points_csv_contract_fingerprint():
-        return [], f"{path}: points CSV contract fingerprint changed; rerun Agent 04"
-    invalid_traces = _invalid_legacy_trace_rows(rows)
+        flags["reason"] = f"agent04/points.csv has {len(rows)} rows but its audit records {metadata.get('row_count')}"
+        return [], f"{path}: {flags['reason']}", flags
+    if not _contract_version_compatible(metadata.get("points_csv_contract"), _points_csv_contract_fingerprint()):
+        flags["reason"] = "points CSV contract major version changed; rerun Agent 04"
+        return [], f"{path}: {flags['reason']}", flags
+    invalid_traces = set(_invalid_legacy_trace_rows(rows))
     if invalid_traces:
-        return [], (
-            f"{path}: legacy line_sample rows violate the current trace contract "
-            f"({len(invalid_traces)} rows; rerun Agent 04)"
-        )
-    return rows, str(path)
+        # Drop only the malformed trace rows; the marker rows remain publishable.
+        rows = [row for row in rows if str(row.get("point_id") or "<missing point_id>") not in invalid_traces]
+        flags["dropped_legacy_trace_rows"] = len(invalid_traces)
+    return rows, str(path), flags
 
 
 def _agent04_attempted(panel_dir, final_metadata):
@@ -636,7 +671,7 @@ def write_stage_aggregations(out_dir):
                 if audit_path.exists()
                 else {}
             )
-            finals, final_source = _final_rows(panel_dir)
+            finals, final_source, final_flags = _final_rows(panel_dir)
             final_audit_path = layout.step_file(panel_dir, "agent04", "audit.json")
             final_metadata = (
                 (json.load(open(final_audit_path, encoding="utf-8")) or {}).get("metadata", {})
@@ -644,10 +679,15 @@ def write_stage_aggregations(out_dir):
                 else {}
             )
             agent04_attempted = _agent04_attempted(panel_dir, final_metadata)
-            if agent04_attempted and not finals:
+            if agent04_attempted and not finals and final_flags.get("reason"):
                 final_status = "invalid_agent04"
             else:
                 final_status = final_metadata.get("status", "missing_final")
+                if final_status == "complete_against_reviewed_evidence" and (
+                    final_flags.get("hard_checks_failed") or final_flags.get("dropped_legacy_trace_rows")
+                ):
+                    # The inventory is kept, but a human must look before it counts as complete.
+                    final_status = "partial_review_required"
             source_pdf = str(metadata.get("source_pdf") or "")
             review_html = str((panel_dir / "review.html").resolve())
             human_review = _load_panel_review(out_dir, panel_dir)
@@ -676,6 +716,7 @@ def write_stage_aggregations(out_dir):
                     "status": final_status,
                     "final_source": final_source,
                     "final_invalid_reason": final_source if final_status == "invalid_agent04" else None,
+                    "final_flags": final_flags,
                 }
             )
         except Exception as error:

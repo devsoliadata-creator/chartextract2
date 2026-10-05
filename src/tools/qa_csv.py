@@ -51,14 +51,24 @@ class FinalCSVError(ValueError):
 
 
 class CandidateOmissionError(FinalCSVError):
-    """Agent 04 omitted candidate IDs without explicitly deleting them."""
+    """Agent 04 omitted candidate IDs without explicitly deleting them.
 
-    def __init__(self, point_ids):
+    ``row_errors`` lists rows that were present in the CSV but rejected by the
+    row validator; their IDs are counted as omissions so that the single
+    correction request can name the exact defect instead of only the ID.
+    """
+
+    def __init__(self, point_ids, row_errors=None):
         self.point_ids = tuple(sorted(str(point_id) for point_id in point_ids))
-        super().__init__(
-            "final CSV omits Agent 03 point IDs without an explicit delete: "
-            + ", ".join(self.point_ids)
-        )
+        self.row_errors = list(row_errors or [])
+        message = ("final CSV omits Agent 03 point IDs without an explicit delete: "
+                   + ", ".join(self.point_ids))
+        if self.row_errors:
+            message += "; rejected rows: " + "; ".join(
+                f"{item.get('point_id') or 'row ' + str(item.get('row'))}: {item.get('error')}"
+                for item in self.row_errors[:12]
+            )
+        super().__init__(message)
 
 
 def _fail(message: str) -> None:
@@ -556,8 +566,20 @@ def _same_series_pixel_warnings(pixels_by_key):
     return warnings
 
 
+def _rebuild_unresolved(unresolved):
+    """Rebuild a consistent unresolved_slots object from whatever slots are usable."""
+    slots = []
+    if isinstance(unresolved, dict) and isinstance(unresolved.get("slots"), list):
+        slots = [slot for slot in unresolved["slots"]
+                 if isinstance(slot, dict) and str(slot.get("series_label") or "").strip()
+                 and str(slot.get("reason") or "").strip()]
+    by_series = Counter(str(slot["series_label"]) for slot in slots)
+    return {"total": len(slots), "by_series": dict(sorted(by_series.items())), "slots": slots}
+
+
 def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
-                   reconcile_bookkeeping=False):
+                   reconcile_bookkeeping=False, tolerate_row_errors=False,
+                   candidate_rows=None, carry_over_omissions=False):
     """Load an Agent 04 full-replacement CSV into the normal extraction form.
 
     Returns ``(extraction, rows, audit)``.  ``rows`` and each point's
@@ -568,17 +590,42 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     It preserves the authored report in the audit, records unexplained changes
     without inventing reasons, and requires human review. The caller's report
     is never mutated while examining alternative cited files.
+
+    ``tolerate_row_errors`` keeps the table when individual rows or report
+    fields are malformed: a bad row is recorded in ``audit["rejected_rows"]``
+    and skipped instead of failing the whole CSV, and report-level fields that
+    cannot be used are normalized and listed in ``audit["report_normalizations"]``.
+    A rejected row whose ID is an Agent 03 candidate counts as an omission.
+    With ``carry_over_omissions`` and ``candidate_rows`` (the Agent 03 CSV rows),
+    those omitted candidates are re-validated from the Agent 03 table and kept,
+    marked ``carried_from_agent03=true``; otherwise ``CandidateOmissionError``
+    is raised so the host can request one correction.
     """
     authored_report = copy.deepcopy(report)
     report = copy.deepcopy(report)
-    if not isinstance(report, dict) or str(report.get("verdict", "")).lower() not in {"accept", "review", "reject"}:
-        _fail("report must include a valid verdict")
-    if not isinstance(report.get("series"), list):
-        _fail("report.series must be the existing QA series report")
-    if isinstance(report.get("row_count"), bool) or not isinstance(report.get("row_count"), int):
-        _fail("report.row_count must be an integer")
-    if not isinstance(report.get("changes"), list):
-        _fail("report.changes must list the reason for every row-level change")
+    lenient = reconcile_bookkeeping or tolerate_row_errors
+    normalizations = []
+
+    def normalize(condition, message, fix):
+        """Apply ``fix`` and record it in tolerant mode; otherwise fail."""
+        if not condition:
+            return
+        if not tolerate_row_errors:
+            _fail(message)
+        fix()
+        normalizations.append(message)
+
+    if not isinstance(report, dict):
+        _fail("report must be a JSON object")
+    normalize(str(report.get("verdict", "")).lower() not in {"accept", "review", "reject"},
+              "report must include a valid verdict", lambda: report.update(verdict="review"))
+    report["verdict"] = str(report["verdict"]).lower()
+    normalize(not isinstance(report.get("series"), list),
+              "report.series must be the existing QA series report", lambda: report.update(series=[]))
+    normalize(isinstance(report.get("row_count"), bool) or not isinstance(report.get("row_count"), int),
+              "report.row_count must be an integer", lambda: report.update(row_count=0))
+    normalize(not isinstance(report.get("changes"), list),
+              "report.changes must list the reason for every row-level change", lambda: report.update(changes=[]))
     expected_digest = report.get("points_csv_sha256")
     if expected_digest is not None:
         if not isinstance(expected_digest, str) or not re.fullmatch(r"[0-9a-f]{64}", expected_digest):
@@ -596,7 +643,13 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
             and 0 <= frame[1] < frame[3] <= image_size[1]):
         _fail("calibration frame_px lies outside the panel image")
     unresolved = copy.deepcopy(report.get("unresolved_slots"))
-    _validate_unresolved(unresolved)
+    try:
+        _validate_unresolved(unresolved)
+    except FinalCSVError as error:
+        if not tolerate_row_errors:
+            raise
+        unresolved = _rebuild_unresolved(unresolved)
+        normalizations.append(f"{error}; unresolved_slots rebuilt from its usable slots")
 
     (extraction, series_by_id, series_by_label, candidate_by_id,
      expected_by_series) = _series_maps(
@@ -613,34 +666,60 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     report_series = {}
     for item in report["series"]:
         if not isinstance(item, dict) or not isinstance(item.get("label"), str) or not item["label"].strip():
-            _fail("each report.series entry requires a label")
+            normalize(True, "each report.series entry requires a label", lambda: None)
+            continue
         label = item["label"]
         if label in report_series:
-            _fail(f"report.series contains duplicate label: {label}")
+            normalize(True, f"report.series contains duplicate label: {label}", lambda: None)
+            continue
         if label not in series_by_label:
-            _fail(f"report.series contains a noneligible or unknown label: {label}")
+            normalize(True, f"report.series contains a noneligible or unknown label: {label}", lambda: None)
+            continue
         report_series[label] = item
-    if set(report_series) != set(series_by_label):
-        _fail("report.series must include every eligible candidate series exactly once")
+    for label in series_by_label:
+        if label not in report_series:
+            normalize(True, "report.series must include every eligible candidate series exactly once",
+                      lambda: None)
+            report_series[label] = {"label": label, "coverage": "uncertain", "final_count": 0,
+                                    "comment": "Series entry supplied by the host; Agent 04 did not report it."}
+    report["series"] = list(report_series.values())
     audit = {
         "authoritative_csv": True,
         "added": [], "deleted": [], "moved": [], "reassigned": [],
         "candidate_count": len(candidate_by_id), "final_count": len(rows),
+        "rejected_rows": [], "carried_over": [],
     }
     normalized = Counter()
-    for index, row in enumerate(rows, 2):
+    accepted_rows = []
+
+    def accept_row(row, index, *, carried=False):
+        """Validate one row; returns True when it joined the inventory."""
         point_id, source_id = row["point_id"], row["source_instance_id"]
-        if point_id in seen_points:
-            _fail(f"duplicate point_id: {point_id}")
-        if source_id in seen_sources:
-            _fail(f"duplicate source_instance_id: {source_id}")
+        try:
+            if point_id in seen_points:
+                _fail(f"duplicate point_id: {point_id}")
+            if source_id in seen_sources:
+                _fail(f"duplicate source_instance_id: {source_id}")
+            series, point, moved, reassigned = _check_row(
+                row, index, spec, figure_id, panel_id, calibration, frame,
+                image_size, series_by_id, series_by_label, candidate_by_id,
+                expected_by_series, old_by_source, normalized,
+            )
+        except FinalCSVError as error:
+            if not tolerate_row_errors:
+                raise
+            audit["rejected_rows"].append({
+                "row": index, "point_id": point_id, "error": str(error),
+                "source": "agent03_carry_over" if carried else "agent04_csv",
+            })
+            return False
         seen_points.add(point_id)
         seen_sources.add(source_id)
-        series, point, moved, reassigned = _check_row(
-            row, index, spec, figure_id, panel_id, calibration, frame,
-            image_size, series_by_id, series_by_label, candidate_by_id,
-            expected_by_series, old_by_source, normalized,
-        )
+        if carried:
+            note = str(row.get("notes", "")).strip()
+            row["notes"] = "; ".join(part for part in (note, "carried_from_agent03=true") if part)
+            point["carried_from_agent03"] = True
+            audit["carried_over"].append(point_id)
         pixel_key = (str(series.get("label")), point["px"][0], point["px"][1])
         pixels_by_key.setdefault(pixel_key, []).append({
             "row": row, "point": point, "point_id": point_id,
@@ -691,7 +770,12 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
                     change.update(from_evidence_type=old_evidence_type,
                                   to_evidence_type=row["evidence_type"])
                 audit["reassigned"].append(change)
-    audit["collision_warnings"] = _same_series_pixel_warnings(pixels_by_key)
+        accepted_rows.append(row)
+        return True
+
+    for index, row in enumerate(rows, 2):
+        accept_row(row, index)
+
     explicit_delete_ids = {
         str(change.get("point_id"))
         for change in report["changes"]
@@ -700,9 +784,26 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     }
     undeclared_omissions = set(candidate_by_id) - seen_points - explicit_delete_ids
     if undeclared_omissions:
-        raise CandidateOmissionError(undeclared_omissions)
+        if not (carry_over_omissions and tolerate_row_errors):
+            raise CandidateOmissionError(undeclared_omissions, audit["rejected_rows"])
+        candidate_rows_by_id = {
+            str(row.get("point_id")): dict(row) for row in (candidate_rows or [])
+            if row.get("point_id")
+        }
+        for point_id in sorted(undeclared_omissions):
+            source_row = candidate_rows_by_id.get(point_id)
+            if source_row is None:
+                audit["rejected_rows"].append({
+                    "row": None, "point_id": point_id, "source": "agent03_carry_over",
+                    "error": "Agent 03 CSV row is unavailable for carry-over",
+                })
+                continue
+            accept_row(source_row, None, carried=True)
+    rows = accepted_rows
+    audit["final_count"] = len(rows)
+    audit["collision_warnings"] = _same_series_pixel_warnings(pixels_by_key)
     audit["deleted"] = sorted(set(candidate_by_id) - seen_points)
-    if report["row_count"] != len(rows) and not reconcile_bookkeeping:
+    if report["row_count"] != len(rows) and not lenient:
         _fail("report.row_count must match the authoritative CSV row count")
     # descriptive cells replaced by the candidate metadata value, per column
     audit["normalized_columns"] = dict(sorted(normalized.items()))
@@ -713,8 +814,9 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     for label, item in report_series.items():
         final_count = item.get("final_count")
         if isinstance(final_count, bool) or not isinstance(final_count, int):
-            _fail(f"report.series {label} requires an integer final_count")
-        if final_count != len(points_by_series[label]) and not reconcile_bookkeeping:
+            normalize(True, f"report.series {label} requires an integer final_count",
+                      lambda item=item, label=label: item.update(final_count=len(points_by_series[label])))
+        if item["final_count"] != len(points_by_series[label]) and not lenient:
             _fail(f"report.series {label} final_count does not match the authoritative CSV")
 
     inferred_changes = set()
@@ -723,21 +825,31 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     inferred_changes.update(("move", item["point_id"]) for item in audit["moved"])
     inferred_changes.update(("reassign", item["point_id"]) for item in audit["reassigned"])
     reported_changes = {}
+    malformed_changes = []
     for change in report["changes"]:
-        if not isinstance(change, dict):
-            _fail("each report.changes entry must be an object")
-        action, point_id = change.get("action"), change.get("point_id")
-        if action not in {"add", "move", "delete", "reassign"} or not isinstance(point_id, str) or not point_id.strip():
-            _fail("report.changes entries require action and point_id")
-        if not isinstance(change.get("reason"), str) or not change["reason"].strip():
-            _fail(f"report change {action} {point_id} requires a reason")
-        if not isinstance(change.get("source_evidence"), str) or not change["source_evidence"].strip():
-            _fail(f"report change {action} {point_id} requires source_evidence")
-        key = (action, point_id)
-        if key in reported_changes:
-            _fail(f"duplicate report change {action} for point {point_id}")
+        try:
+            if not isinstance(change, dict):
+                _fail("each report.changes entry must be an object")
+            action, point_id = change.get("action"), change.get("point_id")
+            if action not in {"add", "move", "delete", "reassign"} or not isinstance(point_id, str) or not point_id.strip():
+                _fail("report.changes entries require action and point_id")
+            if not isinstance(change.get("reason"), str) or not change["reason"].strip():
+                _fail(f"report change {action} {point_id} requires a reason")
+            if not isinstance(change.get("source_evidence"), str) or not change["source_evidence"].strip():
+                _fail(f"report change {action} {point_id} requires source_evidence")
+            key = (action, point_id)
+            if key in reported_changes:
+                _fail(f"duplicate report change {action} for point {point_id}")
+        except FinalCSVError as error:
+            if not tolerate_row_errors:
+                raise
+            malformed_changes.append({"change": change, "error": str(error)})
+            continue
         reported_changes[key] = change
-    if set(reported_changes) != inferred_changes and not reconcile_bookkeeping:
+    if malformed_changes:
+        audit["malformed_changes"] = malformed_changes
+        normalizations.append(f"{len(malformed_changes)} malformed report.changes entries were ignored")
+    if set(reported_changes) != inferred_changes and not lenient:
         _fail("report.changes must match the additions, deletions, moves, and reassignments in the CSV")
     missing_changes = inferred_changes - set(reported_changes)
     extra_changes = set(reported_changes) - inferred_changes
@@ -775,6 +887,21 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
             f"and {len(extra_changes)} reported changes are absent from the CSV diff. "
             "The original report and exact diff are preserved in the audit; human review is required."
         )
+    if audit["rejected_rows"] or audit["carried_over"] or normalizations:
+        audit["report_normalizations"] = normalizations
+        if report["verdict"] == "accept":
+            report["verdict"] = "review"
+        parts = []
+        if audit["rejected_rows"]:
+            parts.append(f"{len(audit['rejected_rows'])} CSV rows failed validation and were not published")
+        if audit["carried_over"]:
+            parts.append(f"{len(audit['carried_over'])} Agent 03 rows were carried over unchanged "
+                         "because Agent 04's version of them was invalid or missing")
+        if normalizations:
+            parts.append(f"{len(normalizations)} report fields were normalized by the host")
+        report.setdefault("uncertainties", []).append(
+            "; ".join(parts) + ". Details are in the Python edit audit; human review is required."
+        )
     # The model's reasons remain its own claims. Actual operations come from
     # the validated replacement CSV; an absent explanation stays absent.
     audit["reported_changes"] = copy.deepcopy(report["changes"])
@@ -804,5 +931,7 @@ def load_final_csv(csv_path, report, candidate, spec, figure_id, panel_id, *,
     extraction["authored_rows"] = rows
     extraction["agent04_report"] = copy.deepcopy(report)
     audit["contains_inferred"] = any(row["is_inferred"] == "true" for row in rows)
-    audit["requires_review"] = audit["contains_inferred"] or bookkeeping_mismatch
+    audit["requires_review"] = (audit["contains_inferred"] or bookkeeping_mismatch
+                                or bool(audit["rejected_rows"]) or bool(audit["carried_over"])
+                                or bool(normalizations))
     return extraction, rows, audit

@@ -1,8 +1,10 @@
 """Agent 04 - final check (agent, one call per panel).
 
 Input: the agent03 stage.  The agent starts with its candidate and report,
-checks them against the source, and returns a verdict plus any final point operations
-(schemas/agent04_final_check.schema.json).
+checks them against the source, and returns a QA report with the complete replacement
+points CSV inline (schemas/agent04_final_check.schema.json).  Invalid rows are audited,
+not fatal: one correction request is made, then Agent 03 rows are carried over for any
+candidate ID the reviewer could not return validly.
 Output: agent04/answer.json, the agent04 stage (agent04/points.csv/json, agent04/audit.json), qa.json
 (deterministic sanity checks), and review.html - the page where a human can drag points.
 Python axis, frame, collision, mask, and calibration checks remain visible diagnostics. They do
@@ -127,8 +129,14 @@ def reconcile_series_counts(answer: dict, extraction: dict, audit: dict) -> int:
     return unapplied
 
 
-def load_inline_final_csv(authored_path, answer, candidate, spec, figure_id, panel_id):
-    """Persist and validate the complete CSV embedded in Agent 04's JSON report."""
+def load_inline_final_csv(authored_path, answer, candidate, spec, figure_id, panel_id,
+                          candidate_rows=None, carry_over=False):
+    """Persist and validate the complete CSV embedded in Agent 04's JSON report.
+
+    Row-level defects never discard the table: invalid rows are recorded in the
+    audit, and with ``carry_over`` the Agent 03 rows for any omitted or invalid
+    candidate IDs are kept unchanged so the panel still publishes.
+    """
     csv_text_value = answer.get("points_csv")
     if not isinstance(csv_text_value, str):
         raise qa_csv.FinalCSVError("report.points_csv must be a UTF-8 CSV string")
@@ -144,21 +152,24 @@ def load_inline_final_csv(authored_path, answer, candidate, spec, figure_id, pan
     digest_corrected = declared_digest != actual_digest
     if digest_corrected:
         answer["points_csv_sha256"] = actual_digest
-    calibration = answer.get("calibration")
-    frame = calibration.get("frame_px") if isinstance(calibration, dict) else None
-    calibration_fallback = not (
-        isinstance(frame, list) and len(frame) == 4
-        and isinstance(calibration.get("axis_models"), dict)
-    )
+    calibration_fallback = False
+    calibration_problem = ""
+    try:
+        qa_csv._validate_calibration(copy.deepcopy(answer.get("calibration")), spec)
+    except qa_csv.FinalCSVError as error:
+        calibration_fallback = True
+        calibration_problem = str(error)
     if calibration_fallback:
         answer["calibration"] = copy.deepcopy(candidate.get("calibration") or {})
         answer["verdict"] = "review"
         answer["uncertainties"] = list(answer.get("uncertainties") or []) + [
-            "Agent 04 returned an incomplete calibration; the validated Agent 03 calibration was retained."
+            "Agent 04 returned an unusable calibration (" + calibration_problem
+            + "); the validated Agent 03 calibration was retained."
         ]
     final, rows, audit = qa_csv.load_final_csv(
         authored_path, answer, candidate, spec, figure_id, panel_id,
-        reconcile_bookkeeping=True,
+        reconcile_bookkeeping=True, tolerate_row_errors=True,
+        candidate_rows=candidate_rows, carry_over_omissions=carry_over,
     )
     if audit.get("report_reconciliation"):
         reconciled = final.get("agent04_report") or {}
@@ -176,8 +187,109 @@ def load_inline_final_csv(authored_path, answer, candidate, spec, figure_id, pan
         audit["csv_selection"]["sha256_corrected_by_host"] = True
     if calibration_fallback:
         audit["calibration_fallback"] = "retained_validated_agent03_calibration"
+        audit["calibration_problem"] = calibration_problem
         audit["requires_review"] = True
     return authored_path, final, rows, audit
+
+
+def correction_feedback(error) -> str:
+    """One correction request naming exactly what the host could not accept."""
+    if isinstance(error, qa_csv.CandidateOmissionError):
+        text = (
+            "Your first final CSV omitted Agent 03 point IDs without declaring explicit deletes: "
+            + ", ".join(error.point_ids) + ". "
+        )
+        if error.row_errors:
+            text += "Some of those IDs were present but their rows failed validation: " + "; ".join(
+                f"{item.get('point_id') or 'row ' + str(item.get('row'))}: {item.get('error')}"
+                for item in error.row_errors[:12]
+            ) + ". "
+    else:
+        text = f"Your first final CSV or QA report could not be validated: {error}. "
+    return (
+        text + "This is the single correction attempt. Return the complete replacement table again, "
+        "including every omitted ID unless a specific source-backed delete is justified in the "
+        "changes report. Preserve all other verified rows and include every Agent 04 addition."
+    )
+
+
+def retain_candidate_inventory(answer, candidate, candidate_rows, authored_csv_path,
+                               authored_answers, first_error, second_error):
+    """Keep the Agent 03 table when two Agent 04 answers could not be validated.
+
+    Returns ``(final, authored_rows, final_csv, audit)`` for a repairable panel.
+    """
+    final = copy.deepcopy(candidate)
+    authored_rows = copy.deepcopy(candidate_rows)
+    final_csv = pathlib.Path(authored_csv_path)
+    csv_digest = (hashlib.sha256(final_csv.read_bytes()).hexdigest()
+                  if final_csv.is_file() else None)
+    omitted = list(getattr(second_error, "point_ids", ()))
+    audit = {
+        "authoritative_csv": False,
+        "candidate_count": len(candidate_rows),
+        "final_count": len(candidate_rows),
+        "added": [], "deleted": [], "moved": [], "reassigned": [],
+        "requested": 0, "applied": 0,
+        "requires_review": True,
+        "repair_required": True,
+        "omitted_candidate_ids": omitted,
+        "rejected_rows": list(getattr(second_error, "row_errors", []) or []),
+        "correction_attempt": {
+            "trigger": str(first_error), "resolved": False, "attempts": 1,
+            "final_error": str(second_error),
+        },
+        "authored_reports": authored_answers,
+        "csv_selection": {
+            "path": str(final_csv) if final_csv else None,
+            "sha256": csv_digest,
+            "binding": "rejected_after_correction_attempt",
+        },
+    }
+    candidate_counts = {
+        str(series.get("label")): len(series.get("points") or [])
+        for series in candidate.get("series") or []
+    }
+    answer["verdict"] = "review"
+    answer["reasoning"] = str(answer.get("reasoning") or "") + (
+        " Agent 04's table could not be validated after one correction attempt; "
+        "the workflow retained the Agent 03 inventory and marked this panel for repair."
+    )
+    answer["series"] = [
+        {"label": label, "coverage": "uncertain", "final_count": count,
+         "comment": "Agent 03 inventory retained after an unusable Agent 04 table; repair required."}
+        for label, count in candidate_counts.items()
+    ]
+    answer["row_count"] = len(candidate_rows)
+    answer["changes"] = []
+    answer["calibration"] = copy.deepcopy(candidate.get("calibration") or answer.get("calibration") or {})
+    axis_check = answer.get("axis_check") if isinstance(answer.get("axis_check"), dict) else {}
+    for axis in ("x", "y"):
+        values = []
+        for row in candidate_rows:
+            try:
+                value = float(row.get(axis, ""))
+            except (TypeError, ValueError):
+                continue
+            if math.isfinite(value):
+                values.append(value)
+        entry = axis_check.get(axis) if isinstance(axis_check.get(axis), dict) else {}
+        entry.update(data_min=min(values) if values else None, data_max=max(values) if values else None)
+        entry.setdefault("printed_min", entry.get("data_min"))
+        entry.setdefault("printed_max", entry.get("data_max"))
+        entry.setdefault("result", "unknown")
+        entry.setdefault("reason", "Agent 04 table rejected; Agent 03 inventory retained.")
+        axis_check[axis] = entry
+    answer["axis_check"] = axis_check
+    answer["unresolved_slots"] = copy.deepcopy(
+        candidate.get("unresolved_slots") or {"total": 0, "by_series": {}, "slots": []}
+    )
+    answer["uncertainties"] = list(answer.get("uncertainties") or []) + [
+        f"Agent 04's table was rejected after one correction attempt ({second_error}). "
+        "The Agent 03 inventory is retained until the final table is repaired."
+    ]
+    final["agent04_report"] = copy.deepcopy(answer)
+    return final, authored_rows, final_csv, audit
 
 
 def source_review_style_overrides(answer):
@@ -273,100 +385,36 @@ class FinalCheck(PanelStep):
         try:
             final_csv, final, authored_rows, audit = load_inline_final_csv(
                 authored_csv_path, answer, candidate, spec,
-                panel.figure_id, panel.panel_id,
+                panel.figure_id, panel.panel_id, candidate_rows=candidate_rows,
             )
-        except qa_csv.CandidateOmissionError as first_omission:
+        except qa_csv.FinalCSVError as first_error:
             if result.get("provenance", {}).get("dry_run"):
                 raise
-            feedback = (
-                "Your first final CSV omitted Agent 03 point IDs without declaring explicit deletes: "
-                + ", ".join(first_omission.point_ids)
-                + ". This is the single correction attempt. Return the complete replacement table again, "
-                  "including every omitted ID unless a specific source-backed delete is justified in the "
-                  "changes report. Preserve all other verified rows and include every Agent 04 addition."
-            )
-            result, artifact_attempt, authored_csv_path = await ask_for_final(feedback)
+            # One correction pass for any validation failure, not only omissions:
+            # a single malformed cell must never cost the whole panel.
+            result, artifact_attempt, authored_csv_path = await ask_for_final(correction_feedback(first_error))
             answer = result["report"]
             authored_answers.append(copy.deepcopy(answer))
             try:
                 final_csv, final, authored_rows, audit = load_inline_final_csv(
                     authored_csv_path, answer, candidate, spec,
-                    panel.figure_id, panel.panel_id,
+                    panel.figure_id, panel.panel_id, candidate_rows=candidate_rows,
+                    carry_over=True,
                 )
                 audit["correction_attempt"] = {
-                    "trigger": list(first_omission.point_ids), "resolved": True,
+                    "trigger": str(first_error), "resolved": True,
+                    "carried_over": list(audit.get("carried_over") or []),
                 }
-            except qa_csv.CandidateOmissionError as unresolved_omission:
-                # A second incomplete CSV cannot erase Agent 03 inventory. Keep
-                # the candidate table intact, make the panel explicitly repairable,
-                # and preserve both authored reports and the missing-ID evidence.
+                if audit.get("carried_over"):
+                    panel.needs_review = True
+            except qa_csv.FinalCSVError as second_error:
+                # Even the carry-over could not produce a usable table (for example a
+                # malformed header). Keep the Agent 03 inventory and make the panel repairable.
                 repair_fallback = True
-                final = copy.deepcopy(candidate)
-                authored_rows = copy.deepcopy(candidate_rows)
-                final_csv = authored_csv_path
-                csv_digest = (hashlib.sha256(final_csv.read_bytes()).hexdigest()
-                              if final_csv.is_file() else None)
-                audit = {
-                    "authoritative_csv": False,
-                    "candidate_count": len(candidate_rows),
-                    "final_count": len(candidate_rows),
-                    "added": [], "deleted": [], "moved": [], "reassigned": [],
-                    "requested": 0, "applied": 0,
-                    "requires_review": True,
-                    "repair_required": True,
-                    "omitted_candidate_ids": list(unresolved_omission.point_ids),
-                    "correction_attempt": {
-                        "trigger": list(first_omission.point_ids), "resolved": False,
-                        "attempts": 1,
-                    },
-                    "authored_reports": authored_answers,
-                    "csv_selection": {
-                        "path": str(final_csv) if final_csv else None,
-                        "sha256": csv_digest,
-                        "binding": "rejected_for_unresolved_candidate_omissions",
-                    },
-                }
-                candidate_counts = {
-                    str(series.get("label")): len(series.get("points") or [])
-                    for series in candidate.get("series") or []
-                }
-                answer["verdict"] = "review"
-                answer["reasoning"] = str(answer.get("reasoning") or "") + (
-                    " Agent 04 still omitted candidate rows after one correction attempt; "
-                    "the workflow retained the Agent 03 inventory and marked this panel for repair."
+                final, authored_rows, final_csv, audit = retain_candidate_inventory(
+                    answer, candidate, candidate_rows, authored_csv_path, authored_answers,
+                    first_error, second_error,
                 )
-                answer["series"] = [
-                    {**item, "coverage": "uncertain",
-                     "final_count": candidate_counts.get(item.get("label"), 0),
-                     "comment": "; ".join(part for part in (
-                         str(item.get("comment") or ""),
-                         "Agent 03 inventory retained after unresolved Agent 04 omissions; repair required.",
-                     ) if part)}
-                    for item in answer.get("series") or []
-                ]
-                answer["row_count"] = len(candidate_rows)
-                answer["changes"] = []
-                answer["calibration"] = copy.deepcopy(candidate.get("calibration") or answer["calibration"])
-                for axis, value_key in (("x", "x"), ("y", "y")):
-                    values = []
-                    for row in candidate_rows:
-                        try:
-                            value = float(row.get(value_key, ""))
-                        except (TypeError, ValueError):
-                            continue
-                        if math.isfinite(value):
-                            values.append(value)
-                    answer["axis_check"][axis]["data_min"] = min(values) if values else None
-                    answer["axis_check"][axis]["data_max"] = max(values) if values else None
-                answer["unresolved_slots"] = copy.deepcopy(
-                    candidate.get("unresolved_slots") or {"total": 0, "by_series": {}, "slots": []}
-                )
-                answer["uncertainties"] = list(answer.get("uncertainties") or []) + [
-                    "Agent 04 omitted candidate IDs after one correction attempt: "
-                    + ", ".join(unresolved_omission.point_ids)
-                    + ". The Agent 03 inventory is retained until the final table is repaired."
-                ]
-                final["agent04_report"] = copy.deepcopy(answer)
                 panel.needs_review = True
 
         authored_answer = authored_answers[-1]
@@ -375,6 +423,8 @@ class FinalCheck(PanelStep):
         if (answer["unresolved_slots"]["total"] or incomplete or audit.get("requires_review")) and answer["verdict"] == "accept":
             answer["verdict"] = "review"
             answer["uncertainties"].append("Incomplete source coverage or inferred rows require review.")
+        if audit.get("rejected_rows") or audit.get("carried_over"):
+            panel.needs_review = True
         audit["authored_report"] = authored_answer
         if len(authored_answers) > 1:
             audit["authored_reports"] = authored_answers
