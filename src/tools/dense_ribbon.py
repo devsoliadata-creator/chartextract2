@@ -76,11 +76,27 @@ def disc_count(mask, cx, cy, radius):
     return int((((gx - cx) ** 2 + (gy - cy) ** 2) <= radius * radius)[sub].sum())
 
 
-def point_on_ink(mask, px, radius, area_fraction=DEFAULTS["on_ink_area_fraction"]):
-    """Whether a point sits on its series' colour: enough ink in a 0.8 r disc."""
-    probe = 0.8 * float(radius)
-    needed = area_fraction * math.pi * probe * probe
-    return disc_count(mask, float(px[0]), float(px[1]), probe) >= needed
+def marker_ink_reference(mask, points, radius):
+    """Median ink in a 1.1 r disc at the series' confident points (open or filled glyphs)."""
+    confident = [p for p in points if p.get("px") and p["px"][0] is not None
+                 and float(p.get("confidence") or 0) >= 0.6]
+    sample = confident or [p for p in points if p.get("px") and p["px"][0] is not None]
+    if not sample:
+        return 0.0
+    return float(np.median([disc_count(mask, float(p["px"][0]), float(p["px"][1]), 1.1 * float(radius))
+                            for p in sample]))
+
+
+def point_on_ink(mask, px, radius, reference_area, area_fraction=DEFAULTS["on_ink_area_fraction"]):
+    """Whether a point sits on its series' colour.
+
+    The ink inside a 1.1 r disc must reach ``area_fraction`` of ``reference_area``,
+    the ink a confident marker of the same series carries, so hollow glyphs are
+    judged against hollow glyphs rather than against a filled disc.
+    """
+    if reference_area <= 0:
+        return True
+    return disc_count(mask, float(px[0]), float(px[1]), 1.1 * float(radius)) >= area_fraction * reference_area
 
 
 # ---------- internals ----------
@@ -310,7 +326,7 @@ def resolve(result, spec, bgr, *, lab=None, config=None):
                 for a, b in zip(clean_sorted, clean_sorted[1:]) if np.linalg.norm(b - a) > 3 * radius]
         line_disc = float(np.median(mids)) if mids else 0.0
 
-        on_ink = np.array([point_on_ink(mask, p, radius, cfg["on_ink_area_fraction"]) for p in pts], bool)
+        on_ink = np.array([point_on_ink(mask, p, radius, marker_area, cfg["on_ink_area_fraction"]) for p in pts], bool)
         start = min(clean, key=lambda p: p[0])
         anchors = sorted([p for p, ok in zip(pts, on_ink) if ok and p[0] < start[0] - radius], key=lambda p: -p[0])
         pieces, cur, heading = [], start, np.array([-1.0, 0.0])

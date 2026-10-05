@@ -483,11 +483,14 @@ def _flag_off_ink_rows(series_list, rows, spec):
             continue
         mask = dense_ribbon.on_ink_mask(lab, colour, tolerance)
         radius = float(series.get("marker_radius_px") or 8.0)
+        reference = dense_ribbon.marker_ink_reference(mask, series.get("points", []), radius)
+        if reference <= 0:
+            continue
         for point in series.get("points", []):
             px = point.get("px") or [None, None]
             if px[0] is None or px[1] is None:
                 continue
-            on = dense_ribbon.point_on_ink(mask, px, radius, fraction)
+            on = dense_ribbon.point_on_ink(mask, px, radius, reference, fraction)
             point["on_series_ink"] = bool(on)
             row = rows_by_id.get(point.get("point_id"))
             if row is None or on:
