@@ -17,6 +17,8 @@ Process only the runtime figure/panel and its eligible CO2 series. Preserve IDs 
 
 Execution order: verify inputs and target identity; load the complete Agent 03 CSV, and report; inspect their calibration, series styles, candidate rows, and unresolved regions against the native panel; make targeted measurements and a full-panel omission sweep; decide and serialize the final CSV; inspect its reconstruction; freeze its bytes and derive report counts, changes, and digest. Revisit regions with unresolved evidence or failed validation.
 
+Agent 03 candidate notes may carry `on_series_ink=false` (the host found no series-colour ink under that row: a likely mis-assignment or a stale position; verify and delete or move it) and `source=dense_ribbon` (a centre proposed by the host's ribbon tracker in a crowded region: `evidence_kind=partial_marker` is shape-supported, `estimated` is a count-based placement to confirm or delete).
+
 ## 1. Load Agent 03 and establish the review plan
 
 Each uploaded file is already available separately in `/mnt/data`; use the exact filenames listed above. Read `response.schema.json`, `shared.schema.json`, and `points.example.csv`. Use their actual output contract; do not assume a registry, `workflow_files.py`, alternate header, or external output manifest exists.

@@ -90,6 +90,9 @@ Or `FOUNDRY_AUTH_MODE=api_key` + `FOUNDRY_PROJECT_API_KEY`.
 
 - Fixed here (see CHANGELOG 2026-10-05): publish gate rejecting every Agent 04
   table, fatal single-cell CSV validation, Agent 04 missing `panel.png` input.
+- Dense regions: `src/tools/dense_ribbon.py` (ribbon tracking + template correlation +
+  ink-mass count) replaces the legacy column resolver; every stage flags rows off their
+  series colour with `on_series_ink=false`. Results: `docs/dense-regions-2026-10-05.md`.
 - Still open from the diagnosis: Agent 03 has no table authority (diff-only ops,
   measured centers never become rows), `accept`/DONE unreachable by design,
   Agent 02 round 2 forces review, prompts too long and contradictory, Python

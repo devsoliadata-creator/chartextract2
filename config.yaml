@@ -41,7 +41,14 @@ extract:
   fill_shared_x_grid: false         # opt in only when the Python extraction confirms shared visible marker columns
   split_twins_by_lines: true      # ads/des marker pairs painted on top of each other: split by their two lines
   trace_curve_in_knot: false      # never substitute a curve sample for a visible marker by default
-  dense_region_resolver: true     # native-core-only resolver for crowded strips
+  dense_region_resolver: false    # legacy column resolver (needed >=2 confident owners per column); replaced by dense_ribbon_resolver
+  dense_ribbon_resolver: true     # ribbon tracking + template correlation + ink-mass count per series in the dense region
+  dense_ribbon_color_tolerance: 34  # Lab tolerance for the tracked ribbon (anti-aliased edges included)
+  dense_ribbon_limit_fraction: 0.25 # search left of this fraction of the x span; clean markers right of it build the template
+  dense_ribbon_peak_score: 0.5    # combined ink/template score needed for a measured centre
+  dense_ribbon_shape_score: 0.5   # template correlation needed to call a centre shape-supported (else estimated)
+  on_ink_tolerance_lab: 34        # every stage: rows whose 0.8 r disc lacks the series colour get on_series_ink=false
+  on_ink_area_fraction: 0.4
   series_gate: true               # same-color series: points go to the series whose curve (y anchors / y_band) explains them
   template_fill: true             # put the series' legend template on crowded-strip slots the resolver could not confirm
   template_fit_min_coverage: 0.55 # share of the template that must carry the series color -> template_fit row

@@ -30,6 +30,8 @@ Put this inventory in `dense_measurements`: exactly one record per target ID, wi
 
 Prioritize these measured centers and their edits over the supplied per-slot bookkeeping. The host records omitted review ledger entries as unresolved. Do not spend the review making many identical slot dispositions while recoverable marker centers remain unmeasured.
 
+Candidate notes may carry `on_series_ink=false` (the host found no series-colour ink under that row: a likely mis-assignment or a stale position; verify and delete or move it) and `source=dense_ribbon` (a centre proposed by the host's ribbon tracker in a crowded region: `evidence_kind=partial_marker` is shape-supported, `estimated` is a count-based placement to confirm or delete).
+
 ## 1. Open the actual inputs
 
 Each uploaded file is already available separately in `/mnt/data`; use the exact filenames listed above. Read `spec.json`, `response.schema.json`, and the supplied CSV contract/example. Confirm that `panel.png` decodes and that its identity and dimensions agree with available input metadata. Verify a recorded source hash when supplied. Check that `measurement_targets.json` and `review_tiles.json` can be parsed and that any referenced native crop needed for a target is available. Report a missing required source or crop as a specific unresolved input; do not fabricate its measurements.

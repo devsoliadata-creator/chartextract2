@@ -3615,6 +3615,19 @@ def extract(spec, out_prefix=None):
                 "points": rows,
             }
         )
+    if CFG["extract"].get("dense_ribbon_resolver", True):
+        from src.tools import dense_ribbon
+
+        result["calibration"]["dense_ribbon_resolver"] = dense_ribbon.resolve(
+            result, spec, crop, lab=lab, config=CFG["extract"],
+        )
+        for series_entry in result["series"]:
+            pts_ = series_entry["points"]
+            series_entry["n_points"] = len(pts_)
+            series_entry["x_min"] = min((p["x"] for p in pts_), default=None)
+            series_entry["x_max"] = max((p["x"] for p in pts_), default=None)
+            series_entry["y_min"] = min((p["y"] for p in pts_), default=None)
+            series_entry["y_max"] = max((p["y"] for p in pts_), default=None)
     result["proposal_quality"] = proposal_quality(result, spec)
     if out_prefix:
         cv2.imwrite(out_prefix + "_overlay.png", overlay)

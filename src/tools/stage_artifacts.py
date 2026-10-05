@@ -19,7 +19,9 @@ import cv2
 import numpy as np
 
 from src.models import layout
+from src.settings import CFG
 from src.models.naming import STAGES
+from src.tools import dense_ribbon
 from src.tools.extract import pixel_to_axis
 from src.workflow.resources import load_json
 
@@ -454,6 +456,55 @@ def evidence_counts(rows):
     return {"overall": count(rows), "by_series": {label: count(items) for label, items in grouped.items()}}
 
 
+def _flag_off_ink_rows(series_list, rows, spec):
+    """Mark rows that do not sit on their own series' colour (``on_series_ink=false``).
+
+    A cheap precision check: a 0.8 r disc around the row's native pixel must carry
+    the series colour.  Nothing is removed; reviewers and the audit see the flag.
+    Returns {series_label: [point_id, ...]}.
+    """
+    image_path = pathlib.Path(str(spec.get("image") or ""))
+    if not image_path.is_file():
+        return {}
+    bgr = cv2.imread(str(image_path), cv2.IMREAD_COLOR)
+    if bgr is None:
+        return {}
+    lab = dense_ribbon.lab_image(bgr)
+    tolerance = float(CFG["extract"].get("on_ink_tolerance_lab", dense_ribbon.DEFAULTS["on_ink_tolerance_lab"]))
+    fraction = float(CFG["extract"].get("on_ink_area_fraction", dense_ribbon.DEFAULTS["on_ink_area_fraction"]))
+    rows_by_id = {row["point_id"]: row for row in rows}
+    flagged = {}
+    for series in series_list:
+        label = str(series.get("label", ""))
+        colour = series.get("color_lab")
+        if colour is None:
+            colour = dense_ribbon.lab_from_hex(_color_hex_for(series, spec))
+        if colour is None:
+            continue
+        mask = dense_ribbon.on_ink_mask(lab, colour, tolerance)
+        radius = float(series.get("marker_radius_px") or 8.0)
+        for point in series.get("points", []):
+            px = point.get("px") or [None, None]
+            if px[0] is None or px[1] is None:
+                continue
+            on = dense_ribbon.point_on_ink(mask, px, radius, fraction)
+            point["on_series_ink"] = bool(on)
+            row = rows_by_id.get(point.get("point_id"))
+            if row is None or on:
+                continue
+            flagged.setdefault(label, []).append(point["point_id"])
+            if "on_series_ink=false" not in row["notes"]:
+                row["notes"] = "; ".join(part for part in (row["notes"], "on_series_ink=false") if part)
+    return flagged
+
+
+def _color_hex_for(series, spec):
+    for item in spec.get("series") or []:
+        if str(item.get("label")) == str(series.get("label")):
+            return item.get("color_hex")
+    return None
+
+
 def build_candidate(extraction, spec, figure_id, panel_id, source_pdf="", style_overrides=None):
     """Return canonical candidate JSON, CSV rows, and metadata."""
     candidate = copy.deepcopy(extraction)
@@ -637,6 +688,7 @@ def build_candidate(extraction, spec, figure_id, panel_id, source_pdf="", style_
             })
 
     candidate["series"] = eligible_series
+    off_ink_rows = _flag_off_ink_rows(eligible_series, rows, spec)
 
     image_path = pathlib.Path(spec.get("image", ""))
     image_sha = ""
@@ -674,6 +726,7 @@ def build_candidate(extraction, spec, figure_id, panel_id, source_pdf="", style_
         ],
         "rejected_masked_points": 0,
         "masked_point_warnings": masked_point_warnings,
+        "off_ink_rows": off_ink_rows,
         "unresolved_slots": {"total": len(slots), "by_series": dict(sorted(slot_counts.items())), "slots": slots},
         "unresolved_accounting_valid": unresolved_valid,
         "row_count": len(rows),
