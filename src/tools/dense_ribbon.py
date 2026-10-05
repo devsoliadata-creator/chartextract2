@@ -448,3 +448,57 @@ def resolve(result, spec, bgr, *, lab=None, config=None):
     audit["added_total"] = int(sum(e.get("added_measured", 0) + e.get("added_estimated", 0)
                                    for e in audit["series"].values()))
     return audit
+
+
+def prune_misassigned(result, spec, bgr, *, lab=None, config=None):
+    """Drop Python-stage rows that sit on another eligible series' colour, not their own.
+
+    Only a clear mis-assignment is removed: no ink of the row's own series in a
+    1.1 r disc (against the series' own confident-marker reference) AND enough ink
+    of a different eligible series there.  Rows that are merely faint are kept and
+    left to the ``on_series_ink=false`` flag.  Every drop is returned in the audit.
+    """
+    cfg = dict(DEFAULTS)
+    cfg.update({k: v for k, v in (config or {}).items() if k in DEFAULTS})
+    lab = lab_image(bgr) if lab is None else lab
+    tolerance = cfg["on_ink_tolerance_lab"]
+    fraction = cfg["on_ink_area_fraction"]
+    eligible = [s for s in result.get("series", []) if s.get("extract", True) and s.get("color_lab") is not None]
+    masks, references, radii = {}, {}, {}
+    for series in eligible:
+        label = str(series.get("label"))
+        masks[label] = on_ink_mask(lab, series["color_lab"], tolerance)
+        radii[label] = float(series.get("marker_radius_px") or 8.0)
+        references[label] = marker_ink_reference(masks[label], series.get("points") or [], radii[label])
+    dropped = {}
+    for series in eligible:
+        label = str(series.get("label"))
+        if references[label] <= 0:
+            continue
+        kept = []
+        for point in series.get("points") or []:
+            px = point.get("px") or [None, None]
+            if px[0] is None or px[1] is None or point.get("source") == "dense_ribbon":
+                kept.append(point)
+                continue
+            if point_on_ink(masks[label], px, radii[label], references[label], fraction):
+                kept.append(point)
+                continue
+            owner = None
+            for other in eligible:
+                other_label = str(other.get("label"))
+                if other_label == label or references[other_label] <= 0:
+                    continue
+                if point_on_ink(masks[other_label], px, radii[other_label], references[other_label], fraction):
+                    owner = other_label
+                    break
+            if owner is None:
+                kept.append(point)
+                continue
+            dropped.setdefault(label, []).append({
+                "px": [round(float(px[0]), 2), round(float(px[1]), 2)],
+                "x": point.get("x"), "y": point.get("y"), "on_ink_of": owner,
+            })
+        series["points"] = kept
+        series["n_points"] = len(kept)
+    return {"enabled": True, "dropped_total": sum(len(v) for v in dropped.values()), "dropped": dropped}

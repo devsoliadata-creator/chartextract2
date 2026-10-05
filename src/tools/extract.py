@@ -3621,6 +3621,12 @@ def extract(spec, out_prefix=None):
         result["calibration"]["dense_ribbon_resolver"] = dense_ribbon.resolve(
             result, spec, crop, lab=lab, config=CFG["extract"],
         )
+        if CFG["extract"].get("prune_misassigned_rows", True):
+            # A detector row on another eligible series' colour, and not on its
+            # own, is a clear mis-assignment; it is removed here and audited.
+            result["calibration"]["misassigned_row_pruning"] = dense_ribbon.prune_misassigned(
+                result, spec, crop, lab=lab, config=CFG["extract"],
+            )
         for series_entry in result["series"]:
             pts_ = series_entry["points"]
             series_entry["n_points"] = len(pts_)

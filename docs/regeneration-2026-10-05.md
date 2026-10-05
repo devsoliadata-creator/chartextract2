@@ -39,3 +39,14 @@ Per-series detail: `regeneration_summary.json` (sent with the overlays).
   the y-setpoints rather than x-setpoints.
 - Fully fused black bands remain count-bounded, not centre-resolved; the estimates are
   explicitly `estimated_marker`, low confidence, for the reviewers.
+
+## Second pass: mis-assigned rows pruned (same day)
+
+| panel | new Python rows | pruned as mis-assigned | still flagged off-ink |
+|---|---|---|---|
+| combined_05/fig2a | 385 | 30 (273K 12, 303K 12, 293K 3, others 3) | 9 |
+| combined_04/fig2a | 349 | 29 (273K 13, 303K 8, 283K 3, 293K 3, 373K 2) | 5 |
+| combined_04/fig3a | 60 | 0 | 1 |
+| combined_03/fig2b | 119 | 2 | 0 |
+
+The clump of black 273K squares on neighbouring curves is gone from the recreation.

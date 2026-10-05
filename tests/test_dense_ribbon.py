@@ -48,3 +48,14 @@ def test_resolver_disabled_without_axis_models(saved_panel):
     extraction["calibration"].pop("axis_models", None)
     audit = dense_ribbon.resolve(extraction, spec, cv2.imread(spec["image"]))
     assert audit["enabled"] is False
+
+
+def test_prune_only_removes_rows_on_another_series_ink(saved_panel):
+    spec, extraction = _inputs(saved_panel)
+    before = sum(len(s["points"]) for s in extraction["series"])
+    audit = dense_ribbon.prune_misassigned(extraction, spec, cv2.imread(spec["image"]))
+    after = sum(len(s["points"]) for s in extraction["series"])
+    assert before - after == audit["dropped_total"]
+    for label, items in audit["dropped"].items():
+        for item in items:
+            assert item["on_ink_of"] != label and item["on_ink_of"]

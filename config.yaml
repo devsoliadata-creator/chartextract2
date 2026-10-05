@@ -47,7 +47,8 @@ extract:
   dense_ribbon_limit_fraction: 0.25 # search left of this fraction of the x span; clean markers right of it build the template
   dense_ribbon_peak_score: 0.5    # combined ink/template score needed for a measured centre
   dense_ribbon_shape_score: 0.5   # template correlation needed to call a centre shape-supported (else estimated)
-  on_ink_tolerance_lab: 34        # every stage: rows whose 0.8 r disc lacks the series colour get on_series_ink=false
+  prune_misassigned_rows: true    # Python stage: drop a detector row that is off its own series' colour but on another eligible series' colour (audited)
+  on_ink_tolerance_lab: 34        # every stage: rows whose 1.1 r disc lacks the series colour (vs the series' own marker reference) get on_series_ink=false
   on_ink_area_fraction: 0.4
   series_gate: true               # same-color series: points go to the series whose curve (y anchors / y_band) explains them
   template_fill: true             # put the series' legend template on crowded-strip slots the resolver could not confirm
