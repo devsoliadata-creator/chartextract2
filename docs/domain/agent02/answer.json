@@ -1,0 +1,390 @@
+{
+ "reasoning": "The printed axes are calibrated correctly: the source runs from 0 to 1 in relative pressure and 0 to 140 cm³ g⁻¹, and the extracted values match those scales. The blue CO2 curve is positioned correctly, but many native blue rings remain unextracted in the dense low-pressure rise and several plateau markers are missed. The red N2 open-circle series is visibly present across the plot but Python extracted no red series at all because it was disabled. The inset must remain ignored as a duplicate plot region.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 1,
+   "data_min": -0.0008,
+   "data_max": 0.997,
+   "reason": "The re-plotted pressure values align with the source's printed 0, 0.2, ..., 1.0 ticks; there is no shifted or stretched x calibration.",
+   "result": "pass"
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 140,
+   "data_min": 0.6475,
+   "data_max": 126.2856,
+   "reason": "The re-plotted uptake values align with the source's printed 0 through 140 cm³ g⁻¹ ticks and the plateau is at approximately 120-127 as in the source.",
+   "result": "pass"
+  }
+ },
+ "satisfied": false,
+ "issues": [
+  "The complete red N2 77K open-circle series is missing from the Python extraction.",
+  "The CO2 195K dense low-pressure region is substantially incomplete: Python found 18 of about 22 markers below 0.015, 4 of about 18 from 0.015 to 0.035, and 4 of about 9 from 0.035 to 0.08.",
+  "Several CO2 plateau markers are also not recovered, despite the correct curve placement.",
+  "The inset is a duplicate representation and must be ignored during extraction."
+ ],
+ "structure_ok": true,
+ "chart_title": "",
+ "x_axis": {
+  "title": "Relative Pressure (P/P₀)",
+  "unit": "dimensionless",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 1,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   1
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.2164,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.3536,
+    "value": 0.2
+   },
+   {
+    "pixel_norm": 0.4908,
+    "value": 0.4
+   },
+   {
+    "pixel_norm": 0.6266,
+    "value": 0.6
+   },
+   {
+    "pixel_norm": 0.7638,
+    "value": 0.8
+   },
+   {
+    "pixel_norm": 0.901,
+    "value": 1
+   }
+  ]
+ },
+ "y_axis": {
+  "title": "Uptake",
+  "unit": "cm³ g⁻¹",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 140,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   20,
+   40,
+   60,
+   80,
+   100,
+   120,
+   140
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.7516,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.6603,
+    "value": 20
+   },
+   {
+    "pixel_norm": 0.5675,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.476,
+    "value": 60
+   },
+   {
+    "pixel_norm": 0.3846,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.2933,
+    "value": 100
+   },
+   {
+    "pixel_norm": 0.2019,
+    "value": 120
+   },
+   {
+    "pixel_norm": 0.1106,
+    "value": 140
+   }
+  ]
+ },
+ "legend_bbox_norm": [
+  0.6174,
+  0.1587,
+  1,
+  0.75
+ ],
+ "total_series": 2,
+ "series": [
+  {
+   "label": "CO2 195K",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#5B70F2",
+   "notes": "Blue open-circle adsorption isotherm labelled CO2@195 K."
+  },
+  {
+   "label": "N2 77K",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#F05F62",
+   "notes": "Red open-circle adsorption isotherm labelled N2@77 K; extract this series rather than treating it as disabled."
+  }
+ ],
+ "branches": "adsorption_only",
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.2093,
+    0.109,
+    0.2716,
+    0.7965
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.3536,
+    0.2788,
+    0.7355,
+    0.625
+   ],
+   "kind": "inset",
+   "python_passes": 4
+  }
+ ],
+ "extraction_settings": [
+  {
+   "label": "CO2 195K",
+   "color_tolerance": 35,
+   "separate_from": [
+    "N2 77K"
+   ],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 0.015,
+     "y_min": 0,
+     "y_max": 55
+    },
+    {
+     "x_from": 0.015,
+     "x_to": 0.035,
+     "y_min": 35,
+     "y_max": 105
+    },
+    {
+     "x_from": 0.035,
+     "x_to": 0.08,
+     "y_min": 95,
+     "y_max": 122
+    },
+    {
+     "x_from": 0.08,
+     "x_to": 1,
+     "y_min": 115,
+     "y_max": 130
+    }
+   ],
+   "template_fill": "fit_only",
+   "reason": "Recover the many closely spaced blue open circles in the low-pressure rise using the curve position and dense-ring geometry; retain the plateau markers without indiscriminate filling.",
+   "sample_marker_norm": [
+    0.8248,
+    0.1809
+   ],
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 0.015,
+     "count": 22
+    },
+    {
+     "x_from": 0.015,
+     "x_to": 0.035,
+     "count": 18
+    },
+    {
+     "x_from": 0.035,
+     "x_to": 0.08,
+     "count": 9
+    },
+    {
+     "x_from": 0.08,
+     "x_to": 1,
+     "count": 16
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 0.005,
+     "y": 12
+    },
+    {
+     "x": 0.01,
+     "y": 30
+    },
+    {
+     "x": 0.015,
+     "y": 48
+    },
+    {
+     "x": 0.02,
+     "y": 62
+    },
+    {
+     "x": 0.025,
+     "y": 82
+    },
+    {
+     "x": 0.03,
+     "y": 104
+    },
+    {
+     "x": 0.04,
+     "y": 116
+    },
+    {
+     "x": 0.06,
+     "y": 120
+    },
+    {
+     "x": 0.1,
+     "y": 122
+    },
+    {
+     "x": 0.5,
+     "y": 124
+    },
+    {
+     "x": 1,
+     "y": 127
+    }
+   ]
+  },
+  {
+   "label": "N2 77K",
+   "color_tolerance": 35,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 0.08,
+     "y_min": -1,
+     "y_max": 4
+    },
+    {
+     "x_from": 0.08,
+     "x_to": 0.85,
+     "y_min": -1,
+     "y_max": 3
+    },
+    {
+     "x_from": 0.85,
+     "x_to": 1,
+     "y_min": -1,
+     "y_max": 5
+    }
+   ],
+   "template_fill": "off",
+   "reason": "The red open-circle series is clearly visible along the near-zero uptake line and its small upturn near x=1; enable extraction of all red rings and do not infer filled points.",
+   "sample_marker_norm": [
+    0.7499,
+    0.7481
+   ],
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 0.08,
+     "count": 10
+    },
+    {
+     "x_from": 0.08,
+     "x_to": 0.85,
+     "count": 20
+    },
+    {
+     "x_from": 0.85,
+     "x_to": 1,
+     "count": 8
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 0.02,
+     "y": 1
+    },
+    {
+     "x": 0.05,
+     "y": 1
+    },
+    {
+     "x": 0.1,
+     "y": 1
+    },
+    {
+     "x": 0.3,
+     "y": 1
+    },
+    {
+     "x": 0.6,
+     "y": 1
+    },
+    {
+     "x": 0.85,
+     "y": 1
+    },
+    {
+     "x": 0.93,
+     "y": 1
+    },
+    {
+     "x": 0.97,
+     "y": 2
+    },
+    {
+     "x": 1,
+     "y": 3
+    }
+   ]
+  }
+ ],
+ "notes": "Both plotted series use open circles and solid connecting lines. The red N2 series is not an excluded or decorative legend entry.",
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.3536,
+    0.2788,
+    0.7355,
+    0.625
+   ],
+   "series_labels": [],
+   "strategy": "ignore",
+   "reason": "This is the inset duplicate of the low-pressure portion of the main plot; do not extract its markers as additional main-panel points."
+  }
+ ],
+ "shared_x_columns": []
+}

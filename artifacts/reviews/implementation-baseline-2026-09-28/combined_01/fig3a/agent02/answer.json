@@ -1,0 +1,203 @@
+{
+ "reasoning": "The linear axis calibration is correct: the recreated CO2 curve occupies the same pressures and uptakes as the source. Marker placement has 0.97 native-ink recall and 0.989 precision; the apparent plateau count shortfall is an artifact of counting only discrete detections while Python also supplied 35 native-band trace samples. The remaining low-pressure ambiguity is confined to roughly 1.5 marker equivalents in the fused adsorption/desorption strip and is suitable for point-level review rather than another structural extraction pass. The source has two directly labeled open-circle series, although only CO2 is the extraction target.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 1,
+   "data_min": -0.0008,
+   "data_max": 1.0104,
+   "reason": "The recreated curve aligns with the source from the zero-pressure rise through the markers at the 1.0 tick. The slight numerical overhang is consistent with markers centered near the frame edge.",
+   "result": "pass"
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 140,
+   "data_min": 0.6475,
+   "data_max": 126.6357,
+   "reason": "The CO2 plateau replots at approximately 118–127 cm³ g⁻¹, matching its position between the printed 120 and 140 ticks, while the native low-pressure rise aligns correctly.",
+   "result": "pass"
+  }
+ },
+ "satisfied": true,
+ "issues": [],
+ "structure_ok": true,
+ "chart_title": "",
+ "x_axis": {
+  "title": "Relative Pressure (P/P₀)",
+  "unit": "P/P₀",
+  "scale": "linear",
+  "minimum": -0.05,
+  "maximum": 1.05,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   1
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.1992,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.3329,
+    "value": 0.2
+   },
+   {
+    "pixel_norm": 0.468,
+    "value": 0.4
+   },
+   {
+    "pixel_norm": 0.6017,
+    "value": 0.6
+   },
+   {
+    "pixel_norm": 0.7354,
+    "value": 0.8
+   },
+   {
+    "pixel_norm": 0.8705,
+    "value": 1
+   }
+  ]
+ },
+ "y_axis": {
+  "title": "Uptake",
+  "unit": "cm³ g⁻¹",
+  "scale": "linear",
+  "minimum": -10,
+  "maximum": 140,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   20,
+   40,
+   60,
+   80,
+   100,
+   120,
+   140
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.8185,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.719,
+    "value": 20
+   },
+   {
+    "pixel_norm": 0.6195,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.5201,
+    "value": 60
+   },
+   {
+    "pixel_norm": 0.4206,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.3211,
+    "value": 100
+   },
+   {
+    "pixel_norm": 0.2199,
+    "value": 120
+   },
+   {
+    "pixel_norm": 0.1204,
+    "value": 140
+   }
+  ]
+ },
+ "legend_bbox_norm": [
+  0.6114,
+  0.1832,
+  0.9095,
+  0.8098
+ ],
+ "total_series": 2,
+ "series": [
+  {
+   "label": "CO2 195K",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#5A74F7",
+   "notes": "Directly labeled CO2@195 K in the plot; target series. Adsorption and desorption markers become densely fused near zero relative pressure."
+  },
+  {
+   "label": "N2 77K",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#F06A69",
+   "notes": "Directly labeled N2@77 K in the plot; excluded from the requested extraction."
+  }
+ ],
+ "branches": "adsorption_and_desorption",
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.185,
+    0.185,
+    0.26,
+    0.825
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.337,
+    0.304,
+    0.709,
+    0.681
+   ],
+   "kind": "inset",
+   "python_passes": 2
+  },
+  {
+   "bbox_norm": [
+    0.19,
+    0.79,
+    0.225,
+    0.835
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 5
+  },
+  {
+   "bbox_norm": [
+    0.225,
+    0.17,
+    0.89,
+    0.235
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 5
+  }
+ ],
+ "extraction_settings": [],
+ "notes": "There is no conventional legend box; the series are identified by direct labels inside the plot. Python's 35 native-band samples account for the visually dense CO2 plateau, so the discrete-only expected-count shortfall does not indicate missing curve coverage. The inset is contextual and must remain excluded.",
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.337,
+    0.304,
+    0.709,
+    0.681
+   ],
+   "series_labels": [],
+   "strategy": "ignore",
+   "reason": "Embedded logarithmic-pressure inset; its markers and annotations are not part of the main-axis extraction."
+  }
+ ],
+ "shared_x_columns": []
+}

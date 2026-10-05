@@ -1,0 +1,20 @@
+{
+ "pdf": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\data\\input\\04.png",
+ "title": "04",
+ "producer": "image",
+ "page_count": 1,
+ "pages": [],
+ "captions": [],
+ "figures": [
+  {
+   "page": 1,
+   "kind": "image",
+   "file": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\discovery\\python_inventory\\figure.png",
+   "source_id": "image",
+   "figure_number": null,
+   "caption": null,
+   "caption_candidates": [],
+   "references": []
+  }
+ ]
+}

@@ -1,0 +1,1243 @@
+{
+ "image": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2b\\panel.png",
+ "panel_bbox": [
+  0,
+  0,
+  618,
+  645
+ ],
+ "x": {
+  "title": "Pressure",
+  "unit": "kPa",
+  "scale": "linear",
+  "ticks": [
+   0,
+   40,
+   80,
+   120
+  ],
+  "x_setpoints_visible": [
+   0,
+   2,
+   5,
+   8,
+   12,
+   16,
+   22,
+   28,
+   34,
+   40,
+   47,
+   54,
+   61,
+   68,
+   75,
+   82,
+   89,
+   96,
+   103,
+   110,
+   117
+  ],
+  "grid": [
+   0,
+   2,
+   5,
+   8,
+   12,
+   16,
+   22,
+   28,
+   34,
+   40,
+   47,
+   54,
+   61,
+   68,
+   75,
+   82,
+   89,
+   96,
+   103,
+   110,
+   117
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.0825,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.3641,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.6456,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.9272,
+    "value": 120
+   }
+  ],
+  "minimum": 0.0,
+  "maximum": 120.0,
+  "boundary_limits_confirmed": false
+ },
+ "y": {
+  "title": "CO2 uptake",
+  "unit": "mmol/g",
+  "scale": "linear",
+  "ticks": [
+   0,
+   0.5,
+   1,
+   1.5,
+   2,
+   2.5,
+   3
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.8093,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.6922,
+    "value": 0.5
+   },
+   {
+    "pixel_norm": 0.5752,
+    "value": 1
+   },
+   {
+    "pixel_norm": 0.4581,
+    "value": 1.5
+   },
+   {
+    "pixel_norm": 0.3411,
+    "value": 2
+   },
+   {
+    "pixel_norm": 0.2256,
+    "value": 2.5
+   },
+   {
+    "pixel_norm": 0.1085,
+    "value": 3
+   }
+  ],
+  "minimum": 0.0,
+  "maximum": 3.1,
+  "boundary_limits_confirmed": true
+ },
+ "legend_bbox": [
+  275,
+  353,
+  580,
+  534
+ ],
+ "legend_position": "lower right inside the plot",
+ "series": [
+  {
+   "label": "CO2 303K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 303K.",
+   "marker": "circle",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#f21f26",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 2.95,
+   "y_anchors": {
+    "p25": 2.35,
+    "p50": 2.65,
+    "p75": 2.83,
+    "p100": 2.95
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 28.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 1.7
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 1.35,
+     "y_max": 2.35
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 2.2,
+     "y_max": 3.05
+    }
+   ],
+   "template_fill": "off",
+   "setting_reason": "Do not infer marker centers along the smooth red guide curve. Preserve the shared origin and isolated markers beyond the guide segment.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 2.0,
+     "y": 0.55
+    },
+    {
+     "x": 5.0,
+     "y": 1.1
+    },
+    {
+     "x": 8.0,
+     "y": 1.45
+    },
+    {
+     "x": 12.0,
+     "y": 1.72
+    },
+    {
+     "x": 20.0,
+     "y": 2.03
+    },
+    {
+     "x": 28.0,
+     "y": 2.22
+    },
+    {
+     "x": 40.0,
+     "y": 2.4
+    },
+    {
+     "x": 60.0,
+     "y": 2.62
+    },
+    {
+     "x": 80.0,
+     "y": 2.78
+    },
+    {
+     "x": 100.0,
+     "y": 2.9
+    },
+    {
+     "x": 117.0,
+     "y": 2.98
+    }
+   ]
+  },
+  {
+   "label": "CO2 313K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 313K.",
+   "marker": "square",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#f5ab1e",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 2.65,
+   "y_anchors": {
+    "p25": 2.1,
+    "p50": 2.35,
+    "p75": 2.53,
+    "p100": 2.65
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 28.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 1.2
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 1.1,
+     "y_max": 2.1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.9,
+     "y_max": 2.75
+    }
+   ],
+   "template_fill": "fit_only",
+   "setting_reason": "Recover the distinct orange low-pressure squares and the missed high-pressure square without adding interpolated points.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 2.0,
+     "y": 0.3
+    },
+    {
+     "x": 7.0,
+     "y": 0.75
+    },
+    {
+     "x": 14.0,
+     "y": 1.25
+    },
+    {
+     "x": 20.0,
+     "y": 1.55
+    },
+    {
+     "x": 28.0,
+     "y": 1.9
+    },
+    {
+     "x": 40.0,
+     "y": 2.2
+    },
+    {
+     "x": 60.0,
+     "y": 2.38
+    },
+    {
+     "x": 80.0,
+     "y": 2.5
+    },
+    {
+     "x": 100.0,
+     "y": 2.59
+    },
+    {
+     "x": 117.0,
+     "y": 2.67
+    }
+   ]
+  },
+  {
+   "label": "CO2 323K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 323K.",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#248d43",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 2.4,
+   "y_anchors": {
+    "p25": 1.9,
+    "p50": 2.15,
+    "p75": 2.3,
+    "p100": 2.4
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 28.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.9
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.75,
+     "y_max": 1.85
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.65,
+     "y_max": 2.5
+    }
+   ],
+   "template_fill": "off",
+   "setting_reason": "Do not sample the smooth green guide segment as a dense sequence. Retain only distinct source-supported triangles and the shared origin.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 4
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 2.0,
+     "y": 0.2
+    },
+    {
+     "x": 5.0,
+     "y": 0.48
+    },
+    {
+     "x": 8.0,
+     "y": 0.72
+    },
+    {
+     "x": 14.0,
+     "y": 1.08
+    },
+    {
+     "x": 20.0,
+     "y": 1.4
+    },
+    {
+     "x": 28.0,
+     "y": 1.72
+    },
+    {
+     "x": 40.0,
+     "y": 1.98
+    },
+    {
+     "x": 60.0,
+     "y": 2.18
+    },
+    {
+     "x": 80.0,
+     "y": 2.3
+    },
+    {
+     "x": 100.0,
+     "y": 2.38
+    },
+    {
+     "x": 117.0,
+     "y": 2.43
+    }
+   ]
+  },
+  {
+   "label": "CO2 333K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 333K.",
+   "marker": "pentagon",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#354c9a",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 2.25,
+   "y_anchors": {
+    "p25": 1.7,
+    "p50": 2.0,
+    "p75": 2.15,
+    "p100": 2.25
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 28.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.8
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.65,
+     "y_max": 1.75
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.5,
+     "y_max": 2.35
+    }
+   ],
+   "template_fill": "fit_only",
+   "setting_reason": "Discard the previous white-background sample and use the blue legend color. Follow the blue pentagon curve rather than unrelated red, green, or magenta ink.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 2.0,
+     "y": 0.12
+    },
+    {
+     "x": 7.0,
+     "y": 0.45
+    },
+    {
+     "x": 14.0,
+     "y": 1.02
+    },
+    {
+     "x": 20.0,
+     "y": 1.4
+    },
+    {
+     "x": 28.0,
+     "y": 1.62
+    },
+    {
+     "x": 40.0,
+     "y": 1.82
+    },
+    {
+     "x": 60.0,
+     "y": 2.0
+    },
+    {
+     "x": 80.0,
+     "y": 2.12
+    },
+    {
+     "x": 100.0,
+     "y": 2.2
+    },
+    {
+     "x": 117.0,
+     "y": 2.26
+    }
+   ]
+  },
+  {
+   "label": "CO2 353K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 353K.",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#d13ea1",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 1.95,
+   "y_anchors": {
+    "p25": 1.25,
+    "p50": 1.65,
+    "p75": 1.85,
+    "p100": 1.95
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 30.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.45
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.3,
+     "y_max": 1.2
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 0.95,
+     "y_max": 2.05
+    }
+   ],
+   "template_fill": "fit_only",
+   "setting_reason": "Recover the remaining distinct magenta diamonds, especially in the low-pressure and closely spaced high-pressure columns.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 2.0,
+     "y": 0.08
+    },
+    {
+     "x": 7.0,
+     "y": 0.25
+    },
+    {
+     "x": 14.0,
+     "y": 0.55
+    },
+    {
+     "x": 20.0,
+     "y": 0.78
+    },
+    {
+     "x": 28.0,
+     "y": 1.08
+    },
+    {
+     "x": 40.0,
+     "y": 1.35
+    },
+    {
+     "x": 60.0,
+     "y": 1.58
+    },
+    {
+     "x": 80.0,
+     "y": 1.75
+    },
+    {
+     "x": 100.0,
+     "y": 1.87
+    },
+    {
+     "x": 117.0,
+     "y": 1.95
+    }
+   ]
+  },
+  {
+   "label": "CO2 373K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend header explicitly reads CO2; legend entry reads 373K.",
+   "marker": "star",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#060707",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of structured CALF-20 sorbent",
+   "y_at_xmax": 1.55,
+   "y_anchors": {
+    "p25": 0.8,
+    "p50": 1.15,
+    "p75": 1.4,
+    "p100": 1.55
+   },
+   "n_markers_estimate": 21,
+   "color_tolerance": 24.0,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.25
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.1,
+     "y_max": 0.75
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 0.6,
+     "y_max": 1.65
+    }
+   ],
+   "template_fill": "off",
+   "setting_reason": "The smooth black guide segment was mistaken for many star markers. Keep the shared origin and isolated black stars after the guide terminates.",
+   "sample_px": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 5.0,
+     "y": 0.12
+    },
+    {
+     "x": 10.0,
+     "y": 0.24
+    },
+    {
+     "x": 15.0,
+     "y": 0.36
+    },
+    {
+     "x": 20.0,
+     "y": 0.48
+    },
+    {
+     "x": 28.0,
+     "y": 0.64
+    },
+    {
+     "x": 40.0,
+     "y": 0.88
+    },
+    {
+     "x": 60.0,
+     "y": 1.15
+    },
+    {
+     "x": 80.0,
+     "y": 1.35
+    },
+    {
+     "x": 100.0,
+     "y": 1.49
+    },
+    {
+     "x": 117.0,
+     "y": 1.57
+    }
+   ]
+  }
+ ],
+ "mask_bboxes": [],
+ "context": {
+  "adsorbent": "CALF-20; panel A is pure CALF-20 and panel B is structured CALF-20 containing 80% MOF and 20% polysulfone",
+  "sample_form": "Pure CALF-20 and an 80% MOF:20% polysulfone structured composite; exact physical form is not specified in the caption",
+  "activation": "Not specified in the provided caption or page context",
+  "instrument": "Volumetric sorption measurement for CO2 and N2; gravimetric measurement for H2O",
+  "measurement_notes": "Panel A: CO2 and N2 isotherms from 273 to 373 K on pure CALF-20. Panel B: CO2 isotherms from 303 to 373 K on structured CALF-20. CO2 loading is reported in mmol/g versus pressure.",
+  "other_parameters": "Panel A pressure axis is in mbar; panels B and C use kPa. The figure also includes non-CO2 N2 and H2O measurements, which are excluded from CO2 extraction."
+ },
+ "panel_info": {
+  "panel": "B",
+  "is_co2_isotherm": true,
+  "reason": "CO2 loading is plotted against pressure for structured CALF-20 containing 80% MOF and 20% polysulfone at temperatures from 303 to 373 K.",
+  "bbox_norm": [
+   0.1,
+   0.42,
+   0.49,
+   0.69
+  ],
+  "has_inset": false,
+  "inset_bbox_norm": null
+ },
+ "panel_mapping": {
+  "runtime_panel_id": "b",
+  "layout_panel_id": "B",
+  "canonical_panel_id": "b"
+ },
+ "llm_spec": {
+  "reasoning": "Single linear isotherm panel for structured CALF-20. The legend is inside the lower-right and lists six CO2 temperature series in two columns. All series use distinct colored markers, with approximate uptake increasing with pressure and decreasing with temperature. The y-axis spans approximately 0 to 3.0 mmol/g; the x-axis spans 0 to 120 kPa. Curves are adsorption-only, with solid connecting traces visible most clearly at low pressure.",
+  "x": {
+   "title": "Pressure",
+   "unit": "kPa",
+   "scale": "linear",
+   "ticks": [
+    0,
+    40,
+    80,
+    120
+   ],
+   "x_setpoints_visible": [
+    0,
+    2,
+    5,
+    8,
+    12,
+    16,
+    22,
+    28,
+    34,
+    40,
+    47,
+    54,
+    61,
+    68,
+    75,
+    82,
+    89,
+    96,
+    103,
+    110,
+    117
+   ],
+   "grid": [
+    0,
+    2,
+    5,
+    8,
+    12,
+    16,
+    22,
+    28,
+    34,
+    40,
+    47,
+    54,
+    61,
+    68,
+    75,
+    82,
+    89,
+    96,
+    103,
+    110,
+    117
+   ],
+   "tick_anchors": [
+    {
+     "pixel_norm": 0.0825,
+     "value": 0
+    },
+    {
+     "pixel_norm": 0.3641,
+     "value": 40
+    },
+    {
+     "pixel_norm": 0.6456,
+     "value": 80
+    },
+    {
+     "pixel_norm": 0.9272,
+     "value": 120
+    }
+   ],
+   "minimum": 0.0,
+   "maximum": 120.0,
+   "boundary_limits_confirmed": false
+  },
+  "y": {
+   "title": "CO2 uptake",
+   "unit": "mmol/g",
+   "scale": "linear",
+   "ticks": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3
+   ],
+   "tick_anchors": [
+    {
+     "pixel_norm": 0.8093,
+     "value": 0
+    },
+    {
+     "pixel_norm": 0.6922,
+     "value": 0.5
+    },
+    {
+     "pixel_norm": 0.5752,
+     "value": 1
+    },
+    {
+     "pixel_norm": 0.4581,
+     "value": 1.5
+    },
+    {
+     "pixel_norm": 0.3411,
+     "value": 2
+    },
+    {
+     "pixel_norm": 0.2256,
+     "value": 2.5
+    },
+    {
+     "pixel_norm": 0.1085,
+     "value": 3
+    }
+   ],
+   "minimum": 0.0,
+   "maximum": 3.1,
+   "boundary_limits_confirmed": true
+  },
+  "legend_bbox_norm": [
+   0.4563,
+   0.5581,
+   0.9288,
+   0.8186
+  ],
+  "legend_position": "lower right inside the plot",
+  "series": [
+   {
+    "label": "CO2 303K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 303K.",
+    "temperature_k": 303,
+    "color_name": "red",
+    "color_hex": "#f21f26",
+    "marker": "circle",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.35,
+     "p50": 2.65,
+     "p75": 2.83,
+     "p100": 2.95
+    },
+    "n_markers_estimate": 21
+   },
+   {
+    "label": "CO2 313K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 313K.",
+    "temperature_k": 313,
+    "color_name": "orange",
+    "color_hex": "#f5ab1e",
+    "marker": "square",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.1,
+     "p50": 2.35,
+     "p75": 2.53,
+     "p100": 2.65
+    },
+    "n_markers_estimate": 21
+   },
+   {
+    "label": "CO2 323K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 323K.",
+    "temperature_k": 323,
+    "color_name": "green",
+    "color_hex": "#248d43",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.9,
+     "p50": 2.15,
+     "p75": 2.3,
+     "p100": 2.4
+    },
+    "n_markers_estimate": 21
+   },
+   {
+    "label": "CO2 333K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 333K.",
+    "temperature_k": 333,
+    "color_name": "blue",
+    "color_hex": "#354c9a",
+    "marker": "pentagon",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.7,
+     "p50": 2.0,
+     "p75": 2.15,
+     "p100": 2.25
+    },
+    "n_markers_estimate": 21
+   },
+   {
+    "label": "CO2 353K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 353K.",
+    "temperature_k": 353,
+    "color_name": "magenta",
+    "color_hex": "#d13ea1",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.25,
+     "p50": 1.65,
+     "p75": 1.85,
+     "p100": 1.95
+    },
+    "n_markers_estimate": 21
+   },
+   {
+    "label": "CO2 373K",
+    "gas": "CO2",
+    "species_evidence": "Legend header explicitly reads CO2; legend entry reads 373K.",
+    "temperature_k": 373,
+    "color_name": "black",
+    "color_hex": "#060707",
+    "marker": "star",
+    "marker_fill": "filled",
+    "line_style": "none",
+    "has_line": false,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of structured CALF-20 sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 0.8,
+     "p50": 1.15,
+     "p75": 1.4,
+     "p100": 1.55
+    },
+    "n_markers_estimate": 21
+   }
+  ],
+  "branches": "adsorption_only",
+  "notes": "No inset or dual axis is visible. Minor tick marks appear between the numbered x ticks but have no printed numeric labels and are therefore omitted. Solid connecting traces are most prominent in the low-pressure region; markers remain distinguishable across the full pressure range.",
+  "agent02_axis_bounds_validation": {
+   "x": {
+    "minimum": "accepted",
+    "maximum": "accepted"
+   },
+   "y": {
+    "minimum": "accepted",
+    "maximum": "accepted"
+   }
+  },
+  "chart_title": "",
+  "complex_regions": [
+   {
+    "bbox_norm": [
+     0.084,
+     0.275,
+     0.282,
+     0.806
+    ],
+    "kind": "thick_connecting_lines",
+    "python_passes": 6
+   },
+   {
+    "bbox_norm": [
+     0.084,
+     0.47,
+     0.282,
+     0.806
+    ],
+    "kind": "thick_connecting_lines",
+    "python_passes": 6
+   },
+   {
+    "bbox_norm": [
+     0.084,
+     0.64,
+     0.282,
+     0.806
+    ],
+    "kind": "thick_connecting_lines",
+    "python_passes": 6
+   },
+   {
+    "bbox_norm": [
+     0.078,
+     0.72,
+     0.17,
+     0.815
+    ],
+    "kind": "overlapping_markers",
+    "python_passes": 6
+   },
+   {
+    "bbox_norm": [
+     0.77,
+     0.25,
+     0.86,
+     0.82
+    ],
+    "kind": "dense_markers",
+    "python_passes": 6
+   }
+  ]
+ },
+ "vector_marks": null,
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.09,
+    0.275,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 303K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous red low-pressure guide segment; no distinct red marker centers should be inferred from its solid ink.",
+   "bbox_px": [
+    55,
+    177,
+    174,
+    520
+   ]
+  },
+  {
+   "bbox_norm": [
+    0.09,
+    0.47,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 323K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous green low-pressure guide segment; suppress the false dense triangle samples.",
+   "bbox_px": [
+    55,
+    303,
+    174,
+    520
+   ]
+  },
+  {
+   "bbox_norm": [
+    0.09,
+    0.64,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 373K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous black low-pressure guide segment; suppress the false sequence of star samples.",
+   "bbox_px": [
+    55,
+    412,
+    174,
+    520
+   ]
+  }
+ ],
+ "shared_x_columns": [],
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.084,
+    0.275,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.084,
+    0.47,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.084,
+    0.64,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.078,
+    0.72,
+    0.17,
+    0.815
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.77,
+    0.25,
+    0.86,
+    0.82
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  }
+ ]
+}

@@ -1,0 +1,896 @@
+{
+ "image": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2a\\panel.png",
+ "panel_bbox": [
+  0,
+  0,
+  1370,
+  827
+ ],
+ "x": {
+  "title": "Pressure",
+  "unit": "mbar",
+  "scale": "linear",
+  "ticks": [
+   0,
+   200,
+   400,
+   600,
+   800,
+   1000,
+   1200
+  ],
+  "x_setpoints_visible": [
+   0,
+   50,
+   100,
+   150,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900,
+   1000,
+   1100,
+   1200
+  ],
+  "grid": [
+   0,
+   50,
+   100,
+   150,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900,
+   1000,
+   1100,
+   1200
+  ]
+ },
+ "y": {
+  "title": "Gas uptake",
+  "unit": "mmol/g",
+  "scale": "linear",
+  "ticks": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "legend_bbox": [
+  990,
+  0,
+  1354,
+  782
+ ],
+ "legend_position": "upper right inside the plot",
+ "series": [
+  {
+   "label": "CO2 273K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 273K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "square",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#000000",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 5.05,
+   "y_anchors": {
+    "p25": 4.1,
+    "p50": 4.65,
+    "p75": 4.9,
+    "p100": 5.05
+   },
+   "n_markers_estimate": 31
+  },
+  {
+   "label": "CO2 283K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 283K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#e52b2b",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 4.55,
+   "y_anchors": {
+    "p25": 3.45,
+    "p50": 3.95,
+    "p75": 4.3,
+    "p100": 4.55
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 293K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 293K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#354a9b",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 4.1,
+   "y_anchors": {
+    "p25": 3.0,
+    "p50": 3.5,
+    "p75": 3.8,
+    "p100": 4.1
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 303K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 303K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "triangle_down",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#238c8c",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 3.55,
+   "y_anchors": {
+    "p25": 2.75,
+    "p50": 3.2,
+    "p75": 3.4,
+    "p100": 3.55
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 313K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 313K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "triangle_left",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#a3489a",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 3.45,
+   "y_anchors": {
+    "p25": 2.7,
+    "p50": 3.1,
+    "p75": 3.3,
+    "p100": 3.45
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 323K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 323K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "triangle_right",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#8d8b3c",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 3.15,
+   "y_anchors": {
+    "p25": 2.4,
+    "p50": 2.8,
+    "p75": 3.0,
+    "p100": 3.15
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 333K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 333K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#273b82",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 2.9,
+   "y_anchors": {
+    "p25": 2.0,
+    "p50": 2.55,
+    "p75": 2.7,
+    "p100": 2.9
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 343K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 343K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "pentagon",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#8e2d22",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 2.65,
+   "y_anchors": {
+    "p25": 1.8,
+    "p50": 2.3,
+    "p75": 2.55,
+    "p100": 2.65
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 353K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 353K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#db2c7b",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 2.5,
+   "y_anchors": {
+    "p25": 1.5,
+    "p50": 2.0,
+    "p75": 2.3,
+    "p100": 2.5
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 363K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 363K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "star",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#238b4e",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 2.3,
+   "y_anchors": {
+    "p25": 1.1,
+    "p50": 1.75,
+    "p75": 2.05,
+    "p100": 2.3
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "CO2 373K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Legend entry CO2 @ 373K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+   "marker": "hexagon",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#293d86",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 2.05,
+   "y_anchors": {
+    "p25": 0.85,
+    "p50": 1.45,
+    "p75": 1.75,
+    "p100": 2.05
+   },
+   "n_markers_estimate": 30
+  },
+  {
+   "label": "N2 273K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 273K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "hexagon",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#8b3289",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.75,
+   "y_anchors": {
+    "p25": 0.2,
+    "p50": 0.4,
+    "p75": 0.55,
+    "p100": 0.75
+   },
+   "n_markers_estimate": 28
+  },
+  {
+   "label": "N2 293K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 293K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#6f4a9b",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.45,
+   "y_anchors": {
+    "p25": 0.12,
+    "p50": 0.22,
+    "p75": 0.32,
+    "p100": 0.45
+   },
+   "n_markers_estimate": 28
+  },
+  {
+   "label": "N2 313K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 313K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "triangle_down",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#111111",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.3,
+   "y_anchors": {
+    "p25": 0.08,
+    "p50": 0.15,
+    "p75": 0.22,
+    "p100": 0.3
+   },
+   "n_markers_estimate": 28
+  },
+  {
+   "label": "N2 333K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 333K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "triangle_left",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#e43b3b",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.24,
+   "y_anchors": {
+    "p25": 0.06,
+    "p50": 0.12,
+    "p75": 0.18,
+    "p100": 0.24
+   },
+   "n_markers_estimate": 28
+  },
+  {
+   "label": "N2 353K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 353K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "triangle_right",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#3d5ba4",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.18,
+   "y_anchors": {
+    "p25": 0.04,
+    "p50": 0.08,
+    "p75": 0.12,
+    "p100": 0.18
+   },
+   "n_markers_estimate": 28
+  },
+  {
+   "label": "N2 373K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Legend entry N2 @ 373K; caption states panel A contains N2 isotherms on pure CALF-20.",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#268f8d",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 0.15,
+   "y_anchors": {
+    "p25": 0.03,
+    "p50": 0.06,
+    "p75": 0.1,
+    "p100": 0.15
+   },
+   "n_markers_estimate": 28
+  }
+ ],
+ "mask_bboxes": [],
+ "context": {
+  "adsorbent": "CALF-20; panel A is pure CALF-20 and panel B is structured CALF-20 containing 80% MOF and 20% polysulfone",
+  "sample_form": "Pure CALF-20 and an 80% MOF:20% polysulfone structured composite; exact physical form is not specified in the caption",
+  "activation": "Not specified in the provided caption or page context",
+  "instrument": "Volumetric sorption measurement for CO2 and N2; gravimetric measurement for H2O",
+  "measurement_notes": "Panel A: CO2 and N2 isotherms from 273 to 373 K on pure CALF-20. Panel B: CO2 isotherms from 303 to 373 K on structured CALF-20. CO2 loading is reported in mmol/g versus pressure.",
+  "other_parameters": "Panel A pressure axis is in mbar; panels B and C use kPa. The figure also includes non-CO2 N2 and H2O measurements, which are excluded from CO2 extraction."
+ },
+ "panel_info": {
+  "panel": "A",
+  "is_co2_isotherm": true,
+  "reason": "CO2 loading is plotted against pressure for pure CALF-20 at temperatures from 273 to 373 K; N2 curves are also present but do not affect eligibility of the CO2 curves.",
+  "bbox_norm": [
+   0.08,
+   0.0,
+   0.98,
+   0.37
+  ],
+  "has_inset": false,
+  "inset_bbox_norm": null
+ },
+ "panel_mapping": {
+  "runtime_panel_id": "a",
+  "layout_panel_id": "A",
+  "canonical_panel_id": "a"
+ },
+ "llm_spec": {
+  "reasoning": "Single panel with linear pressure and uptake axes. The legend at the upper-right lists eleven CO2 isotherms from 273K to 373K and six N2 isotherms from 273K to 373K. CO2 curves are the high-loading family; N2 curves remain near the baseline. Lines are single adsorption branches with colored markers and connecting solid lines.",
+  "x": {
+   "title": "Pressure",
+   "unit": "mbar",
+   "scale": "linear",
+   "ticks": [
+    0,
+    200,
+    400,
+    600,
+    800,
+    1000,
+    1200
+   ],
+   "x_setpoints_visible": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200
+   ],
+   "grid": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200
+   ]
+  },
+  "y": {
+   "title": "Gas uptake",
+   "unit": "mmol/g",
+   "scale": "linear",
+   "ticks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "legend_bbox_norm": [
+   0.733,
+   0.004,
+   0.978,
+   0.936
+  ],
+  "legend_position": "upper right inside the plot",
+  "series": [
+   {
+    "label": "CO2 273K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 273K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 273,
+    "color_name": "black",
+    "color_hex": "#000000",
+    "marker": "square",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 4.1,
+     "p50": 4.65,
+     "p75": 4.9,
+     "p100": 5.05
+    },
+    "n_markers_estimate": 31
+   },
+   {
+    "label": "CO2 283K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 283K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 283,
+    "color_name": "red",
+    "color_hex": "#e52b2b",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 3.45,
+     "p50": 3.95,
+     "p75": 4.3,
+     "p100": 4.55
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 293K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 293K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 293,
+    "color_name": "blue",
+    "color_hex": "#354a9b",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 3.0,
+     "p50": 3.5,
+     "p75": 3.8,
+     "p100": 4.1
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 303K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 303K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 303,
+    "color_name": "teal",
+    "color_hex": "#238c8c",
+    "marker": "triangle_down",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.75,
+     "p50": 3.2,
+     "p75": 3.4,
+     "p100": 3.55
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 313K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 313K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 313,
+    "color_name": "purple",
+    "color_hex": "#a3489a",
+    "marker": "triangle_left",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.7,
+     "p50": 3.1,
+     "p75": 3.3,
+     "p100": 3.45
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 323K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 323K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 323,
+    "color_name": "olive",
+    "color_hex": "#8d8b3c",
+    "marker": "triangle_right",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.4,
+     "p50": 2.8,
+     "p75": 3.0,
+     "p100": 3.15
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 333K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 333K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 333,
+    "color_name": "dark blue",
+    "color_hex": "#273b82",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 2.0,
+     "p50": 2.55,
+     "p75": 2.7,
+     "p100": 2.9
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 343K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 343K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 343,
+    "color_name": "brown",
+    "color_hex": "#8e2d22",
+    "marker": "pentagon",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.8,
+     "p50": 2.3,
+     "p75": 2.55,
+     "p100": 2.65
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 353K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 353K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 353,
+    "color_name": "pink",
+    "color_hex": "#db2c7b",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.5,
+     "p50": 2.0,
+     "p75": 2.3,
+     "p100": 2.5
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 363K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 363K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 363,
+    "color_name": "green",
+    "color_hex": "#238b4e",
+    "marker": "star",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 1.1,
+     "p50": 1.75,
+     "p75": 2.05,
+     "p100": 2.3
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "CO2 373K",
+    "gas": "CO2",
+    "species_evidence": "Legend entry CO2 @ 373K; caption states panel A contains CO2 isotherms on pure CALF-20.",
+    "temperature_k": 373,
+    "color_name": "navy",
+    "color_hex": "#293d86",
+    "marker": "hexagon",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 0.85,
+     "p50": 1.45,
+     "p75": 1.75,
+     "p100": 2.05
+    },
+    "n_markers_estimate": 30
+   },
+   {
+    "label": "N2 273K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 273K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 273,
+    "color_name": "purple",
+    "color_hex": "#8b3289",
+    "marker": "hexagon",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.2,
+     "p50": 0.4,
+     "p75": 0.55,
+     "p100": 0.75
+    },
+    "n_markers_estimate": 28
+   },
+   {
+    "label": "N2 293K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 293K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 293,
+    "color_name": "purple",
+    "color_hex": "#6f4a9b",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.12,
+     "p50": 0.22,
+     "p75": 0.32,
+     "p100": 0.45
+    },
+    "n_markers_estimate": 28
+   },
+   {
+    "label": "N2 313K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 313K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 313,
+    "color_name": "black",
+    "color_hex": "#111111",
+    "marker": "triangle_down",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.08,
+     "p50": 0.15,
+     "p75": 0.22,
+     "p100": 0.3
+    },
+    "n_markers_estimate": 28
+   },
+   {
+    "label": "N2 333K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 333K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 333,
+    "color_name": "red",
+    "color_hex": "#e43b3b",
+    "marker": "triangle_left",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.06,
+     "p50": 0.12,
+     "p75": 0.18,
+     "p100": 0.24
+    },
+    "n_markers_estimate": 28
+   },
+   {
+    "label": "N2 353K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 353K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 353,
+    "color_name": "blue",
+    "color_hex": "#3d5ba4",
+    "marker": "triangle_right",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.04,
+     "p50": 0.08,
+     "p75": 0.12,
+     "p100": 0.18
+    },
+    "n_markers_estimate": 28
+   },
+   {
+    "label": "N2 373K",
+    "gas": "N2",
+    "species_evidence": "Legend entry N2 @ 373K; caption states panel A contains N2 isotherms on pure CALF-20.",
+    "temperature_k": 373,
+    "color_name": "teal",
+    "color_hex": "#268f8d",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 0.03,
+     "p50": 0.06,
+     "p75": 0.1,
+     "p100": 0.15
+    },
+    "n_markers_estimate": 28
+   }
+  ],
+  "branches": "adsorption_only",
+  "notes": "No inset or broken axis is visible. Single linear y axis; the plotted family includes high-loading CO2 curves and low-loading N2 curves. The x-axis extends to about 1200 mbar. Marker colors and shapes are repeated across gases, so both are needed to distinguish series."
+ },
+ "vector_marks": null
+}

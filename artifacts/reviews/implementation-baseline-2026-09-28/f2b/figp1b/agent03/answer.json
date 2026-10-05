@@ -1,0 +1,479 @@
+{
+ "reasoning": "batch 1: Independent inspection of unchanged panel.png confirms panel B is a single linear Pressure [kPa] versus CO2 Loading [mmol/g] plot, with plot-frame anchors approximately x=173..694 px for 0..120 kPa and y=512..60 px for 0..3.0 mmol/g. The legend identifies six eligible filled series: red circles 303K, orange squares 313K, green upward triangles 323K, blue pentagons 333K, magenta diamonds 353K, and black stars 373K. Native tick spacing agrees with the supplied calibration. The high-pressure marker rows are generally aligned to distinct native glyphs. In the crowded strip, the black low-pressure candidate rows were sampled from a continuous thick black stroke rather than individual stars and were deleted; the bounded stroke remains an unresolved trace span. A duplicate green detection was deleted. Seven low-pressure red positions were added as estimated fused markers only because red ink and its trajectory are present at shared columns; these are not accepted as fully resolved observations.",
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 303K",
+   "coverage": "incomplete",
+   "final_count": 48,
+   "comment": "Seven estimated low-pressure positions added on the native red fused band; the high-pressure circles are source-visible. Estimated points force review."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "incomplete",
+   "final_count": 18,
+   "comment": "All 18 orange square centres are source-visible, including the crowded low-pressure squares."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "incomplete",
+   "final_count": 52,
+   "comment": "One duplicate candidate removed where two detections represented the same native green triangle; remaining centres are source-supported."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "complete",
+   "final_count": 20,
+   "comment": "Candidate centres match the blue pentagon glyphs, including the partially occluded low-pressure pentagon."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "complete",
+   "final_count": 18,
+   "comment": "Candidate centres match the magenta diamonds; the one partial high-pressure diamond remains source-supported."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "uncertain",
+   "final_count": 28,
+   "comment": "Eleven low-pressure false marker claims removed from the uninterrupted black stroke; 14 distinct stars remain, while the underlying stroke is not represented by marker rows."
+  }
+ ],
+ "operations": [
+  {
+   "operation_id": "batch-001-del373low01",
+   "action": "delete",
+   "point_id": "pt-7e6118c21551ec36",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (180.9,504.8) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (180.9,504.8).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low02",
+   "action": "delete",
+   "point_id": "pt-c6160ae73d9e7262",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (188.0,499.2) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (188.0,499.2).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low03",
+   "action": "delete",
+   "point_id": "pt-3f043207223901ec",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (198.5,490.8) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (198.5,490.8).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low04",
+   "action": "delete",
+   "point_id": "pt-38e25aee472b8504",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (209.9,481.1) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (209.9,481.1).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low05",
+   "action": "delete",
+   "point_id": "pt-08599c390a6a7fd2",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (222.1,470.8) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (222.1,470.8).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low06",
+   "action": "delete",
+   "point_id": "pt-3800fc527dc818ad",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (227.9,465.1) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (227.9,465.1).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low07",
+   "action": "delete",
+   "point_id": "pt-224377d62642a108",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (237.4,457.0) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (237.4,457.0).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low08",
+   "action": "delete",
+   "point_id": "pt-125fe4de75f8db93",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (243.9,452.0) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (243.9,452.0).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low09",
+   "action": "delete",
+   "point_id": "pt-37a358a117cba0ed",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (252.9,444.1) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (252.9,444.1).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low10",
+   "action": "delete",
+   "point_id": "pt-8589e714a111368c",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (260.0,438.9) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (260.0,438.9).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del373low11",
+   "action": "delete",
+   "point_id": "pt-023c368011159a31",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate lies on the continuous thick black connecting stroke at native centre (265.9,434.0) with no separable star contour; retain the stroke as unresolved trace evidence rather than a marker.",
+   "source_evidence": "Native panel crop shows uninterrupted black band and no star glyph at (265.9,434.0).",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-del323dup01",
+   "action": "delete",
+   "point_id": "pt-6c4bac4aa500e7b3",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": true,
+   "reason": "Duplicate fragment detection: the native green upward triangle around (269,248) is one glyph, while this candidate is a second centre within the same marker footprint.",
+   "source_evidence": "Single green triangle contour spans approximately x=263-279 and y=239-257; no second triangle exists at the proposed offset.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "box:marker_01:4"
+  },
+  {
+   "operation_id": "batch-001-add303est01",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.24390285326086955,
+   "y_norm": 0.6646372399797058,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (179.5,436.7), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (179.5,436.7) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est02",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.2557008605072464,
+   "y_norm": 0.5614408929477422,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (188.2,368.9), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (188.2,368.9) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est03",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.2674988677536232,
+   "y_norm": 0.4811770674784373,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (196.9,316.1), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (196.9,316.1) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est04",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.279296875,
+   "y_norm": 0.41581938102486055,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (205.6,273.2), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (205.6,273.2) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est05",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.29404438405797106,
+   "y_norm": 0.375687468290208,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (216.4,246.8), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (216.4,246.8) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est06",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.3146908967391305,
+   "y_norm": 0.33412227295788943,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (231.6,219.5), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (231.6,219.5) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  },
+  {
+   "operation_id": "batch-001-add303est07",
+   "action": "add",
+   "point_id": null,
+   "series_label": "CO2 303K",
+   "x_norm": 0.3530344202898551,
+   "y_norm": 0.2931303906646372,
+   "overlap": true,
+   "reason": "Wholly fused red marker position is supported by red native ink at (259.8,192.6), the red curve trajectory, and the shared pressure column with other temperature markers; no separable circle contour remains.",
+   "source_evidence": "Red connecting band passes through (259.8,192.6) in the unchanged panel; same pressure slot is populated by neighboring CO2 series.",
+   "evidence_kind": "estimated",
+   "uncertainty_px": 6.0,
+   "evidence_ref": "crowded_strip:01"
+  }
+ ],
+ "uncertainties": [
+  "Native black continuous stroke spans approximately x=174..291 px and y=512..419 px; it contains no separable star contours for the deleted low-pressure candidate centres. Marker-row edits do not create line_sample rows, so Agent 04 should preserve/represent this native trace separately.",
+  "Red fused low-pressure band spans approximately x=174..289 px, with estimated centres near (179.5,436.7), (188.2,368.9), (196.9,316.1), (205.6,273.2), (216.4,246.8), (231.6,219.5), and (259.8,192.6) px. Each has 6 px positional uncertainty and remains review-only.",
+  "The green triangle/blue pentagon overlap near x=263..286 px, y=239..260 px is partially occluded; the green duplicate was removed, but ownership and exact contours remain locally crowded.",
+  "Unresolved review item crowded_strip:01: Reviewed native full-height strip. Red low-pressure ink supports estimated fused positions; black low-pressure band has no separable stars, so false marker rows were deleted and the trace span remains unresolved.",
+  "Unresolved review item slot:0001: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0002: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0003: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0004: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0005: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0006: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0007: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0008: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0009: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0010: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Unresolved review item slot:0011: Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections.",
+  "Edit batch-001-add303est01 was not applied: same_series_marker_collision",
+  "Edit batch-001-add303est02 was not applied: same_series_marker_collision",
+  "Edit batch-001-add303est03 was not applied: same_series_marker_collision",
+  "Edit batch-001-add303est05 was not applied: same_series_marker_collision",
+  "Edit batch-001-add303est06 was not applied: same_series_marker_collision",
+  "Edit batch-001-add303est07 was not applied: same_series_marker_collision"
+ ],
+ "coverage": [
+  {
+   "item_id": "crowded_strip:01",
+   "item_type": "evidence",
+   "status": "unresolved",
+   "detail": "Reviewed native full-height strip. Red low-pressure ink supports estimated fused positions; black low-pressure band has no separable stars, so false marker rows were deleted and the trace span remains unresolved."
+  },
+  {
+   "item_id": "tile:marker_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Reviewed native marker contact tile; all component crops were checked against the unchanged panel."
+  },
+  {
+   "item_id": "box:marker_01:1",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:2",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:3",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:4",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:5",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:6",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:7",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "box:marker_01:8",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "tile:region_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "tile:region_02",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "tile:region_03",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0001",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0002",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0003",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0004",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0005",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0006",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0007",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0008",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0009",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0010",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  },
+  {
+   "item_id": "slot:0011",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Reviewed native tile/box before candidate evidence; retained source-supported marker centres and rejected duplicate or unsupported detections."
+  }
+ ]
+}

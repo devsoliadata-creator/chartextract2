@@ -1,0 +1,146 @@
+{
+ "schema_version": "4.0",
+ "master_csv": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\all_data.csv",
+ "accepted_csv": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\all_data_accepted.csv",
+ "review_csv": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\all_data_review.csv",
+ "index_html": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\dashboard.html",
+ "panel_count": 13,
+ "complete_panel_count": 0,
+ "accepted_row_count": 0,
+ "review_row_count": 226,
+ "row_count": 226,
+ "missing_or_invalid_panels": [],
+ "panels": [
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\figp1a",
+   "candidate_rows": 316,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\figp1a\\agent04\\points.csv",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\figp1a\\agent04\\points.csv"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2a",
+   "candidate_rows": 351,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2a\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (557 rows; rerun Agent 04)",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2a\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (557 rows; rerun Agent 04)"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2b",
+   "candidate_rows": 104,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2b\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig2b\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig3a",
+   "candidate_rows": 79,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig3a\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig3a\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b",
+   "candidate_rows": 114,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b copy",
+   "candidate_rows": 112,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b copy\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig2b copy\\agent04\\points.csv: points CSV contract fingerprint changed; rerun Agent 04"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig3a",
+   "candidate_rows": 67,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig3a\\agent04\\points.csv",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_02\\fig3a\\agent04\\points.csv"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_03\\fig2b",
+   "candidate_rows": 112,
+   "accepted_rows": 0,
+   "review_rows": 121,
+   "human_review_applied": false,
+   "status": "partial_review_required",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_03\\fig2b\\agent04\\points.csv",
+   "final_invalid_reason": null
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig2a",
+   "candidate_rows": 364,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig2a\\agent04\\points.csv",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig2a\\agent04\\points.csv"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig3a",
+   "candidate_rows": 65,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig3a\\agent04\\points.csv",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_04\\fig3a\\agent04\\points.csv"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b\\fig2b",
+   "candidate_rows": 95,
+   "accepted_rows": 0,
+   "review_rows": 114,
+   "human_review_applied": false,
+   "status": "partial_review_required",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b\\fig2b\\agent04\\points.csv",
+   "final_invalid_reason": null
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b\\figp1b",
+   "candidate_rows": 184,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b\\figp1b\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (82 rows; rerun Agent 04)",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b\\figp1b\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (82 rows; rerun Agent 04)"
+  },
+  {
+   "panel_dir": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b_02\\figp1b",
+   "candidate_rows": 170,
+   "accepted_rows": 0,
+   "review_rows": 0,
+   "human_review_applied": false,
+   "status": "invalid_agent04",
+   "final_source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b_02\\figp1b\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (71 rows; rerun Agent 04)",
+   "final_invalid_reason": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b_02\\figp1b\\agent04\\points.csv: legacy line_sample rows violate the current trace contract (71 rows; rerun Agent 04)"
+  }
+ ],
+ "complete": false
+}

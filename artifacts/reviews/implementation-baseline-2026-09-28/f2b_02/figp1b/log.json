@@ -1,0 +1,346 @@
+{
+ "entries": [
+  {
+   "step": "agent01",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 1,
+   "status": "failed",
+   "error": "",
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent01",
+   "agent_name": "agent01-structure",
+   "agent_version": "9",
+   "created_at": "2026-09-28T18:42:28.538017+00:00",
+   "response_id": "resp_04c5c3ac62c90657006abab510accc8194b513aca521d96ece",
+   "usage": {
+    "input_tokens": 5301,
+    "input_tokens_details": {
+     "cache_write_tokens": 5298,
+     "cached_tokens": 0
+    },
+    "output_tokens": 2086,
+    "output_tokens_details": {
+     "reasoning_tokens": 969
+    },
+    "total_tokens": 7387
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:43:00.131043+00:00",
+   "response_id": "resp_06c9668552bb8f25006abab5222d508195a5f5936da29409eb",
+   "usage": {
+    "input_tokens": 11112,
+    "input_tokens_details": {
+     "cache_write_tokens": 9148,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 2412,
+    "output_tokens_details": {
+     "reasoning_tokens": 1487
+    },
+    "total_tokens": 13524
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:44:02.898940+00:00",
+   "response_id": "resp_077ed6257a853eee006abab54a193c819691dbfe9f49b159b5",
+   "usage": {
+    "input_tokens": 18283,
+    "input_tokens_details": {
+     "cache_write_tokens": 16319,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 4525,
+    "output_tokens_details": {
+     "reasoning_tokens": 2273
+    },
+    "total_tokens": 22808
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:44:45.555085+00:00",
+   "response_id": "resp_0f217c74b66e58cd006abab586dd588194abf6339ff8f4d1dc",
+   "usage": {
+    "input_tokens": 22178,
+    "input_tokens_details": {
+     "cache_write_tokens": 20214,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 3237,
+    "output_tokens_details": {
+     "reasoning_tokens": 1442
+    },
+    "total_tokens": 25415
+   },
+   "attempt": 3,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:45:40.067998+00:00",
+   "response_id": "resp_06a3c9255f8f010f006abab5b515f48190a5860f3d61f26370",
+   "usage": {
+    "input_tokens": 25263,
+    "input_tokens_details": {
+     "cache_write_tokens": 23299,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 3396,
+    "output_tokens_details": {
+     "reasoning_tokens": 2400
+    },
+    "total_tokens": 28659
+   },
+   "attempt": 4,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "python",
+   "status": "ok",
+   "note": "restored best round",
+   "round": 2,
+   "from_round": 4
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:46:54.789108+00:00",
+   "response_id": "resp_09fe583957b36d07006abab5ebdd548195b90690bccf83790a",
+   "usage": {
+    "input_tokens": 45507,
+    "input_tokens_details": {
+     "cache_write_tokens": 3874,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4883,
+    "output_tokens_details": {
+     "reasoning_tokens": 4862
+    },
+    "total_tokens": 50390
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04",
+   "agent_name": "agent04-qa",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:50:31.580582+00:00",
+   "response_id": "resp_022022e605e4a0dd006abab63897cc8194b84e94dea74b0186",
+   "usage": {
+    "input_tokens": 53554,
+    "input_tokens_details": {
+     "cache_write_tokens": 5040,
+     "cached_tokens": 0
+    },
+    "output_tokens": 12570,
+    "output_tokens_details": {
+     "reasoning_tokens": 12341
+    },
+    "total_tokens": 66124
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/points.csv",
+    "agent03/points.json",
+    "agent03/audit.json",
+    "agent03/answer.json",
+    "agent03/images/overlay.png",
+    "agent03/images/recreated.png",
+    "agent03/images/redraw_diff.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04",
+   "agent_name": "agent04-qa",
+   "agent_version": "10",
+   "created_at": "2026-09-28T19:05:19.021144+00:00",
+   "response_id": "resp_033bb7122ca44ad3006abab955dbc08190ba7760e21af34589",
+   "usage": {
+    "input_tokens": 75180,
+    "input_tokens_details": {
+     "cache_write_tokens": 5040,
+     "cached_tokens": 0
+    },
+    "output_tokens": 18366,
+    "output_tokens_details": {
+     "reasoning_tokens": 18336
+    },
+    "total_tokens": 93546
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/points.csv",
+    "agent03/points.json",
+    "agent03/audit.json",
+    "agent03/answer.json",
+    "agent03/images/overlay.png",
+    "agent03/images/recreated.png",
+    "agent03/images/redraw_diff.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  }
+ ]
+}

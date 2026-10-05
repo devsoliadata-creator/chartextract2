@@ -1,0 +1,19 @@
+{
+ "schema_version": "1.0",
+ "role": "supporting_only",
+ "authority": "native_raster_supporting_evidence",
+ "source_image": "panel.png",
+ "coordinate_space": "panel_pixels",
+ "panel_shape_px": [
+  1370,
+  827
+ ],
+ "crop_transform": {
+  "panel_origin_px": [
+   0,
+   0
+  ],
+  "scale": 1
+ },
+ "traces": []
+}

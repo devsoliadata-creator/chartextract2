@@ -1,0 +1,458 @@
+{
+ "reasoning": "batch 1: Independent inspection of the unchanged 728x657 panel confirms a single linear Pressure [kPa] axis and linear CO2 Loading [mmol/g] axis, with plot frame approximately x=173..694 px and y=60..512 px. Tick calibration from the printed anchors gives x≈0.2301 kPa/px (residual ≈0.60 px) and y≈−0.006644 mmol/g/px (residual ≈0.64 px), consistent with the supplied calibration. The legend identifies six eligible filled CO2 series: red circles 303K, orange squares 313K, green up-triangles 323K, blue pentagons 333K, magenta diamonds 353K, and black stars 373K. The low-pressure region contains thick continuous colored bands that must be represented by retained line_sample rows, but it does not contain the many separable marker centres proposed by template filling. Native tiles and enlarged crops show no glyphs at the deleted template/fit positions. The visible marker-bearing regions from about x=3 to 114 kPa were checked across the full panel; no source-supported omitted marker was found. The post-edit set retains continuous trace samples and partial markers where native ink supports them, so the result requires review rather than acceptance.",
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 303K",
+   "coverage": "incomplete",
+   "final_count": 40,
+   "comment": "14 native visible red circles retained plus 26 native continuous red line samples. Five unsupported low-pressure template_fill rows on the thick red band were deleted; no additional separable red circles are visible there."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "incomplete",
+   "final_count": 18,
+   "comment": "18 native visible orange squares retained. Two low-pressure template_fill rows and three alleged partial-marker rows lack orange-square pixels and were deleted."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "incomplete",
+   "final_count": 50,
+   "comment": "19 visible triangles, 2 supported partial triangles, and 29 continuous green line samples retained. Three template_fill and two template_fit rows on the green band were deleted. Crowded low-pressure partials remain source-supported but require review."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "complete",
+   "final_count": 19,
+   "comment": "All 19 visible blue pentagons are source-supported across the panel; no correction is required."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "incomplete",
+   "final_count": 18,
+   "comment": "All 18 visible magenta diamonds are source-supported, including the crowded low-pressure markers."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "incomplete",
+   "final_count": 25,
+   "comment": "25 black stars are source-supported. One spurious partial row at (271.67,248.04) px was deleted because the native ink there is magenta/blue overlap, not a black star."
+  }
+ ],
+ "operations": [
+  {
+   "operation_id": "batch-001-del-d6b2b6d9099ad70a",
+   "action": "delete",
+   "point_id": "pt-d6b2b6d9099ad70a",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template-filled centre on the thick red connecting band; native panel shows continuous red ink but no separable red circle at this location.",
+   "source_evidence": "Native crop shows only the thick red curve at the proposed centre, with no circular glyph; nearby visible circle begins at (289.5,177) px.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-2e516152e7fc7191",
+   "action": "delete",
+   "point_id": "pt-2e516152e7fc7191",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template-filled centre on the thick red connecting band; native panel shows continuous red ink but no separable red circle at this location.",
+   "source_evidence": "Native crop shows only the thick red curve at the proposed centre, with no circular glyph; nearby visible circle begins at (289.5,177) px.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-3150651760d6f220",
+   "action": "delete",
+   "point_id": "pt-3150651760d6f220",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template-filled centre on the thick red connecting band; native panel shows continuous red ink but no separable red circle at this location.",
+   "source_evidence": "Native crop shows only the thick red curve at the proposed centre, with no circular glyph; nearby visible circle begins at (289.5,177) px.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-845d983ea0e681ae",
+   "action": "delete",
+   "point_id": "pt-845d983ea0e681ae",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template-filled centre on the thick red connecting band; native panel shows continuous red ink but no separable red circle at this location.",
+   "source_evidence": "Native crop shows only the thick red curve at the proposed centre, with no circular glyph; nearby visible circle begins at (289.5,177) px.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-c2a093d795f780c7",
+   "action": "delete",
+   "point_id": "pt-c2a093d795f780c7",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template-filled centre on the thick red connecting band; native panel shows continuous red ink but no separable red circle at this location.",
+   "source_evidence": "Native crop shows only the thick red curve at the proposed centre, with no circular glyph; nearby visible circle begins at (289.5,177) px.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-b4cd58af6e845d80",
+   "action": "delete",
+   "point_id": "pt-b4cd58af6e845d80",
+   "series_label": "CO2 313K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is unsupported by an orange square at this position; native pixels show red/green connecting ink or blank separation, while the nearby true orange square is elsewhere.",
+   "source_evidence": "Native low-pressure crop/tile shows no orange square centred at the proposed pixel; orange square centres are separated and visible at nearby slots.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-81d91b9c55d46011",
+   "action": "delete",
+   "point_id": "pt-81d91b9c55d46011",
+   "series_label": "CO2 313K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is unsupported by an orange square at this position; native pixels show red/green connecting ink or blank separation, while the nearby true orange square is elsewhere.",
+   "source_evidence": "Native low-pressure crop/tile shows no orange square centred at the proposed pixel; orange square centres are separated and visible at nearby slots.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-04986be3f5977ee3",
+   "action": "delete",
+   "point_id": "pt-04986be3f5977ee3",
+   "series_label": "CO2 313K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is unsupported by an orange square at this position; native pixels show red/green connecting ink or blank separation, while the nearby true orange square is elsewhere.",
+   "source_evidence": "Native low-pressure crop/tile shows no orange square centred at the proposed pixel; orange square centres are separated and visible at nearby slots.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-8a9307fe457a1096",
+   "action": "delete",
+   "point_id": "pt-8a9307fe457a1096",
+   "series_label": "CO2 313K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is unsupported by an orange square at this position; native pixels show red/green connecting ink or blank separation, while the nearby true orange square is elsewhere.",
+   "source_evidence": "Native low-pressure crop/tile shows no orange square centred at the proposed pixel; orange square centres are separated and visible at nearby slots.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-2eae73a52d49a370",
+   "action": "delete",
+   "point_id": "pt-2eae73a52d49a370",
+   "series_label": "CO2 313K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is unsupported by an orange square at this position; native pixels show red/green connecting ink or blank separation, while the nearby true orange square is elsewhere.",
+   "source_evidence": "Native low-pressure crop/tile shows no orange square centred at the proposed pixel; orange square centres are separated and visible at nearby slots.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-6f84cf908fc75550",
+   "action": "delete",
+   "point_id": "pt-6f84cf908fc75550",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template/fit point on the thick green connecting band rather than a distinct triangle marker; retain the independent line_sample rows for the continuous band.",
+   "source_evidence": "Native low-pressure ROI shows green band ink through the proposed position but no separable triangle glyph; true triangles are visible at nearby separated centres.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-3099ddffde5a03cb",
+   "action": "delete",
+   "point_id": "pt-3099ddffde5a03cb",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template/fit point on the thick green connecting band rather than a distinct triangle marker; retain the independent line_sample rows for the continuous band.",
+   "source_evidence": "Native low-pressure ROI shows green band ink through the proposed position but no separable triangle glyph; true triangles are visible at nearby separated centres.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-aeffa2f79490e9fe",
+   "action": "delete",
+   "point_id": "pt-aeffa2f79490e9fe",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template/fit point on the thick green connecting band rather than a distinct triangle marker; retain the independent line_sample rows for the continuous band.",
+   "source_evidence": "Native low-pressure ROI shows green band ink through the proposed position but no separable triangle glyph; true triangles are visible at nearby separated centres.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-96e17fd443e6da26",
+   "action": "delete",
+   "point_id": "pt-96e17fd443e6da26",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template/fit point on the thick green connecting band rather than a distinct triangle marker; retain the independent line_sample rows for the continuous band.",
+   "source_evidence": "Native low-pressure ROI shows green band ink through the proposed position but no separable triangle glyph; true triangles are visible at nearby separated centres.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-9a0b7e70361d11eb",
+   "action": "delete",
+   "point_id": "pt-9a0b7e70361d11eb",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "Candidate is a template/fit point on the thick green connecting band rather than a distinct triangle marker; retain the independent line_sample rows for the continuous band.",
+   "source_evidence": "Native low-pressure ROI shows green band ink through the proposed position but no separable triangle glyph; true triangles are visible at nearby separated centres.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-9f0ae86976d41413",
+   "action": "delete",
+   "point_id": "pt-9f0ae86976d41413",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "The proposed high-temperature point at (271.67,248.04) px is not a black star; native pixels there belong to the magenta diamond/nearby colored series, while the black trace is below.",
+   "source_evidence": "Native crowded-strip tile box 11 and panel crop show magenta/blue overlap at the proposed position and no black star.",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  }
+ ],
+ "uncertainties": [
+  "Native panel calibration is internally consistent but the x and y fit residuals are about 0.60 px and 0.64 px respectively; this is material only at the smallest low-pressure separations.",
+  "Low-pressure native trace spans are thick and overlapping: approximately x=173..277 px for the red, green, and black/colored connecting bands. Continuous ink is preserved as line_sample rows, but those rows are not counted as observed marker centres.",
+  "CO2 323K has two retained partial-marker rows in the crowded low-pressure region; their ownership is supported by green triangle fragments and trajectory context, but positional/ownership ambiguity keeps the verdict at review.",
+  "No estimated marker was added. No blank-background or expected-count-only addition was justified by native pixels.",
+  "Unresolved review item crowded_strip:01: not returned by the review batch",
+  "Unresolved review item tile:marker_01: not returned by the review batch",
+  "Unresolved review item box:marker_01:1: not returned by the review batch",
+  "Unresolved review item box:marker_01:2: not returned by the review batch",
+  "Unresolved review item box:marker_01:3: not returned by the review batch",
+  "Unresolved review item box:marker_01:4: not returned by the review batch",
+  "Unresolved review item box:marker_01:5: not returned by the review batch",
+  "Unresolved review item box:marker_01:6: not returned by the review batch",
+  "Unresolved review item box:marker_01:7: not returned by the review batch",
+  "Unresolved review item box:marker_01:8: not returned by the review batch",
+  "Unresolved review item tile:marker_02: not returned by the review batch",
+  "Unresolved review item box:marker_02:9: not returned by the review batch",
+  "Unresolved review item box:marker_02:10: not returned by the review batch",
+  "Unresolved review item box:marker_02:11: not returned by the review batch",
+  "Unresolved review item box:marker_02:12: not returned by the review batch",
+  "Unresolved review item box:marker_02:13: not returned by the review batch",
+  "Unresolved review item box:marker_02:14: not returned by the review batch",
+  "Unresolved review item box:marker_02:15: not returned by the review batch",
+  "Unresolved review item box:marker_02:16: not returned by the review batch",
+  "Unresolved review item tile:marker_03: not returned by the review batch",
+  "Unresolved review item box:marker_03:17: not returned by the review batch",
+  "Unresolved review item box:marker_03:18: not returned by the review batch",
+  "Unresolved review item box:marker_03:19: not returned by the review batch",
+  "Unresolved review item box:marker_03:20: not returned by the review batch",
+  "Unresolved review item tile:region_01: not returned by the review batch",
+  "Unresolved review item tile:region_02: not returned by the review batch"
+ ],
+ "coverage": [
+  {
+   "item_id": "crowded_strip:01",
+   "item_type": "evidence",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_01",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:1",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:2",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:3",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:4",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:5",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:6",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:7",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:8",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_02",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:9",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:10",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:11",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:12",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:13",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:14",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:15",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:16",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_03",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:17",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:18",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:19",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:20",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:region_01",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:region_02",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "reasoning": "The linear calibration matches the printed axes and the recreated curves occupy the same values as the source. The overlay covers the discrete high-pressure markers and follows the fused low-pressure red, green, and black bands. The low recall reported for CO2 373K is dominated by the broad continuous black low-pressure band rather than dozens of visibly distinct missed star markers; Python already represents that band with a separate raster trace. The remaining small misses are isolated marker-level ambiguities suitable for point review. Raster legend measurements misclassify several glyphs: the source visibly shows a green filled upward triangle, blue filled pentagon, magenta filled diamond, and black four-point star.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 120,
+   "data_min": 0.3916,
+   "data_max": 114.127,
+   "reason": "The recreated curves use the same 0-120 kPa linear scale as the source, with corresponding markers at the same pressures.",
+   "result": "pass"
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 3,
+   "data_min": 0.0425,
+   "data_max": 2.9287,
+   "reason": "The recreated loadings align with the printed 0-3.0 mmol/g ticks; the highest red marker remains just below 3.0 as in the source.",
+   "result": "pass"
+  }
+ },
+ "satisfied": true,
+ "issues": [],
+ "structure_ok": true,
+ "chart_title": "",
+ "x_axis": {
+  "title": "Pressure",
+  "unit": "kPa",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 120,
+  "boundary_limits_confirmed": false,
+  "ticks": [
+   0,
+   40,
+   80,
+   120
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.2376,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.4766,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.7157,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.9533,
+    "value": 120
+   }
+  ]
+ },
+ "y_axis": {
+  "title": "CO2 Loading",
+  "unit": "mmol/g",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 3,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   0.5,
+   1,
+   1.5,
+   2,
+   2.5,
+   3
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.7793,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.6651,
+    "value": 0.5
+   },
+   {
+    "pixel_norm": 0.5495,
+    "value": 1
+   },
+   {
+    "pixel_norm": 0.4353,
+    "value": 1.5
+   },
+   {
+    "pixel_norm": 0.3212,
+    "value": 2
+   },
+   {
+    "pixel_norm": 0.2055,
+    "value": 2.5
+   },
+   {
+    "pixel_norm": 0.0913,
+    "value": 3
+   }
+  ]
+ },
+ "legend_bbox_norm": [
+  0.5536,
+  0.5342,
+  0.9643,
+  0.796
+ ],
+ "total_series": 6,
+ "series": [
+  {
+   "label": "CO2 303K",
+   "marker": "circle",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#e32626",
+   "notes": ""
+  },
+  {
+   "label": "CO2 313K",
+   "marker": "square",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#e6a32b",
+   "notes": ""
+  },
+  {
+   "label": "CO2 323K",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#2ca25f",
+   "notes": "The source clearly shows upward triangles; the raster glyph measurement is distorted by the small symbol."
+  },
+  {
+   "label": "CO2 333K",
+   "marker": "pentagon",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#293e8f",
+   "notes": "The source shows filled blue pentagons. The open-circle measurement is contaminated by the nearby blue CO2 legend heading."
+  },
+  {
+   "label": "CO2 353K",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#b52d91",
+   "notes": "The source glyph is a narrow filled diamond; raster enlargement made it appear hexagonal."
+  },
+  {
+   "label": "CO2 373K",
+   "marker": "star",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#000000",
+   "notes": "The source shows a filled four-point star/spark glyph, not a plain diamond."
+  }
+ ],
+ "branches": "adsorption_only",
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.232,
+    0.25,
+    0.42,
+    0.785
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.232,
+    0.25,
+    0.42,
+    0.785
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  }
+ ],
+ "extraction_settings": [],
+ "notes": "The dense low-pressure red, green, and black ink forms fused marker/curve bands and is appropriately represented by Python's separate raster traces. Isolated residual marker ambiguities can be handled during point-level review.",
+ "region_strategies": [],
+ "shared_x_columns": []
+}

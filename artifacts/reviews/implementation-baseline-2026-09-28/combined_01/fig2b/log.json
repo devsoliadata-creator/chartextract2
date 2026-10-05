@@ -1,0 +1,187 @@
+{
+ "entries": [
+  {
+   "step": "agent01",
+   "agent_name": "agent01-structure",
+   "agent_version": "9",
+   "created_at": "2026-09-28T19:45:38.218034+00:00",
+   "response_id": "resp_0fada6973499f1ae006abac3db76c08197bff63a42087c0840",
+   "usage": {
+    "input_tokens": 5539,
+    "input_tokens_details": {
+     "cache_write_tokens": 5536,
+     "cached_tokens": 0
+    },
+    "output_tokens": 2676,
+    "output_tokens_details": {
+     "reasoning_tokens": 1538
+    },
+    "total_tokens": 8215
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T19:46:16.156670+00:00",
+   "response_id": "resp_040624c0c9b579d6006abac3efdb78819798923871fcf2a7ce",
+   "usage": {
+    "input_tokens": 11152,
+    "input_tokens_details": {
+     "cache_write_tokens": 9188,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 2864,
+    "output_tokens_details": {
+     "reasoning_tokens": 1799
+    },
+    "total_tokens": 14016
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T19:47:17.326894+00:00",
+   "response_id": "resp_08a658885bda2b6b006abac41bff988194bc8232bf28e8462e",
+   "usage": {
+    "input_tokens": 18371,
+    "input_tokens_details": {
+     "cache_write_tokens": 16407,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 5208,
+    "output_tokens_details": {
+     "reasoning_tokens": 2203
+    },
+    "total_tokens": 23579
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T19:48:57.273793+00:00",
+   "response_id": "resp_09a3dc1bcf27b0e8006abac46891fc81948533f9de6ec07e5d",
+   "usage": {
+    "input_tokens": 32611,
+    "input_tokens_details": {
+     "cache_write_tokens": 30647,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 7056,
+    "output_tokens_details": {
+     "reasoning_tokens": 3894
+    },
+    "total_tokens": 39667
+   },
+   "attempt": 3,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 4,
+   "status": "failed",
+   "error": "",
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 1,
+   "status": "failed",
+   "error": "DefaultAzureCredential failed to retrieve a token from the included credentials.\nAttempted credentials:\n\tEnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.\nVisit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.\n\tWorkloadIdentityCredential: WorkloadIdentityCredential authentication unavailable. The workload options are not fully configured. See the troubleshooting guide for more information: https://aka.ms/azsdk/python/identity/workloadidentitycredential/troubleshoot. Missing required arguments: 'tenant_id', 'client_id', 'token_file_path'.\n\tManagedIdentityCredential: ManagedIdentityCredential authentication unavailable, no response from the IMDS endpoint.\n\tSharedTokenCacheCredential: SharedTokenCacheCredential authentication unavailable. No accounts were found in the cache.\n\tVisualStudioCodeCredential: VisualStudioCodeCredential requires the 'azure-identity-broker' package to be installed. You must also ensure you have the Azure Resources extension installed and have signed in to Azure via Visual Studio Code.\n\tAzureCliCredential: Azure CLI not found on path\n\tAzurePowerShellCredential: Failed to execute \"cmd\".\nTo mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/powershellcredential/troubleshoot.\n\tAzureDeveloperCliCredential: Failed to execute 'C:\\Users\\jmckenna\\AppData\\Local\\Programs\\Azure Dev CLI\\azd.EXE'\nTo mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.",
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/region_04_candidate.png",
+    "agent03/images/tiles/region_04_native.png",
+    "agent03/images/tiles/region_05_candidate.png",
+    "agent03/images/tiles/region_05_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/slot_search_0001_native.png",
+    "agent03/images/tiles/slot_search_0002_native.png",
+    "agent03/images/tiles/slot_search_0003_native.png",
+    "agent03/images/tiles/slot_search_0007_native.png",
+    "agent03/images/tiles/slot_search_0011_native.png",
+    "agent03/images/tiles/slot_search_0014_native.png",
+    "agent03/images/tiles/slot_search_0017_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  }
+ ]
+}

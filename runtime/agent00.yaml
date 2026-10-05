@@ -1,0 +1,10 @@
+version: 1
+
+# Agent 00's per-candidate images are supplied by the stage under these names.
+files:
+  - source: figure_image
+    upload_as: figure.png
+    required: true
+  - source: page_preview
+    upload_as: page.png
+    required: false

@@ -1,0 +1,922 @@
+{
+ "entries": [
+  {
+   "step": "agent01",
+   "agent_name": "agent01-structure",
+   "agent_version": "9",
+   "created_at": "2026-09-28T17:19:27.379225+00:00",
+   "response_id": "resp_0cb285e5c6f4a507006abaa1997f348190b56a19bcc50f7acb",
+   "usage": {
+    "input_tokens": 5309,
+    "input_tokens_details": {
+     "cache_write_tokens": 5306,
+     "cached_tokens": 0
+    },
+    "output_tokens": 2570,
+    "output_tokens_details": {
+     "reasoning_tokens": 1360
+    },
+    "total_tokens": 7879
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T17:19:52.726917+00:00",
+   "response_id": "resp_093910200841c1d3006abaa1ad24e48197b3cd22f4921ab64f",
+   "usage": {
+    "input_tokens": 11200,
+    "input_tokens_details": {
+     "cache_write_tokens": 11197,
+     "cached_tokens": 0
+    },
+    "output_tokens": 2029,
+    "output_tokens_details": {
+     "reasoning_tokens": 998
+    },
+    "total_tokens": 13229
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T17:20:58.156547+00:00",
+   "response_id": "resp_0757ce2d9bbabd76006abaa1cd238c8195a168fa52a5576234",
+   "usage": {
+    "input_tokens": 18075,
+    "input_tokens_details": {
+     "cache_write_tokens": 16111,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 4750,
+    "output_tokens_details": {
+     "reasoning_tokens": 2323
+    },
+    "total_tokens": 22825
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T17:22:30.548917+00:00",
+   "response_id": "resp_0677fa6c7c930ef9006abaa21465dc8196baf5ca0c872749b7",
+   "usage": {
+    "input_tokens": 34086,
+    "input_tokens_details": {
+     "cache_write_tokens": 3504,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4986,
+    "output_tokens_details": {
+     "reasoning_tokens": 4967
+    },
+    "total_tokens": 39072
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04",
+   "agent_name": "agent04-qa",
+   "agent_version": "10",
+   "created_at": "2026-09-28T17:25:49.669824+00:00",
+   "response_id": "resp_07894176b7d28e60006abaa2713d98819482411a16b62dcfab",
+   "usage": {
+    "input_tokens": 81724,
+    "input_tokens_details": {
+     "cache_write_tokens": 4494,
+     "cached_tokens": 0
+    },
+    "output_tokens": 10621,
+    "output_tokens_details": {
+     "reasoning_tokens": 10589
+    },
+    "total_tokens": 92345
+   },
+   "attempt": 1,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/points.csv",
+    "agent03/points.json",
+    "agent03/audit.json",
+    "agent03/answer.json",
+    "agent03/images/overlay.png",
+    "agent03/images/recreated.png",
+    "agent03/images/redraw_diff.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04_cached_replay",
+   "status": "ok",
+   "note": "Rebuilt from saved cited attempt-0001; padded decimals and stale candidate glyphs reconciled against Agent 04 source read; no model call."
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T17:44:56.184659+00:00",
+   "response_id": "resp_04d01fa998548e86006abaa75de09081909c603c4c9cb9d948",
+   "usage": {
+    "input_tokens": 33913,
+    "input_tokens_details": {
+     "cache_write_tokens": 3963,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4281,
+    "output_tokens_details": {
+     "reasoning_tokens": 4260
+    },
+    "total_tokens": 38194
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04",
+   "agent_name": "agent04-qa",
+   "agent_version": "10",
+   "created_at": "2026-09-28T17:49:55.361237+00:00",
+   "response_id": "resp_0dae030219464591006abaa7b14ab481949cbfb86b3dd36e2c",
+   "usage": {
+    "input_tokens": 77856,
+    "input_tokens_details": {
+     "cache_write_tokens": 5004,
+     "cached_tokens": 0
+    },
+    "output_tokens": 16786,
+    "output_tokens_details": {
+     "reasoning_tokens": 16756
+    },
+    "total_tokens": 94642
+   },
+   "attempt": 2,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/points.csv",
+    "agent03/points.json",
+    "agent03/audit.json",
+    "agent03/answer.json",
+    "agent03/images/overlay.png",
+    "agent03/images/recreated.png",
+    "agent03/images/redraw_diff.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T17:56:37.396795+00:00",
+   "response_id": "resp_0aab6f63198cbbfb006abaaa27720c8197bc5c3e8dd4791087",
+   "usage": {
+    "input_tokens": 18075,
+    "input_tokens_details": {
+     "cache_write_tokens": 18072,
+     "cached_tokens": 0
+    },
+    "output_tokens": 5451,
+    "output_tokens_details": {
+     "reasoning_tokens": 2381
+    },
+    "total_tokens": 23526
+   },
+   "attempt": 3,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T17:57:51.985580+00:00",
+   "response_id": "resp_078c749851601ee2006abaaa6d17f4819485365943d8e81773",
+   "usage": {
+    "input_tokens": 25245,
+    "input_tokens_details": {
+     "cache_write_tokens": 23281,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 5150,
+    "output_tokens_details": {
+     "reasoning_tokens": 3255
+    },
+    "total_tokens": 30395
+   },
+   "attempt": 4,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T17:58:58.239329+00:00",
+   "response_id": "resp_04d00b3b1594834d006abaaab9813481909313dc4e43977e08",
+   "usage": {
+    "input_tokens": 24617,
+    "input_tokens_details": {
+     "cache_write_tokens": 22653,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 4721,
+    "output_tokens_details": {
+     "reasoning_tokens": 2224
+    },
+    "total_tokens": 29338
+   },
+   "attempt": 5,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:00:06.119304+00:00",
+   "response_id": "resp_0dd6d6442325545f006abaab00209881978ab0b0d83914b101",
+   "usage": {
+    "input_tokens": 24771,
+    "input_tokens_details": {
+     "cache_write_tokens": 22807,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 4046,
+    "output_tokens_details": {
+     "reasoning_tokens": 2208
+    },
+    "total_tokens": 28817
+   },
+   "attempt": 6,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "python",
+   "status": "ok",
+   "note": "restored best round",
+   "round": 3,
+   "from_round": 4
+  },
+  {
+   "step": "agent02",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 7,
+   "status": "failed",
+   "error": "",
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:04:00.136913+00:00",
+   "response_id": "resp_082fa165ff84b2d3006abaabdb03248193b94e4efb22abdb59",
+   "usage": {
+    "input_tokens": 35035,
+    "input_tokens_details": {
+     "cache_write_tokens": 3844,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4406,
+    "output_tokens_details": {
+     "reasoning_tokens": 4388
+    },
+    "total_tokens": 39441
+   },
+   "attempt": 3,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:11:23.714537+00:00",
+   "response_id": "resp_06f7b67cbc96b567006abaad61863c8194877b8410ace7a00c",
+   "usage": {
+    "input_tokens": 28629,
+    "input_tokens_details": {
+     "cache_write_tokens": 3842,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4469,
+    "output_tokens_details": {
+     "reasoning_tokens": 4450
+    },
+    "total_tokens": 33098
+   },
+   "attempt": 4,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:16:18.505874+00:00",
+   "response_id": "resp_02783df3127e665e006abaaeaf825481909ab5af8de6ba9bc8",
+   "usage": {
+    "input_tokens": 51104,
+    "input_tokens_details": {
+     "cache_write_tokens": 3873,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4716,
+    "output_tokens_details": {
+     "reasoning_tokens": 4695
+    },
+    "total_tokens": 55820
+   },
+   "attempt": 5,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 6,
+   "status": "failed",
+   "error": "DefaultAzureCredential failed to retrieve a token from the included credentials.\nAttempted credentials:\n\tEnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.\nVisit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.\n\tWorkloadIdentityCredential: WorkloadIdentityCredential authentication unavailable. The workload options are not fully configured. See the troubleshooting guide for more information: https://aka.ms/azsdk/python/identity/workloadidentitycredential/troubleshoot. Missing required arguments: 'tenant_id', 'client_id', 'token_file_path'.\n\tManagedIdentityCredential: ManagedIdentityCredential authentication unavailable, no response from the IMDS endpoint.\n\tSharedTokenCacheCredential: SharedTokenCacheCredential authentication unavailable. No accounts were found in the cache.\n\tVisualStudioCodeCredential: VisualStudioCodeCredential requires the 'azure-identity-broker' package to be installed. You must also ensure you have the Azure Resources extension installed and have signed in to Azure via Visual Studio Code.\n\tAzureCliCredential: Azure CLI not found on path\n\tAzurePowerShellCredential: Failed to execute \"cmd\".\nTo mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/powershellcredential/troubleshoot.\n\tAzureDeveloperCliCredential: Failed to execute 'C:\\Users\\jmckenna\\AppData\\Local\\Programs\\Azure Dev CLI\\azd.EXE'\nTo mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.",
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent03",
+   "agent_name": "agent03-extraction",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:19:03.091338+00:00",
+   "response_id": "resp_0b918f519de14f87006abaaf62ae208193be6fff16f2ca1ae0",
+   "usage": {
+    "input_tokens": 29301,
+    "input_tokens_details": {
+     "cache_write_tokens": 3873,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4352,
+    "output_tokens_details": {
+     "reasoning_tokens": 4333
+    },
+    "total_tokens": 33653
+   },
+   "attempt": 6,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "review_points.json",
+    "review_points.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent04",
+   "agent_name": "agent04-qa",
+   "agent_version": "10",
+   "created_at": "2026-09-28T18:25:27.557572+00:00",
+   "response_id": "resp_034885c84ffdaa15006abab04a402881978a6ab26343f468e4",
+   "usage": {
+    "input_tokens": 57888,
+    "input_tokens_details": {
+     "cache_write_tokens": 5041,
+     "cached_tokens": 0
+    },
+    "output_tokens": 13701,
+    "output_tokens_details": {
+     "reasoning_tokens": 13671
+    },
+    "total_tokens": 71589
+   },
+   "attempt": 3,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "spec.json",
+    "agent02/answer.json",
+    "python/summary.json",
+    "python/points.csv",
+    "python/points.json",
+    "python/audit.json",
+    "python/images/overlay.png",
+    "python/images/recreated.png",
+    "agent03/points.csv",
+    "agent03/points.json",
+    "agent03/audit.json",
+    "agent03/answer.json",
+    "agent03/images/overlay.png",
+    "agent03/images/recreated.png",
+    "agent03/images/redraw_diff.png",
+    "agent03/images/tiles/audit_overlay.png",
+    "agent03/images/tiles/clean_overlay.png",
+    "agent03/images/tiles/crowded_strip_native_01.png",
+    "agent03/images/tiles/legend.png",
+    "agent03/images/tiles/region_01_candidate.png",
+    "agent03/images/tiles/region_01_native.png",
+    "agent03/images/tiles/region_02_candidate.png",
+    "agent03/images/tiles/region_02_native.png",
+    "agent03/images/tiles/region_03_candidate.png",
+    "agent03/images/tiles/region_03_native.png",
+    "agent03/images/tiles/review_python_overlay.png",
+    "agent03/images/tiles/review_tiles.json",
+    "agent03/images/tiles/tile_01_candidate.png",
+    "agent03/images/tiles/tile_01_native.png",
+    "agent03/images/tiles/tile_02_candidate.png",
+    "agent03/images/tiles/tile_02_native.png",
+    "agent03/images/tiles/tile_03_candidate.png",
+    "agent03/images/tiles/tile_03_native.png",
+    "response.schema.json",
+    "points_csv.contract.json",
+    "points.example.csv",
+    "panel.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:37:15.038720+00:00",
+   "response_id": "resp_080a19ad58b662de006abab3aceb848190883d526cb1dbf905",
+   "usage": {
+    "input_tokens": 24617,
+    "input_tokens_details": {
+     "cache_write_tokens": 24614,
+     "cached_tokens": 0
+    },
+    "output_tokens": 4870,
+    "output_tokens_details": {
+     "reasoning_tokens": 2415
+    },
+    "total_tokens": 29487
+   },
+   "attempt": 8,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:38:33.802478+00:00",
+   "response_id": "resp_0cf27af8695b6fc9006abab3fa44bc81949ef8a03cdc9f43fa",
+   "usage": {
+    "input_tokens": 25075,
+    "input_tokens_details": {
+     "cache_write_tokens": 23111,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 5068,
+    "output_tokens_details": {
+     "reasoning_tokens": 3217
+    },
+    "total_tokens": 30143
+   },
+   "attempt": 9,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": "agent02-calibration",
+   "agent_version": "7",
+   "created_at": "2026-09-28T18:39:32.155054+00:00",
+   "response_id": "resp_07b2168defcc94e3006abab4484f7081908504c7eb7b4f70a6",
+   "usage": {
+    "input_tokens": 25161,
+    "input_tokens_details": {
+     "cache_write_tokens": 23197,
+     "cached_tokens": 1961
+    },
+    "output_tokens": 3681,
+    "output_tokens_details": {
+     "reasoning_tokens": 1425
+    },
+    "total_tokens": 28842
+   },
+   "attempt": 10,
+   "status": "ok",
+   "error": null,
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  },
+  {
+   "step": "agent02",
+   "agent_name": null,
+   "agent_version": null,
+   "created_at": null,
+   "response_id": null,
+   "usage": null,
+   "attempt": 11,
+   "status": "failed",
+   "error": "",
+   "files_sent": [
+    "panel.png",
+    "compare.png",
+    "overlay.png",
+    "redraw_diff.png",
+    "legend_markers.png"
+   ],
+   "dry_run": false
+  }
+ ]
+}

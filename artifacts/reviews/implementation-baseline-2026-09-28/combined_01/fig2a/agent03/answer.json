@@ -1,0 +1,1386 @@
+{
+ "reasoning": "batch 1: Independent inspection of unchanged panel.png found a linear plot with frame approximately x=54..1004 and y=28..770 px. Tick calibration from native ticks gives x≈126+0.7193·Pressure(mbar) and y≈708−124.3·uptake(mmol/g), with residuals about 1.3 px in x and 0.9 px in y. The legend identifies eleven eligible filled solid CO2 series from 273K through 373K; the N2 entries and legend glyphs are excluded. The source has dense low-pressure overlap and many separable higher-pressure markers. Review of the full proposal found 49 candidates whose sampled native center pixel is a different series color or blank/template evidence; those are deleted. No new marker is added from expected counts or interpolation. The remaining proposal is not accepted because ownership in the crowded strip remains unresolved and the source review does not establish complete marker coverage for every series.",
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 273K",
+   "coverage": "complete",
+   "final_count": 31,
+   "comment": "Deleted 11 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 283K",
+   "coverage": "uncertain",
+   "final_count": 30,
+   "comment": "Deleted 9 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 293K",
+   "coverage": "uncertain",
+   "final_count": 40,
+   "comment": "Deleted 5 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 303K",
+   "coverage": "uncertain",
+   "final_count": 26,
+   "comment": "Deleted 15 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "incomplete",
+   "final_count": 27,
+   "comment": "Deleted 0 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "incomplete",
+   "final_count": 33,
+   "comment": "Deleted 1 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "uncertain",
+   "final_count": 35,
+   "comment": "Deleted 2 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 343K",
+   "coverage": "uncertain",
+   "final_count": 35,
+   "comment": "Deleted 2 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "uncertain",
+   "final_count": 35,
+   "comment": "Deleted 0 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 363K",
+   "coverage": "uncertain",
+   "final_count": 32,
+   "comment": "Deleted 1 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "uncertain",
+   "final_count": 27,
+   "comment": "Deleted 3 candidate rows whose native center pixels are occupied by a different colored CO2 trace or blank/template evidence. Remaining rows retain candidate coverage but crowded low-pressure ownership remains uncertain."
+  }
+ ],
+ "operations": [
+  {
+   "operation_id": "batch-001-del-001",
+   "action": "delete",
+   "point_id": "pt-0ec704e0f4bccb37",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (135.0,519.0), the candidate center is supported by (51, 72, 189) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (135.0,519.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-002",
+   "action": "delete",
+   "point_id": "pt-1c5d4e07e937fc50",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (152.0,523.0), the candidate center is supported by (29, 126, 135) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (152.0,523.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-003",
+   "action": "delete",
+   "point_id": "pt-5c63151983dd5e26",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (161.8,514.9), the candidate center is supported by (178, 84, 158) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (161.8,514.9)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-004",
+   "action": "delete",
+   "point_id": "pt-ce4717d8c86cc028",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (172.7,492.4), the candidate center is supported by (178, 84, 162) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (172.7,492.4)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-005",
+   "action": "delete",
+   "point_id": "pt-bdcd769e1f75facd",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (183.5,471.3), the candidate center is supported by (178, 81, 158) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (183.5,471.3)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-006",
+   "action": "delete",
+   "point_id": "pt-aaa108fe60f67e48",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (200.7,440.8), the candidate center is supported by (171, 85, 158) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (200.7,440.8)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-007",
+   "action": "delete",
+   "point_id": "pt-728c3ce666bcd2d2",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (201.0,435.0), the candidate center is supported by (174, 82, 165) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (201.0,435.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-008",
+   "action": "delete",
+   "point_id": "pt-40bf747517178889",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (201.9,420.9), the candidate center is supported by (16, 116, 114) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (201.9,420.9)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-009",
+   "action": "delete",
+   "point_id": "pt-ef0b3ed9251ec38e",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (246.2,323.1), the candidate center is supported by (239, 37, 33) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (246.2,323.1)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-010",
+   "action": "delete",
+   "point_id": "pt-5e074b07f76cbf92",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (252.3,358.6), the candidate center is supported by (48, 82, 156) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (252.3,358.6)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-011",
+   "action": "delete",
+   "point_id": "pt-b3b043aa9de8b3dc",
+   "series_label": "CO2 273K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (253.9,313.4), the candidate center is supported by (239, 32, 40) rather than the declared CO2 273K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (253.9,313.4)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-012",
+   "action": "delete",
+   "point_id": "pt-1ec4f43fd2d3f141",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (151.8,555.0), the candidate center is supported by (183, 78, 170) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (151.8,555.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-013",
+   "action": "delete",
+   "point_id": "pt-6b3bd8720e4baf15",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (152.0,565.0), the candidate center is supported by (210, 158, 206) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (152.0,565.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-014",
+   "action": "delete",
+   "point_id": "pt-2a41de0636575d4e",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (165.0,566.0), the candidate center is supported by (122, 125, 48) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (165.0,566.0)",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-015",
+   "action": "delete",
+   "point_id": "pt-631c1284a9caf20e",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (173.1,542.1), the candidate center is supported by (116, 128, 46) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (173.1,542.1)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-016",
+   "action": "delete",
+   "point_id": "pt-3a961eebb28f3256",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (185.2,519.8), the candidate center is supported by (128, 129, 61) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (185.2,519.8)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-017",
+   "action": "delete",
+   "point_id": "pt-6107ca19b6d2963d",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (201.5,486.6), the candidate center is supported by (130, 128, 53) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (201.5,486.6)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-018",
+   "action": "delete",
+   "point_id": "pt-106199821c183199",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (213.5,476.4), the candidate center is supported by (124, 120, 57) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (213.5,476.4)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-019",
+   "action": "delete",
+   "point_id": "pt-42c74ecd4f794b5c",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (247.0,404.0), the candidate center is supported by (178, 79, 159) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (247.0,404.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-020",
+   "action": "delete",
+   "point_id": "pt-16a8d49ada807e12",
+   "series_label": "CO2 283K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (262.0,354.0), the candidate center is supported by (185, 192, 234) rather than the declared CO2 283K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (262.0,354.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-021",
+   "action": "delete",
+   "point_id": "pt-8238a257320dea89",
+   "series_label": "CO2 293K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (133.0,563.0), the candidate center is supported by (174, 35, 66) rather than the declared CO2 293K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (133.0,563.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-022",
+   "action": "delete",
+   "point_id": "pt-ac1cbaab84a855f9",
+   "series_label": "CO2 293K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (151.0,555.0), the candidate center is supported by (179, 81, 164) rather than the declared CO2 293K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (151.0,555.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-023",
+   "action": "delete",
+   "point_id": "pt-0682d6c271dbd2a0",
+   "series_label": "CO2 293K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (160.0,566.0), the candidate center is supported by (120, 140, 43) rather than the declared CO2 293K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (160.0,566.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-024",
+   "action": "delete",
+   "point_id": "pt-97698be480920fa7",
+   "series_label": "CO2 293K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (252.6,402.6), the candidate center is supported by (176, 86, 160) rather than the declared CO2 293K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (252.6,402.6)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-025",
+   "action": "delete",
+   "point_id": "pt-4aa543bce1b5bd80",
+   "series_label": "CO2 293K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (285.0,392.0), the candidate center is supported by (176, 104, 168) rather than the declared CO2 293K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (285.0,392.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-026",
+   "action": "delete",
+   "point_id": "pt-4ffb0a253afe4a92",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (133.0,607.0), the candidate center is supported by (109, 34, 125) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (133.0,607.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-027",
+   "action": "delete",
+   "point_id": "pt-4909f8f5ca2490ca",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (139.0,560.0), the candidate center is supported by (130, 85, 154) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (139.0,560.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-028",
+   "action": "delete",
+   "point_id": "pt-cf523c3f774d31a9",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (163.3,571.2), the candidate center is supported by (120, 123, 54) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (163.3,571.2)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-029",
+   "action": "delete",
+   "point_id": "pt-f211cb6104acae3b",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (164.4,562.3), the candidate center is supported by (124, 127, 56) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (164.4,562.3)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-030",
+   "action": "delete",
+   "point_id": "pt-5daca927ea38d142",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (173.0,541.0), the candidate center is supported by (119, 126, 46) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (173.0,541.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-031",
+   "action": "delete",
+   "point_id": "pt-08f8bdc5554d7590",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (214.0,474.0), the candidate center is supported by (126, 126, 56) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (214.0,474.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-032",
+   "action": "delete",
+   "point_id": "pt-0cf30cc837c7b6eb",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (248.9,444.5), the candidate center is supported by (125, 126, 60) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (248.9,444.5)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-033",
+   "action": "delete",
+   "point_id": "pt-812fa4f34e93e280",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (253.0,439.0), the candidate center is supported by (128, 125, 54) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (253.0,439.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-034",
+   "action": "delete",
+   "point_id": "pt-3f56c0d357e188cd",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (285.0,384.0), the candidate center is supported by (232, 169, 224) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (285.0,384.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-035",
+   "action": "delete",
+   "point_id": "pt-8efdc976a224661b",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (386.0,352.0), the candidate center is supported by (123, 68, 152) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (386.0,352.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-036",
+   "action": "delete",
+   "point_id": "pt-4e7b4d0294da7866",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (421.0,343.0), the candidate center is supported by (183, 79, 158) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (421.0,343.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-037",
+   "action": "delete",
+   "point_id": "pt-aae5729d4ac474b2",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (470.0,334.0), the candidate center is supported by (179, 85, 163) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (470.0,334.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-038",
+   "action": "delete",
+   "point_id": "pt-dfb040afd9102b3c",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (495.0,333.0), the candidate center is supported by (222, 150, 187) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (495.0,333.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-039",
+   "action": "delete",
+   "point_id": "pt-eb33ecddfb4ba3f3",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (512.0,328.0), the candidate center is supported by (89, 76, 145) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (512.0,328.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-040",
+   "action": "delete",
+   "point_id": "pt-26313eb3d3819327",
+   "series_label": "CO2 303K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (593.0,317.0), the candidate center is supported by (232, 165, 216) rather than the declared CO2 303K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (593.0,317.0)",
+   "evidence_kind": "native_visible",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-041",
+   "action": "delete",
+   "point_id": "pt-086e2353e41b377d",
+   "series_label": "CO2 323K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (252.6,473.1), the candidate center is supported by (40, 40, 112) rather than the declared CO2 323K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (252.6,473.1)",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-042",
+   "action": "delete",
+   "point_id": "pt-26188f499d4edf7b",
+   "series_label": "CO2 333K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (139.0,652.0), the candidate center is supported by (127, 137, 51) rather than the declared CO2 333K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (139.0,652.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-043",
+   "action": "delete",
+   "point_id": "pt-cd5559fe99a977a1",
+   "series_label": "CO2 333K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (285.0,460.0), the candidate center is supported by (124, 123, 189) rather than the declared CO2 333K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (285.0,460.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-044",
+   "action": "delete",
+   "point_id": "pt-eb5a4641562f07d3",
+   "series_label": "CO2 343K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (123.3,673.7), the candidate center is supported by (67, 104, 131) rather than the declared CO2 343K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (123.3,673.7)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-045",
+   "action": "delete",
+   "point_id": "pt-15f8fd5828a6bada",
+   "series_label": "CO2 343K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (263.0,519.0), the candidate center is supported by (201, 116, 119) rather than the declared CO2 343K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (263.0,519.0)",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-046",
+   "action": "delete",
+   "point_id": "pt-568e0c04fdcbf2e1",
+   "series_label": "CO2 363K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (145.8,688.3), the candidate center is supported by (44, 41, 130) rather than the declared CO2 363K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (145.8,688.3)",
+   "evidence_kind": "native_absence",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-047",
+   "action": "delete",
+   "point_id": "pt-eea71f89f9adf016",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (151.0,661.0), the candidate center is supported by (120, 16, 25) rather than the declared CO2 373K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (151.0,661.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-048",
+   "action": "delete",
+   "point_id": "pt-40925675940e7b14",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (160.0,656.0), the candidate center is supported by (218, 131, 186) rather than the declared CO2 373K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (160.0,656.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  },
+  {
+   "operation_id": "batch-001-del-049",
+   "action": "delete",
+   "point_id": "pt-ef7d33f656db046e",
+   "series_label": "CO2 373K",
+   "x_norm": null,
+   "y_norm": null,
+   "overlap": false,
+   "reason": "At native panel pixel (201.0,650.0), the candidate center is supported by (36, 103, 70) rather than the declared CO2 373K ink; this is a neighboring series/blank template artifact, not a CO2 marker for this series.",
+   "source_evidence": "panel.png native pixel (201.0,650.0)",
+   "evidence_kind": "partial_marker",
+   "uncertainty_px": null,
+   "evidence_ref": "panel.png"
+  }
+ ],
+ "uncertainties": [
+  "Low-pressure strip approximately x=123..215 px, y=430..705 px contains fused CO2 markers and crossing colored traces; exact ownership of several partial glyphs remains unresolved.",
+  "Additional crowded overlap regions around x=245..310 px and x=580..610 px have mixed colored pixels; native ink supports traces but not every proposed individual marker center.",
+  "Calibration is source-backed and materially consistent, but individual center uncertainty in crowded regions is typically 2-6 native panel pixels.",
+  "49 deleted candidates were removed using native color/blank contradictions; no wholly hidden estimated point was retained.",
+  "Unresolved review item crowded_strip:01: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added.",
+  "Unresolved review item crowded_strip:02: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added.",
+  "Unresolved review item slot:0001: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added.",
+  "Unresolved review item slot:0002: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added.",
+  "Unresolved review item slot:0003: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added.",
+  "Unresolved review item slot:0004: Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+ ],
+ "coverage": [
+  {
+   "item_id": "crowded_strip:01",
+   "item_type": "evidence",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  },
+  {
+   "item_id": "crowded_strip:02",
+   "item_type": "evidence",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  },
+  {
+   "item_id": "tile:marker_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:1",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:2",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:3",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:4",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:5",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:6",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:7",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_01:8",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_02",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:9",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:10",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:11",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:12",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:13",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:14",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:15",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_02:16",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_03",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:17",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:18",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:19",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:20",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:21",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:22",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:23",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_03:24",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_04",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:25",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:26",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:27",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:28",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:29",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:30",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:31",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_04:32",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_05",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:33",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:34",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:35",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:36",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:37",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:38",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:39",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_05:40",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_06",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:41",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:42",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:43",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:44",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:45",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:46",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:47",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_06:48",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_07",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:49",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:50",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:51",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:52",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:53",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:54",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:55",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_07:56",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_08",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:57",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:58",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:59",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:60",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:61",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:62",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:63",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_08:64",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_09",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:65",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:66",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:67",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:68",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:69",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:70",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:71",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_09:72",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_10",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:73",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:74",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:75",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:76",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:77",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:78",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:79",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_10:80",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:marker_11",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_11:81",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "box:marker_11:82",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:region_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:region_02",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "tile:region_03",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Native source tile/crop inspected before candidate evidence; candidate ownership and visible ink were checked against panel.png."
+  },
+  {
+   "item_id": "slot:0001",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  },
+  {
+   "item_id": "slot:0002",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  },
+  {
+   "item_id": "slot:0003",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  },
+  {
+   "item_id": "slot:0004",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "Native source inspected; fused/overlapping glyphs and nearby traces do not provide decisive ownership for every candidate slot, so no unsupported replacement marker was added."
+  }
+ ]
+}

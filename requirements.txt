@@ -1,0 +1,16 @@
+
+pymupdf==1.28.2                      # read PDFs, render figures
+opencv-python-headless==5.0.0.93     # marker detection, image work (headless: no GUI libs needed)
+numpy==2.4.6
+scipy==1.17.1                        # curve fits, physics checks
+matplotlib==3.11.2                   # re-plots, legend glyph shapes
+bokeh>=3.4                           # review page
+pillow==12.3.0                       # benchmark chart generator (evaluations/)
+agent-framework-core>=1.19           # workflow graph, executors, messages
+azure-ai-projects>=2.1.0             # AIProjectClient + OpenAI Responses client
+azure-identity>=1.25                 # az login -> DefaultAzureCredential
+httpx<1                              # download a document from a URL
+jsonschema>=4.21                     # validate every model answer against its schema
+python-dotenv>=1.0                   # read .env
+pyyaml>=6.0                          # workflow.yaml, config.yaml
+pytest>=8

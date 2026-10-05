@@ -1,0 +1,3193 @@
+{
+ "reasoning": "Source-only inspection of unchanged panel.png identified a linear Pressure (mbar) axis with printed ticks 0–1200 and a linear Gas uptake (mmol/g) axis with printed ticks 0–5. The native legend maps eleven filled, solid CO2 series (273K–373K) and separately lists six N2 series; all N2 ink was excluded. There is no inset and spec.json supplies no masks. Independent tick-stroke fits used x pixels 126,270,414,558,703,845,989 for 0,200,...,1200 mbar and y pixels 708,584,459,336,212,86 for 0,1,...,5 mmol/g. After calibration, the full Agent 03 CSV/JSON and all 102 review_tiles.json items were checked against native pixels, including crowded_strip:01 and crowded_strip:02. Twelve rows were deleted: six template-derived rows lacked a same-series native marker core, and six CO2 293K rows at x=123.13 or x=184–255px contradicted the triangle-up 293K trajectory (the latter sat on the lower dark-blue family or outside the nonnegative start). Crowded/fused candidate coordinates were conservatively reclassified as line_sample rather than claimed as discrete markers. Native-supported line samples were added only on observed same-series ink to fill continuous-band gaps; no trace extends beyond visible ink. Each eligible series receives a low-confidence estimated_marker at the shared zero-axis intersection because its colored trajectory reaches the fused origin and the column is shared, but ownership is not individually visible. The saved CSV was reloaded and plotted over panel.png; all eleven reconstructed bands align with their native curves, no N2 baseline series is included, and the largest along-band x gap is 18.00 native pixels. Verdict is review because line_sample and estimated_marker rows remain and low-pressure discrete marker counts are unresolved.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 1200,
+   "data_min": 0.0,
+   "data_max": 1194.535887177494,
+   "result": "pass",
+   "reason": "Saved values reproject to the native 0–1200 mbar tick positions with 1.29 px RMS residual; the rightmost visible CO2 marker centre is slightly left of the 1200 tick."
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 5,
+   "data_min": 0.0,
+   "data_max": 5.051139065764368,
+   "result": "pass",
+   "reason": "Saved values reproject to native 0–5 mmol/g ticks with 0.89 px RMS residual; the upper black marker is slightly above the printed 5 tick, as drawn."
+  }
+ },
+ "independent_read": {
+  "x_axis": "Pressure, mbar; linear; printed ticks 0, 200, 400, 600, 800, 1000, 1200.",
+  "y_axis": "Gas uptake, mmol/g; linear; printed ticks 0, 1, 2, 3, 4, 5.",
+  "series": [
+   {
+    "label": "CO2 273K",
+    "marker": "square",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 31,
+    "notes": "Native legend shows a filled square on a solid #000000 line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 283K",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 30,
+    "notes": "Native legend shows a filled diamond on a solid #e52b2b line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 293K",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 30,
+    "notes": "Native legend shows a filled triangle_up on a solid #354a9b line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 303K",
+    "marker": "triangle_down",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled triangle_down on a solid #238c8c line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 313K",
+    "marker": "triangle_left",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled triangle_left on a solid #a3489a line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 323K",
+    "marker": "triangle_right",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 30,
+    "notes": "Native legend shows a filled triangle_right on a solid #8d8b3c line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 333K",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled diamond on a solid #273b82 line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 343K",
+    "marker": "pentagon",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled pentagon on a solid #8e2d22 line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 353K",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled diamond on a solid #db2c7b line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 363K",
+    "marker": "star",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 29,
+    "notes": "Native legend shows a filled star on a solid #238b4e line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   },
+   {
+    "label": "CO2 373K",
+    "marker": "hexagon",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 28,
+    "notes": "Native legend shows a filled hexagon on a solid #293d86 line. Estimate counts only visibly separable glyphs; the low-pressure strip is fused and was not counted as hidden markers."
+   }
+  ],
+  "visual_risks": [
+   "All CO2 curves converge into a dense, heavily overlapped low-pressure strip near x=126–300 px.",
+   "Large filled markers touch or fuse along several mid/high-pressure stretches, so a connected blob may contain more than one glyph.",
+   "CO2 303K and 313K are close in the middle of the panel; color and local trajectory are required for ownership.",
+   "CO2 333K and 373K use similar dark-blue hues but are vertically separated except near the common origin.",
+   "N2 curves occupy the baseline region and reuse several marker shapes/colors; gas identity must come from legend plus trajectory.",
+   "The shared origin is wholly overlapped and supports only estimated per-series ownership."
+  ]
+ },
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 273K",
+   "coverage": "uncertain",
+   "final_count": 68,
+   "comment": "Native band x=126.28..985.50px; direct markers=21, partial markers=0, line samples=46, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 283K",
+   "coverage": "uncertain",
+   "final_count": 74,
+   "comment": "Native band x=126.28..984.23px; direct markers=23, partial markers=0, line samples=50, estimated markers=1. Reloaded-CSV maximum x spacing is 17.94px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 293K",
+   "coverage": "uncertain",
+   "final_count": 78,
+   "comment": "Native band x=126.28..982.48px; direct markers=16, partial markers=0, line samples=61, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 303K",
+   "coverage": "uncertain",
+   "final_count": 71,
+   "comment": "Native band x=126.28..984.00px; direct markers=20, partial markers=0, line samples=50, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "uncertain",
+   "final_count": 71,
+   "comment": "Native band x=126.28..983.70px; direct markers=19, partial markers=0, line samples=51, estimated markers=1. Reloaded-CSV maximum x spacing is 17.50px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "uncertain",
+   "final_count": 72,
+   "comment": "Native band x=126.28..983.93px; direct markers=22, partial markers=0, line samples=49, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "uncertain",
+   "final_count": 76,
+   "comment": "Native band x=126.28..983.87px; direct markers=21, partial markers=0, line samples=54, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 343K",
+   "coverage": "uncertain",
+   "final_count": 77,
+   "comment": "Native band x=126.28..983.89px; direct markers=19, partial markers=8, line samples=49, estimated markers=1. Reloaded-CSV maximum x spacing is 17.78px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "uncertain",
+   "final_count": 72,
+   "comment": "Native band x=126.28..983.98px; direct markers=19, partial markers=8, line samples=44, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 363K",
+   "coverage": "uncertain",
+   "final_count": 74,
+   "comment": "Native band x=126.28..984.84px; direct markers=18, partial markers=1, line samples=54, estimated markers=1. Reloaded-CSV maximum x spacing is 17.45px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "uncertain",
+   "final_count": 67,
+   "comment": "Native band x=126.28..983.46px; direct markers=17, partial markers=0, line samples=49, estimated markers=1. Reloaded-CSV maximum x spacing is 18.00px. Low-pressure individual marker ownership/count remains unresolved, so trace samples represent ink rather than experimental slots."
+  }
+ ],
+ "uncertainties": [
+  "The 126.28px shared origin is represented once per eligible series as estimated_marker with 8 px uncertainty; these are logical overlapping points, not separately visible centres.",
+  "Low-pressure marker counts and individual glyph centres cannot be uniquely recovered from the fused native strip. The retained line_sample rows describe the observed band centreline and must not be interpreted as experimental point counts.",
+  "Thin connecting lines are anti-aliased and sometimes gray relative to legend colors; trace coordinates use local same-series continuity and 2.5–3 px uncertainty.",
+  "No inset or excluded mask is present. N2 baseline ink was excluded from points.csv."
+ ],
+ "row_count": 800,
+ "calibration": {
+  "px_per_unit_x": 0.7192885515675984,
+  "px_per_unit_y": 124.25822028052431,
+  "unit_per_px_x": 1.3902626391322739,
+  "unit_per_px_y": 0.008047757305250376,
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 1.3902626391322739,
+    "intercept": -175.56794368736172
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.008047757305250376,
+    "intercept": 5.698983528837023
+   }
+  },
+  "frame_px": [
+   54,
+   28,
+   1004,
+   770
+  ],
+  "x_ticks_px": [
+   126,
+   270,
+   414,
+   558,
+   703,
+   845,
+   989
+  ],
+  "y_ticks_px": [
+   86,
+   212,
+   336,
+   459,
+   584,
+   708
+  ],
+  "tick_anchors": {
+   "x": [
+    {
+     "value": 0,
+     "pixel": 126
+    },
+    {
+     "value": 200,
+     "pixel": 270
+    },
+    {
+     "value": 400,
+     "pixel": 414
+    },
+    {
+     "value": 600,
+     "pixel": 558
+    },
+    {
+     "value": 800,
+     "pixel": 703
+    },
+    {
+     "value": 1000,
+     "pixel": 845
+    },
+    {
+     "value": 1200,
+     "pixel": 989
+    }
+   ],
+   "y": [
+    {
+     "value": 5,
+     "pixel": 86
+    },
+    {
+     "value": 4,
+     "pixel": 212
+    },
+    {
+     "value": 3,
+     "pixel": 336
+    },
+    {
+     "value": 2,
+     "pixel": 459
+    },
+    {
+     "value": 1,
+     "pixel": 584
+    },
+    {
+     "value": 0,
+     "pixel": 708
+    }
+   ]
+  },
+  "tick_fit_resid_x": 1.786691622626904,
+  "tick_fit_resid_y": 0.007141019876056642,
+  "tick_fit_resid_x_px": 1.2851468293372679,
+  "tick_fit_resid_y_px": 0.8873304207866487
+ },
+ "unresolved_slots": {
+  "total": 11,
+  "by_series": {
+   "CO2 273K": 1,
+   "CO2 283K": 1,
+   "CO2 293K": 1,
+   "CO2 303K": 1,
+   "CO2 313K": 1,
+   "CO2 323K": 1,
+   "CO2 333K": 1,
+   "CO2 343K": 1,
+   "CO2 353K": 1,
+   "CO2 363K": 1,
+   "CO2 373K": 1
+  },
+  "slots": [
+   {
+    "series_label": "CO2 273K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 273K glyph near x=307.70px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 283K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 283K glyph near x=290.53px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 293K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 293K glyph near x=295.03px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 303K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 303K glyph near x=305.57px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 313K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 313K glyph near x=295.71px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 323K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 323K glyph near x=294.94px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 333K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 333K glyph near x=339.78px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 343K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 343K glyph near x=295.09px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 353K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 353K glyph near x=295.34px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 363K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 363K glyph near x=294.40px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   },
+   {
+    "series_label": "CO2 373K",
+    "reason": "Native crowded strip from the shared origin near x=126.28px to the first confidently separable CO2 373K glyph near x=311.07px contains continuous same-series ink but fused/overlapping glyphs; individual experimental marker centres and count cannot be uniquely resolved. The CSV uses low-confidence line_sample rows plus one estimated shared-origin marker, not fabricated discrete slots."
+   }
+  ]
+ },
+ "changes": [
+  {
+   "action": "delete",
+   "point_id": "pt-3feece088c46566d",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (123.13, 658.52); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-77bcd2ecc613bf72",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (184.00, 570.00); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-cb5e80a1a63251b1",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (202.43, 535.46); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-928aaccdced88308",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (210.28, 527.71); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-bf04e84527bae177",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (251.36, 485.95); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-4c0210328215fe18",
+   "reason": "Deleted misassigned low-pressure candidate; native pixel lies on a different blue trajectory or outside the calibrated nonnegative start.",
+   "source_evidence": "panel.png native pixel (254.87, 476.58); direct native review contradicts the declared CO2 293K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-44559e9b16f23b74",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (163.47, 585.46); direct native review contradicts the declared CO2 313K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-35f704ba7974eec5",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (252.55, 452.35); direct native review contradicts the declared CO2 313K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-43e2097eb45576aa",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (273.27, 421.41); direct native review contradicts the declared CO2 313K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-0a01941f34ecb91e",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (273.27, 446.63); direct native review contradicts the declared CO2 323K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-e9adfe90de2dde79",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (273.27, 554.37); direct native review contradicts the declared CO2 353K marker ownership."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-616996dac3835771",
+   "reason": "Deleted unsupported inferred/template row",
+   "source_evidence": "panel.png native pixel (280.00, 587.00); direct native review contradicts the declared CO2 363K marker ownership."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-58d936195d2e7e60",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (139.00, 420.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-447ba82da0443299",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (156.00, 366.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-22d78b9e8752a804",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (172.00, 329.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8a7788822ad2a5fe",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (188.00, 308.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6611421681437188",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (205.00, 295.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3eb9b42860f7d19a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (214.00, 290.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-607af9a5184af086",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (232.50, 271.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c72afbf617e597bc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (250.00, 245.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3f4af827e59866a1",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (276.00, 239.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6615b41edadee723",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (298.00, 226.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f49b73a8fb1dd9e6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (323.50, 210.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ec58d0a13533aa75",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (351.00, 196.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-409ef66d7c87b619",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (371.00, 186.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7b96f49d1506ca80",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (424.00, 167.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-75cc1ffa312673c8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (450.00, 159.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1e448378de44d383",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (473.00, 152.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-27454eb86d2acc1d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (500.00, 144.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-38ea78172dd16a3c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (527.00, 137.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cd1b1c2493d9da2a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (552.00, 132.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b2517eac0f30b4c2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (576.50, 127.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-009019ec37648a56",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (602.00, 122.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4007391f528bd308",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (630.00, 117.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-67daefdc66f17a50",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (679.50, 110.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bc33541b8c1e6abb",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (712.00, 105.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-18ea7a00f58245a7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (757.50, 100.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-332b4b7a0734850b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (784.50, 98.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d6bea8a6ce02f825",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (827.00, 94.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-14acd9df8d2ba9de",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 273K source band.",
+   "source_evidence": "panel.png same-series #030303 ink at native pixel (836.50, 93.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f0c63704ba6d1c65",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (157.00, 413.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e9e3c3149effcf84",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (170.00, 393.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-78f47d07080268d0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (185.50, 373.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-039781ade85d20c0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (200.00, 361.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d537f9a2edf8dc05",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (216.00, 347.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-125fd4fcb519bbe5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (232.00, 335.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0d0838146d93519d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (245.00, 324.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4e742eac8e79f91e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (260.00, 315.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-193493d453132fc8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (346.00, 277.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-75e933e68d5eb1a3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (374.00, 261.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6dd6edf1a2cdb2b4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (390.00, 260.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-64e14b93ec7cbfa5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (482.00, 224.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-924da5f885fbfd28",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (501.00, 221.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f39b879ee38552f8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (520.00, 211.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c08545bf6438fa0d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (537.00, 208.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3947d6bb1ad7d93e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (666.00, 186.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3217359fa6da8197",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (702.00, 178.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d396fd9a1153f18f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (714.00, 179.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-febc30de0328411d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (742.00, 172.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7d891dd97958c648",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (760.00, 172.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4407596098807690",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (782.00, 167.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0f52ec8df39e6d45",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (804.00, 166.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6811d83835fe750d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (826.50, 163.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e9e5b147f98ba863",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (836.00, 163.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e1e490c05b5529c6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (871.00, 159.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8d0848444e49a664",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (920.00, 155.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-550d8a1901f9a7b9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (931.00, 154.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b280c31b079701b5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (955.00, 151.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fa6c32f46f59fc08",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 283K source band.",
+   "source_evidence": "panel.png same-series #f1231f ink at native pixel (975.00, 150.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ffca9cbde5b8b563",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (153.00, 467.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ceb23c70269eb26f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (169.00, 436.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-36a73939892e0bbd",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (183.00, 420.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c713ecfcdf1558b0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (201.50, 390.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0479f0be7f1cb9fa",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (214.00, 391.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-07820db609055f50",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (234.50, 366.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4960a5f566e70253",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (249.00, 362.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-136fd00e8b383114",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (261.00, 362.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9d7e87cc6fac67fd",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (279.50, 345.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d2450bfee80471ed",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (309.00, 334.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1fe258805fe7c91d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (327.00, 331.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bf4835175c281fe3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (347.00, 329.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e42982ad842a05f9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (376.00, 313.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-724496e87e7ed972",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (392.00, 312.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-53284a0f4edfa790",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (408.50, 301.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-df0d7e6fec6ce1d2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (436.50, 298.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f2e2159fea9ff909",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (451.00, 293.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9d8131f47c303689",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (492.00, 275.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c89794972c4bd158",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (502.00, 283.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-350d66f50630dbf0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (522.00, 272.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-80157200a2776f96",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (545.00, 272.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8ee57c74d0c26d7c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (572.00, 258.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1150161d2b448655",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (606.00, 265.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ecce43cfea617476",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (623.00, 253.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-15c0b6e1ee12ef23",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (658.00, 248.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b8285826b7bed519",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (674.00, 247.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fb62a43be97686b4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (702.00, 238.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-95b88416b17cd1e7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (720.00, 237.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f20ed0d082b664bc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (740.50, 232.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7b695ec41c529f57",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (762.00, 231.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-90a5fbae50356af7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (781.00, 226.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-095460ee84257905",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (824.00, 220.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-acb8cc07a2b64c74",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (840.00, 218.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bad69598bcb8bbb2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (878.00, 213.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-01804a78b7c703c6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (890.50, 213.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3083cdc8fbc6e7e1",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (921.00, 209.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-44c06d99cad3902f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (931.00, 208.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-13f17bfeb62513f9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (955.00, 207.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c9c96e075d5804a4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 293K source band.",
+   "source_evidence": "panel.png same-series #384ca8 ink at native pixel (972.00, 203.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3ea8d73c4d973ef5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (143.00, 519.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7de027b064d5fe26",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (159.00, 485.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9a9c2ed71bbca484",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (168.00, 463.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6e43786d7f343e1b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (184.00, 452.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8ccc5349c85970e2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (200.00, 427.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e07f9bec8f3a3ba2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (214.00, 413.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8d6c6837e55be6d0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (228.00, 404.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b0a5456d8869251f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (245.00, 383.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-10946e5570596fd6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (260.00, 382.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b3b4d3af321eea0c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (317.00, 361.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6a5c193b22ae8021",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (348.00, 355.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8b2fd2ab470bd8e5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (372.00, 345.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3e6e02dc3296ad98",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (393.00, 344.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e50acc546a8d0b81",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (402.00, 343.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f4639d1d97678bda",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (427.00, 333.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fee6a34fc5916b86",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (438.00, 334.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d6b1e3cb878b0009",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (458.00, 326.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5148227e1b76bc28",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (481.00, 322.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4aeb8d699e51217d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (499.00, 318.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3db7350b607a05d4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (537.00, 311.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0ea76c3edee57098",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (564.00, 310.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6fc1fb74d349f366",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (609.00, 304.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-023c5d2fce2de926",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (624.50, 301.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7e6272b6dd123bf0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (649.00, 293.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7358ebcfe2a036d3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (660.00, 296.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-073f27ad56925b6f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (676.00, 292.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-caeb06ddba16bee0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (703.00, 286.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-91b091045d91eae2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (719.00, 285.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-789b3e43ca55ece7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (737.00, 285.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b8b2be92060426dc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (759.00, 278.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f535eee2cf77bc81",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (781.00, 278.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1fc53c1b621d91cb",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (803.50, 274.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-343e775e1f93095b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (828.00, 273.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e10e3aee062a7768",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (841.00, 269.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-07e602741dbaef6b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (870.00, 269.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-56d47e58b6832be0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (887.50, 270.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-46fe5e8c6c1d2edc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (913.00, 265.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d7e2da6bded7597a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (929.00, 265.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d9103ff397b882db",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (954.50, 259.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3ea9135a9f2c7714",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 303K source band.",
+   "source_evidence": "panel.png same-series #0d7d75 ink at native pixel (971.50, 259.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bdd50685937fb72b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (155.00, 511.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-97df9ab45e3ed1ac",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (173.50, 471.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3c464046533465aa",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (185.00, 472.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9cb2aab08dfa631c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (201.00, 434.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-322c9931a3ccf687",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (219.50, 430.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-222a206cb412428d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (231.00, 419.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4d70b0fef833ce2c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (248.00, 398.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-43d4a7aa2b7226f0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (261.00, 395.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5847107bcc886f1e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (284.00, 387.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5a1cd4b4f9e074ae",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (314.00, 380.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2bfbceff1237d239",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (331.50, 374.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-476a922a3840c608",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (354.00, 361.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-66066ed5db72b858",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (375.00, 361.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b38e91b9da8be184",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (402.00, 355.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6c18776120dbe209",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (413.00, 349.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fc2b65a48718f0f8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (442.00, 349.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-73a820ced0079957",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (457.00, 344.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5945a6eec29a29c4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (486.00, 341.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e3d13f3dbc618b0e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (501.00, 338.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6c88075d4d42fc0e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (527.00, 323.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ef509663356d5c49",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (543.00, 328.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a0d8a1b1d03efd61",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (557.00, 322.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-303b6146fd9454fa",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (573.00, 320.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-521c83b537a48fd4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (614.50, 314.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4bcae26e2ed6ae59",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (630.00, 314.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-571f058b3ccbca32",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (643.00, 305.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c120e75704613684",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (656.00, 314.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7defc9036758d7e2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (674.50, 313.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b87bf03184cbb8ba",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (704.50, 302.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-edea6f5be2f58fe9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (720.00, 304.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6bc54cd61ccdd393",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (742.00, 299.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0aa92bdf6a3d65cf",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (763.00, 299.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-92ac34b13f56e9b6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (785.50, 292.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d60ddaa88b3cf2d9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (806.00, 294.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-de8b51601610e013",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (829.00, 291.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8739bd6024688695",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (840.00, 290.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0beb676990980d29",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (865.00, 287.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-98cefd2cd40ea56e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (882.50, 286.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dd516dff0869c822",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (920.50, 282.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-20ab71c06f630da8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (935.00, 281.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-759fc3dbb75bcbad",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (959.50, 280.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cff0a20034d98a8b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 313K source band.",
+   "source_evidence": "panel.png same-series #b94fa3 ink at native pixel (975.00, 278.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b61bfb82e9527dc9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (188.50, 513.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-abd78e85aab26dfa",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (207.00, 480.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-14700dacdb303af2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (219.00, 475.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-daaf6eae1e242874",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (235.00, 456.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-28cbf1f6fc92364c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (249.00, 432.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-de24ee7546c91ddc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (263.00, 435.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cfba95470f8e1a1b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (279.00, 427.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dda3faef9beb4ccb",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (316.00, 409.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-504c7362dd6acdb0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (333.00, 404.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f0f854f1e25bec4c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (349.00, 403.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bcbfa919aeab8a97",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (374.00, 391.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b2ea23d2bf9b28d4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (394.00, 390.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e16b2afb500f1f66",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (411.00, 384.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-717bc551b3691464",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (440.00, 382.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-673c485eab368448",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (457.50, 378.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0d3cfd36f45840b9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (482.00, 371.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-87b82c758d224e5d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (499.50, 363.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3612cc3605f37bb7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (519.00, 367.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8e0fafd109cac51b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (539.50, 358.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8ca4cdfad5c2e29f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (566.00, 359.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1d53c29aba525941",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (610.00, 355.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6290f8b6a3f4b00e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (627.00, 354.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ba500e2ec070e4f0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (653.00, 350.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a741521a76484a22",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (671.00, 341.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-097c08ceeb3e6636",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (704.00, 340.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d4e145d76b3b5c3d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (721.00, 340.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dd57000035bbf5e3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (740.00, 340.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-24d0b41fec6b78e8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (759.00, 335.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-50cb250ba90e74fb",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (780.00, 336.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3f66e95b4078c7df",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (803.00, 333.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-27a3a61d131a0360",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (826.00, 333.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1c6dacb9985faff4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (842.00, 330.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a9ab3074f3339514",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (872.50, 329.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1c8f700e3531f14b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (890.00, 326.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f9cdf802d8d2b6a6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (914.50, 325.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b0d557190f34556b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (930.00, 323.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-46f3e7eae29161b6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (955.50, 321.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-97873b5c006f27ad",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 323K source band.",
+   "source_evidence": "panel.png same-series #76792b ink at native pixel (971.00, 320.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-050368fb9df833ce",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (147.00, 516.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3e332c83c52c4f2b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (215.00, 520.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-72c680e2d2365cf5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (243.00, 486.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1bd0bba22c177739",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (265.00, 476.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-73c86e99b5ce175b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (286.00, 457.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1d8004027aeb2352",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (317.00, 445.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-334b91457ebee1b6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (331.00, 439.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-50cd515cab0812aa",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (350.00, 435.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-be935beaedcd7fb3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (374.00, 424.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a1832bfdfbea0dd8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (394.00, 421.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fb66d8e82497bcf0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (411.00, 409.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-48e99881fe98c6c0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (440.00, 409.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7bf663a252866ef6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (456.00, 402.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-09db8832d678d866",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (485.50, 393.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fbc475b72c93b078",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (502.00, 396.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-139995712e3a9c46",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (521.00, 389.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5fcc2ff4b6cbb8e6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (542.00, 387.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5e18232dce93764e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (566.50, 386.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-39b5ee9c31fc4691",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (609.50, 381.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a976c4539c02d1be",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (630.00, 373.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b66ee607c4383084",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (653.50, 377.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2a5544ac3771f6b3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (674.00, 374.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-82bf5551006c2c42",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (717.00, 369.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8833a443e3510a08",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (741.00, 367.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6f226b5b34fb20d0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (762.00, 364.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b926a4e87b369fe6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (780.00, 367.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c9ba6080a069c093",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (804.00, 360.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2e417cc60faa7477",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (831.50, 359.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c9c981c3ddb5901b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (872.00, 358.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9ee75f33245a83d3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (889.00, 355.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-78e658d575f10c11",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (917.00, 355.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-984e0a29d8d3e225",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (935.00, 354.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0690c70e7ee24fb2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (958.00, 353.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0ac89af5dae53fb1",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 333K source band.",
+   "source_evidence": "panel.png same-series #282372 ink at native pixel (975.00, 351.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c2f03f8c94451310",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (145.00, 661.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-26909b538c764df4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (193.00, 580.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cc450e394a3b3da5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (241.00, 526.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-286a7d21368ac165",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (285.00, 494.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7dabbaaef666e46b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (317.00, 481.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a280fda0d24ebb64",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (333.00, 475.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cc2287756d56cb13",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (354.00, 456.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-99cc51f50c300a9d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (374.50, 457.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b51f9586f628acc1",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (393.00, 452.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-55a2070ac2d88fdf",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (410.00, 440.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b6f2c3612e190450",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (439.00, 440.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5adece540918a3ab",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (455.50, 432.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-79cd6ecc58f81369",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (483.00, 427.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2954aceb59cfc3b2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (500.00, 422.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a115b1ad8e615878",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (521.00, 417.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1a569ebb165c28e3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (540.00, 416.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2f5cc7d93911538c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (608.00, 407.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5addebc1bbe77d1e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (627.00, 401.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ac025a116f86682a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (655.00, 398.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-954dc6d22ff323c6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (666.50, 399.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2166fcf0d764f709",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (708.00, 395.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-964765f929a27b9f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (741.00, 391.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ed85a232fabb47fe",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (760.50, 390.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3256fcce23ff6f5e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (783.00, 386.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f4f0591b425ebc61",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (805.00, 383.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a230cb727dfa2454",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (826.00, 384.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-98ad083826e8106d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (836.00, 382.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f6309ed195caa7c9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (874.00, 381.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cce34f38572d7d2a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (890.00, 379.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-36f55667f36251dc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (917.00, 380.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c9928dca30a5cbe1",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (934.00, 377.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a55d84df42b1820b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (958.00, 378.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ccf6dea23f1851a6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 343K source band.",
+   "source_evidence": "panel.png same-series #7b0f13 ink at native pixel (967.00, 376.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-46098f594dbead07",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (145.00, 675.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d7813fe8f9c0afb8",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (194.00, 622.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f79d5ea8a7b0e7e5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (243.00, 577.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6b427a6fc0d97e66",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (264.50, 561.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2b2eaef974239250",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (278.50, 549.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-153bd14da8f54d44",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (323.00, 522.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9fc975c0bc1ebd73",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (348.00, 513.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-96b275060551fc14",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (376.00, 492.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1073977e0c0f9ec0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (397.50, 487.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-da7e18b928c7ba26",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (440.50, 472.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b2346d5e95172428",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (450.50, 470.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-84ce611323b26374",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (486.00, 460.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-85896f88fbcc5a3b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (502.00, 458.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-94be19751bf0a4ea",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (519.00, 454.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-aecd9bba6a9fb061",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (540.00, 445.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d09adfd0bb361934",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (564.00, 444.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4d13954f3343334b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (609.00, 436.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ef8b95fd86e189a0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (627.50, 434.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d31218fe65fa9ec9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (655.00, 428.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8294d6be7c1b07be",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (667.00, 428.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f99d92773042180a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (712.50, 420.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-96ba734ac4dd9a06",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (742.50, 417.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-623151cca75ce568",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (762.00, 417.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b594b350336bdc3e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (781.50, 413.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-869342b9585620ff",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (807.00, 413.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-056d0fe1f0556fd5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (830.50, 412.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2d7f1a5b10aebed2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (872.50, 409.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6ff13e789d51a3d7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (888.00, 406.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f86ebe2955a24842",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (914.00, 405.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3df8044bf999c0e7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (932.00, 404.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d436b7c364cd6b7b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (955.00, 403.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f14de1c8380205f0",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 353K source band.",
+   "source_evidence": "panel.png same-series #f31f74 ink at native pixel (970.50, 400.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-07a3099abf008436",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (134.00, 638.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-1ab2077557cf84fb",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (173.50, 662.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b56132d1df771707",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (217.00, 632.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d65ebc94b69c4e42",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (230.00, 622.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fbc0f2b05226df61",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (263.00, 599.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-887baeeba953e131",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (279.00, 588.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d4c61a5ba91994b3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (322.00, 561.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4d0ba11b8b51f283",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (348.00, 551.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-de1f6ed3b7f77408",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (374.00, 532.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5eb7c9265fa65a4c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (391.00, 530.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-13c065c13ebb2132",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (435.50, 514.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-96512c2da3f975b3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (454.00, 503.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e2ac68ba4c920883",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (482.00, 494.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a469f3c01d8e2acc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (500.50, 487.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f265ddcad803f791",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (522.00, 482.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d54fedff91d50dbe",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (543.00, 479.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a4cdb7fc30847a77",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (567.00, 475.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bf9992f7de67ba64",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (608.00, 466.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4ab8c8b38649b4fc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (627.00, 463.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f961d1a9b6d5484d",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (651.00, 458.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-77e8f3ade654c744",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (663.00, 456.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-14808be747028494",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (676.00, 454.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dcef57b3a2a0f824",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (715.00, 447.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b111ea356d1600cf",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (739.00, 446.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dd9d50756276cffc",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (760.00, 442.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c893825e9d09312a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (784.00, 438.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-11c132cd6354c50f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (805.00, 436.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-865c06b83faaf515",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (827.00, 436.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c82e3da4e1b1e055",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (838.00, 434.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2c0ede4527eaf62b",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (873.50, 430.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-68e55492dec30f77",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (889.50, 430.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-58ac83461cc8d6e6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (916.00, 427.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cc060f9c0aee45a2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (932.50, 425.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-226253b2e51b77e9",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (955.00, 424.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7339b78b1692a9e4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 363K source band.",
+   "source_evidence": "panel.png same-series #197b35 ink at native pixel (974.50, 422.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-755037f1b4cf553c",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (155.00, 686.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-47bd88749daf31e7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (170.00, 678.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-91d828b25eccca50",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (197.00, 667.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-20c029ef406028ac",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (212.00, 649.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-403050e28d19b477",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (226.00, 651.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6299dae33f3b2628",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (244.00, 636.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2ea82762ecd64a13",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (257.00, 630.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-19563267ee7847cf",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (301.00, 605.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3f8f8d09b2e9611a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (348.00, 587.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4a9008ded844d101",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (392.00, 566.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e5e7c5bf439cbed2",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (431.50, 557.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-462e4b72480b7222",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (462.50, 545.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-42ae13e721f79a6f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (479.00, 536.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fb8ab9d130db56a3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (508.00, 531.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a99038a562082ae3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (525.00, 526.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-192f2f4b82611343",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (551.00, 516.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0211ed307bde1085",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (573.00, 513.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-401d3345ad3bd60e",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (597.50, 508.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f587d4c2eb53a154",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (613.00, 505.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b459dd3ad0a003c5",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (641.00, 499.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dd704ba35b299726",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (656.00, 497.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7288edec63d04733",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (683.00, 492.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-01871510d5a5d6c4",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (730.00, 485.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8e4d3b0dbab448ea",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (747.00, 482.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-347b7fb87f835ab7",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (778.00, 477.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d0a09d5bd79980be",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (793.50, 475.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-5338662abffb24f6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (818.50, 472.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-453c1ff889e813d6",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (841.00, 469.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-95583214007b7920",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (870.00, 465.50); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-614f022a743de189",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (884.50, 465.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ddbe39f3a625862a",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (922.00, 460.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b5a981c185f2c927",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (940.00, 460.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b49c4c981a65815f",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (951.00, 458.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-076af7019553b3c3",
+   "reason": "Added native line sample to close a >18 px gap along the continuous CO2 373K source band.",
+   "source_evidence": "panel.png same-series #2a2b86 ink at native pixel (972.00, 456.00); local trajectory continuity inspected in the untouched panel."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-000f76a53f0f4fd2",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 273K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-49aebbb38e8bfb29",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 283K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3d3a0e13703df8c0",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 293K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cca2628d8bf8a16e",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 303K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-66a8587a3222674b",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 313K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-85697169e16968f1",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 323K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-99782c6b99e663a6",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 333K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-65d9d9eda73a535a",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 343K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7f9df2c374b007b0",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 353K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e79b1a4b05c74242",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 363K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f639ff4b5e430b1d",
+   "reason": "Added low-confidence estimated shared-origin marker for CO2 373K; ownership is hidden by complete overlap.",
+   "source_evidence": "panel.png native zero-axis intersection near (126.28, 708.15) contains fused CO2-family ink and all eligible trajectories converge to the shared column."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-990ccbf6e23539ce",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (227.00, 277.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bccec6bea7606a68",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (402.00, 175.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-047ac59aaad11388",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (883.00, 89.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e8227bbd7902feb8",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (950.00, 84.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d1f1d2ec64f7061d",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (276.00, 309.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8534bac0b0ce1f74",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (323.00, 280.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-da162b1f2f7a6e1c",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (403.00, 248.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ee3342fcfab5640a",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (449.00, 239.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bdd6c5abf1a921b9",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (491.00, 222.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c80ebf5ff4fff26f",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (572.00, 207.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-b33cef8a623e4eb5",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (615.00, 192.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d242faecb3c60c82",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (649.00, 190.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6df6d421cbf2668c",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (883.00, 158.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fce629eeaf266d1d",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (963.00, 151.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-2303916ddce181e3",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 293K band.",
+   "source_evidence": "panel.png continuous CO2 293K ink at native pixel (189.00, 408.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-aded76878aa15c84",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 293K band.",
+   "source_evidence": "panel.png continuous CO2 293K ink at native pixel (225.00, 376.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c1e190890ef5e068",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 293K band.",
+   "source_evidence": "panel.png continuous CO2 293K ink at native pixel (273.00, 352.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dcdff3f410857e53",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 293K band.",
+   "source_evidence": "panel.png continuous CO2 293K ink at native pixel (865.00, 219.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-60a2b29d91db5ffc",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 303K band.",
+   "source_evidence": "panel.png continuous CO2 303K ink at native pixel (273.00, 383.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9811fd473738adb7",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 303K band.",
+   "source_evidence": "panel.png continuous CO2 303K ink at native pixel (330.00, 359.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bc0d29c21f379859",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 303K band.",
+   "source_evidence": "panel.png continuous CO2 303K ink at native pixel (448.00, 329.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6f274884513a3b3b",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 313K band.",
+   "source_evidence": "panel.png continuous CO2 313K ink at native pixel (165.00, 493.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dcfc70c5b856ade1",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 313K band.",
+   "source_evidence": "panel.png continuous CO2 313K ink at native pixel (211.00, 431.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-65b010ec34bbd14e",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 313K band.",
+   "source_evidence": "panel.png continuous CO2 313K ink at native pixel (269.00, 393.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ea9eadbb465cff9d",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 313K band.",
+   "source_evidence": "panel.png continuous CO2 313K ink at native pixel (669.00, 315.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fc53d6838cd7f70b",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 323K band.",
+   "source_evidence": "panel.png continuous CO2 323K ink at native pixel (197.00, 497.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0c2223731c2c1541",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (230.00, 504.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-726da97dbed90912",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (273.00, 471.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-9d19857e72a71357",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (578.00, 383.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a2dd9308ac747479",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (621.00, 376.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-642719647bbd0560",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (665.00, 376.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-3f0d2cdfb51e5cd1",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 333K band.",
+   "source_evidence": "panel.png continuous CO2 333K ink at native pixel (706.00, 368.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-62862c1bad66218b",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (134.00, 680.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-852ccb10ac9b037f",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (230.00, 551.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-0131961cd2435495",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (273.00, 508.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8ac991727da4ef14",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (566.00, 413.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-008c1de52fdaecae",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (619.00, 403.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7ac4e11e82398d07",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (717.00, 393.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-710e19c8cec3a0b9",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 353K band.",
+   "source_evidence": "panel.png continuous CO2 353K ink at native pixel (137.00, 685.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bcf340c4d0884513",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 353K band.",
+   "source_evidence": "panel.png continuous CO2 353K ink at native pixel (226.00, 593.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4489d1c2bf5222c9",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 353K band.",
+   "source_evidence": "panel.png continuous CO2 353K ink at native pixel (410.00, 481.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-59ea980ff06524eb",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 353K band.",
+   "source_evidence": "panel.png continuous CO2 353K ink at native pixel (621.00, 434.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-e553ea86296d3ead",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 353K band.",
+   "source_evidence": "panel.png continuous CO2 353K ink at native pixel (676.00, 428.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-f03dc9df946b7dd3",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (144.00, 650.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-c8ebd2ce3a773378",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (400.00, 528.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-d241fb92f60ab405",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (446.00, 506.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-47e8e746a8aceb2f",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (493.00, 496.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-fe1a649f2e6ba45a",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (617.00, 466.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-ffb871cb68beb9c1",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (704.00, 448.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-bee30774c7426a88",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 363K band.",
+   "source_evidence": "panel.png continuous CO2 363K ink at native pixel (961.00, 425.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-63b7846e8249e5ef",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 373K band.",
+   "source_evidence": "panel.png continuous CO2 373K ink at native pixel (323.00, 596.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-923231431d840d93",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 373K band.",
+   "source_evidence": "panel.png continuous CO2 373K ink at native pixel (379.00, 571.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-dbb4869b5fc98d30",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 373K band.",
+   "source_evidence": "panel.png continuous CO2 373K ink at native pixel (693.00, 486.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cd4f06e257fc8e1d",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 373K band.",
+   "source_evidence": "panel.png continuous CO2 373K ink at native pixel (958.00, 457.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-aaae80c49c7bf8bf",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (865.00, 92.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8ac130a753225a1c",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (898.00, 90.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4cb5c1ae0f136f9c",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (933.00, 87.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-505140a615f77661",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 273K band.",
+   "source_evidence": "panel.png continuous CO2 273K ink at native pixel (968.00, 84.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-42a11a5aee467344",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (435.00, 244.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-75af02b3bb813bdc",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (561.00, 209.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-adff5ce657838dec",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (631.00, 193.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-6b2dbc7cbd87cec1",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 283K band.",
+   "source_evidence": "panel.png continuous CO2 283K ink at native pixel (895.00, 158.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-99d792996f333393",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 303K band.",
+   "source_evidence": "panel.png continuous CO2 303K ink at native pixel (285.00, 370.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-7fac85300cf5dcfb",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (260.00, 518.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-599dd937f3bbb8a2",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 343K band.",
+   "source_evidence": "panel.png continuous CO2 343K ink at native pixel (575.00, 407.00) between retained neighboring coordinates."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-28bcab0c9e1d5d8d",
+   "reason": "Added native line sample after saved-table spacing audit found a >18 px gap on the continuous CO2 373K band.",
+   "source_evidence": "panel.png continuous CO2 373K ink at native pixel (366.00, 583.00) between retained neighboring coordinates."
+  }
+ ]
+}

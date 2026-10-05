@@ -1,0 +1,291 @@
+{
+ "reasoning": "Source-only inspection found one panel-B linear plot with frame x=173.0..694.5 px and y=60.0..512.0 px, Pressure [kPa] on 0..120 and CO2 Loading [mmol/g] on 0..3.0. The legend identifies only CO2 series: filled red circles 303K, orange squares 313K, green upward triangles 323K, blue pentagons 333K, magenta diamonds 353K, and black stars 373K. No inset or mask is present. Independent native tick fitting corrected the frame top from the candidate's y=43 px (an outward tick extension) to the actual horizontal border y=60 px and recomputed every saved x/y value. Accepted x anchors were (173,0), (347,40), (521,80), (694.5,120); accepted y anchors were (512,0), (437,0.5), (362,1), (286,1.5), (211,2), (136,2.5), (60,3). All 184 Agent 03 rows and the complete review_tiles inventory were compared with panel.png. The false blue row at (277.51,244.08) was deleted because native pixels show green-band/triangle ink and no blue pentagon. Two red and two green trace rows embedded in resolved endpoint glyphs were deleted as duplicate or off-centre samples. The fused red estimate was moved to the native band centreline. Agent 03 low-pressure green detections at (189.99,431.34), (194.67,398.70), (200.09,387.05), (203.50,369.50), and (271.51,248.28) have same-series green ink but no separable triangle contour, so they remain at unchanged native coordinates only as low-confidence line_sample rows. The black endpoint claim at (282.08,421.98) likewise has continuous black stroke but no star arms and was converted to line_sample. The source legend visibly shows a multi-arm black star, contradicting the candidate raster classifier's diamond; every CO2 373K row therefore uses marker_shape=star. Dense native strips are represented without extrapolation: red x≈174..289 px has 31 line samples, one low-confidence estimated marker, and 14 direct circles overall; green x≈174.5..289.5 px has 36 line samples and 14 direct triangles overall; black x≈177..296 px has 15 line samples and 13 direct stars overall. Reloaded-CSV overlay inspection aligned direct glyphs to native markers and trace samples to same-series ink. Largest successive native gaps in those strips were 13.46, 12.20, and 12.50 px, respectively, approximately one local marker width. Because inferred trace rows, one estimated marker, and unresolved fused-origin/discrete-slot spans remain, the result requires review rather than acceptance.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0.0,
+   "printed_max": 120.0,
+   "data_min": 0.230105,
+   "data_max": 114.017258,
+   "result": "pass",
+   "reason": "Reloaded CSV coordinates reproject onto the native 0, 40, 80, and 120 kPa ticks with maximum anchor error 0.33 px; data remain inside the plotted frame."
+  },
+  "y": {
+   "printed_min": 0.0,
+   "printed_max": 3.0,
+   "data_min": 0.049779,
+   "data_max": 2.925996,
+   "result": "pass",
+   "reason": "Reloaded CSV coordinates reproject onto the native 0.0–3.0 mmol/g ticks at 0.5 intervals with maximum anchor error 0.67 px; the plotted extrema agree with the source."
+  }
+ },
+ "independent_read": {
+  "x_axis": "Pressure [kPa], linear; printed major ticks 0, 40, 80, 120; native plot border x≈173.0 to 694.5 px.",
+  "y_axis": "CO2 Loading [mmol/g], linear; printed major ticks 0.0 to 3.0 in 0.5 increments; native plot border y≈512.0 to 60.0 px.",
+  "series": [
+   {
+    "label": "CO2 303K",
+    "marker": "circle",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 14,
+    "notes": "Native legend and clear high-pressure glyphs show filled red circles. The low-pressure red series is a fused thick band, so 14 is the estimate of separable circles, not a target count."
+   },
+   {
+    "label": "CO2 313K",
+    "marker": "square",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 18,
+    "notes": "Native legend shows filled orange squares; low-pressure squares remain individually recognizable despite crowding."
+   },
+   {
+    "label": "CO2 323K",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 14,
+    "notes": "Native legend has an upward apex and flat base, confirming triangle_up. Most low-pressure green ink is a fused band without separable triangles."
+   },
+   {
+    "label": "CO2 333K",
+    "marker": "pentagon",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 19,
+    "notes": "Clear native blue glyphs have one top apex and a horizontal lower edge, supporting a filled pentagon rather than a hexagon."
+   },
+   {
+    "label": "CO2 353K",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 18,
+    "notes": "Native legend and plot show filled magenta diamonds; one high-pressure glyph is partly merged with a neighboring diamond but its centre remains supported."
+   },
+   {
+    "label": "CO2 373K",
+    "marker": "star",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 13,
+    "notes": "Native legend clearly shows a black multi-arm star. This overrides the earlier automated diamond measurement. The low-pressure black segment is continuous stroke without separable star arms."
+   }
+  ],
+  "visual_risks": [
+   "Red and green low-pressure markers merge into thick same-color bands.",
+   "All series overlap near the origin and partly coincide with the left/bottom axes.",
+   "The black low-pressure strip has no separable star contours.",
+   "A blue candidate at the green-band endpoint can be misassigned by color/overlap.",
+   "The legend occupies the lower-right plot area but contains no data markers to digitize."
+  ]
+ },
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 303K",
+   "coverage": "uncertain",
+   "final_count": 46,
+   "comment": "14 direct circles, 31 native-band line samples, and one low-confidence estimated fused marker. Continuous band x≈174..289 px is covered, but individual fused marker centres and the axis-overlapped origin remain unresolved."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "complete",
+   "final_count": 18,
+   "comment": "18 source-visible orange square centres; no inferred rows."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "uncertain",
+   "final_count": 50,
+   "comment": "14 direct upward triangles and 36 low-confidence line samples over the fused green band. Automated low-pressure marker claims without triangle contours were retained only as trace samples."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "complete",
+   "final_count": 19,
+   "comment": "19 source-visible blue pentagons. The false partial point on green ink was deleted."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "complete",
+   "final_count": 18,
+   "comment": "18 source-supported magenta diamonds, including one partially visible high-pressure centre."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "uncertain",
+   "final_count": 28,
+   "comment": "13 direct black stars and 15 low-confidence line samples across the continuous low-pressure stroke; the former endpoint marker claim was downgraded to trace evidence."
+  }
+ ],
+ "uncertainties": [
+  "The red estimated_marker at (205.56,264.00) px is wholly fused; uncertainty is 6 px (about 1.3806 kPa and 0.0398 mmol/g), and it is not an accepted direct observation.",
+  "Discrete marker multiplicity cannot be recovered inside the red, green, and black continuous low-pressure bands from native pixels; line_sample rows represent ink centreline only.",
+  "The common origin is overlapped by several series and the axes, so series-specific sampling cannot be extended all the way to (173,512) without fabrication.",
+  "Native raster antialiasing limits centre precision to roughly 0.5–1 px for clear glyphs and several pixels in crowded bands.",
+  "The source-supported black legend glyph is star; candidate black rows were style-corrected from diamond without changing series ownership or coordinates."
+ ],
+ "row_count": 179,
+ "calibration": {
+  "px_per_unit_x": 4.345833333333333,
+  "px_per_unit_y": 150.66666666666666,
+  "unit_per_px_x": 0.23010546500479387,
+  "unit_per_px_y": 0.00663716814159292,
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 0.23010546500479387,
+    "intercept": -39.80824544582934
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.00663716814159292,
+    "intercept": 3.398230088495575
+   }
+  },
+  "frame_px": [
+   173.0,
+   60.0,
+   694.5,
+   512.0
+  ],
+  "x_ticks_px": [
+   173.0,
+   347.0,
+   521.0,
+   694.5
+  ],
+  "y_ticks_px": [
+   60.0,
+   136.0,
+   211.0,
+   286.0,
+   362.0,
+   437.0,
+   512.0
+  ],
+  "tick_anchors": {
+   "x": [
+    {
+     "pixel": 173.0,
+     "value": 0,
+     "status": "accepted"
+    },
+    {
+     "pixel": 347.0,
+     "value": 40,
+     "status": "accepted"
+    },
+    {
+     "pixel": 521.0,
+     "value": 80,
+     "status": "accepted"
+    },
+    {
+     "pixel": 694.5,
+     "value": 120,
+     "status": "accepted"
+    }
+   ],
+   "y": [
+    {
+     "pixel": 512.0,
+     "value": 0,
+     "status": "accepted"
+    },
+    {
+     "pixel": 437.0,
+     "value": 0.5,
+     "status": "accepted"
+    },
+    {
+     "pixel": 362.0,
+     "value": 1,
+     "status": "accepted"
+    },
+    {
+     "pixel": 286.0,
+     "value": 1.5,
+     "status": "accepted"
+    },
+    {
+     "pixel": 211.0,
+     "value": 2,
+     "status": "accepted"
+    },
+    {
+     "pixel": 136.0,
+     "value": 2.5,
+     "status": "accepted"
+    },
+    {
+     "pixel": 60.0,
+     "value": 3,
+     "status": "accepted"
+    }
+   ]
+  },
+  "tick_fit_resid_x_px_rms": 0.1863389981249784,
+  "tick_fit_resid_x_px_max": 0.33333333333333837,
+  "tick_fit_resid_y_px_rms": 0.3984095364448085,
+  "tick_fit_resid_y_px_max": 0.6666666666666844,
+  "notes": "Native frame is the axis-line rectangle, not the outward top tick extensions. The former candidate frame top of 43 px was rejected because native horizontal plot border is centered at y=60 px."
+ },
+ "unresolved_slots": {
+  "total": 3,
+  "by_series": {
+   "CO2 303K": 1,
+   "CO2 313K": 0,
+   "CO2 323K": 1,
+   "CO2 333K": 0,
+   "CO2 353K": 0,
+   "CO2 373K": 1
+  },
+  "slots": [
+   {
+    "series_label": "CO2 303K",
+    "reason": "Native red ink from approximately (174,456) to (289,177) is fused, and the lower continuation into the multi-series/axis origin near x=173–180, y=456–512 cannot be assigned to individual circle centres. The strip is represented by trace samples plus one explicitly estimated marker."
+   },
+   {
+    "series_label": "CO2 323K",
+    "reason": "Native green ink from approximately (174.5,485) to (289.5,239.5) is a continuous band; low-pressure triangle contours and the shared origin are not individually separable. The visible endpoint triangle is retained and the rest is represented by trace samples."
+   },
+   {
+    "series_label": "CO2 373K",
+    "reason": "Native black ink from approximately (177,504.5) to (296,416.5) is an uninterrupted thick stroke with no separable star arms, including at the apparent endpoint. It is represented only by line samples until the first clear star near (318.14,397.16)."
+   }
+  ]
+ },
+ "changes": [
+  {
+   "action": "move",
+   "point_id": "pt-0797be4808da8fdb",
+   "reason": "Moved the estimated fused red marker from y=273.19 px to the local red-band centreline at y=264.00 px; x is unchanged.",
+   "source_evidence": "At native x=205–206 px the red-series colored ink spans approximately y=252–276 px with centre near y=264 px; the old y=273.19 px sat near the lower edge rather than the trajectory centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-cb9667c4e8c43ae5",
+   "reason": "Deleted a false CO2 333K partial-marker claim.",
+   "source_evidence": "Native pixels at (277.51,244.08) lie on the thick green CO2 323K band immediately before its upward-triangle endpoint; there is no blue pentagon ink or pentagon contour there. The nearest blue pentagon is centered near (289.10,271.85)."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-9e665e74519c59ac",
+   "reason": "Deleted a redundant red trace sample within the directly resolved endpoint circle.",
+   "source_evidence": "Native (288.00,175.00) is inside the red endpoint circle whose resolved centre is (289.41,177.09); retaining both would duplicate the same local source ink rather than extend trace coverage."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-607e19d962bb566d",
+   "reason": "Deleted an off-centre red trace sample at the upper edge of the directly resolved endpoint circle.",
+   "source_evidence": "Native (290.00,169.00) is the upper edge of the red endpoint glyph, not the band centreline; the visible-marker row at (289.41,177.09) and preceding trace at (280.50,182.00) cover the source."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-df15ccde186764d0",
+   "reason": "Deleted an off-centre green trace sample at the top edge of the directly resolved endpoint triangle.",
+   "source_evidence": "Native (289.50,231.00) lies on the apex edge of the green triangle centered near (289.50,239.50), not on a separate trace position."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-025eeff63e1dfbe7",
+   "reason": "Deleted a duplicate green trace sample coincident with the directly resolved endpoint triangle.",
+   "source_evidence": "Native (290.00,240.00) is effectively the same centre as the visible green triangle row at (289.50,239.50), so it is not a separate source instance or needed band sample."
+  }
+ ]
+}

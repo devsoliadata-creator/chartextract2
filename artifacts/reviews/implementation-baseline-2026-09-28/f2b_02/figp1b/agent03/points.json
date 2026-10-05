@@ -1,0 +1,3820 @@
+{
+ "calibration": {
+  "px_per_unit_x": 4.3450230149597235,
+  "px_per_unit_y": 150.50105091870634,
+  "unit_per_px_x": 0.23014837816900946,
+  "unit_per_px_y": 0.00664447187508447,
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 0.23014837816900946,
+    "intercept": -39.769321936265584
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.00664447187508447,
+    "intercept": 3.401268166542029
+   }
+  },
+  "tick_fit_resid_x": 0.1379830897883494,
+  "tick_fit_resid_y": 0.004278429005200035,
+  "tick_fit_resid_x_px": 0.599539700805632,
+  "tick_fit_resid_y_px": 0.6439080615636806,
+  "frame_px": [
+   173,
+   43,
+   694,
+   512
+  ],
+  "x_ticks_px": [
+   173,
+   346,
+   521,
+   694
+  ],
+  "y_ticks_px": [
+   60,
+   136,
+   211,
+   286,
+   362,
+   436,
+   512
+  ],
+  "tick_anchors": {
+   "x": [
+    {
+     "pixel_norm": 0.2376,
+     "value": 0.0
+    },
+    {
+     "pixel_norm": 0.4766,
+     "value": 40.0
+    },
+    {
+     "pixel_norm": 0.7157,
+     "value": 80.0
+    },
+    {
+     "pixel_norm": 0.9533,
+     "value": 120.0
+    }
+   ],
+   "y": [
+    {
+     "pixel_norm": 0.7793,
+     "value": 0.0
+    },
+    {
+     "pixel_norm": 0.6651,
+     "value": 0.5
+    },
+    {
+     "pixel_norm": 0.5495,
+     "value": 1.0
+    },
+    {
+     "pixel_norm": 0.4353,
+     "value": 1.5
+    },
+    {
+     "pixel_norm": 0.3212,
+     "value": 2.0
+    },
+    {
+     "pixel_norm": 0.2055,
+     "value": 2.5
+    },
+    {
+     "pixel_norm": 0.0913,
+     "value": 3.0
+    }
+   ]
+  },
+  "color_tolerance_lab": 33.70121383666992,
+  "color_tolerance_per_series": [
+   33.70121383666992,
+   33.70121383666992,
+   33.70121383666992,
+   37.82523422241211,
+   33.70121383666992,
+   33.70121383666992
+  ],
+  "base_color_passes": 3,
+  "complex_region_passes": 3,
+  "complex_region_count": 1,
+  "complex_regions_accepted": [
+   {
+    "bbox_px": [
+     173.0,
+     216.81,
+     302.12,
+     512.0
+    ],
+    "data_x": [
+     0.046347486973054686,
+     29.76310607615555
+    ],
+    "bbox_norm": [
+     0.232,
+     0.33,
+     0.415,
+     0.785
+    ],
+    "kind": "thick_connecting_lines",
+    "python_passes": 3
+   }
+  ],
+  "complex_regions_rejected": [],
+  "legend_reader": "rows_by_declared_color",
+  "sample_colors": [],
+  "legend_markers": [
+   {
+    "label": "CO2 303K",
+    "legend_box_px": [
+     449,
+     414,
+     473,
+     439
+    ],
+    "shape": "circle",
+    "fill": "filled",
+    "color_hex": "#f21f26",
+    "fill_hex": "#ea2326",
+    "edge_hex": "#d42129",
+    "polygon": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.924,
+      0.383
+     ],
+     [
+      0.707,
+      0.707
+     ],
+     [
+      0.383,
+      0.924
+     ],
+     [
+      0.0,
+      1.0
+     ],
+     [
+      -0.383,
+      0.924
+     ],
+     [
+      -0.707,
+      0.707
+     ],
+     [
+      -0.924,
+      0.383
+     ],
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      -0.924,
+      -0.383
+     ],
+     [
+      -0.707,
+      -0.707
+     ],
+     [
+      -0.383,
+      -0.924
+     ],
+     [
+      -0.0,
+      -1.0
+     ],
+     [
+      0.383,
+      -0.924
+     ],
+     [
+      0.707,
+      -0.707
+     ],
+     [
+      0.924,
+      -0.383
+     ]
+    ],
+    "size_px": 5.15,
+    "vertices": 5,
+    "source": "raster",
+    "confidence": 0.49
+   },
+   {
+    "label": "CO2 313K",
+    "legend_box_px": [
+     572,
+     414,
+     596,
+     439
+    ],
+    "shape": "square",
+    "fill": "filled",
+    "color_hex": "#f5ab1e",
+    "fill_hex": "#f2a924",
+    "edge_hex": "#e99e2a",
+    "polygon": [
+     [
+      -0.721,
+      -0.911
+     ],
+     [
+      -0.89,
+      -0.743
+     ],
+     [
+      -0.89,
+      0.743
+     ],
+     [
+      -0.721,
+      0.911
+     ],
+     [
+      0.765,
+      0.911
+     ],
+     [
+      0.933,
+      0.575
+     ],
+     [
+      0.765,
+      -0.911
+     ]
+    ],
+    "size_px": 5.94,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.6
+   },
+   {
+    "label": "CO2 323K",
+    "legend_box_px": [
+     448,
+     439,
+     474,
+     463
+    ],
+    "shape": "pentagon",
+    "fill": "filled",
+    "color_hex": "#248d43",
+    "fill_hex": "#278942",
+    "edge_hex": "#668e70",
+    "polygon": [
+     [
+      -0.428,
+      -1.506
+     ],
+     [
+      -1.501,
+      0.334
+     ],
+     [
+      -0.606,
+      -0.458
+     ],
+     [
+      -0.581,
+      0.564
+     ],
+     [
+      -1.501,
+      0.769
+     ],
+     [
+      1.387,
+      0.922
+     ],
+     [
+      1.54,
+      0.487
+     ],
+     [
+      0.62,
+      0.564
+     ],
+     [
+      0.467,
+      -0.381
+     ],
+     [
+      1.233,
+      -0.075
+     ],
+     [
+      0.467,
+      -1.301
+     ],
+     [
+      -0.376,
+      -0.739
+     ]
+    ],
+    "size_px": 6.52,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.33
+   },
+   {
+    "label": "CO2 333K",
+    "legend_box_px": [
+     557,
+     380,
+     591,
+     412
+    ],
+    "shape": "circle",
+    "fill": "open",
+    "color_hex": "#3a3691",
+    "fill_hex": null,
+    "edge_hex": "#8287ba",
+    "polygon": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.924,
+      0.383
+     ],
+     [
+      0.707,
+      0.707
+     ],
+     [
+      0.383,
+      0.924
+     ],
+     [
+      0.0,
+      1.0
+     ],
+     [
+      -0.383,
+      0.924
+     ],
+     [
+      -0.707,
+      0.707
+     ],
+     [
+      -0.924,
+      0.383
+     ],
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      -0.924,
+      -0.383
+     ],
+     [
+      -0.707,
+      -0.707
+     ],
+     [
+      -0.383,
+      -0.924
+     ],
+     [
+      -0.0,
+      -1.0
+     ],
+     [
+      0.383,
+      -0.924
+     ],
+     [
+      0.707,
+      -0.707
+     ],
+     [
+      0.924,
+      -0.383
+     ]
+    ],
+    "size_px": 9.56,
+    "vertices": 7,
+    "source": "raster",
+    "confidence": 0.5
+   },
+   {
+    "label": "CO2 353K",
+    "legend_box_px": [
+     451,
+     466,
+     471,
+     495
+    ],
+    "shape": "hexagon",
+    "fill": "filled",
+    "color_hex": "#d13ea1",
+    "fill_hex": "#cc3c9d",
+    "edge_hex": "#b2348c",
+    "polygon": [
+     [
+      -0.218,
+      -1.418
+     ],
+     [
+      -0.735,
+      -0.642
+     ],
+     [
+      -0.735,
+      0.867
+     ],
+     [
+      -0.002,
+      1.384
+     ],
+     [
+      0.774,
+      0.608
+     ],
+     [
+      0.774,
+      -0.642
+     ],
+     [
+      0.429,
+      -1.159
+     ]
+    ],
+    "size_px": 3.87,
+    "vertices": 6,
+    "source": "raster",
+    "confidence": 0.36
+   },
+   {
+    "label": "CO2 373K",
+    "legend_box_px": [
+     573,
+     469,
+     596,
+     492
+    ],
+    "shape": "diamond",
+    "fill": "filled",
+    "color_hex": "#060707",
+    "fill_hex": "#0a0a0a",
+    "edge_hex": "#727272",
+    "polygon": [
+     [
+      -0.176,
+      -1.203
+     ],
+     [
+      -1.291,
+      0.045
+     ],
+     [
+      -0.574,
+      0.523
+     ],
+     [
+      -0.176,
+      1.161
+     ],
+     [
+      0.276,
+      1.161
+     ],
+     [
+      0.276,
+      0.922
+     ],
+     [
+      1.232,
+      0.205
+     ],
+     [
+      1.232,
+      -0.088
+     ],
+     [
+      0.515,
+      -0.566
+     ],
+     [
+      0.116,
+      -1.203
+     ]
+    ],
+    "size_px": 6.27,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.91
+   }
+  ],
+  "twins_split_by_lines": 0,
+  "line_split_enabled": false,
+  "series_gate": [],
+  "color_ambiguity_groups": [],
+  "series_assignment_audit": {
+   "groups": [],
+   "candidates": []
+  },
+  "series_assignment_margin": 0.12,
+  "reclaimed_points": 0,
+  "dense_circle_detector": {
+   "regions": [],
+   "native_supported_additions": 0,
+   "unresolved_fused_regions": 0
+  },
+  "dense_region_resolver": {
+   "roi_px": [
+    [
+     277.08,
+     216.81,
+     302.12,
+     512.0
+    ],
+    [
+     173.0,
+     43.0,
+     277.08,
+     512.0
+    ]
+   ],
+   "low_pressure_strip_px": [
+    173.0,
+    43.0,
+    277.08,
+    512.0
+   ],
+   "columns": 6,
+   "native_supported_additions": 6
+  },
+  "global_spatial_ownership": {
+   "enabled": true,
+   "branches": "adsorption_only",
+   "multi_series": true,
+   "all_filled": true,
+   "ambiguity_group_count": 0,
+   "crowded_region_count": 1,
+   "reason": "adsorption_only_multi_series_filled_crowded",
+   "distance_fraction": 0.8,
+   "confidence_margin": 0.08,
+   "candidate_count": 119,
+   "overlap_components": 0,
+   "deduplicated": 0,
+   "unresolved": 0,
+   "components": [],
+   "global_twin_pool": true,
+   "joint_assignment_candidate_source": "globally_settled_candidates",
+   "rescore_single_source": false,
+   "expected_count_pruning": {
+    "enabled": true,
+    "tolerance_fraction": 0.15,
+    "minimum_tolerance": 2,
+    "series": [],
+    "removed": 0
+   }
+  },
+  "template_fill": {
+   "template_fit": 2,
+   "template_fill": 10,
+   "slots": [
+    {
+     "series_label": "CO2 303K",
+     "series_index": 0,
+     "column_index": 0,
+     "column_px": 179.89,
+     "predicted_y_px": 224.17,
+     "state": "template_fill",
+     "reason": "one_sided_search_outside_native_anchor_span",
+     "region_index": 1,
+     "rival_coverage": 0.34,
+     "template_px": [
+      179.89,
+      224.17
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 313K",
+     "series_index": 1,
+     "column_index": 0,
+     "column_px": 179.89,
+     "predicted_y_px": 354.21,
+     "state": "template_fill",
+     "trajectory_mode": "one_sided_native_search",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.39,
+     "template_px": [
+      179.89,
+      354.21
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 323K",
+     "series_index": 2,
+     "column_index": 0,
+     "column_px": 179.89,
+     "predicted_y_px": 466.56,
+     "state": "template_fill",
+     "trajectory_mode": "one_sided_native_search",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.33,
+     "template_px": [
+      179.89,
+      466.56
+     ],
+     "template_coverage": 0.46
+    },
+    {
+     "series_label": "CO2 303K",
+     "series_index": 0,
+     "column_index": 1,
+     "column_px": 189.33,
+     "predicted_y_px": 220.11,
+     "state": "template_fill",
+     "reason": "one_sided_search_outside_native_anchor_span",
+     "region_index": 1,
+     "rival_coverage": 0.0,
+     "template_px": [
+      189.33,
+      220.11
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 313K",
+     "series_index": 1,
+     "column_index": 1,
+     "column_px": 189.33,
+     "predicted_y_px": 335.35,
+     "state": "template_fill",
+     "trajectory_mode": "one_sided_native_search",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.24,
+     "template_px": [
+      189.33,
+      335.35
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 323K",
+     "series_index": 2,
+     "column_index": 1,
+     "column_px": 189.33,
+     "predicted_y_px": 430.09,
+     "state": "template_fit",
+     "trajectory_mode": "interpolated_native_anchors",
+     "reason": "line_like_residual_not_marker",
+     "region_index": 1,
+     "rival_coverage": 0.07,
+     "template_px": [
+      190,
+      428
+     ],
+     "template_coverage": 0.71
+    },
+    {
+     "series_label": "CO2 303K",
+     "series_index": 0,
+     "column_index": 2,
+     "column_px": 204.51,
+     "predicted_y_px": 213.58,
+     "state": "template_fill",
+     "reason": "one_sided_search_outside_native_anchor_span",
+     "region_index": 1,
+     "rival_coverage": 0.0,
+     "template_px": [
+      204.51,
+      213.58
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 323K",
+     "series_index": 2,
+     "column_index": 2,
+     "column_px": 204.51,
+     "predicted_y_px": 377.75,
+     "state": "template_fit",
+     "trajectory_mode": "interpolated_native_anchors",
+     "reason": "line_like_residual_not_marker",
+     "region_index": 1,
+     "rival_coverage": 0.11,
+     "template_px": [
+      204,
+      373
+     ],
+     "template_coverage": 0.59
+    },
+    {
+     "series_label": "CO2 303K",
+     "series_index": 0,
+     "column_index": 3,
+     "column_px": 231.27,
+     "predicted_y_px": 202.06,
+     "state": "template_fill",
+     "reason": "one_sided_search_outside_native_anchor_span",
+     "region_index": 1,
+     "rival_coverage": 0.0,
+     "template_px": [
+      231.27,
+      202.06
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 323K",
+     "series_index": 2,
+     "column_index": 3,
+     "column_px": 231.27,
+     "predicted_y_px": 334.72,
+     "state": "template_fill",
+     "trajectory_mode": "interpolated_native_anchors",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.34,
+     "template_px": [
+      231.27,
+      334.72
+     ],
+     "template_coverage": 0.15
+    },
+    {
+     "series_label": "CO2 303K",
+     "series_index": 0,
+     "column_index": 4,
+     "column_px": 258.51,
+     "predicted_y_px": 190.34,
+     "state": "template_fill",
+     "trajectory_mode": "one_sided_native_search",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.05,
+     "template_px": [
+      258.51,
+      190.34
+     ],
+     "template_coverage": 0.0
+    },
+    {
+     "series_label": "CO2 323K",
+     "series_index": 2,
+     "column_index": 4,
+     "column_px": 258.51,
+     "predicted_y_px": 290.92,
+     "state": "template_fill",
+     "trajectory_mode": "interpolated_native_anchors",
+     "reason": "no_native_marker_core_after_line_suppression",
+     "region_index": 1,
+     "rival_coverage": 0.39,
+     "template_px": [
+      258.51,
+      290.92
+     ],
+     "template_coverage": 0.07
+    }
+   ]
+  },
+  "region_strategies": [],
+  "x_grid_columns": 0,
+  "x_grid_supported_columns": 0,
+  "exact_duplicates_dropped": {
+   "CO2 303K": 0,
+   "CO2 313K": 0,
+   "CO2 323K": 0,
+   "CO2 333K": 0,
+   "CO2 353K": 0,
+   "CO2 373K": 0
+  },
+  "dense_band_sampling": {
+   "samples": 55,
+   "bands": [
+    {
+     "band_id": "region-1:CO2 303K:1",
+     "series_label": "CO2 303K",
+     "bbox_px": [
+      174,
+      217,
+      244,
+      456
+     ],
+     "native_ink_pixels": 3321,
+     "sample_count": 26,
+     "marker_radius_px": 5.0
+    },
+    {
+     "band_id": "region-1:CO2 323K:1",
+     "series_label": "CO2 323K",
+     "bbox_px": [
+      174,
+      231,
+      298,
+      486
+     ],
+     "native_ink_pixels": 3564,
+     "sample_count": 29,
+     "marker_radius_px": 5.0
+    }
+   ],
+   "method": "native HSV component cross-section medians at marker-width arc spacing",
+   "staged_line_samples": 55
+  }
+ },
+ "series": [
+  {
+   "label": "CO2 303K",
+   "n_points": 40,
+   "marker_radius_px": 5.0,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    132.5,
+    202.0,
+    180.5
+   ],
+   "marker_glyph": {
+    "shape": "circle",
+    "fill": "filled",
+    "color_hex": "#f21f26",
+    "fill_hex": "#ea2326",
+    "edge_hex": "#d42129",
+    "polygon": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.924,
+      0.383
+     ],
+     [
+      0.707,
+      0.707
+     ],
+     [
+      0.383,
+      0.924
+     ],
+     [
+      0.0,
+      1.0
+     ],
+     [
+      -0.383,
+      0.924
+     ],
+     [
+      -0.707,
+      0.707
+     ],
+     [
+      -0.924,
+      0.383
+     ],
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      -0.924,
+      -0.383
+     ],
+     [
+      -0.707,
+      -0.707
+     ],
+     [
+      -0.383,
+      -0.924
+     ],
+     [
+      -0.0,
+      -1.0
+     ],
+     [
+      0.383,
+      -0.924
+     ],
+     [
+      0.707,
+      -0.707
+     ],
+     [
+      0.924,
+      -0.383
+     ]
+    ],
+    "size_px": 5.15,
+    "vertices": 5,
+    "source": "raster",
+    "confidence": 0.49
+   },
+   "color_twins": [],
+   "x_min": 0.3916,
+   "x_max": 113.7535,
+   "y_min": 0.378,
+   "y_max": 2.928,
+   "points": [
+    {
+     "x": 0.3916,
+     "y": 0.378,
+     "px": [
+      174.5,
+      455.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (174.50, 455.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 1.5,
+     "point_id": "pt-08990cfb56257df8",
+     "source_instance_id": "src-b5c075fe4dc7efc0"
+    },
+    {
+     "x": 0.7368,
+     "y": 0.4445,
+     "px": [
+      176.0,
+      445.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (176.00, 445.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 2.5,
+     "point_id": "pt-152e633a808a08fa",
+     "source_instance_id": "src-af07a0db86ed97b3"
+    },
+    {
+     "x": 0.9669,
+     "y": 0.5109,
+     "px": [
+      177.0,
+      435.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (177.00, 435.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 3.5,
+     "point_id": "pt-6aca59c1859b1154",
+     "source_instance_id": "src-b974f9d28093f2fe"
+    },
+    {
+     "x": 1.1971,
+     "y": 0.5774,
+     "px": [
+      178.0,
+      425.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (178.00, 425.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 4.5,
+     "point_id": "pt-51a836984c465008",
+     "source_instance_id": "src-5c39a9fbdca85a89"
+    },
+    {
+     "x": 1.1971,
+     "y": 0.7767,
+     "px": [
+      178.0,
+      395.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (178.00, 395.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 2.5,
+     "point_id": "pt-db9119842e80f7c4",
+     "source_instance_id": "src-64f815025660efd3"
+    },
+    {
+     "x": 1.5423,
+     "y": 0.6438,
+     "px": [
+      179.5,
+      415.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (179.50, 415.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 6.0,
+     "point_id": "pt-f3901a970307df08",
+     "source_instance_id": "src-5a40b6c909e25ae8"
+    },
+    {
+     "x": 1.8875,
+     "y": 0.7103,
+     "px": [
+      181.0,
+      405.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (181.00, 405.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 6.5,
+     "point_id": "pt-b4d27ebc2f490cba",
+     "source_instance_id": "src-ba18a7ba60ef3836"
+    },
+    {
+     "x": 1.8875,
+     "y": 0.8431,
+     "px": [
+      181.0,
+      385.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (181.00, 385.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 6.5,
+     "point_id": "pt-876a4856f5c44b79",
+     "source_instance_id": "src-2994432849f2f605"
+    },
+    {
+     "x": 2.578,
+     "y": 0.9096,
+     "px": [
+      184.0,
+      375.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (184.00, 375.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-13473dad4ae38dec",
+     "source_instance_id": "src-c496b8c05e541ff9"
+    },
+    {
+     "x": 2.9232,
+     "y": 0.976,
+     "px": [
+      185.5,
+      365.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (185.50, 365.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-5a54e83e4dd4adee",
+     "source_instance_id": "src-fd485728eb93b289"
+    },
+    {
+     "x": 3.1534,
+     "y": 1.0425,
+     "px": [
+      186.5,
+      355.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (186.50, 355.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-c6e5929a39a64903",
+     "source_instance_id": "src-aefe9b873ee04ca1"
+    },
+    {
+     "x": 3.3835,
+     "y": 1.1089,
+     "px": [
+      187.5,
+      345.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (187.50, 345.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-5e1d472bdb83f6ed",
+     "source_instance_id": "src-a2a9d35955a5e8c7"
+    },
+    {
+     "x": 3.8438,
+     "y": 1.1754,
+     "px": [
+      189.5,
+      335.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (189.50, 335.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-79ebbd71e41da25c",
+     "source_instance_id": "src-bee9da109838796a"
+    },
+    {
+     "x": 4.189,
+     "y": 1.2418,
+     "px": [
+      191.0,
+      325.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (191.00, 325.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-cf218f45215c05ed",
+     "source_instance_id": "src-5f17a44a23ab2a29"
+    },
+    {
+     "x": 4.4192,
+     "y": 1.3083,
+     "px": [
+      192.0,
+      315.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (192.00, 315.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 7.5,
+     "point_id": "pt-2f0e358ceeab1c97",
+     "source_instance_id": "src-7b9383ac97f6359e"
+    },
+    {
+     "x": 4.4192,
+     "y": 1.3747,
+     "px": [
+      192.0,
+      305.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (192.00, 305.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 6.5,
+     "point_id": "pt-506b2c359159fb6b",
+     "source_instance_id": "src-d5869ea69ade39b4"
+    },
+    {
+     "x": 5.4548,
+     "y": 1.4345,
+     "px": [
+      196.5,
+      296.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (196.50, 296.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-43cb1ae286999e9e",
+     "source_instance_id": "src-2ec8678768265208"
+    },
+    {
+     "x": 5.9151,
+     "y": 1.5009,
+     "px": [
+      198.5,
+      286.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (198.50, 286.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-f7fdd8d78bbf5db4",
+     "source_instance_id": "src-c1e96df4568c1d5d"
+    },
+    {
+     "x": 6.4905,
+     "y": 1.5674,
+     "px": [
+      201.0,
+      276.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (201.00, 276.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-e10dc8b8ae448461",
+     "source_instance_id": "src-ab2ef2a6ee9e36ee"
+    },
+    {
+     "x": 7.1809,
+     "y": 1.6338,
+     "px": [
+      204.0,
+      266.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (204.00, 266.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-653f3e9499bf48cd",
+     "source_instance_id": "src-6b21fd44e1e59d8b"
+    },
+    {
+     "x": 8.1015,
+     "y": 1.7003,
+     "px": [
+      208.0,
+      256.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (208.00, 256.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-4764c18cc76a9401",
+     "source_instance_id": "src-5e0f59cc74ea6402"
+    },
+    {
+     "x": 9.1372,
+     "y": 1.7601,
+     "px": [
+      212.5,
+      247.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (212.50, 247.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-8df74483917ce1d1",
+     "source_instance_id": "src-0cc3a4231af96e67"
+    },
+    {
+     "x": 10.1729,
+     "y": 1.8265,
+     "px": [
+      217.0,
+      237.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (217.00, 237.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-ba17540c1ab71578",
+     "source_instance_id": "src-e6dae53c96c9b291"
+    },
+    {
+     "x": 11.5538,
+     "y": 1.8797,
+     "px": [
+      223.0,
+      229.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (223.00, 229.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-f32a8b29785f5d7b",
+     "source_instance_id": "src-f8764b67e52ec0f3"
+    },
+    {
+     "x": 13.0497,
+     "y": 1.9328,
+     "px": [
+      229.5,
+      221.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (229.50, 221.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 10.0,
+     "point_id": "pt-5bd9ed5955cd06d7",
+     "source_instance_id": "src-806112d39c5a6e42"
+    },
+    {
+     "x": 13.8553,
+     "y": 1.9594,
+     "px": [
+      233.0,
+      217.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 303K continuous-band ink at (233.00, 217.00) px; region-1:CO2 303K:1",
+     "uncertainty_px": 10.5,
+     "point_id": "pt-d91a7120461f7e6b",
+     "source_instance_id": "src-20fd37cf6205f2a7"
+    },
+    {
+     "x": 26.8586,
+     "y": 2.2252,
+     "px": [
+      289.5,
+      177.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-6ba66b6c35731060",
+     "source_instance_id": "src-64e24b5a23ef15c9"
+    },
+    {
+     "x": 33.2061,
+     "y": 2.3041,
+     "px": [
+      317.08,
+      165.13
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-8889e76b34693c60",
+     "source_instance_id": "src-f512b2b063523ccd"
+    },
+    {
+     "x": 40.007,
+     "y": 2.3838,
+     "px": [
+      346.63,
+      153.13
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-5305555cb0690f79",
+     "source_instance_id": "src-663f6514ebfc3ec6"
+    },
+    {
+     "x": 46.7734,
+     "y": 2.4492,
+     "px": [
+      376.03,
+      143.28
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-b0e4b8ed0b43ddc8",
+     "source_instance_id": "src-51067e723417001e"
+    },
+    {
+     "x": 53.427,
+     "y": 2.5111,
+     "px": [
+      404.94,
+      133.97
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d9702aa2cbeab9fd",
+     "source_instance_id": "src-a7c5dc391b89c643"
+    },
+    {
+     "x": 60.0552,
+     "y": 2.5674,
+     "px": [
+      433.74,
+      125.5
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7b4cde6b2fc07f6c",
+     "source_instance_id": "src-6d767d249ceb3f88"
+    },
+    {
+     "x": 66.7733,
+     "y": 2.6203,
+     "px": [
+      462.93,
+      117.53
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-03556fbdfdf8bf47",
+     "source_instance_id": "src-8305bfd18e49bbb0"
+    },
+    {
+     "x": 73.3923,
+     "y": 2.6726,
+     "px": [
+      491.69,
+      109.66
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-898a9d382c83b987",
+     "source_instance_id": "src-03adae58a720ec5d"
+    },
+    {
+     "x": 80.0436,
+     "y": 2.7195,
+     "px": [
+      520.59,
+      102.61
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-9633804bf4177c84",
+     "source_instance_id": "src-cc23ae0af0ae8e82"
+    },
+    {
+     "x": 86.6305,
+     "y": 2.7645,
+     "px": [
+      549.21,
+      95.84
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-8c369c35477b9a53",
+     "source_instance_id": "src-c8d5b8351fa784e8"
+    },
+    {
+     "x": 93.4728,
+     "y": 2.8101,
+     "px": [
+      578.94,
+      88.97
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e331cc12595325ee",
+     "source_instance_id": "src-412bde8bf7e7139e"
+    },
+    {
+     "x": 101.2472,
+     "y": 2.864,
+     "px": [
+      612.72,
+      80.86
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-50e22c14a338be88",
+     "source_instance_id": "src-9e44ccaf4a9c8a6a"
+    },
+    {
+     "x": 106.918,
+     "y": 2.8913,
+     "px": [
+      637.36,
+      76.75
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-2e12088d8d3c19e7",
+     "source_instance_id": "src-1437c74267a0fab1"
+    },
+    {
+     "x": 113.7535,
+     "y": 2.928,
+     "px": [
+      667.06,
+      71.23
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-69f4543fc366c116",
+     "source_instance_id": "src-8ad124782bf3c58d"
+    }
+   ],
+   "series_id": "figp1b:b:co2-303k-bc2a4dd1"
+  },
+  {
+   "label": "CO2 313K",
+   "n_points": 18,
+   "marker_radius_px": 6.0,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    191.5,
+    145.0,
+    202.0
+   ],
+   "marker_glyph": {
+    "shape": "square",
+    "fill": "filled",
+    "color_hex": "#f5ab1e",
+    "fill_hex": "#f2a924",
+    "edge_hex": "#e99e2a",
+    "polygon": [
+     [
+      -0.721,
+      -0.911
+     ],
+     [
+      -0.89,
+      -0.743
+     ],
+     [
+      -0.89,
+      0.743
+     ],
+     [
+      -0.721,
+      0.911
+     ],
+     [
+      0.765,
+      0.911
+     ],
+     [
+      0.933,
+      0.575
+     ],
+     [
+      0.765,
+      -0.911
+     ]
+    ],
+    "size_px": 5.94,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.6
+   },
+   "color_twins": [],
+   "x_min": 2.8081,
+   "x_max": 113.8869,
+   "y_min": 0.7966,
+   "y_max": 2.652,
+   "points": [
+    {
+     "x": 2.8081,
+     "y": 0.7966,
+     "px": [
+      185.0,
+      392.0
+     ],
+     "confidence": 0.7,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-715858732cfdc85f",
+     "source_instance_id": "src-31894bdbede08c60"
+    },
+    {
+     "x": 7.4111,
+     "y": 1.3813,
+     "px": [
+      205.0,
+      304.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e3facab76b8c9980",
+     "source_instance_id": "src-e6c01f14a17570a5"
+    },
+    {
+     "x": 13.6251,
+     "y": 1.7402,
+     "px": [
+      232.0,
+      250.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-1cb78605ae4366c1",
+     "source_instance_id": "src-684b4aebe2b55f1b"
+    },
+    {
+     "x": 19.8391,
+     "y": 1.9196,
+     "px": [
+      259.0,
+      223.0
+     ],
+     "confidence": 0.7,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-15b02882bb4625db",
+     "source_instance_id": "src-5f12a2a7a4d2028c"
+    },
+    {
+     "x": 27.0888,
+     "y": 2.0491,
+     "px": [
+      290.5,
+      203.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-9004118495654736",
+     "source_instance_id": "src-683a2082bcc048e7"
+    },
+    {
+     "x": 32.9576,
+     "y": 2.1289,
+     "px": [
+      316.0,
+      191.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-9993f9ed10c3fe32",
+     "source_instance_id": "src-79450fcbd9b7e7c9"
+    },
+    {
+     "x": 40.2072,
+     "y": 2.1986,
+     "px": [
+      347.5,
+      181.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-15fb2bfffbac97e4",
+     "source_instance_id": "src-a56d907afd80b315"
+    },
+    {
+     "x": 46.6192,
+     "y": 2.2538,
+     "px": [
+      375.36,
+      172.7
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-9cf950feb1c837bf",
+     "source_instance_id": "src-7102375c23c40127"
+    },
+    {
+     "x": 53.2935,
+     "y": 2.3096,
+     "px": [
+      404.36,
+      164.3
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-8ddffaafc589321c",
+     "source_instance_id": "src-8937b7858a2f7b08"
+    },
+    {
+     "x": 59.9678,
+     "y": 2.3561,
+     "px": [
+      433.36,
+      157.3
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-69787c22d87efbc6",
+     "source_instance_id": "src-7569ccafc7fcb19b"
+    },
+    {
+     "x": 66.6743,
+     "y": 2.4013,
+     "px": [
+      462.5,
+      150.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-f08daf2822506913",
+     "source_instance_id": "src-1c3ae334f34a1970"
+    },
+    {
+     "x": 73.4637,
+     "y": 2.4378,
+     "px": [
+      492.0,
+      145.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-b4d4f56296fdbf71",
+     "source_instance_id": "src-7e82bb04cb0a745e"
+    },
+    {
+     "x": 80.1127,
+     "y": 2.4785,
+     "px": [
+      520.89,
+      138.88
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-1dd18ea873d511d7",
+     "source_instance_id": "src-716da500e7be7733"
+    },
+    {
+     "x": 86.6972,
+     "y": 2.5176,
+     "px": [
+      549.5,
+      133.0
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-6c80160813a14668",
+     "source_instance_id": "src-9735e133fb84fe70"
+    },
+    {
+     "x": 93.3715,
+     "y": 2.5541,
+     "px": [
+      578.5,
+      127.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-3497012731e46fed",
+     "source_instance_id": "src-4c586c44e1bb02dd"
+    },
+    {
+     "x": 101.3485,
+     "y": 2.5964,
+     "px": [
+      613.16,
+      121.14
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-ceecf317d2042ac8",
+     "source_instance_id": "src-c3806209092571c2"
+    },
+    {
+     "x": 106.8352,
+     "y": 2.6205,
+     "px": [
+      637.0,
+      117.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-32d385c7c5475843",
+     "source_instance_id": "src-1b8c336c35faedc1"
+    },
+    {
+     "x": 113.8869,
+     "y": 2.652,
+     "px": [
+      667.64,
+      112.76
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d7f5666632ca8821",
+     "source_instance_id": "src-697790555575f1d4"
+    }
+   ],
+   "series_id": "figp1b:b:co2-313k-21d87380"
+  },
+  {
+   "label": "CO2 323K",
+   "n_points": 50,
+   "marker_radius_px": 5.0,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    131.5,
+    82.5,
+    159.0
+   ],
+   "marker_glyph": {
+    "shape": "pentagon",
+    "fill": "filled",
+    "color_hex": "#248d43",
+    "fill_hex": "#278942",
+    "edge_hex": "#668e70",
+    "polygon": [
+     [
+      -0.428,
+      -1.506
+     ],
+     [
+      -1.501,
+      0.334
+     ],
+     [
+      -0.606,
+      -0.458
+     ],
+     [
+      -0.581,
+      0.564
+     ],
+     [
+      -1.501,
+      0.769
+     ],
+     [
+      1.387,
+      0.922
+     ],
+     [
+      1.54,
+      0.487
+     ],
+     [
+      0.62,
+      0.564
+     ],
+     [
+      0.467,
+      -0.381
+     ],
+     [
+      1.233,
+      -0.075
+     ],
+     [
+      0.467,
+      -1.301
+     ],
+     [
+      -0.376,
+      -0.739
+     ]
+    ],
+    "size_px": 6.52,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.33
+   },
+   "color_twins": [],
+   "x_min": 0.3916,
+   "x_max": 114.1171,
+   "y_min": 0.1787,
+   "y_max": 2.3953,
+   "points": [
+    {
+     "x": 0.3916,
+     "y": 0.1787,
+     "px": [
+      174.5,
+      485.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (174.50, 485.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 1.5,
+     "point_id": "pt-0af1cb668055c4e7",
+     "source_instance_id": "src-706c6ea77e98f81e"
+    },
+    {
+     "x": 1.3122,
+     "y": 0.3049,
+     "px": [
+      178.5,
+      466.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (178.50, 466.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 2.0,
+     "point_id": "pt-48c77c8d94a8927e",
+     "source_instance_id": "src-51c2aad7d0f50264"
+    },
+    {
+     "x": 1.7725,
+     "y": 0.2385,
+     "px": [
+      180.5,
+      476.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (180.50, 476.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 6.0,
+     "point_id": "pt-15f9f9c04222a1dd",
+     "source_instance_id": "src-8d0c167f3dcbc1de"
+    },
+    {
+     "x": 1.8875,
+     "y": 0.3714,
+     "px": [
+      181.0,
+      456.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (181.00, 456.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.5,
+     "point_id": "pt-b2bc2dbbc6481623",
+     "source_instance_id": "src-a214f284d57aa056"
+    },
+    {
+     "x": 3.0912,
+     "y": 0.4582,
+     "px": [
+      186.23,
+      442.93
+     ],
+     "confidence": 0.79,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c01bf5323eb2469c",
+     "source_instance_id": "src-306e708bd8ded4f5"
+    },
+    {
+     "x": 3.2684,
+     "y": 0.4245,
+     "px": [
+      187.0,
+      448.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (187.00, 448.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 6.5,
+     "point_id": "pt-89892bf19ea36a67",
+     "source_instance_id": "src-3d00e0e2bbbbad69"
+    },
+    {
+     "x": 3.563,
+     "y": 0.5091,
+     "px": [
+      188.28,
+      435.28
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-da7d13e82ef6fb3a",
+     "source_instance_id": "src-1cd723211bd92f23"
+    },
+    {
+     "x": 3.6136,
+     "y": 0.491,
+     "px": [
+      188.5,
+      438.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (188.50, 438.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.0,
+     "point_id": "pt-06a32a99cb4d1cd0",
+     "source_instance_id": "src-b06b86ad4292a531"
+    },
+    {
+     "x": 3.9589,
+     "y": 0.6239,
+     "px": [
+      190.0,
+      418.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (190.00, 418.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 4.5,
+     "point_id": "pt-475a575cd58623ce",
+     "source_instance_id": "src-9ae67056bd5a207d"
+    },
+    {
+     "x": 4.1177,
+     "y": 0.5883,
+     "px": [
+      190.69,
+      423.35
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-4c5cc74756866f6b",
+     "source_instance_id": "src-0cde72ef429c1015"
+    },
+    {
+     "x": 4.189,
+     "y": 0.5574,
+     "px": [
+      191.0,
+      428.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (191.00, 428.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.5,
+     "point_id": "pt-24c9169f713ba3cb",
+     "source_instance_id": "src-3201ada0f723248e"
+    },
+    {
+     "x": 4.4192,
+     "y": 0.6903,
+     "px": [
+      192.0,
+      408.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (192.00, 408.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 3.5,
+     "point_id": "pt-3f712c73122ae05c",
+     "source_instance_id": "src-1e40b11349592bdb"
+    },
+    {
+     "x": 5.4203,
+     "y": 0.747,
+     "px": [
+      196.35,
+      399.47
+     ],
+     "confidence": 0.92,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7a2ee0b834dc0641",
+     "source_instance_id": "src-202af8879ac938df"
+    },
+    {
+     "x": 5.685,
+     "y": 0.7501,
+     "px": [
+      197.5,
+      399.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (197.50, 399.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.0,
+     "point_id": "pt-280a0a771f98584b",
+     "source_instance_id": "src-3422f4ce7df76625"
+    },
+    {
+     "x": 6.09,
+     "y": 0.8352,
+     "px": [
+      199.26,
+      386.2
+     ],
+     "confidence": 0.96,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-abbc92f6068b6523",
+     "source_instance_id": "src-c048e92e0f6f2d9f"
+    },
+    {
+     "x": 6.2604,
+     "y": 0.8166,
+     "px": [
+      200.0,
+      389.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (200.00, 389.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.5,
+     "point_id": "pt-85359047dbb14220",
+     "source_instance_id": "src-ad397a30b05b70a1"
+    },
+    {
+     "x": 6.6056,
+     "y": 0.883,
+     "px": [
+      201.5,
+      379.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (201.50, 379.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-f8f3b3908b191e87",
+     "source_instance_id": "src-677507b5d2aa9c8c"
+    },
+    {
+     "x": 7.1809,
+     "y": 0.9229,
+     "px": [
+      204.0,
+      373.0
+     ],
+     "confidence": 0.53,
+     "overlap_flag": true,
+     "assigned_by": "template",
+     "source": "template_fit",
+     "point_id": "pt-9cb2f69d1132eaf3",
+     "source_instance_id": "src-47be929841fbc0ee"
+    },
+    {
+     "x": 7.296,
+     "y": 0.9495,
+     "px": [
+      204.5,
+      369.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (204.50, 369.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-5698f4526faa60b4",
+     "source_instance_id": "src-45015eb51b2fa4ab"
+    },
+    {
+     "x": 7.9865,
+     "y": 1.0159,
+     "px": [
+      207.5,
+      359.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (207.50, 359.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-43544c01c67d0413",
+     "source_instance_id": "src-8f8f0e396b087e84"
+    },
+    {
+     "x": 8.792,
+     "y": 1.0823,
+     "px": [
+      211.0,
+      349.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (211.00, 349.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-904112a8f6f6b6f3",
+     "source_instance_id": "src-5d552a4cd4be4580"
+    },
+    {
+     "x": 9.5975,
+     "y": 1.1488,
+     "px": [
+      214.5,
+      339.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (214.50, 339.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-4f04a0887902e0fc",
+     "source_instance_id": "src-c8293e95186d2fb7"
+    },
+    {
+     "x": 10.5181,
+     "y": 1.2152,
+     "px": [
+      218.5,
+      329.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (218.50, 329.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-d89bb1571f4c918f",
+     "source_instance_id": "src-5fc80bdb605a5b2d"
+    },
+    {
+     "x": 11.7839,
+     "y": 1.2817,
+     "px": [
+      224.0,
+      319.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (224.00, 319.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-5c02cee5d6c35521",
+     "source_instance_id": "src-b534ef49d80529db"
+    },
+    {
+     "x": 13.9703,
+     "y": 1.4079,
+     "px": [
+      233.5,
+      300.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (233.50, 300.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 9.0,
+     "point_id": "pt-a65c91d0a066e5cf",
+     "source_instance_id": "src-2c6abdeb523540e1"
+    },
+    {
+     "x": 15.3512,
+     "y": 1.4677,
+     "px": [
+      239.5,
+      291.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (239.50, 291.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 9.0,
+     "point_id": "pt-6128f0eb11c22aef",
+     "source_instance_id": "src-f0309a1ee82a0c1a"
+    },
+    {
+     "x": 16.7321,
+     "y": 1.5209,
+     "px": [
+      245.5,
+      283.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (245.50, 283.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.0,
+     "point_id": "pt-2b821c598f4f85b9",
+     "source_instance_id": "src-38e9119db1fce688"
+    },
+    {
+     "x": 18.3431,
+     "y": 1.574,
+     "px": [
+      252.5,
+      275.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (252.50, 275.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-9fb6079f09682fe6",
+     "source_instance_id": "src-60937c36b546d5ca"
+    },
+    {
+     "x": 20.0693,
+     "y": 1.6272,
+     "px": [
+      260.0,
+      267.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (260.00, 267.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.5,
+     "point_id": "pt-3fcc8ab83f39d88a",
+     "source_instance_id": "src-c6f0719c15a5a57d"
+    },
+    {
+     "x": 21.4571,
+     "y": 1.7506,
+     "px": [
+      266.03,
+      248.43
+     ],
+     "confidence": 0.42,
+     "overlap_flag": true,
+     "assigned_by": "color",
+     "point_id": "pt-6c4bac4aa500e7b3",
+     "source_instance_id": "src-26f5d662bc9dc831"
+    },
+    {
+     "x": 21.7954,
+     "y": 1.6737,
+     "px": [
+      267.5,
+      260.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (267.50, 260.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 8.0,
+     "point_id": "pt-589af537928aea08",
+     "source_instance_id": "src-039b1f9bfed54a7b"
+    },
+    {
+     "x": 23.7516,
+     "y": 1.7136,
+     "px": [
+      276.0,
+      254.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (276.00, 254.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 7.5,
+     "point_id": "pt-c2e368556db42fc6",
+     "source_instance_id": "src-f549362571c865f4"
+    },
+    {
+     "x": 24.0992,
+     "y": 1.7795,
+     "px": [
+      277.51,
+      244.08
+     ],
+     "confidence": 0.5,
+     "overlap_flag": true,
+     "assigned_by": "color",
+     "point_id": "pt-ed8bcba885d472ca",
+     "source_instance_id": "src-41bbdb163f8fbff5"
+    },
+    {
+     "x": 25.3627,
+     "y": 1.7667,
+     "px": [
+      283.0,
+      246.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (283.00, 246.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 9.5,
+     "point_id": "pt-72c3fcef669a5d29",
+     "source_instance_id": "src-83a65abf3e36ad07"
+    },
+    {
+     "x": 26.8586,
+     "y": 1.8664,
+     "px": [
+      289.5,
+      231.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (289.50, 231.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 1.5,
+     "point_id": "pt-df15ccde186764d0",
+     "source_instance_id": "src-b424be63c48469f5"
+    },
+    {
+     "x": 26.9737,
+     "y": 1.8199,
+     "px": [
+      290.0,
+      238.0
+     ],
+     "confidence": 0.4,
+     "overlap_flag": true,
+     "source": "curve",
+     "assigned_by": "dense_band_sampler",
+     "evidence_kind": "native_trace",
+     "evidence_ref": "panel.png",
+     "source_evidence": "Native CO2 323K continuous-band ink at (290.00, 238.00) px; region-1:CO2 323K:1",
+     "uncertainty_px": 5.5,
+     "point_id": "pt-68b9963e9a38831d",
+     "source_instance_id": "src-d99b5c040cf16eb1"
+    },
+    {
+     "x": 27.1049,
+     "y": 1.8108,
+     "px": [
+      290.57,
+      239.37
+     ],
+     "confidence": 0.96,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-699ec525a9dc2932",
+     "source_instance_id": "src-85989beef86d5da0"
+    },
+    {
+     "x": 33.1394,
+     "y": 1.9075,
+     "px": [
+      316.79,
+      224.81
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-42395cfdf57cf3dc",
+     "source_instance_id": "src-7093a553c638d84b"
+    },
+    {
+     "x": 40.2187,
+     "y": 1.9742,
+     "px": [
+      347.55,
+      214.78
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-cbdba6acdb74e4a0",
+     "source_instance_id": "src-7adb7fdeecc21115"
+    },
+    {
+     "x": 46.725,
+     "y": 2.047,
+     "px": [
+      375.82,
+      203.82
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-99ed8691f43d6251",
+     "source_instance_id": "src-76a058ced6035155"
+    },
+    {
+     "x": 53.595,
+     "y": 2.0942,
+     "px": [
+      405.67,
+      196.71
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-3c2548d58d057d04",
+     "source_instance_id": "src-411f020acd7d2e76"
+    },
+    {
+     "x": 60.0736,
+     "y": 2.1339,
+     "px": [
+      433.82,
+      190.74
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e631563e7ea1b1af",
+     "source_instance_id": "src-b22335a4c8cd3469"
+    },
+    {
+     "x": 66.7894,
+     "y": 2.1835,
+     "px": [
+      463.0,
+      183.27
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-8bb74b114d3718fb",
+     "source_instance_id": "src-1ec8c18fca7b84c1"
+    },
+    {
+     "x": 73.5051,
+     "y": 2.2162,
+     "px": [
+      492.18,
+      178.35
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e91915bb73d8c9da",
+     "source_instance_id": "src-4f40bda4187d6d07"
+    },
+    {
+     "x": 80.0413,
+     "y": 2.2459,
+     "px": [
+      520.58,
+      173.89
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-4693d04c80f8513f",
+     "source_instance_id": "src-912812074b92f27e"
+    },
+    {
+     "x": 86.6443,
+     "y": 2.2797,
+     "px": [
+      549.27,
+      168.8
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-f7aead7b2276f683",
+     "source_instance_id": "src-943a0342bb4892eb"
+    },
+    {
+     "x": 93.5533,
+     "y": 2.3112,
+     "px": [
+      579.29,
+      164.06
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-38b74adf7de08144",
+     "source_instance_id": "src-14fe54acaf711f41"
+    },
+    {
+     "x": 101.4543,
+     "y": 2.3533,
+     "px": [
+      613.62,
+      157.72
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d965c68daa02e84e",
+     "source_instance_id": "src-3b43a2a555ec88ea"
+    },
+    {
+     "x": 106.7615,
+     "y": 2.3751,
+     "px": [
+      636.68,
+      154.44
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-61b64ca26c98c2c3",
+     "source_instance_id": "src-271d7a2d7d021e09"
+    },
+    {
+     "x": 114.1171,
+     "y": 2.3953,
+     "px": [
+      668.64,
+      151.4
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d807339a1569cfa2",
+     "source_instance_id": "src-eaf119e7c834d93f"
+    }
+   ],
+   "series_id": "figp1b:b:co2-323k-c5e1f4c4"
+  },
+  {
+   "label": "CO2 333K",
+   "n_points": 19,
+   "marker_radius_px": 7.0,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    72.0,
+    157.5,
+    78.0
+   ],
+   "marker_glyph": {
+    "shape": "circle",
+    "fill": "open",
+    "color_hex": "#3a3691",
+    "fill_hex": null,
+    "edge_hex": "#8287ba",
+    "polygon": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.924,
+      0.383
+     ],
+     [
+      0.707,
+      0.707
+     ],
+     [
+      0.383,
+      0.924
+     ],
+     [
+      0.0,
+      1.0
+     ],
+     [
+      -0.383,
+      0.924
+     ],
+     [
+      -0.707,
+      0.707
+     ],
+     [
+      -0.924,
+      0.383
+     ],
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      -0.924,
+      -0.383
+     ],
+     [
+      -0.707,
+      -0.707
+     ],
+     [
+      -0.383,
+      -0.924
+     ],
+     [
+      -0.0,
+      -1.0
+     ],
+     [
+      0.383,
+      -0.924
+     ],
+     [
+      0.707,
+      -0.707
+     ],
+     [
+      0.924,
+      -0.383
+     ]
+    ],
+    "size_px": 9.56,
+    "vertices": 7,
+    "source": "raster",
+    "confidence": 0.5
+   },
+   "color_twins": [],
+   "x_min": 1.4871,
+   "x_max": 113.9882,
+   "y_min": 0.1422,
+   "y_max": 2.2402,
+   "points": [
+    {
+     "x": 1.4871,
+     "y": 0.1422,
+     "px": [
+      179.26,
+      490.5
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-bf02f24250e4750a",
+     "source_instance_id": "src-ea558fb98a31e6fe"
+    },
+    {
+     "x": 3.3168,
+     "y": 0.3279,
+     "px": [
+      187.21,
+      462.54
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-0aab02930e3a6056",
+     "source_instance_id": "src-90c9ccd42fb51389"
+    },
+    {
+     "x": 6.6999,
+     "y": 0.6501,
+     "px": [
+      201.91,
+      414.06
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d2c74c3ba892445c",
+     "source_instance_id": "src-7b21503ad82aa26c"
+    },
+    {
+     "x": 13.5031,
+     "y": 1.1479,
+     "px": [
+      231.47,
+      339.13
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-ca39563ce54873b7",
+     "source_instance_id": "src-86ffb46a09c7cf68"
+    },
+    {
+     "x": 19.869,
+     "y": 1.4061,
+     "px": [
+      259.13,
+      300.27
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d4e7f40121758e49",
+     "source_instance_id": "src-5051100ed39e6c7a"
+    },
+    {
+     "x": 26.7919,
+     "y": 1.594,
+     "px": [
+      289.21,
+      272.0
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7dbd362e2b2cf81c",
+     "source_instance_id": "src-de509a7d977499c0"
+    },
+    {
+     "x": 33.2614,
+     "y": 1.7176,
+     "px": [
+      317.32,
+      253.39
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d34f54e4c48387a6",
+     "source_instance_id": "src-39f5e4c7c9ce6e9a"
+    },
+    {
+     "x": 39.915,
+     "y": 1.8005,
+     "px": [
+      346.23,
+      240.91
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-a5f5a9cb61ec761a",
+     "source_instance_id": "src-e1409ecdfb4a4f8c"
+    },
+    {
+     "x": 46.3867,
+     "y": 1.8796,
+     "px": [
+      374.35,
+      229.02
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-a5d2c40409c07a03",
+     "source_instance_id": "src-817cbef5b09ba336"
+    },
+    {
+     "x": 53.4868,
+     "y": 1.9379,
+     "px": [
+      405.2,
+      220.24
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-986d9f6c11091938",
+     "source_instance_id": "src-6742567bcf7e03da"
+    },
+    {
+     "x": 59.9056,
+     "y": 1.9889,
+     "px": [
+      433.09,
+      212.57
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-6f341926b2905350",
+     "source_instance_id": "src-741b793a82c77597"
+    },
+    {
+     "x": 66.6582,
+     "y": 2.0338,
+     "px": [
+      462.43,
+      205.81
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-98d5aca12f1568eb",
+     "source_instance_id": "src-4851459a60dd9ca9"
+    },
+    {
+     "x": 73.5742,
+     "y": 2.0718,
+     "px": [
+      492.48,
+      200.09
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-2e38590f94da1a9f",
+     "source_instance_id": "src-5669e05ce06653f7"
+    },
+    {
+     "x": 80.0206,
+     "y": 2.1049,
+     "px": [
+      520.49,
+      195.11
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-5a91185efbd6b0c7",
+     "source_instance_id": "src-ce923579ef098383"
+    },
+    {
+     "x": 86.8698,
+     "y": 2.1366,
+     "px": [
+      550.25,
+      190.33
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-212451edee9abc16",
+     "source_instance_id": "src-987e286802e50f33"
+    },
+    {
+     "x": 93.4866,
+     "y": 2.1622,
+     "px": [
+      579.0,
+      186.48
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-63ac9fb455f1e248",
+     "source_instance_id": "src-23c9980405b14d4d"
+    },
+    {
+     "x": 101.1712,
+     "y": 2.1959,
+     "px": [
+      612.39,
+      181.41
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-644497c1382cffce",
+     "source_instance_id": "src-d189aa796e9f4dad"
+    },
+    {
+     "x": 106.8628,
+     "y": 2.2162,
+     "px": [
+      637.12,
+      178.35
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-b1b4dd8e0853bbea",
+     "source_instance_id": "src-9df492a69def8d8b"
+    },
+    {
+     "x": 113.9882,
+     "y": 2.2402,
+     "px": [
+      668.08,
+      174.74
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e6c48483fc08e9a3",
+     "source_instance_id": "src-26c73fbbdbb5b740"
+    }
+   ],
+   "series_id": "figp1b:b:co2-333k-94a1f9ba"
+  },
+  {
+   "label": "CO2 353K",
+   "n_points": 18,
+   "marker_radius_px": 5.0,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    131.0,
+    194.5,
+    106.0
+   ],
+   "marker_glyph": {
+    "shape": "hexagon",
+    "fill": "filled",
+    "color_hex": "#d13ea1",
+    "fill_hex": "#cc3c9d",
+    "edge_hex": "#b2348c",
+    "polygon": [
+     [
+      -0.218,
+      -1.418
+     ],
+     [
+      -0.735,
+      -0.642
+     ],
+     [
+      -0.735,
+      0.867
+     ],
+     [
+      -0.002,
+      1.384
+     ],
+     [
+      0.774,
+      0.608
+     ],
+     [
+      0.774,
+      -0.642
+     ],
+     [
+      0.429,
+      -1.159
+     ]
+    ],
+    "size_px": 3.87,
+    "vertices": 6,
+    "source": "raster",
+    "confidence": 0.36
+   },
+   "color_twins": [],
+   "x_min": 3.4871,
+   "x_max": 114.1033,
+   "y_min": 0.1792,
+   "y_max": 1.9218,
+   "points": [
+    {
+     "x": 3.4871,
+     "y": 0.1792,
+     "px": [
+      187.95,
+      484.93
+     ],
+     "confidence": 0.96,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-4369aabadc6ab72c",
+     "source_instance_id": "src-b161de6b2ad7af60"
+    },
+    {
+     "x": 6.6286,
+     "y": 0.3282,
+     "px": [
+      201.6,
+      462.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-bb7ca03b50e440bc",
+     "source_instance_id": "src-22db50bc0ae35637"
+    },
+    {
+     "x": 13.4433,
+     "y": 0.6487,
+     "px": [
+      231.21,
+      414.27
+     ],
+     "confidence": 0.97,
+     "overlap_flag": true,
+     "assigned_by": "color",
+     "point_id": "pt-80910b0af1acde2c",
+     "source_instance_id": "src-21b61a532510b239"
+    },
+    {
+     "x": 19.4179,
+     "y": 0.8605,
+     "px": [
+      257.17,
+      382.39
+     ],
+     "confidence": 1.0,
+     "overlap_flag": true,
+     "assigned_by": "color",
+     "point_id": "pt-61997cd795c0e8c4",
+     "source_instance_id": "src-88c241feb2ce5346"
+    },
+    {
+     "x": 26.4812,
+     "y": 1.0805,
+     "px": [
+      287.86,
+      349.28
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-8cfe3c0c1d590071",
+     "source_instance_id": "src-b81751e7ffe835ee"
+    },
+    {
+     "x": 33.098,
+     "y": 1.2371,
+     "px": [
+      316.61,
+      325.71
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-e9aa4afa026cf60e",
+     "source_instance_id": "src-c07c974dc34dbf0e"
+    },
+    {
+     "x": 40.0553,
+     "y": 1.3659,
+     "px": [
+      346.84,
+      306.33
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-1b1f8e65199dfba0",
+     "source_instance_id": "src-99a321894f30fa4a"
+    },
+    {
+     "x": 46.9506,
+     "y": 1.4601,
+     "px": [
+      376.8,
+      292.15
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-afc285c065b16434",
+     "source_instance_id": "src-0c05b61d7027f4d4"
+    },
+    {
+     "x": 53.0633,
+     "y": 1.5408,
+     "px": [
+      403.36,
+      280.0
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-fd9738b7586fc860",
+     "source_instance_id": "src-3e6c475385783434"
+    },
+    {
+     "x": 60.0552,
+     "y": 1.602,
+     "px": [
+      433.74,
+      270.79
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c0db623908dd1e92",
+     "source_instance_id": "src-888e32394a04d658"
+    },
+    {
+     "x": 66.6743,
+     "y": 1.6704,
+     "px": [
+      462.5,
+      260.5
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-0adc1c10e766407e",
+     "source_instance_id": "src-3f5070563f4d4994"
+    },
+    {
+     "x": 73.4637,
+     "y": 1.7169,
+     "px": [
+      492.0,
+      253.5
+     ],
+     "confidence": 0.96,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-df4d26fb366bbd1f",
+     "source_instance_id": "src-f7508003401b24dc"
+    },
+    {
+     "x": 80.1541,
+     "y": 1.7537,
+     "px": [
+      521.07,
+      247.96
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-1e957d5820c5669e",
+     "source_instance_id": "src-bdfa0b8f179013db"
+    },
+    {
+     "x": 86.6351,
+     "y": 1.7998,
+     "px": [
+      549.23,
+      241.02
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-46f6ca7068f31e6c",
+     "source_instance_id": "src-dbe8a1c349187249"
+    },
+    {
+     "x": 93.5533,
+     "y": 1.8269,
+     "px": [
+      579.29,
+      236.95
+     ],
+     "confidence": 0.98,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-4e9a0e618ca4ce61",
+     "source_instance_id": "src-cb5fa1a9009dd9c4"
+    },
+    {
+     "x": 101.3968,
+     "y": 1.8744,
+     "px": [
+      613.37,
+      229.79
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-02e24e02838834f8",
+     "source_instance_id": "src-cc7b71a2dea8f50b"
+    },
+    {
+     "x": 106.9203,
+     "y": 1.8877,
+     "px": [
+      637.37,
+      227.79
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7aaae45616549835",
+     "source_instance_id": "src-c1b647b7023417c6"
+    },
+    {
+     "x": 114.1033,
+     "y": 1.9218,
+     "px": [
+      668.58,
+      222.66
+     ],
+     "confidence": 1.0,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-75713c70d948c370",
+     "source_instance_id": "src-153f9d74a00a1702"
+    }
+   ],
+   "series_id": "figp1b:b:co2-353k-c3530734"
+  },
+  {
+   "label": "CO2 373K",
+   "n_points": 25,
+   "marker_radius_px": 5.8,
+   "extract": true,
+   "gas": "CO2",
+   "color_lab": [
+    5.0,
+    128.0,
+    128.0
+   ],
+   "marker_glyph": {
+    "shape": "diamond",
+    "fill": "filled",
+    "color_hex": "#060707",
+    "fill_hex": "#0a0a0a",
+    "edge_hex": "#727272",
+    "polygon": [
+     [
+      -0.176,
+      -1.203
+     ],
+     [
+      -1.291,
+      0.045
+     ],
+     [
+      -0.574,
+      0.523
+     ],
+     [
+      -0.176,
+      1.161
+     ],
+     [
+      0.276,
+      1.161
+     ],
+     [
+      0.276,
+      0.922
+     ],
+     [
+      1.232,
+      0.205
+     ],
+     [
+      1.232,
+      -0.088
+     ],
+     [
+      0.515,
+      -0.566
+     ],
+     [
+      0.116,
+      -1.203
+     ]
+    ],
+    "size_px": 6.27,
+    "vertices": 4,
+    "source": "raster",
+    "confidence": 0.91
+   },
+   "color_twins": [],
+   "x_min": 1.7794,
+   "x_max": 113.2793,
+   "y_min": 0.0417,
+   "y_max": 1.5541,
+   "points": [
+    {
+     "x": 1.7794,
+     "y": 0.0417,
+     "px": [
+      180.53,
+      505.62
+     ],
+     "confidence": 0.75,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-3de11dcc7d382f68",
+     "source_instance_id": "src-f022f9aeba121b45"
+    },
+    {
+     "x": 3.4894,
+     "y": 0.0845,
+     "px": [
+      187.96,
+      499.17
+     ],
+     "confidence": 0.67,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c6160ae73d9e7262",
+     "source_instance_id": "src-53a67d01d8bab07b"
+    },
+    {
+     "x": 5.8277,
+     "y": 0.1386,
+     "px": [
+      198.12,
+      491.04
+     ],
+     "confidence": 0.67,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c628f729acf008f8",
+     "source_instance_id": "src-a11c66e37e0b58a9"
+    },
+    {
+     "x": 7.6574,
+     "y": 0.1861,
+     "px": [
+      206.07,
+      483.89
+     ],
+     "confidence": 0.67,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-216b7ab7cc554913",
+     "source_instance_id": "src-170c31a3763aeffb"
+    },
+    {
+     "x": 9.7494,
+     "y": 0.2385,
+     "px": [
+      215.16,
+      476.0
+     ],
+     "confidence": 0.67,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-59c8e14dac7dcd70",
+     "source_instance_id": "src-19ecf4ddde86e8a8"
+    },
+    {
+     "x": 12.7022,
+     "y": 0.3113,
+     "px": [
+      227.99,
+      465.05
+     ],
+     "confidence": 0.71,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-47aa8ec6b2740210",
+     "source_instance_id": "src-3effc356e41aa744"
+    },
+    {
+     "x": 14.8633,
+     "y": 0.3656,
+     "px": [
+      237.38,
+      456.87
+     ],
+     "confidence": 0.67,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-d28c90ffd6606918",
+     "source_instance_id": "src-e9e00759cc2bef56"
+    },
+    {
+     "x": 16.3616,
+     "y": 0.398,
+     "px": [
+      243.89,
+      452.0
+     ],
+     "confidence": 0.71,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-125fe4de75f8db93",
+     "source_instance_id": "src-e9a22256d61235bd"
+    },
+    {
+     "x": 18.4421,
+     "y": 0.4503,
+     "px": [
+      252.93,
+      444.12
+     ],
+     "confidence": 0.71,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-37a358a117cba0ed",
+     "source_instance_id": "src-3a7a90695344b6d7"
+    },
+    {
+     "x": 20.0531,
+     "y": 0.4847,
+     "px": [
+      259.93,
+      438.94
+     ],
+     "confidence": 0.71,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c66ad85383eee138",
+     "source_instance_id": "src-f92667b7ded012c7"
+    },
+    {
+     "x": 22.4812,
+     "y": 0.541,
+     "px": [
+      270.48,
+      430.48
+     ],
+     "confidence": 0.71,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-18597efbd1210854",
+     "source_instance_id": "src-375b508e68f324e8"
+    },
+    {
+     "x": 25.1555,
+     "y": 0.5974,
+     "px": [
+      282.1,
+      421.98
+     ],
+     "confidence": 0.79,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-c5a855d39a7cf5d9",
+     "source_instance_id": "src-ef92d6bb7a81e2d0"
+    },
+    {
+     "x": 33.4501,
+     "y": 0.7623,
+     "px": [
+      318.14,
+      397.16
+     ],
+     "confidence": 0.95,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-fd6dca886e42800e",
+     "source_instance_id": "src-a1f8dec9a2ef21e6"
+    },
+    {
+     "x": 39.7469,
+     "y": 0.873,
+     "px": [
+      345.5,
+      380.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-5f981a8ca1ef29fc",
+     "source_instance_id": "src-3e451e3996e262c5"
+    },
+    {
+     "x": 46.6514,
+     "y": 0.9794,
+     "px": [
+      375.5,
+      364.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-93b275b85f7b51ee",
+     "source_instance_id": "src-c6112c4c355a3e2a"
+    },
+    {
+     "x": 53.4086,
+     "y": 1.068,
+     "px": [
+      404.86,
+      351.16
+     ],
+     "confidence": 0.95,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-3f948450e47252bb",
+     "source_instance_id": "src-da84b78139c964e8"
+    },
+    {
+     "x": 60.0,
+     "y": 1.1521,
+     "px": [
+      433.5,
+      338.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7e8c6ea17363f2f5",
+     "source_instance_id": "src-6ff7bbeafe96ae00"
+    },
+    {
+     "x": 66.7549,
+     "y": 1.2243,
+     "px": [
+      462.85,
+      327.64
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-02d86f86374fd8e8",
+     "source_instance_id": "src-a675336a22276bdb"
+    },
+    {
+     "x": 73.4959,
+     "y": 1.2827,
+     "px": [
+      492.14,
+      318.84
+     ],
+     "confidence": 0.95,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-04e177f524c4e53f",
+     "source_instance_id": "src-2c8b3c26b6b2e44f"
+    },
+    {
+     "x": 79.7928,
+     "y": 1.3448,
+     "px": [
+      519.5,
+      309.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-2a2b8d1b32d07723",
+     "source_instance_id": "src-17125e6ad123ec83"
+    },
+    {
+     "x": 87.0102,
+     "y": 1.3936,
+     "px": [
+      550.86,
+      302.16
+     ],
+     "confidence": 0.95,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-fd6f67ffa1bdb3d1",
+     "source_instance_id": "src-8ad29720fcec9401"
+    },
+    {
+     "x": 93.2564,
+     "y": 1.4345,
+     "px": [
+      578.0,
+      296.0
+     ],
+     "confidence": 0.93,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-5347d05851b4336c",
+     "source_instance_id": "src-eaefca7b6b4bd61a"
+    },
+    {
+     "x": 100.925,
+     "y": 1.4883,
+     "px": [
+      611.32,
+      287.91
+     ],
+     "confidence": 0.99,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-cd6f17abf8e3a07a",
+     "source_instance_id": "src-a1f0399fca50c97c"
+    },
+    {
+     "x": 106.7201,
+     "y": 1.5176,
+     "px": [
+      636.5,
+      283.5
+     ],
+     "confidence": 0.97,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-fbe591aae08229a8",
+     "source_instance_id": "src-86cb32db53560873"
+    },
+    {
+     "x": 113.2793,
+     "y": 1.5541,
+     "px": [
+      665.0,
+      278.0
+     ],
+     "confidence": 0.93,
+     "overlap_flag": false,
+     "assigned_by": "color",
+     "point_id": "pt-7b7e0c0b6fb4f33f",
+     "source_instance_id": "src-5f8c345c0ec0a6b1"
+    }
+   ],
+   "series_id": "figp1b:b:co2-373k-9f2f766d"
+  }
+ ],
+ "unresolved_slots": {
+  "total": 0,
+  "by_series": {},
+  "slots": []
+ },
+ "excluded_series_context": {
+  "total": 0,
+  "by_series": {},
+  "slots": []
+ },
+ "unresolved_total": 0,
+ "proposal_quality": {
+  "review_required": true,
+  "warnings": [
+   {
+    "check": "weak_marker_coverage",
+    "series": "CO2 303K",
+    "detail": "5 of 19 markers are low-confidence or overlapping; maximum is 25%"
+   },
+   {
+    "check": "weak_marker_coverage",
+    "series": "CO2 323K",
+    "detail": "7 of 26 markers are low-confidence or overlapping; maximum is 25%"
+   }
+  ]
+ }
+}

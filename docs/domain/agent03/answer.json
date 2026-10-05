@@ -1,0 +1,244 @@
+{
+ "reasoning": "batch 1: Independent inspection of the unchanged panel.png found one eligible series, CO2 195K, drawn as blue open circles with a solid line. The red open-circle N2 77K series is excluded. The main plot frame is approximately x=128..661 and y=68..497 px within the 707x624 panel; the inset at about x=250..520, y=174..390 is not part of the main-panel extraction. Axes are linear: Relative Pressure (P/P0) runs 0..1 and Uptake runs 0..140 cm3 g-1. Tick positions independently agree with the supplied calibration (x about 484 px per unit and y about 2.86 px per uptake unit; residuals are sub-pixel to about 0.6 px). I reviewed the complete 48-row CO2 proposal and the native tile/box evidence before candidate overlays. The visible main-panel CO2 centres are generally supported, including crowded partially fused rings. I did not apply an edit: the dense-strip unresolved region contains connected blue ink and white ring fragments, but no additional separable centre can be located with honest native support; adding a point there would rely on the expected count or interpolation. The proposal therefore remains under review rather than accepted.",
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 195K",
+   "coverage": "incomplete",
+   "final_count": 48,
+   "comment": "All 48 proposed CO2 rows were checked against panel.png. Main-panel marker coverage is supported where centres are separable, but the dense low-pressure strip has one unresolved fused-marker slot and cannot be certified complete from native pixels."
+  }
+ ],
+ "operations": [],
+ "uncertainties": [
+  "The dense CO2 strip in native panel pixels approximately [148,68,192,497] contains overlapping/fused blue rings; one supplied unresolved slot remains indecisive.",
+  "The source/spec expected-count estimate of about 65 is not treated as evidence. No additional point was added solely to reach that count.",
+  "No estimated operations are present. The inset and the red N2 77K series are excluded from the CO2 coordinate inventory.",
+  "Unresolved review item crowded_strip:01: not returned by the review batch",
+  "Unresolved review item tile:marker_01: not returned by the review batch",
+  "Unresolved review item box:marker_01:1: not returned by the review batch",
+  "Unresolved review item box:marker_01:2: not returned by the review batch",
+  "Unresolved review item box:marker_01:3: not returned by the review batch",
+  "Unresolved review item box:marker_01:4: not returned by the review batch",
+  "Unresolved review item box:marker_01:5: not returned by the review batch",
+  "Unresolved review item box:marker_01:6: not returned by the review batch",
+  "Unresolved review item box:marker_01:7: not returned by the review batch",
+  "Unresolved review item box:marker_01:8: not returned by the review batch",
+  "Unresolved review item tile:marker_02: not returned by the review batch",
+  "Unresolved review item box:marker_02:9: not returned by the review batch",
+  "Unresolved review item box:marker_02:10: not returned by the review batch",
+  "Unresolved review item box:marker_02:11: not returned by the review batch",
+  "Unresolved review item box:marker_02:12: not returned by the review batch",
+  "Unresolved review item box:marker_02:13: not returned by the review batch",
+  "Unresolved review item box:marker_02:14: not returned by the review batch",
+  "Unresolved review item box:marker_02:15: not returned by the review batch",
+  "Unresolved review item box:marker_02:16: not returned by the review batch",
+  "Unresolved review item tile:marker_03: not returned by the review batch",
+  "Unresolved review item box:marker_03:17: not returned by the review batch",
+  "Unresolved review item box:marker_03:18: not returned by the review batch",
+  "Unresolved review item box:marker_03:19: not returned by the review batch",
+  "Unresolved review item box:marker_03:20: not returned by the review batch",
+  "Unresolved review item box:marker_03:21: not returned by the review batch",
+  "Unresolved review item box:marker_03:22: not returned by the review batch",
+  "Unresolved review item box:marker_03:23: not returned by the review batch",
+  "Unresolved review item box:marker_03:24: not returned by the review batch",
+  "Unresolved review item tile:marker_04: not returned by the review batch",
+  "Unresolved review item box:marker_04:25: not returned by the review batch",
+  "Unresolved review item tile:region_01: not returned by the review batch",
+  "Unresolved review item slot:0001: not returned by the review batch"
+ ],
+ "coverage": [
+  {
+   "item_id": "crowded_strip:01",
+   "item_type": "evidence",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_01",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:1",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:2",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:3",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:4",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:5",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:6",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:7",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_01:8",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_02",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:9",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:10",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:11",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:12",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:13",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:14",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:15",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_02:16",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_03",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:17",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:18",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:19",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:20",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:21",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:22",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:23",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_03:24",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:marker_04",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "box:marker_04:25",
+   "item_type": "box",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "tile:region_01",
+   "item_type": "tile",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  },
+  {
+   "item_id": "slot:0001",
+   "item_type": "slot",
+   "status": "unresolved",
+   "detail": "not returned by the review batch"
+  }
+ ]
+}

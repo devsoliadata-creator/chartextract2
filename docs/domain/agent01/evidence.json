@@ -1,0 +1,29 @@
+{
+ "input_path": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\discovery\\python_inventory\\p4_img16.png",
+ "preserved_path": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\fig3a\\evidence\\source_original.png",
+ "sha256": "ac3f273d0fbac22bf716b3f1aba338f16a877aba6c11767ecc678723bfae3a57",
+ "panel_id": "a",
+ "source_path": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\fig3a\\evidence\\source_original.png",
+ "crop_path": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\fig3a\\panel.png",
+ "source_size_px": [
+  2051,
+  1712
+ ],
+ "bbox_norm": [
+  0.0,
+  0.01,
+  0.33,
+  0.35
+ ],
+ "bbox_px": [
+  0,
+  0,
+  707,
+  624
+ ],
+ "crop_size_px": [
+  707,
+  624
+ ],
+ "padding_fraction": 0.015
+}
