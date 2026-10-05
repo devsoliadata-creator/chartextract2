@@ -20,7 +20,7 @@ Twelve panels were attempted across the three runs. Only 3 reached an Agent 04 t
 
 1. Auth token expiry is the single biggest killer in these runs: 8 of the failed agent attempts and 3 whole panels (combined_05) died on 401 / DefaultAzureCredential. Out of scope for the code fixes, but nothing downstream can work until a run survives its own length.
 2. Agent 04 does not return full tables for big panels. combined_05/fig2a: 43 rows returned, 395 claimed. The inline-CSV contract asks a model to re-emit ~400 rows x 31 columns; it emitted the rows it touched. With the old code that is an omission error, then a second 173k-token call. With the new carry-over (this repo) the same answer publishes 386 rows: 43 from Agent 04 + 343 carried from Agent 03.
-3. Schema-invalid Agent 04 answers are discarded with no feedback and the raw text is not saved (`artifact_agent.py` only writes `response.txt` when an artifact dir exists). Three such answers on combined_04/fig3a cost 180k tokens.
+3. Schema-invalid Agent 04 answers are discarded with no feedback. The code should write `agent04/response.txt` on failure, but no such file survives in combined_04/fig3a, so the three discarded answers (180k tokens) cannot be inspected.
 4. Python legend detection has no fallback. Agent 01 already supplies `color_hex` per series; `extract.py:477` raises instead of using it.
 5. Agent 01 schema strictness (extra root fields) killed 2 panels in combined_03; the current code already tolerates this.
 6. Token cost: 476k / 872k / 425k tokens per run; 180k on failed attempts in combined_04.
