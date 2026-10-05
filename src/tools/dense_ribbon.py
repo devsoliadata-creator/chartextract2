@@ -58,10 +58,33 @@ def lab_from_hex(value):
     return cv2.cvtColor(np.uint8([[[blue, green, red]]]), cv2.COLOR_BGR2LAB)[0, 0].astype(np.float32)
 
 
+HUE_WINDOW_DEG = 18.0       # same-hue shades of a coloured series count as its ink
+MIN_CHROMA = 25.0           # below this the colour is grey/black: use the full Lab distance only
+SHADE_CHROMA_FRACTION = 0.4  # a shade must keep this share of the marker's chroma (excludes background)
+
+
 def on_ink_mask(lab, colour, tolerance):
-    """Boolean mask of pixels within ``tolerance`` Lab units of ``colour``."""
+    """Boolean mask of pixels that carry the series colour.
+
+    Pixels within ``tolerance`` Lab units always match.  For a coloured series the
+    mask also accepts darker or lighter *shades* of the same hue: fused marker bands
+    are rendered darker than isolated markers, so a pure Lab distance drops them.
+    A shade matches when its chroma direction is within ``HUE_WINDOW_DEG`` of the
+    marker colour and its chroma magnitude keeps ``SHADE_CHROMA_FRACTION`` of it.
+    """
     colour = np.asarray(colour, dtype=np.float32)
-    return np.linalg.norm(lab - colour[None, None, :], axis=2) < float(tolerance)
+    mask = np.linalg.norm(lab - colour[None, None, :], axis=2) < float(tolerance)
+    ca, cb = float(colour[1]) - 128.0, float(colour[2]) - 128.0
+    chroma = math.hypot(ca, cb)
+    if chroma < MIN_CHROMA:
+        return mask
+    pa, pb = lab[..., 1] - 128.0, lab[..., 2] - 128.0
+    pixel_chroma = np.hypot(pa, pb)
+    cos_angle = (pa * ca + pb * cb) / np.maximum(pixel_chroma * chroma, 1e-6)
+    shade = ((cos_angle >= math.cos(math.radians(HUE_WINDOW_DEG)))
+             & (pixel_chroma >= SHADE_CHROMA_FRACTION * chroma)
+             & (lab[..., 0] <= 235.0))
+    return mask | shade
 
 
 def disc_count(mask, cx, cy, radius):
