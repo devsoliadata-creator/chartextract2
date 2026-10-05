@@ -1,0 +1,86 @@
+{
+  "reasoning": "Python found 11 of 12 CO2 273 K markers and put one N2 triangle into CO2 298 K. A CO2 253 K marker is fused into a crowded-strip stripe.",
+  "verdict": "review",
+  "series": [
+    {
+      "label": "CO2 273 K",
+      "coverage": "complete",
+      "final_count": 12,
+      "comment": "Added the hidden first marker at 1 kPa."
+    },
+    {
+      "label": "CO2 298 K",
+      "coverage": "complete",
+      "final_count": 12,
+      "comment": "Removed one N2 triangle."
+    },
+    {
+      "label": "CO2 253 K",
+      "coverage": "uncertain",
+      "final_count": 9,
+      "comment": "Estimated one point in the fused low-pressure stripe; no visible centre."
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "op-1",
+      "action": "add",
+      "point_id": null,
+      "series_label": "CO2 273 K",
+      "x_norm": 0.131,
+      "y_norm": 0.742,
+      "overlap": true,
+      "reason": "Missed marker under the 298 K square.",
+      "source_evidence": "Blue filled circle fragment at panel pixel (131, 742); its arc and color support the estimated centre.",
+      "evidence_kind": "partial_marker",
+      "uncertainty_px": 2.5,
+      "evidence_ref": "tile:marker_01"
+    },
+    {
+      "operation_id": "op-2",
+      "action": "delete",
+      "point_id": "pt-9f2c1a",
+      "series_label": null,
+      "x_norm": null,
+      "y_norm": null,
+      "overlap": false,
+      "reason": "False detection.",
+      "source_evidence": "Open grey triangle (N2), not a red square.",
+      "evidence_kind": "native_visible",
+      "uncertainty_px": null,
+      "evidence_ref": "tile:marker_01"
+    },
+    {
+      "operation_id": "op-3",
+      "action": "add",
+      "point_id": null,
+      "series_label": "CO2 253 K",
+      "x_norm": 0.098,
+      "y_norm": 0.681,
+      "overlap": true,
+      "reason": "No individual marker centre is visible in the fused low-pressure stripe, but the series' own green ink is present at this column, shared with clearly visible 273 K and 298 K markers, and the position sits on the 253 K series' own smooth trajectory.",
+      "source_evidence": "Green ink fused into a continuous stripe at panel pixel (98, 681); column shared with visible 273 K/298 K markers and consistent with the 253 K trajectory and temperature ordering.",
+      "evidence_kind": "estimated",
+      "uncertainty_px": 3.5,
+      "evidence_ref": "tile:marker_02"
+    }
+  ],
+  "uncertainties": [
+    "Estimated point op-3 in the CO2 253 K fused stripe has no visible marker centre; always routes to review."
+  ],
+  "dense_measurements": [],
+  "coverage": [
+    {
+      "item_id": "tile:marker_01",
+      "item_type": "tile",
+      "status": "reviewed",
+      "detail": "All native boxes inspected; no further source-supported edits."
+    },
+    {
+      "item_id": "tile:marker_02",
+      "item_type": "tile",
+      "status": "reviewed",
+      "detail": "Fused low-pressure stripe inspected; no individual marker centre visible, estimated from shared column and trajectory."
+    }
+  ]
+}

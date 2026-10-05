@@ -1,0 +1,866 @@
+{
+ "schema_version": "1.0",
+ "role": "supporting_only",
+ "authority": "native_raster_supporting_evidence",
+ "source_image": "panel.png",
+ "coordinate_space": "panel_pixels",
+ "panel_shape_px": [
+  718,
+  573
+ ],
+ "crop_transform": {
+  "panel_origin_px": [
+   0,
+   0
+  ],
+  "scale": 1
+ },
+ "traces": [
+  {
+   "trace_id": "native-band-001",
+   "segment_id": "region-1:CO2@195K:1",
+   "series_name": "CO2@195K",
+   "color_hex": "#5A74F7",
+   "role": "supporting_only",
+   "ordered_points": [
+    {
+     "order": 0,
+     "px": [
+      141.5,
+      472.0
+     ],
+     "x": -0.0018,
+     "y": -1.3418,
+     "uncertainty_px": 6.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 1,
+     "px": [
+      142.0,
+      458.0
+     ],
+     "x": -0.0008,
+     "y": 3.5603,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 2,
+     "px": [
+      143.0,
+      444.0
+     ],
+     "x": 0.0013,
+     "y": 8.4623,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 3,
+     "px": [
+      143.5,
+      430.0
+     ],
+     "x": 0.0023,
+     "y": 13.3643,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 4,
+     "px": [
+      144.0,
+      416.0
+     ],
+     "x": 0.0033,
+     "y": 18.2663,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 5,
+     "px": [
+      144.0,
+      402.0
+     ],
+     "x": 0.0033,
+     "y": 23.1683,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 6,
+     "px": [
+      145.0,
+      388.0
+     ],
+     "x": 0.0054,
+     "y": 28.0703,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 7,
+     "px": [
+      145.0,
+      374.0
+     ],
+     "x": 0.0054,
+     "y": 32.9723,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 8,
+     "px": [
+      146.0,
+      360.0
+     ],
+     "x": 0.0075,
+     "y": 37.8743,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 9,
+     "px": [
+      146.5,
+      346.0
+     ],
+     "x": 0.0085,
+     "y": 42.7763,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 10,
+     "px": [
+      148.0,
+      332.0
+     ],
+     "x": 0.0116,
+     "y": 47.6783,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 11,
+     "px": [
+      148.0,
+      318.0
+     ],
+     "x": 0.0116,
+     "y": 52.5804,
+     "uncertainty_px": 6.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 12,
+     "px": [
+      149.5,
+      304.0
+     ],
+     "x": 0.0147,
+     "y": 57.4824,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 13,
+     "px": [
+      153.5,
+      290.0
+     ],
+     "x": 0.0229,
+     "y": 62.3844,
+     "uncertainty_px": 10.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 14,
+     "px": [
+      158.5,
+      276.0
+     ],
+     "x": 0.0333,
+     "y": 67.2864,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 15,
+     "px": [
+      160.0,
+      262.0
+     ],
+     "x": 0.0364,
+     "y": 72.1884,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 16,
+     "px": [
+      160.5,
+      248.0
+     ],
+     "x": 0.0374,
+     "y": 77.0904,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 17,
+     "px": [
+      161.5,
+      234.0
+     ],
+     "x": 0.0395,
+     "y": 81.9924,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 18,
+     "px": [
+      162.5,
+      220.0
+     ],
+     "x": 0.0415,
+     "y": 86.8944,
+     "uncertainty_px": 7.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 19,
+     "px": [
+      163.0,
+      206.0
+     ],
+     "x": 0.0426,
+     "y": 91.7964,
+     "uncertainty_px": 7.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 20,
+     "px": [
+      164.0,
+      192.0
+     ],
+     "x": 0.0446,
+     "y": 96.6984,
+     "uncertainty_px": 5.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 21,
+     "px": [
+      164.5,
+      178.0
+     ],
+     "x": 0.0456,
+     "y": 101.6005,
+     "uncertainty_px": 6.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 22,
+     "px": [
+      166.5,
+      164.0
+     ],
+     "x": 0.0498,
+     "y": 106.5025,
+     "uncertainty_px": 2.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 23,
+     "px": [
+      168.5,
+      150.0
+     ],
+     "x": 0.0539,
+     "y": 111.4045,
+     "uncertainty_px": 2.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 24,
+     "px": [
+      172.0,
+      136.0
+     ],
+     "x": 0.0611,
+     "y": 116.3065,
+     "uncertainty_px": 6.5,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 25,
+     "px": [
+      177.5,
+      123.0
+     ],
+     "x": 0.0725,
+     "y": 120.8584,
+     "uncertainty_px": 5.0,
+     "native_support": "band_cross_section_median"
+    },
+    {
+     "order": 26,
+     "px": [
+      185.0,
+      115.0
+     ],
+     "x": 0.088,
+     "y": 123.6595,
+     "uncertainty_px": 1.5,
+     "native_support": "band_cross_section_median"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      141.5,
+      472.0
+     ],
+     "x": -0.0018,
+     "y": -1.3418,
+     "uncertainty_px": 6.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      142.0,
+      458.0
+     ],
+     "x": -0.0008,
+     "y": 3.5603,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      143.0,
+      444.0
+     ],
+     "x": 0.0013,
+     "y": 8.4623,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      143.5,
+      430.0
+     ],
+     "x": 0.0023,
+     "y": 13.3643,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      144.0,
+      416.0
+     ],
+     "x": 0.0033,
+     "y": 18.2663,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      144.0,
+      402.0
+     ],
+     "x": 0.0033,
+     "y": 23.1683,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      145.0,
+      388.0
+     ],
+     "x": 0.0054,
+     "y": 28.0703,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      145.0,
+      374.0
+     ],
+     "x": 0.0054,
+     "y": 32.9723,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      146.0,
+      360.0
+     ],
+     "x": 0.0075,
+     "y": 37.8743,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      146.5,
+      346.0
+     ],
+     "x": 0.0085,
+     "y": 42.7763,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      148.0,
+      332.0
+     ],
+     "x": 0.0116,
+     "y": 47.6783,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      148.0,
+      318.0
+     ],
+     "x": 0.0116,
+     "y": 52.5804,
+     "uncertainty_px": 6.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      149.5,
+      304.0
+     ],
+     "x": 0.0147,
+     "y": 57.4824,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      153.5,
+      290.0
+     ],
+     "x": 0.0229,
+     "y": 62.3844,
+     "uncertainty_px": 10.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      158.5,
+      276.0
+     ],
+     "x": 0.0333,
+     "y": 67.2864,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      160.0,
+      262.0
+     ],
+     "x": 0.0364,
+     "y": 72.1884,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      160.5,
+      248.0
+     ],
+     "x": 0.0374,
+     "y": 77.0904,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      161.5,
+      234.0
+     ],
+     "x": 0.0395,
+     "y": 81.9924,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      162.5,
+      220.0
+     ],
+     "x": 0.0415,
+     "y": 86.8944,
+     "uncertainty_px": 7.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      163.0,
+      206.0
+     ],
+     "x": 0.0426,
+     "y": 91.7964,
+     "uncertainty_px": 7.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      164.0,
+      192.0
+     ],
+     "x": 0.0446,
+     "y": 96.6984,
+     "uncertainty_px": 5.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      164.5,
+      178.0
+     ],
+     "x": 0.0456,
+     "y": 101.6005,
+     "uncertainty_px": 6.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      166.5,
+      164.0
+     ],
+     "x": 0.0498,
+     "y": 106.5025,
+     "uncertainty_px": 2.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      168.5,
+      150.0
+     ],
+     "x": 0.0539,
+     "y": 111.4045,
+     "uncertainty_px": 2.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      172.0,
+      136.0
+     ],
+     "x": 0.0611,
+     "y": 116.3065,
+     "uncertainty_px": 6.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      177.5,
+      123.0
+     ],
+     "x": 0.0725,
+     "y": 120.8584,
+     "uncertainty_px": 5.0,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  },
+  {
+   "trace_id": null,
+   "segment_id": null,
+   "series_name": "CO2@195K",
+   "source_identity": "curve",
+   "role": "supporting_only",
+   "branch": null,
+   "ordered_points": [
+    {
+     "px": [
+      185.0,
+      115.0
+     ],
+     "x": 0.088,
+     "y": 123.6595,
+     "uncertainty_px": 1.5,
+     "native_support": "python_supporting_proposal"
+    }
+   ]
+  }
+ ]
+}

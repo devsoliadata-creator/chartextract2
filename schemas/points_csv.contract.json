@@ -1,0 +1,76 @@
+{
+  "schema_version": "4.1",
+  "core_columns": [
+    "figure_id",
+    "panel_id",
+    "series_id",
+    "series_name",
+    "x",
+    "x_unit",
+    "y",
+    "y_unit",
+    "marker_shape",
+    "line_style",
+    "color_hex",
+    "is_inferred",
+    "confidence",
+    "source_pixel_x",
+    "source_pixel_y",
+    "notes",
+    "point_id",
+    "source_instance_id",
+    "species",
+    "export_eligible",
+    "species_evidence",
+    "quantity_type",
+    "loading_basis",
+    "evidence_type",
+    "normalized_x",
+    "normalized_x_unit",
+    "normalized_y",
+    "normalized_y_unit",
+    "conversion_id",
+    "uncertainty_x",
+    "uncertainty_y"
+  ],
+  "authority": "examples/points.example.csv shows the exact column order; all core columns must remain. Extra columns are optional strings. Changes invalidate dependent stages.",
+  "row_rules": [
+    "One coordinate-bearing row per resolved source instance. Unique point_id AND source_instance_id.",
+    "All coordinate-bearing CSV stages contain only policy-eligible CO2 series. Excluded series may be recorded as non-coordinate audit metadata but never as CSV rows.",
+    "All CSV rows require export_eligible=true and nonempty CO2 species evidence.",
+    "Agent 04 points.csv is the authoritative final marker inventory: its point IDs must equal Agent 03 IDs minus IDs explicitly listed with action=delete, plus Agent 04 additions. An omitted Agent 03 ID without an explicit delete is incomplete and must be corrected; the host makes one correction attempt and retains Agent 03 inventory for repair if omissions remain.",
+    "Agent 04 final CSVs are marker-only: use visible_marker, partially_visible_marker, estimated_marker, or reviewer_asserted_marker. Do not include line_sample, template, fit, reported_numeric, or manual rows.",
+    "reviewer_asserted_marker is for a new Agent 04 row whose ID does not match Agent 03, whose finite in-frame position and eligible CO2 series are valid, and whose notes have no native evidence citation. It requires is_inferred=false and confidence=low. It may remain accepted when the report verdict is accept; this evidence type alone does not require human review.",
+    "is_inferred=true only for line_sample, template_fill, and estimated_marker rows (series template placed on a crowded-strip slot between real markers of that series; estimated_marker is a point with no visible centre, placed from the series' ink, column, and trajectory); these rows always go to review. Other hypotheses stay in unresolved metadata.",
+    "estimated_marker rows require nonblank uncertainty_x and uncertainty_y, confidence=low, and marker_shape equal to the series' declared marker; they are never auto-accepted.",
+    "Native coordinates are finite and lie inside source plot. x/y calculated only with valid axes; otherwise blank. A configured mask overlap is retained as mask_warning metadata and notes, not silently dropped.",
+    "uncertainty_x/y optional, finite nonnegative, in reported data units; do not manufacture certainty.",
+    "Native reviewer evidence kind, item reference, source description, and raw uncertainty_px are retained in stage metadata and notes. uncertainty_x/y are the calibrated axis-unit projection of uncertainty_px when calibration is valid.",
+    "normalized_x/y optional. Populate only through documented conditional conversions, with conversion_id(s).",
+    "line_sample rows, when present in earlier diagnostic stages, require marker_shape=none, is_inferred=true, and confidence=low. Agent 04 final CSVs never include sampled trace ink."
+  ],
+  "confidence": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "required_numeric_columns": [
+    "x",
+    "y"
+  ],
+  "allowed_is_inferred": [
+    false,
+    true
+  ],
+  "evidence_type": [
+    "visible_marker",
+    "partially_visible_marker",
+    "template_fit",
+    "template_fill",
+    "line_sample",
+    "estimated_marker",
+    "reviewer_asserted_marker",
+    "reported_numeric",
+    "manual"
+  ]
+}

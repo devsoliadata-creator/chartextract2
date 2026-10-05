@@ -1,0 +1,129 @@
+name: co2-chart-extraction
+description: CO2 isotherm charts in a research paper -> one reviewed data table with a review page per chart.
+start: python_read_document
+output: python_publish_results
+max_image_side: 1600          # images are shrunk to this size (pixels) before they are sent to a model
+max_check_rounds: 2           # Agent 02 makes one complete plan, then at most one targeted patch before independent review
+max_workflow_steps: 1000      # safety stop for one document: a panel takes ~10 steps (more when agent 02 loops) -> ~100 panels
+
+
+# Agent identity lives in .env. Each agentNN_<step> automatically uses
+# FOUNDRY_AGENT_NN_NAME and FOUNDRY_AGENT_NN_VERSION; no YAML fallback is used.
+# This file owns behavior. Detailed request instructions live under prompts/.
+agent_defaults:
+  timeout_seconds: 500        # fail a stalled model call instead of waiting indefinitely
+
+steps:
+  - id: python_read_document
+    title: Read the PDF or image and list every figure candidate (Python)
+
+  - id: agent00_find_figures
+    title: Decide which figures contain CO2 isotherm panels (agent, one call per figure)
+    agent:
+      timeout_seconds: 180
+      response_mode: json
+      instructions: |
+        # Role
+        You are a meticulous scientific data-extraction assistant for gas adsorption research.
+
+        # Instructions
+        Think first in the "reasoning" field, then answer.
+        Never guess numeric data values from a plot; you are asked about labels, layout and physical context only.
+      prompt: prompts/agent00_find_figures.md
+      schema: schemas/agent00_find_figures.schema.json
+      example: examples/agent00_find_figures.example.json
+
+  - id: agent01_read_chart
+    title: Describe one panel - axes, ticks, legend and series (agent)
+    agent:
+      response_mode: unstructured
+      instructions: |
+        # Role
+        You are a meticulous scientific data-extraction assistant for gas adsorption research.
+
+        # Instructions
+        Think first in the "reasoning" field, then answer.
+        Never guess numeric data values as if they were measured.
+      prompt: prompts/agent01_read_chart.md
+      schema: schemas/agent01_read_chart.schema.json
+      example: examples/agent01_read_chart.example.json
+
+  - id: python_extract_points
+    title: Calibrate the axes and detect every marker (deterministic Python, rerun every check round)
+
+  - id: agent02_check_extraction
+    title: Create one extraction plan, then verify it with at most one targeted patch (agent)
+    agent:
+      instructions: |
+        # Role
+        You are a meticulous scientific-chart structure validator.
+
+        # Instructions
+        Inspect the source chart yourself and judge the Python extraction against it.
+        The current structure is supporting material, not authority.
+        Correct the structure; do not edit individual data points.
+      prompt: prompts/agent02_check_extraction.md
+      schema: schemas/agent02_check_extraction.schema.json
+      example: examples/agent02_check_extraction.example.json
+      response_mode: unstructured
+
+  - id: agent03_review_points
+    title: Review the Python points against the source and add, move, delete or reassign them (agent)
+    agent:
+      timeout_seconds: 900      # per Code Interpreter call; one focused measurement correction is allowed
+      response_mode: artifacts
+      instructions: |
+        # Role
+        You are a scientific chart extraction reviewer with Code Interpreter.
+
+        # Instructions
+        Use Python to inspect uploaded files and produce a cited JSON report file; your final message is unstructured.
+        Inspect the unchanged source panel yourself; Python rows and diagnostics are fallible evidence, not authority.
+        Add, move, delete, or reassign any CO2 point when native source pixels support it; actively search for omitted markers, including supported glyph fragments in crowded regions.
+        Measure native-pixel centers in every supplied dense measurement target before settling any unresolved slot; link each measurement to a retained point or positional edit.
+        Report a native evidence reference and positive positional uncertainty in panel pixels for positional edits.
+        Preserve one extracted row per source marker instance: one row or centroid must never stand for multiple crowded, high-density, or overlapping markers. In any localized crowded, high-density, or overlapping marker-bearing region, if the count remains uncertain between N and N+1, choose N+1 and mark the uncertain extra as evidence_kind=estimated, with a source-based center/owner and positive positional uncertainty; set overlap=true only when overlap is actual or suspected. State the competing counts rather than claiming the extra is directly observed. Apply this +1 choice once per cluster across reviewer passes, preserving any existing estimated extra. Outside the explicit zero-start rule below, a curve start, shared zero, shared column, temperature ordering, expected count, smoothness, or interpolation without a crowded/high-density/overlapping marker-bearing region does not justify adding a marker. Use honest uncertainty and never accept a verdict while an estimated point remains.
+        Shared-zero start rule: if the source appears to show all eligible series starting at the same in-frame (0,0) origin on linear axes but their first markers cannot be resolved, include one estimated zero-start marker for each affected series. Derive its native position from the existing calibration, disclose the shared-origin assumption in source_evidence, and use positive uncertainty and review status. Preserve visible nonzero first markers and existing origin-instance IDs; add a separate origin instance only when missing. Do not add a second dense-region extra for that same unresolved start. Do not force zero on logarithmic axes, an origin outside the source frame/masks, visibly nonzero starts, or an uncalibrated origin; leave a calibration conflict for Agent 04.
+      prompt: prompts/agent03_review_points.md
+      schema: schemas/agent03_review_points.schema.json
+      example: examples/agent03_review_points.example.json
+
+  - id: agent04_final_check
+    title: Final source review and authoritative table (agent)
+    agent:
+      timeout_seconds: 900
+      response_mode: artifacts
+      instructions: |
+        # Role
+        You are the final scientific-chart reviewer with Code Interpreter.
+
+        # Instructions
+        Start from the complete Agent 03 CSV, JSON, and report. Use Python and unchanged native pixels to verify and correct the entire candidate table. You have final authority over supported rows, calibration, marker style, and the final verdict within the output contract.
+        Agent 03 findings guide inspection; source pixels decide contested measurements. Python detections remain fallible evidence.
+          Return one unfenced JSON QA report containing the complete replacement CSV and its SHA-256 digest inline.
+          Do not create or cite output files; inspect plots made from the in-memory final CSV before returning it.
+        Supported partial glyph centres are allowed with explicit uncertainty.
+        Preserve one extracted row per source marker instance: one row or centroid must never stand for multiple crowded, high-density, or overlapping markers. In any localized crowded, high-density, or overlapping marker-bearing region, if the count remains uncertain between N and N+1, choose N+1 and mark the uncertain extra as evidence_type=estimated_marker, is_inferred=true, confidence=low, with positive positional/axis uncertainties; use overlap_flag=true in notes only when overlap is actual or suspected. Record the competing counts and a source-based estimated center/owner. This is an explicit density/overlap hypothesis, not a directly observed extra marker. Apply the +1 choice once per cluster across reviewer passes; retain the existing estimated extra's identity rather than adding another. Outside the explicit zero-start rule below, a curve start, shared zero, shared column, temperature ordering, expected count, or interpolation without a crowded/high-density/overlapping marker-bearing region does not justify adding a marker; never verdict=accept while an estimated_marker row remains.
+        Shared-zero start rule: if the source appears to show all eligible series starting at the same in-frame (0,0) origin on linear axes but their first markers cannot be resolved, include one estimated (x=0,y=0) marker for each affected series. Derive native pixels from the final calibration; use evidence_type=estimated_marker, is_inferred=true, confidence=low, positive pixel/axis uncertainties, and notes identifying origin_estimate=true plus the shared-origin assumption. Keep the normal series marker and table-only evidence status. Reuse existing origin-instance IDs across stages and never overwrite a clearly resolved nonzero first marker or add another density/overlap extra for the same unresolved start. Do not force zero on logarithmic axes, origins outside the source frame or inside masks, visibly nonzero starts, or an uncalibrated origin. These assumed origin rows always require review.
+        Account for unresolved native regions.
+      prompt: prompts/agent04_final_check.md
+      schema: schemas/agent04_final_check.schema.json
+      example: examples/agent04_final_check.example.json
+
+  - id: python_publish_results
+    title: Build review pages and the master CSV tables, then report (Python)
+
+# Arrows of the graph.  "when" is the route a step chose; an arrow without "when" is always taken.
+edges:
+  - {from: python_read_document, to: agent00_find_figures, when: continue}
+  - {from: python_read_document, to: python_publish_results, when: publish}        # nothing to read
+  - {from: agent00_find_figures, to: agent01_read_chart, when: next_panel}
+  - {from: agent00_find_figures, to: python_publish_results, when: publish}         # no CO2 panels
+  - {from: agent01_read_chart, to: python_extract_points}
+  - {from: python_extract_points, to: agent02_check_extraction, when: continue}
+  - {from: python_extract_points, to: agent03_review_points, when: review_points}
+  - {from: agent02_check_extraction, to: python_extract_points, when: adjust}       # rebuild until agent 02 is satisfied
+  - {from: agent02_check_extraction, to: agent03_review_points, when: continue}
+  - {from: agent03_review_points, to: agent04_final_check}
+  - {from: agent04_final_check, to: agent01_read_chart, when: next_panel}            # loop over panels
+  - {from: agent04_final_check, to: python_publish_results, when: publish}

@@ -1,0 +1,672 @@
+{
+ "reasoning": "Independent source-only inspection of panel.png established the main frame at approximately X=118–651 px and Y=68–498 px, linear Relative Pressure (P/P₀) and Uptake (cm³ g⁻¹) axes, blue open-circle solid CO2@195K ink, and excluded red N2@77K ink. The inset mask X=190–523,Y=168–403 px was treated as excluded context; no inset coordinates were emitted. Native major-tick strokes were fitted independently before candidate review. After loading the complete Agent 03 table, every row was checked against panel.png. The fused low-pressure strip was not treated as a set of automatically detected marker centres: unsupported direct-marker claims were deleted, while 12 low-confidence line_sample rows retain the visible CO2 centreline through the continuous band and connecting rise. From the saved CSV there are 46 direct visible/partial markers, one estimated origin marker, and 12 trace samples. Five omitted native markers were added at (150,292), (237,119), (310,116), (587,111), and (611,108) px. Marker centres in separable regions were recentered from native rim/core symmetry. The wholly fused origin is explicitly estimated at the zero-axis intersection from blue CO2 ink, its own trajectory, and the shared N2 origin column, so the verdict is review. The complete review_tiles.json inventory was examined. slot:0001 and slot:0002 have null source pixels and a listed bbox [0,68,33,497] outside the plot frame; those slot records provide no native support for additions, so decisions there were based on the actual panel strip instead. Reloaded-CSV reconstruction and overlay were inspected: points track the source curve, exclude the inset/N2 series, and continuous fused spans are sampled at no more than about 14 px in the vertical strip; plateau centre spacings are about 24–25 px between approximately 18–20 px glyphs with visible connecting ink.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0.0,
+   "printed_max": 1.0,
+   "data_min": -0.001181,
+   "data_max": 0.999114,
+   "result": "pass",
+   "reason": "Printed major ticks are 0.0–1.0. Native tick centres 142.5,239.5,336.0,433.0,529.5,626.5 px fit the saved values with 0.000247 P/P₀ RMS residual; the slight negative minimum is subpixel scatter around the zero tick."
+  },
+  "y": {
+   "printed_min": 0.0,
+   "printed_max": 140.0,
+   "data_min": -0.058266,
+   "data_max": 126.843028,
+   "result": "pass",
+   "reason": "Printed major ticks are 0–140 cm³ g⁻¹. Native tick centres from 468.5 px (0) to 68.5 px (140) fit with 0.0487 cm³ g⁻¹ RMS residual; the saved curve overlays the native uptake trajectory."
+  }
+ },
+ "independent_read": {
+  "x_axis": "Relative Pressure (P/P₀), linear; printed major ticks 0.0, 0.2, 0.4, 0.6, 0.8, 1.0; frame extends slightly beyond the printed end ticks.",
+  "y_axis": "Uptake (cm³ g⁻¹), linear; printed major ticks 0, 20, 40, 60, 80, 100, 120, 140.",
+  "series": [
+   {
+    "label": "CO2@195K",
+    "marker": "circle",
+    "marker_fill": "open",
+    "visible_markers_estimate": 47,
+    "notes": "Direct upper-right label and native blue glyphs show open circles joined by a solid blue line. Estimate includes the fused origin as one uncertain logical marker and excludes inset duplicates; the dense vertical strip prevents an exact source-only count."
+   },
+   {
+    "label": "N2@77K",
+    "marker": "circle",
+    "marker_fill": "open",
+    "visible_markers_estimate": 29,
+    "notes": "Direct lower-right label and native red open circles identify N2; this series is excluded by spec.json and contributes no CSV rows."
+   }
+  ],
+  "visual_risks": [
+   "Blue CO2 markers fuse into a solid low-pressure strip at approximately X=136–152 px,Y=350–469 px.",
+   "Several rising-branch circles overlap and preserve only partial white cores or arcs.",
+   "Terminal plateau markers near X=575–626 px overlap.",
+   "Inset X=190–523 px,Y=168–403 px duplicates CO2 with independent log-x axes and must be excluded.",
+   "CO2 and N2 ink overlap near the zero-axis intersection."
+  ]
+ },
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2@195K",
+   "coverage": "uncertain",
+   "final_count": 59,
+   "comment": "Saved CSV contains 46 direct visible/partial markers, 1 low-confidence estimated origin marker, and 12 low-confidence line samples. The fused strip X≈136–152,Y≈350–469 px is covered as trace ink, but individual hidden marker multiplicity/branch ownership is unresolved."
+  }
+ ],
+ "uncertainties": [
+  "The origin glyph has no separable white core and is retained as estimated_marker with 7 px uncertainty; it is supported by native blue ink, the CO2 trajectory, and the shared origin column, not by expected counts.",
+  "The dense low-pressure strip is continuous native CO2 ink. Its line_sample rows describe the band centreline and are not experimental marker counts.",
+  "Individual hidden open-circle instances and adsorption/desorption branch multiplicity inside X≈136–152 px,Y≈350–469 px cannot be resolved from native pixels.",
+  "Partially fused plateau/rising markers retain low confidence where only arc symmetry survives."
+ ],
+ "row_count": 59,
+ "calibration": {
+  "px_per_unit_x": 483.8573959255979,
+  "px_per_unit_y": 2.856550843925816,
+  "unit_per_px_x": 0.002066724635028145,
+  "unit_per_px_y": 0.3500725366490168,
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 0.002066724635028145,
+    "intercept": -0.29465562216832186
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.3500725366490168,
+    "intercept": 163.95071702317983
+   }
+  },
+  "tick_fit_resid_x": 0.00024702090573897674,
+  "tick_fit_resid_y": 0.0486906224240643,
+  "tick_fit_resid_x_px": 0.11952289219004389,
+  "tick_fit_resid_y_px": 0.13908723857673413,
+  "frame_px": [
+   118,
+   68,
+   651,
+   498
+  ],
+  "x_ticks_px": [
+   142.5,
+   239.5,
+   336.0,
+   433.0,
+   529.5,
+   626.5
+  ],
+  "y_ticks_px": [
+   68.5,
+   125.5,
+   182.5,
+   240.0,
+   297.0,
+   354.0,
+   411.0,
+   468.5
+  ],
+  "tick_anchors": {
+   "x": [
+    {
+     "pixel": 142.5,
+     "value": 0.0
+    },
+    {
+     "pixel": 239.5,
+     "value": 0.2
+    },
+    {
+     "pixel": 336.0,
+     "value": 0.4
+    },
+    {
+     "pixel": 433.0,
+     "value": 0.6000000000000001
+    },
+    {
+     "pixel": 529.5,
+     "value": 0.8
+    },
+    {
+     "pixel": 626.5,
+     "value": 1.0
+    }
+   ],
+   "y": [
+    {
+     "pixel": 468.5,
+     "value": 0.0
+    },
+    {
+     "pixel": 411.0,
+     "value": 20.0
+    },
+    {
+     "pixel": 354.0,
+     "value": 40.0
+    },
+    {
+     "pixel": 297.0,
+     "value": 60.0
+    },
+    {
+     "pixel": 240.0,
+     "value": 80.0
+    },
+    {
+     "pixel": 182.5,
+     "value": 100.0
+    },
+    {
+     "pixel": 125.5,
+     "value": 120.0
+    },
+    {
+     "pixel": 68.5,
+     "value": 140.0
+    }
+   ]
+  }
+ },
+ "unresolved_slots": {
+  "total": 1,
+  "by_series": {
+   "CO2@195K": 1
+  },
+  "slots": [
+   {
+    "series_label": "CO2@195K",
+    "reason": "Native panel.png region X≈136–152 px,Y≈350–469 px is a solid fused blue band; the centreline is sampled, but individual hidden marker centres and branch multiplicity are not separable."
+   }
+  ]
+ },
+ "changes": [
+  {
+   "action": "delete",
+   "point_id": "pt-aed08d9476ac80ba",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (141.50,472.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-51d33c16388b4bdf",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (142.11,457.22) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-0e421e680583238a",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (142.20,450.41) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-f0bfe5d652081e38",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (142.20,444.41) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-ec5a403a24f1cea2",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (142.81,427.81) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-1a0b1e547ef09ad0",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (143.09,436.99) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-fb436fe1184ef3d3",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (143.20,418.41) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-124af1dd1f172aa1",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (144.00,409.00) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-64ce8a779afd8336",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (144.54,394.05) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-b774757902df67c5",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.00,383.00) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-c3191fd05d761a18",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.00,381.00) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-ebc0f9eff95f7d7a",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.38,374.49) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-9c21b38a39fdee09",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.41,368.23) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-3e4ec089a90b07b1",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.45,366.82) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-294707f2ebdf074e",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (145.68,360.53) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-e60f795cf1911afe",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (146.50,346.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-42e1908ddc6a169b",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (148.00,332.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-a900102d4ab704ea",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (149.50,304.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-f3b93b0c983c7edd",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (161.50,234.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-be5ef0da3854e474",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (162.50,220.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-27359139c46c779d",
+   "reason": "Unsupported duplicate/direct-marker claim in the fused low-pressure blue band; native pixels do not separate a circular centre.",
+   "source_evidence": "panel.png native pixels near (162.84,211.20) show continuous fused blue ink without a separable white-core/rim centre."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-1b56df9d250985c4",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (163.00,206.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-1107b5a20cfa6633",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (164.00,192.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-d00503e85354ed29",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (164.50,178.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-b0b67a969a84556f",
+   "reason": "Trace sample duplicates a directly resolved marker or lies beyond the supported band centreline; removed to keep one supported representation.",
+   "source_evidence": "panel.png native pixels near (185.00,115.00) show a separable marker already represented by a retained direct row or only marker-edge ink."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-d18a699346ea98b2",
+   "reason": "Placed the wholly fused origin instance at the calibrated zero-axis intersection rather than the lower-rim centroid.",
+   "source_evidence": "panel.png shows the rounded blue band crossing x=142.5 px and y=468.5 px; no separable white centre is visible."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-d18a699346ea98b2",
+   "reason": "Visible-marker classification was unsupported because the origin glyph is wholly fused; classified as estimated_marker.",
+   "source_evidence": "Native crop X=132–158,Y=445–482 shows solid blue fill through the origin with no closed white marker core; own CO2 ink, trajectory, and the shared N2 origin column support only an estimate."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-1ab721e5bfbab797",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (145.0,344.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-e83cc222cfe128b5",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (146.0,332.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-4065800f9c9ca699",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (148.0,321.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-4065800f9c9ca699",
+   "reason": "Native inspection supports partially_visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (148.0,321.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-bfab080f041025cf",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (149.0,311.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-43cc82a9e5738f26",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (150.0,301.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-bb073db59ad86dad",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (154.0,286.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-bb073db59ad86dad",
+   "reason": "Native inspection supports visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (154.0,286.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-8ac1bb0baa523493",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (157.0,278.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-7b6862d8024ec158",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (158.0,269.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-7b6862d8024ec158",
+   "reason": "Native inspection supports partially_visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (158.0,269.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-5b8a710637e9313f",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (159.0,261.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-5b8a710637e9313f",
+   "reason": "Native inspection supports partially_visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (159.0,261.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-01c27f62d7bc85ae",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (160.0,253.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-8cb290e0204741b0",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (160.0,246.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-8cb290e0204741b0",
+   "reason": "Native inspection supports partially_visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (160.0,246.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-bba08871bbfa7132",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (160.0,238.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-86bc2e8ad41a6ff8",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (160.0,230.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-487aaa2e097e8f22",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (160.0,223.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-62baf6f49b8f7437",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (161.0,215.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-74283947d4d092a3",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (162.0,205.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-ca23f6c87b8d937b",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (162.0,195.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-37514ca987c4adc6",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (164.0,174.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-e8243a693e44ebc6",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (170.0,132.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-ede149e6b4200179",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (177.0,125.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-ede149e6b4200179",
+   "reason": "Native inspection supports visible_marker rather than a trace sample.",
+   "source_evidence": "panel.png at (177.0,125.0) px shows a localized blue circular rim/white core on the CO2 trajectory."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-a9e829f656f9b0e4",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (186.0,121.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-e8b343b9327b4bc8",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (199.0,122.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-b1ca1fd118a14c60",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (212.0,120.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-7db81f7f07c5de0a",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (225.0,121.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-8942667739e5ae6e",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (249.0,120.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-822d1d57a54ed807",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (260.0,118.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-252ca490c6f49488",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (272.0,119.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-06e162902d0f0419",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (285.0,117.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-4996b0970e899994",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (334.0,116.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-a009a255ab9a4003",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (358.0,115.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-786d94592a77e510",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (382.0,115.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-f8458eb33361b356",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (406.0,114.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-e3fac353b69032a8",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (430.0,114.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-6918e989678743c0",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (454.0,113.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-e622a9bcf087a432",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (478.0,113.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-bb166d71fee0d9bb",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (502.0,113.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-a28af6b8b52df482",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (526.0,112.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-0aa95b693d85f76d",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (551.0,112.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-5bf25bb0032f2ede",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (575.0,111.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-9b2c4f18d0b6e5a4",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (599.0,110.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-8d6e8406089a4e27",
+   "reason": "Recentered on the native circular rim/white-core symmetry rather than the automated component centroid.",
+   "source_evidence": "panel.png native blue CO2 glyph at (626.0,106.0) px has the local circular-rim symmetry/white-core maximum used for the centre."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-8c20fecb2ff6d0e6",
+   "reason": "Visible CO2 marker omitted from the Agent 03 table.",
+   "source_evidence": "panel.png at (150.0,292.0) px shows distinct white core and blue circular rim in the rising CO2 chain."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-cd7e873bb6a372a0",
+   "reason": "Visible CO2 marker omitted from the Agent 03 table.",
+   "source_evidence": "panel.png at (237.0,119.0) px shows distinct white core enclosed by a blue circular rim on the early plateau."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-355f322d58d145e7",
+   "reason": "Visible CO2 marker omitted from the Agent 03 table.",
+   "source_evidence": "panel.png at (310.0,116.0) px shows isolated open blue circle with a complete white core on the plateau."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-4107bd798d9b9fe3",
+   "reason": "Visible CO2 marker omitted from the Agent 03 table.",
+   "source_evidence": "panel.png at (587.0,111.0) px shows overlapping blue ring with a recoverable white-core centre between adjacent terminal markers."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-25bbf7eef5026c06",
+   "reason": "Visible CO2 marker omitted from the Agent 03 table.",
+   "source_evidence": "panel.png at (611.0,108.0) px shows partly fused terminal blue ring; upper/lower arc symmetry supports the centre."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-646540f80e6df6ab",
+   "reason": "Placed trace sample on the centreline of the fused native band.",
+   "source_evidence": "panel.png shows the blue CO2 band centred near (146.0,353.0) px."
+  },
+  {
+   "action": "reassign",
+   "point_id": "pt-646540f80e6df6ab",
+   "reason": "No separable open-circle centre exists here; retain the coordinate only as a native line_sample.",
+   "source_evidence": "Native pixels around (146.0,353.0) px are continuous solid blue band ink with no enclosed white marker core."
+  }
+ ]
+}

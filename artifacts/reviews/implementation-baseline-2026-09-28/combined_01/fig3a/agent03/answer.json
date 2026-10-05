@@ -1,0 +1,302 @@
+{
+ "reasoning": "batch 1: Independent inspection of the unchanged panel.png confirms one eligible series, the blue open-circle solid CO2@195K curve; the red N2@77K curve and the inset are excluded. The main plot is linear in both axes. Native tick anchors give x ≈ 0.0020753·X_px − 0.2966 (equivalently x=0 near X=143.0 and x=1 near X=625.0) and y ≈ −0.350001·Y_px + 164.2362 (y=0 near Y=469.0 and y=140 near Y=69.0), consistent with the source frame and candidate calibration. I inspected the full native panel, the crowded low-pressure strip, all supplied native tiles/boxes/regions, and both slot-search crops before reviewing candidate views. The blue marker chain is densely overlapped near the origin but the supplied visible/partial marker centres are supported by native blue contours; the later plateau markers are also source-supported. No native pixels support an add, move, delete, or reassignment. The candidate contains 52 marker rows (including partial/overlapped markers) and 27 inferred line_sample rows. The latter represent continuous native same-series ink rather than additional marker centres and are retained. Because inferred trace rows remain, the verdict is review rather than accept.",
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2@195K",
+   "coverage": "uncertain",
+   "final_count": 79,
+   "comment": "Post-edit count remains 79: 52 source-backed marker/partial-marker rows and 27 retained line_sample rows. Marker coverage is complete over the visible main-panel blue curve to native inspection, including the crowded low-pressure strip; exact centres in the fused origin region retain the candidate's pixel uncertainty. Coverage is marked uncertain because the dense strip and inferred trace representation require downstream review."
+  }
+ ],
+ "operations": [],
+ "uncertainties": [
+  "Crowded low-pressure CO2 strip approximately X=141–164 px, Y=105–469 px: multiple open blue circles overlap into a thick continuous band. The native contours support the retained marker sequence and trace ink, but separability of some adjacent centres is limited to roughly marker-scale uncertainty.",
+  "The 27 retained line_sample rows are inferred samples of continuous native blue CO2 ink, not claims of individual marker centres; their presence independently requires verdict review.",
+  "Inset bbox approximately X=190–523 px, Y=168–403 px is excluded from extraction. The red N2 curve and all text/axis ink are excluded non-CO2 content."
+ ],
+ "coverage": [
+  {
+   "item_id": "crowded_strip:01",
+   "item_type": "evidence",
+   "status": "reviewed",
+   "detail": "Inspected unchanged native crowded low-pressure strip in panel.png; blue CO2 ink is continuous and all supplied marker/trace candidates lie on the blue trajectory. No additional separable CO2 centre supported beyond the listed rows."
+  },
+  {
+   "item_id": "tile:marker_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile tile_01_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "box:marker_01:1",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [142.2, 450.41] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-0e421e680583238a at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:2",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [142.2, 444.41] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-f0bfe5d652081e38 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:3",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [143.09, 436.99] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-1a0b1e547ef09ad0 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:4",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [143.2, 418.41] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-fb436fe1184ef3d3 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:5",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [144.0, 409.0] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-124af1dd1f172aa1 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:6",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [144.54, 394.05] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-64ce8a779afd8336 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:7",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.0, 383.0] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-b774757902df67c5 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_01:8",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.0, 381.0] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-c3191fd05d761a18 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "tile:marker_02",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile tile_02_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "box:marker_02:9",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.38, 374.49] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-ebc0f9eff95f7d7a at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:10",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.41, 368.23] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-9c21b38a39fdee09 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:11",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.45, 366.82] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-3e4ec089a90b07b1 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:12",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [145.68, 360.53] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-294707f2ebdf074e at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:13",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [147.5, 335.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-e83cc222cfe128b5 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:14",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [150.5, 311.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-bfab080f041025cf at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:15",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [160.12, 254.47] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-01c27f62d7bc85ae at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_02:16",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [161.27, 234.71] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-86bc2e8ad41a6ff8 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "tile:marker_03",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile tile_03_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "box:marker_03:17",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [161.85, 228.54] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-487aaa2e097e8f22 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:18",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [162.54, 218.89] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-62baf6f49b8f7437 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:19",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [171.5, 133.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-e8243a693e44ebc6 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:20",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [186.5, 121.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-a9e829f656f9b0e4 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:21",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [211.5, 120.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-b1ca1fd118a14c60 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:22",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [259.5, 118.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-822d1d57a54ed807 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:23",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [285.5, 116.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-06e162902d0f0419 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_03:24",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [333.5, 116.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-4996b0970e899994 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "tile:marker_04",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile tile_04_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "box:marker_04:25",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [356.5, 116.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-a009a255ab9a4003 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:26",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [378.5, 115.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-786d94592a77e510 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:27",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [407.5, 115.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-f8458eb33361b356 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:28",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [428.5, 114.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-e3fac353b69032a8 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:29",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [454.5, 113.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-6918e989678743c0 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:30",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [476.5, 114.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-e622a9bcf087a432 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:31",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [504.5, 112.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-bb166d71fee0d9bb at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_04:32",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [524.5, 112.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-a28af6b8b52df482 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "tile:marker_05",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile tile_05_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "box:marker_05:33",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [553.5, 111.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-0aa95b693d85f76d at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_05:34",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [575.5, 113.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-5bf25bb0032f2ede at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_05:35",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [597.5, 111.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-9b2c4f18d0b6e5a4 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "box:marker_05:36",
+   "item_type": "box",
+   "status": "reviewed",
+   "detail": "Inspected native box at [624.5, 107.5] before candidate view; the blue open-circle contour/fragment supports the retained CO2 point pt-8d6e8406089a4e27 at this location. No move, delete, or reassignment supported."
+  },
+  {
+   "item_id": "tile:region_01",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile region_01_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "tile:region_03",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile region_03_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "tile:region_04",
+   "item_type": "tile",
+   "status": "reviewed",
+   "detail": "Inspected native tile region_04_native.png; supplied candidate set is source-consistent for the CO2 series, with no native contradiction requiring an edit."
+  },
+  {
+   "item_id": "slot:0001",
+   "item_type": "slot",
+   "status": "reviewed",
+   "detail": "Inspected the unchanged native slot-search crop; it contains no eligible blue CO2 marker at the searched location (only surrounding axis/text context), so no point operation is warranted."
+  },
+  {
+   "item_id": "slot:0002",
+   "item_type": "slot",
+   "status": "reviewed",
+   "detail": "Inspected the unchanged native slot-search crop; it contains no eligible blue CO2 marker at the searched location (only surrounding axis/text context), so no point operation is warranted."
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+  "note": "Current saved artifacts preserved before implementation; f2b_01 baseline not identified. Existing stages may reflect separate reruns.",
+  "files": [
+    {
+      "path": "artifacts/runs/combined_01/fig2a/panel.png",
+      "sha256": "d5b88edd7698a01383412692a087744b117d66ff666727870b6f882c1ea4338c"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/spec.json",
+      "sha256": "c32716b6a69e303012dd3ea9ff2989b56b8e1b9087c5892a52d6dd6dcea6c958"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/log.json",
+      "sha256": "b920f9dbe32d20d777297d3ae1517e1e4494a20351864d3a4732d884b934a153"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent02/answer.json",
+      "sha256": "e331fb15cee425d11dd9e709a15022db4097cf5b06bc8c3785767a06d85feb5e"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/python/points.csv",
+      "sha256": "f752956c889c48469e31e488caea656952279241c67af38e498f3494fc98f163"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/python/points.json",
+      "sha256": "aa5fe94f2ab5ffbb1570fd08f1ecd9e706ed1a31ec79bef93ef5d49d1ae40e52"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/python/summary.json",
+      "sha256": "9d744b7963d69529f99859bc904aba6371506fcb7cbe9ea250d0c411a0c66a7f"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent03/points.csv",
+      "sha256": "6829a76b69241ddae06062728a522bde738ec621d432b1f4aa58ef1343632e70"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent03/points.json",
+      "sha256": "6861794bec1dd741fd3502805b603adc59c73772495f45af72cd082de80a6198"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent03/answer.json",
+      "sha256": "67fee772b4a1078c948902c13127a6fce02c80a9ad3db54d56f8a049a25982e9"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent04/points.csv",
+      "sha256": "6b8c4fae2ecc14e31fea4db35f0b78d44481a18820f88c375eed53fadb1cce63"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent04/points.json",
+      "sha256": "daa44779f18e3e2294f5364808de06860d6ce808e0fa75d6f925881d6215c390"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent04/answer.json",
+      "sha256": "55ed7b259be0e0702908ca0750f78490ce498a4cf4bf22c884854c7e95cad38e"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2a/agent04/audit.json",
+      "sha256": "4f052fd558e57998d3b86d03577ba77a952a78a8d9ab6964a8235d09f8b3f6f4"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/panel.png",
+      "sha256": "6b8b446ce32abacce90ba2e7c85ccce1db1269c535459b1bfa2697dba5e02dcf"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/spec.json",
+      "sha256": "219651301ed110e4af4150b364bc74415e66b54b866251dc1937bd02225dfee2"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/log.json",
+      "sha256": "441ed33637cc2a08dfbde383edfc41a98ef96c8a1adecfa10b8f78757cee4450"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/agent02/answer.json",
+      "sha256": "625ec98ee5a1d99c9b76b881ca166fe7c13ef58d9c2e2a142b8043a8262cdfde"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/python/points.csv",
+      "sha256": "4372079feccc3d8acde7bf23ef20469596f46c48d9a9d2dc6878a8454ee1d289"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/python/points.json",
+      "sha256": "c18ef6fbc84254d4b1ae5b7c77dfa1ef20bc354cc68db1440902bad0608d82a3"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig2b/python/summary.json",
+      "sha256": "1982c4a18595442761309fcfe2fb02fdc25568d3e42d8e749edfdf5c26c5af90"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/panel.png",
+      "sha256": "e4e06a1b2e9af3c7baf38ece202f49f572953b570a3e642e5a7ba9b29bedeb09"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/spec.json",
+      "sha256": "692b3cda926b0dd023cc083f83691b931bf3b92c681ee81a46829569e8b11343"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/log.json",
+      "sha256": "52b48f65eb6708096f2bdea60f23cbbab1e9aca249125954f274095d560e5da7"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent02/answer.json",
+      "sha256": "3ae256da2bad035a11d709f252ac0162c9822552a1d0bc0669149f4768c1657e"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/python/points.csv",
+      "sha256": "42d5e0447158990f5b577a22412de01c1b87c1864aeb6bec868298ed96755b65"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/python/points.json",
+      "sha256": "794f995e6eee43c1fcce3cc6b44eb78a5bbcb26fb606bc0994a1b24fbbbcd84a"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/python/summary.json",
+      "sha256": "613b8dfb77b77210122cc9fc8bb823697916de1458eb72d3739a3638f7a57738"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent03/points.csv",
+      "sha256": "70ef533a19bdf24b3a10eaecde34b68450fcd9e5e8a2a255e5c240b617e0e9b2"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent03/points.json",
+      "sha256": "2d3363021e015db58f5044ac6c3b4f8a17cbcd0fc3d28bd445f54fa961c7f5d4"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent03/answer.json",
+      "sha256": "f6f87ffdce17e4c87878a5ba9576e61c1e9032c010eeee331de8a377eca78c9d"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent04/points.csv",
+      "sha256": "b44592cd691163738e4b5000bb6a48673045bf5953aad94e4f2d5fcb5d0b9ee9"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent04/points.json",
+      "sha256": "36c37ff640198ecf520e90fa7cb5ca677a8364da68abb7f02899e772c1c58a0b"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent04/answer.json",
+      "sha256": "40cc0ec78042c43124002f9c2235a9ecfa75c2a2bbc275015098b6f0a832d3df"
+    },
+    {
+      "path": "artifacts/runs/combined_01/fig3a/agent04/audit.json",
+      "sha256": "53378ba9f3f6aba8a61125b5fbbe95d27b7be502581439f6ee7f84b56e0039e3"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/panel.png",
+      "sha256": "b4bb47cb07ed3552d16a19c0aba6beb0f0ff4e35f70b5102fa6d7e11c324e17c"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/spec.json",
+      "sha256": "8e95569af466cd07d4d66d69f897710e7b1daa7b8ab659cdd429cb40f82ba878"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/log.json",
+      "sha256": "d4f3f486438a1f33e2a3d87f0cdec2355ec81e823ac6a442573ba5022e83bcc1"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent02/answer.json",
+      "sha256": "fe36ac8b2888df3dfa929537cd50d7053f213b87c5d0270ccb47d1e9abaded68"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/python/points.csv",
+      "sha256": "1680b24e5d9e6c23169c08d6f65bce71361ecae2d960f4a4b396f73ee1b7b02b"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/python/points.json",
+      "sha256": "a167454651dec37c0a24ccd9eb6bb1d24e103f8d17adb1346a2a8ecd4785a438"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/python/summary.json",
+      "sha256": "a4afac9abd1e8a3a35701e8cf1bd2fb3c4b4ab9dc570a652c4877828a263da9b"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent03/points.csv",
+      "sha256": "51346bac9b2a8479995868c87fd6364b622941fbb9dabe1245201f22f488f2cf"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent03/points.json",
+      "sha256": "93204c6496b38012137361ce5184f29e17c8abfd1ed286b442ae7c408cb69765"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent03/answer.json",
+      "sha256": "0367f35fe83d0e291a863409345eec71eb0dcf88372b3dc185fd36d75297a026"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent04/points.csv",
+      "sha256": "7be123ac2a536fd9bf67d38b19d6a992649a48800576bdb3053f6927859c24fc"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent04/points.json",
+      "sha256": "8f75fbe53b030072a279a8149f42ece4bd2cd90f4c9cdf2b5c695091dac69c82"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent04/answer.json",
+      "sha256": "18da9b2a1ba714c536aace5729443193f6db628dded0c0cc49d923bb9c6651e0"
+    },
+    {
+      "path": "artifacts/runs/f2b/figp1b/agent04/audit.json",
+      "sha256": "a68853d3db2d8efeb036f29e9a9885567a7d87e5a60b6d9f9b2c7e43b88eaaba"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/panel.png",
+      "sha256": "45c7dfdff37c274dcb7111a70500e12e2db09a4400e957758811f84aa4b5c24e"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/spec.json",
+      "sha256": "dd33569bb21b0ded0f5e4dc6a8f97244e1f3124c51386949be4ecd41d073120d"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/log.json",
+      "sha256": "2fc37e1122b11e8037a1c0e5bde66268c4caf870b1c00723ef7081b053fb47cf"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent02/answer.json",
+      "sha256": "1dbde0959ce739b1d962caf73a0f3578177cf18f10b99c138bb547e08725ec96"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/python/points.csv",
+      "sha256": "b1a83fadcf744536ad8a6037d02720cbf054dbb411f97661b7c08dd93178e96e"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/python/points.json",
+      "sha256": "bab819816f582d66835b50d1df5a538da8270b8f01292218d594e522b58b2eaa"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/python/summary.json",
+      "sha256": "fa2548f0f0696e2e79693779b8a7a23aa8195ee3c63e21cbd403777bc194178a"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent03/points.csv",
+      "sha256": "f949e880970c3df8a9de4131ebfba682d3fd09c86e9d23a8f37f277b3dbc8e37"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent03/points.json",
+      "sha256": "5e55233f51a2af53405b70f4aaf6542d193f7739684128709f44732d95e90b5d"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent03/answer.json",
+      "sha256": "c56bb404e7b59e299aec3171fa4e3e9f45a67d171ec5bbd3ddddfb4526253f04"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent04/points.csv",
+      "sha256": "760ea3bee8a47645986f00ef243bff6ef41ccf4ff724d7e4351c603a373a5067"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent04/points.json",
+      "sha256": "ed4ca2c5e80efa30bcf685316863e48e1810413ce4851769e0910bc3a2b5d4fe"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent04/answer.json",
+      "sha256": "79b0a756075642934ad1879efe8c01a962001bcd42ba3f6fa2bb97d0048f89cc"
+    },
+    {
+      "path": "artifacts/runs/f2b_02/figp1b/agent04/audit.json",
+      "sha256": "7b19a2bbe626b0cdd235f95e6711b015e9c0f3804f4a70cee6d2d20b46900269"
+    }
+  ]
+}

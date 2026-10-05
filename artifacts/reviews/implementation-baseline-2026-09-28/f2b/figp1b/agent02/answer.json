@@ -1,0 +1,508 @@
+{
+ "reasoning": "The tick calibration and re-plotted curve values agree with the source. The six legend identities are also correct; the raster glyph reader misread several symbols because of line and text overlap. Coverage is not yet acceptable: Python converted the thick low-pressure red, green, and black curves into dozens of closely spaced trace samples, while the source uses the same six low-pressure pressure columns visible from the separated orange markers. Those three fused segments should be sampled only at 1.5, 3.5, 7, 13.5, 20, and 27 kPa. The prior estimate of eleven black stars below 30 kPa is unsupported by the image.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 120,
+   "data_min": 0.2765,
+   "data_max": 114.1036,
+   "reason": "The recreated curves occupy the same 0-120 kPa positions as the source, including the final markers near 114 kPa.",
+   "result": "pass"
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 3,
+   "data_min": 0.039,
+   "data_max": 2.9285,
+   "reason": "The recreated loading values align with the source ticks from 0 to 3.0 mmol/g; the upper red point remains just below 3.0 as in the panel.",
+   "result": "pass"
+  }
+ },
+ "satisfied": false,
+ "issues": [
+  "The low-pressure CO2 303K curve is represented by 33 artificial trace samples rather than the six shared marker columns.",
+  "The low-pressure CO2 323K curve is represented by 37 artificial trace samples rather than the six shared marker columns.",
+  "The low-pressure CO2 373K segment is represented by 21 artificial trace samples, and its expected count below 30 kPa was incorrectly set to eleven instead of six.",
+  "One isolated CO2 353K marker and one high-pressure CO2 373K marker remain missed, but these are secondary to the systematic fused-band error."
+ ],
+ "structure_ok": true,
+ "chart_title": "",
+ "x_axis": {
+  "title": "Pressure",
+  "unit": "kPa",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 120,
+  "boundary_limits_confirmed": false,
+  "ticks": [
+   0,
+   40,
+   80,
+   120
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.2351,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.4715,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.7079,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.9429,
+    "value": 120
+   }
+  ]
+ },
+ "y_axis": {
+  "title": "CO2 Loading",
+  "unit": "mmol/g",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 3,
+  "boundary_limits_confirmed": false,
+  "ticks": [
+   0,
+   0.5,
+   1,
+   1.5,
+   2,
+   2.5,
+   3
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.7793,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.6651,
+    "value": 0.5
+   },
+   {
+    "pixel_norm": 0.551,
+    "value": 1
+   },
+   {
+    "pixel_norm": 0.4353,
+    "value": 1.5
+   },
+   {
+    "pixel_norm": 0.3212,
+    "value": 2
+   },
+   {
+    "pixel_norm": 0.207,
+    "value": 2.5
+   },
+   {
+    "pixel_norm": 0.0913,
+    "value": 3
+   }
+  ]
+ },
+ "legend_bbox_norm": [
+  0.5258,
+  0.5145,
+  0.9728,
+  0.8174
+ ],
+ "total_series": 6,
+ "series": [
+  {
+   "label": "CO2 303K",
+   "marker": "circle",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#e32620",
+   "notes": "Red filled circles. The low-pressure markers fuse with the thick connecting curve."
+  },
+  {
+   "label": "CO2 313K",
+   "marker": "square",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#e9a52e",
+   "notes": "Orange filled squares."
+  },
+  {
+   "label": "CO2 323K",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#2a9b59",
+   "notes": "Green filled upward triangles; the raster glyph reader's pentagon result is caused by the connecting line."
+  },
+  {
+   "label": "CO2 333K",
+   "marker": "pentagon",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#294b9b",
+   "notes": "Blue filled pentagons. The raster glyph reader sampled the nearby CO2 legend heading and incorrectly reported an open circle."
+  },
+  {
+   "label": "CO2 353K",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#b83e95",
+   "notes": "Magenta filled diamonds; the elongated raster outline was incorrectly classified as a hexagon."
+  },
+  {
+   "label": "CO2 373K",
+   "marker": "star",
+   "marker_fill": "filled",
+   "line_style": "solid",
+   "color_hex": "#000000",
+   "notes": "Black filled stars. The raster glyph reader simplified the star to a diamond."
+  }
+ ],
+ "branches": "adsorption_only",
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.228,
+    0.254,
+    0.421,
+    0.785
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.228,
+    0.53,
+    0.31,
+    0.785
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 6
+  }
+ ],
+ "extraction_settings": [
+  {
+   "label": "CO2 303K",
+   "color_tolerance": 26,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 5,
+     "y_min": 0,
+     "y_max": 1.25
+    },
+    {
+     "x_from": 5,
+     "x_to": 15,
+     "y_min": 0.9,
+     "y_max": 2.05
+    },
+    {
+     "x_from": 15,
+     "x_to": 35,
+     "y_min": 1.75,
+     "y_max": 2.4
+    },
+    {
+     "x_from": 35,
+     "x_to": 120,
+     "y_min": 2.2,
+     "y_max": 3.05
+    }
+   ],
+   "template_fill": "off",
+   "reason": "Replace the dense low-pressure line trace with one inferred sample at each of the six shared pressure columns; retain the 13 resolved markers above 30 kPa.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 13
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 1.5,
+     "y": 0.45
+    },
+    {
+     "x": 3.5,
+     "y": 0.9
+    },
+    {
+     "x": 7,
+     "y": 1.5
+    },
+    {
+     "x": 13.5,
+     "y": 1.9
+    },
+    {
+     "x": 20,
+     "y": 2.1
+    },
+    {
+     "x": 27,
+     "y": 2.22
+    },
+    {
+     "x": 40,
+     "y": 2.38
+    },
+    {
+     "x": 60,
+     "y": 2.56
+    },
+    {
+     "x": 80,
+     "y": 2.7
+    },
+    {
+     "x": 100,
+     "y": 2.84
+    },
+    {
+     "x": 114,
+     "y": 2.93
+    }
+   ]
+  },
+  {
+   "label": "CO2 323K",
+   "color_tolerance": 24,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 5,
+     "y_min": 0,
+     "y_max": 0.7
+    },
+    {
+     "x_from": 5,
+     "x_to": 15,
+     "y_min": 0.45,
+     "y_max": 1.35
+    },
+    {
+     "x_from": 15,
+     "x_to": 35,
+     "y_min": 1.15,
+     "y_max": 1.95
+    },
+    {
+     "x_from": 35,
+     "x_to": 120,
+     "y_min": 1.8,
+     "y_max": 2.55
+    }
+   ],
+   "template_fill": "off",
+   "reason": "Replace the dense low-pressure line trace with one inferred sample at each of the six shared pressure columns; retain the 13 resolved markers above 30 kPa.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 13
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 1.5,
+     "y": 0.18
+    },
+    {
+     "x": 3.5,
+     "y": 0.42
+    },
+    {
+     "x": 7,
+     "y": 0.85
+    },
+    {
+     "x": 13.5,
+     "y": 1.28
+    },
+    {
+     "x": 20,
+     "y": 1.55
+    },
+    {
+     "x": 27,
+     "y": 1.8
+    },
+    {
+     "x": 40,
+     "y": 2
+    },
+    {
+     "x": 60,
+     "y": 2.14
+    },
+    {
+     "x": 80,
+     "y": 2.25
+    },
+    {
+     "x": 100,
+     "y": 2.34
+    },
+    {
+     "x": 114,
+     "y": 2.4
+    }
+   ]
+  },
+  {
+   "label": "CO2 373K",
+   "color_tolerance": 38,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.25
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.15,
+     "y_max": 0.7
+    },
+    {
+     "x_from": 30,
+     "x_to": 60,
+     "y_min": 0.6,
+     "y_max": 1.2
+    },
+    {
+     "x_from": 60,
+     "x_to": 120,
+     "y_min": 1.05,
+     "y_max": 1.7
+    }
+   ],
+   "template_fill": "off",
+   "reason": "The thick black segment does not show eleven distinct stars. Sample it only at the same six pressure columns used by the other series, preventing the 21-point line trace from being treated as marker data.",
+   "sample_marker_norm": [
+    0.708,
+    0.475
+   ],
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 13
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 1.5,
+     "y": 0.04
+    },
+    {
+     "x": 3.5,
+     "y": 0.08
+    },
+    {
+     "x": 7,
+     "y": 0.17
+    },
+    {
+     "x": 13.5,
+     "y": 0.32
+    },
+    {
+     "x": 20,
+     "y": 0.47
+    },
+    {
+     "x": 27,
+     "y": 0.63
+    },
+    {
+     "x": 40,
+     "y": 0.87
+    },
+    {
+     "x": 60,
+     "y": 1.15
+    },
+    {
+     "x": 80,
+     "y": 1.35
+    },
+    {
+     "x": 100,
+     "y": 1.49
+    },
+    {
+     "x": 114,
+     "y": 1.56
+    }
+   ]
+  }
+ ],
+ "notes": "The legend heading CO2 is not a data series. Raster-based legend shape classifications for the green, blue, magenta, and black entries are unreliable because the symbols overlap connecting lines or nearby text; the declared triangle, pentagon, diamond, and star identities match the source panel.",
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.228,
+    0.254,
+    0.421,
+    0.785
+   ],
+   "series_labels": [
+    "CO2 303K",
+    "CO2 323K",
+    "CO2 373K"
+   ],
+   "strategy": "sample_band_at_columns",
+   "reason": "The red, green, and black low-pressure markers are fused into thick curves. Infer exactly one point for each series at each shared pressure column visible from the separated orange markers, rather than producing marker-width-spaced trace samples."
+  }
+ ],
+ "shared_x_columns": [
+  1.5,
+  3.5,
+  7,
+  13.5,
+  20,
+  27
+ ]
+}

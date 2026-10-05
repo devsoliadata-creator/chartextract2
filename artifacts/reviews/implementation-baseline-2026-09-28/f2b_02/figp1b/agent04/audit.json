@@ -1,0 +1,4614 @@
+{
+ "metadata": {
+  "schema_version": "4.0",
+  "stage": "agent04",
+  "figure_id": "figp1b",
+  "panel_id": "b",
+  "source_pdf": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\data\\input\\f2b_02.png",
+  "image_sha256": "45c7dfdff37c274dcb7111a70500e12e2db09a4400e957758811f84aa4b5c24e",
+  "status": "partial_review_required",
+  "plot_bbox": [
+   173,
+   60,
+   695,
+   512
+  ],
+  "series": [
+   {
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "series_name": "CO2 303K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '303K' to CO2.",
+    "marker_shape": "circle",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "circle",
+     "fill": "filled",
+     "color_hex": "#f21f26",
+     "fill_hex": "#ea2326",
+     "edge_hex": "#d42129",
+     "polygon": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.924,
+       0.383
+      ],
+      [
+       0.707,
+       0.707
+      ],
+      [
+       0.383,
+       0.924
+      ],
+      [
+       0.0,
+       1.0
+      ],
+      [
+       -0.383,
+       0.924
+      ],
+      [
+       -0.707,
+       0.707
+      ],
+      [
+       -0.924,
+       0.383
+      ],
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       -0.924,
+       -0.383
+      ],
+      [
+       -0.707,
+       -0.707
+      ],
+      [
+       -0.383,
+       -0.924
+      ],
+      [
+       -0.0,
+       -1.0
+      ],
+      [
+       0.383,
+       -0.924
+      ],
+      [
+       0.707,
+       -0.707
+      ],
+      [
+       0.924,
+       -0.383
+      ]
+     ],
+     "size_px": 5.15,
+     "vertices": 5,
+     "source": "raster",
+     "confidence": 0.49
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#f21f26",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   },
+   {
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "series_name": "CO2 313K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '313K' to CO2.",
+    "marker_shape": "square",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "square",
+     "fill": "filled",
+     "color_hex": "#f5ab1e",
+     "fill_hex": "#f2a924",
+     "edge_hex": "#e99e2a",
+     "polygon": [
+      [
+       -0.721,
+       -0.911
+      ],
+      [
+       -0.89,
+       -0.743
+      ],
+      [
+       -0.89,
+       0.743
+      ],
+      [
+       -0.721,
+       0.911
+      ],
+      [
+       0.765,
+       0.911
+      ],
+      [
+       0.933,
+       0.575
+      ],
+      [
+       0.765,
+       -0.911
+      ]
+     ],
+     "size_px": 5.94,
+     "vertices": 4,
+     "source": "raster",
+     "confidence": 0.6
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#f5ab1e",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   },
+   {
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "series_name": "CO2 323K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '323K' to CO2.",
+    "marker_shape": "triangle_up",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "pentagon",
+     "fill": "filled",
+     "color_hex": "#248d43",
+     "fill_hex": "#278942",
+     "edge_hex": "#668e70",
+     "polygon": [
+      [
+       -0.428,
+       -1.506
+      ],
+      [
+       -1.501,
+       0.334
+      ],
+      [
+       -0.606,
+       -0.458
+      ],
+      [
+       -0.581,
+       0.564
+      ],
+      [
+       -1.501,
+       0.769
+      ],
+      [
+       1.387,
+       0.922
+      ],
+      [
+       1.54,
+       0.487
+      ],
+      [
+       0.62,
+       0.564
+      ],
+      [
+       0.467,
+       -0.381
+      ],
+      [
+       1.233,
+       -0.075
+      ],
+      [
+       0.467,
+       -1.301
+      ],
+      [
+       -0.376,
+       -0.739
+      ]
+     ],
+     "size_px": 6.52,
+     "vertices": 4,
+     "source": "raster",
+     "confidence": 0.33
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#248d43",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   },
+   {
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "series_name": "CO2 333K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '333K' to CO2.",
+    "marker_shape": "pentagon",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "circle",
+     "fill": "open",
+     "color_hex": "#3a3691",
+     "fill_hex": null,
+     "edge_hex": "#8287ba",
+     "polygon": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.924,
+       0.383
+      ],
+      [
+       0.707,
+       0.707
+      ],
+      [
+       0.383,
+       0.924
+      ],
+      [
+       0.0,
+       1.0
+      ],
+      [
+       -0.383,
+       0.924
+      ],
+      [
+       -0.707,
+       0.707
+      ],
+      [
+       -0.924,
+       0.383
+      ],
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       -0.924,
+       -0.383
+      ],
+      [
+       -0.707,
+       -0.707
+      ],
+      [
+       -0.383,
+       -0.924
+      ],
+      [
+       -0.0,
+       -1.0
+      ],
+      [
+       0.383,
+       -0.924
+      ],
+      [
+       0.707,
+       -0.707
+      ],
+      [
+       0.924,
+       -0.383
+      ]
+     ],
+     "size_px": 9.56,
+     "vertices": 7,
+     "source": "raster",
+     "confidence": 0.5
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#3a3691",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   },
+   {
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "series_name": "CO2 353K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '353K' to CO2.",
+    "marker_shape": "diamond",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "hexagon",
+     "fill": "filled",
+     "color_hex": "#d13ea1",
+     "fill_hex": "#cc3c9d",
+     "edge_hex": "#b2348c",
+     "polygon": [
+      [
+       -0.218,
+       -1.418
+      ],
+      [
+       -0.735,
+       -0.642
+      ],
+      [
+       -0.735,
+       0.867
+      ],
+      [
+       -0.002,
+       1.384
+      ],
+      [
+       0.774,
+       0.608
+      ],
+      [
+       0.774,
+       -0.642
+      ],
+      [
+       0.429,
+       -1.159
+      ]
+     ],
+     "size_px": 3.87,
+     "vertices": 6,
+     "source": "raster",
+     "confidence": 0.36
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#d13ea1",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   },
+   {
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "series_name": "CO2 373K",
+    "species": "CO2",
+    "export_eligible": true,
+    "species_evidence": "Legend heading 'CO2' binds the entry '373K' to CO2.",
+    "marker_shape": "star",
+    "marker_fill": "filled",
+    "marker_glyph": {
+     "shape": "diamond",
+     "fill": "filled",
+     "color_hex": "#060707",
+     "fill_hex": "#0a0a0a",
+     "edge_hex": "#727272",
+     "polygon": [
+      [
+       -0.176,
+       -1.203
+      ],
+      [
+       -1.291,
+       0.045
+      ],
+      [
+       -0.574,
+       0.523
+      ],
+      [
+       -0.176,
+       1.161
+      ],
+      [
+       0.276,
+       1.161
+      ],
+      [
+       0.276,
+       0.922
+      ],
+      [
+       1.232,
+       0.205
+      ],
+      [
+       1.232,
+       -0.088
+      ],
+      [
+       0.515,
+       -0.566
+      ],
+      [
+       0.116,
+       -1.203
+      ]
+     ],
+     "size_px": 6.27,
+     "vertices": 4,
+     "source": "raster",
+     "confidence": 0.91
+    },
+    "marker_style_source": "agent04_independent_read",
+    "color_hex": "#060707",
+    "line_style": "solid",
+    "axis_x_id": "x",
+    "axis_y_id": "y",
+    "quantity_type": "co2_loading",
+    "loading_basis": "per gram of sorbent"
+   }
+  ],
+  "axes": [
+   {
+    "axis_id": "x",
+    "scale": "linear",
+    "unit": "kPa",
+    "quantity_type": "Pressure",
+    "calibration_status": "unresolved",
+    "a": 0.22988505747126436,
+    "b": -39.770114942528735,
+    "anchors": [],
+    "equation": "value=a*pixel+b"
+   },
+   {
+    "axis_id": "y",
+    "scale": "linear",
+    "unit": "mmol/g",
+    "quantity_type": "CO2 Loading",
+    "calibration_status": "unresolved",
+    "a": -0.00663190567318084,
+    "b": 3.397672437625888,
+    "anchors": [],
+    "equation": "value=a*pixel+b"
+   }
+  ],
+  "instances": [
+   {
+    "source_instance_id": "src-b5c075fe4dc7efc0",
+    "point_id": "pt-08990cfb56257df8",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 174.5,
+    "source_pixel_y": 455.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 1.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (174.50, 455.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-af07a0db86ed97b3",
+    "point_id": "pt-152e633a808a08fa",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 176.0,
+    "source_pixel_y": 445.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (176.00, 445.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-b974f9d28093f2fe",
+    "point_id": "pt-6aca59c1859b1154",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 177.0,
+    "source_pixel_y": 435.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (177.00, 435.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5c39a9fbdca85a89",
+    "point_id": "pt-51a836984c465008",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 178.0,
+    "source_pixel_y": 425.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 4.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (178.00, 425.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-64f815025660efd3",
+    "point_id": "pt-db9119842e80f7c4",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 178.0,
+    "source_pixel_y": 395.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (178.00, 395.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5a40b6c909e25ae8",
+    "point_id": "pt-f3901a970307df08",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 179.5,
+    "source_pixel_y": 415.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (179.50, 415.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-ba18a7ba60ef3836",
+    "point_id": "pt-b4d27ebc2f490cba",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 181.0,
+    "source_pixel_y": 405.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (181.00, 405.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-2994432849f2f605",
+    "point_id": "pt-876a4856f5c44b79",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 181.0,
+    "source_pixel_y": 385.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (181.00, 385.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-c496b8c05e541ff9",
+    "point_id": "pt-13473dad4ae38dec",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 184.0,
+    "source_pixel_y": 375.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (184.00, 375.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-fd485728eb93b289",
+    "point_id": "pt-5a54e83e4dd4adee",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 185.5,
+    "source_pixel_y": 365.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (185.50, 365.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-aefe9b873ee04ca1",
+    "point_id": "pt-c6e5929a39a64903",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 186.5,
+    "source_pixel_y": 355.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (186.50, 355.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a2a9d35955a5e8c7",
+    "point_id": "pt-5e1d472bdb83f6ed",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 187.5,
+    "source_pixel_y": 345.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (187.50, 345.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-bee9da109838796a",
+    "point_id": "pt-79ebbd71e41da25c",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 189.5,
+    "source_pixel_y": 335.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (189.50, 335.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5f17a44a23ab2a29",
+    "point_id": "pt-cf218f45215c05ed",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 191.0,
+    "source_pixel_y": 325.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (191.00, 325.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-7b9383ac97f6359e",
+    "point_id": "pt-2f0e358ceeab1c97",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 192.0,
+    "source_pixel_y": 315.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (192.00, 315.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-d5869ea69ade39b4",
+    "point_id": "pt-506b2c359159fb6b",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 192.0,
+    "source_pixel_y": 305.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (192.00, 305.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-2ec8678768265208",
+    "point_id": "pt-43cb1ae286999e9e",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 196.5,
+    "source_pixel_y": 296.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (196.50, 296.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-c1e96df4568c1d5d",
+    "point_id": "pt-f7fdd8d78bbf5db4",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 198.5,
+    "source_pixel_y": 286.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (198.50, 286.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-ab2ef2a6ee9e36ee",
+    "point_id": "pt-e10dc8b8ae448461",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 201.0,
+    "source_pixel_y": 276.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (201.00, 276.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-6b21fd44e1e59d8b",
+    "point_id": "pt-653f3e9499bf48cd",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 204.0,
+    "source_pixel_y": 266.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (204.00, 266.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5e0f59cc74ea6402",
+    "point_id": "pt-4764c18cc76a9401",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 208.0,
+    "source_pixel_y": 256.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (208.00, 256.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-0cc3a4231af96e67",
+    "point_id": "pt-8df74483917ce1d1",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 212.5,
+    "source_pixel_y": 247.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (212.50, 247.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-e6dae53c96c9b291",
+    "point_id": "pt-ba17540c1ab71578",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 217.0,
+    "source_pixel_y": 237.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (217.00, 237.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-f8764b67e52ec0f3",
+    "point_id": "pt-f32a8b29785f5d7b",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 223.0,
+    "source_pixel_y": 229.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (223.00, 229.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-806112d39c5a6e42",
+    "point_id": "pt-5bd9ed5955cd06d7",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 229.5,
+    "source_pixel_y": 221.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 10.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (229.50, 221.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-20fd37cf6205f2a7",
+    "point_id": "pt-d91a7120461f7e6b",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 233.0,
+    "source_pixel_y": 217.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 10.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 303K continuous-band ink at (233.00, 217.00) px, region-1:CO2 303K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-64e24b5a23ef15c9",
+    "point_id": "pt-6ba66b6c35731060",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 289.5,
+    "source_pixel_y": 177.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-f512b2b063523ccd",
+    "point_id": "pt-8889e76b34693c60",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 317.08,
+    "source_pixel_y": 165.13,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-663f6514ebfc3ec6",
+    "point_id": "pt-5305555cb0690f79",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 346.63,
+    "source_pixel_y": 153.13,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-51067e723417001e",
+    "point_id": "pt-b0e4b8ed0b43ddc8",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 376.03,
+    "source_pixel_y": 143.28,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a7c5dc391b89c643",
+    "point_id": "pt-d9702aa2cbeab9fd",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 404.94,
+    "source_pixel_y": 133.97,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-6d767d249ceb3f88",
+    "point_id": "pt-7b4cde6b2fc07f6c",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 433.74,
+    "source_pixel_y": 125.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-8305bfd18e49bbb0",
+    "point_id": "pt-03556fbdfdf8bf47",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 462.93,
+    "source_pixel_y": 117.53,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-03adae58a720ec5d",
+    "point_id": "pt-898a9d382c83b987",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 491.69,
+    "source_pixel_y": 109.66,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-cc23ae0af0ae8e82",
+    "point_id": "pt-9633804bf4177c84",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 520.59,
+    "source_pixel_y": 102.61,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-c8d5b8351fa784e8",
+    "point_id": "pt-8c369c35477b9a53",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 549.21,
+    "source_pixel_y": 95.84,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-412bde8bf7e7139e",
+    "point_id": "pt-e331cc12595325ee",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 578.94,
+    "source_pixel_y": 88.97,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-9e44ccaf4a9c8a6a",
+    "point_id": "pt-50e22c14a338be88",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 607.0,
+    "source_pixel_y": 83.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.00, 83.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-1437c74267a0fab1",
+    "point_id": "pt-2e12088d8d3c19e7",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 637.36,
+    "source_pixel_y": 76.75,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-8ad124782bf3c58d",
+    "point_id": "pt-69f4543fc366c116",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 667.06,
+    "source_pixel_y": 71.23,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-01",
+    "point_id": "pt-a04-overlap-01",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 615.5,
+    "source_pixel_y": 80.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (615.50, 80.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-redtrace-01",
+    "point_id": "pt-a04-redtrace-01",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 243.0,
+    "source_pixel_y": 207.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous CO2 303K band centreline ink at native coordinate (243.00, 207.00) px fills a previously unsampled visible span",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a04-redtrace-02",
+    "point_id": "pt-a04-redtrace-02",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 255.0,
+    "source_pixel_y": 198.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous CO2 303K band centreline ink at native coordinate (255.00, 198.00) px fills a previously unsampled visible span",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a04-redtrace-03",
+    "point_id": "pt-a04-redtrace-03",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 266.0,
+    "source_pixel_y": 190.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous CO2 303K band centreline ink at native coordinate (266.00, 190.00) px fills a previously unsampled visible span",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a04-redtrace-04",
+    "point_id": "pt-a04-redtrace-04",
+    "series_id": "figp1b:b:co2-303k-bc2a4dd1",
+    "state": "resolved",
+    "source_pixel_x": 278.5,
+    "source_pixel_y": 183.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous CO2 303K band centreline ink at native coordinate (278.50, 183.00) px fills a previously unsampled visible span",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-31894bdbede08c60",
+    "point_id": "pt-715858732cfdc85f",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 185.0,
+    "source_pixel_y": 392.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-e6c01f14a17570a5",
+    "point_id": "pt-e3facab76b8c9980",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 205.0,
+    "source_pixel_y": 304.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-684b4aebe2b55f1b",
+    "point_id": "pt-1cb78605ae4366c1",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 232.0,
+    "source_pixel_y": 250.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-5f12a2a7a4d2028c",
+    "point_id": "pt-15b02882bb4625db",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 259.0,
+    "source_pixel_y": 223.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-683a2082bcc048e7",
+    "point_id": "pt-9004118495654736",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 290.5,
+    "source_pixel_y": 203.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-79450fcbd9b7e7c9",
+    "point_id": "pt-9993f9ed10c3fe32",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 316.0,
+    "source_pixel_y": 191.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a56d907afd80b315",
+    "point_id": "pt-15fb2bfffbac97e4",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 347.5,
+    "source_pixel_y": 181.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7102375c23c40127",
+    "point_id": "pt-9cf950feb1c837bf",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 375.36,
+    "source_pixel_y": 172.7,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-8937b7858a2f7b08",
+    "point_id": "pt-8ddffaafc589321c",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 404.36,
+    "source_pixel_y": 164.3,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7569ccafc7fcb19b",
+    "point_id": "pt-69787c22d87efbc6",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 433.36,
+    "source_pixel_y": 157.3,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-1c3ae334f34a1970",
+    "point_id": "pt-f08daf2822506913",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 462.5,
+    "source_pixel_y": 150.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7e82bb04cb0a745e",
+    "point_id": "pt-b4d4f56296fdbf71",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 492.0,
+    "source_pixel_y": 145.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-716da500e7be7733",
+    "point_id": "pt-1dd18ea873d511d7",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 520.89,
+    "source_pixel_y": 138.88,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-9735e133fb84fe70",
+    "point_id": "pt-6c80160813a14668",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 549.5,
+    "source_pixel_y": 133.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-4c586c44e1bb02dd",
+    "point_id": "pt-3497012731e46fed",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 578.5,
+    "source_pixel_y": 127.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-c3806209092571c2",
+    "point_id": "pt-ceecf317d2042ac8",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 607.0,
+    "source_pixel_y": 122.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.00, 122.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-1b8c336c35faedc1",
+    "point_id": "pt-32d385c7c5475843",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 637.0,
+    "source_pixel_y": 117.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-697790555575f1d4",
+    "point_id": "pt-d7f5666632ca8821",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 667.64,
+    "source_pixel_y": 112.76,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-02",
+    "point_id": "pt-a04-overlap-02",
+    "series_id": "figp1b:b:co2-313k-21d87380",
+    "state": "resolved",
+    "source_pixel_x": 616.0,
+    "source_pixel_y": 120.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (616.00, 120.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-706c6ea77e98f81e",
+    "point_id": "pt-0af1cb668055c4e7",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 174.5,
+    "source_pixel_y": 485.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 1.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (174.50, 485.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-51c2aad7d0f50264",
+    "point_id": "pt-48c77c8d94a8927e",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 178.5,
+    "source_pixel_y": 466.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (178.50, 466.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-8d0c167f3dcbc1de",
+    "point_id": "pt-15f9f9c04222a1dd",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 180.5,
+    "source_pixel_y": 476.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (180.50, 476.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a214f284d57aa056",
+    "point_id": "pt-b2bc2dbbc6481623",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 181.0,
+    "source_pixel_y": 456.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (181.00, 456.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-3d00e0e2bbbbad69",
+    "point_id": "pt-89892bf19ea36a67",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 187.0,
+    "source_pixel_y": 448.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 6.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (187.00, 448.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-b06b86ad4292a531",
+    "point_id": "pt-06a32a99cb4d1cd0",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 188.5,
+    "source_pixel_y": 438.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (188.50, 438.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-9ae67056bd5a207d",
+    "point_id": "pt-475a575cd58623ce",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 190.0,
+    "source_pixel_y": 418.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 4.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (190.00, 418.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-3201ada0f723248e",
+    "point_id": "pt-24c9169f713ba3cb",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 191.0,
+    "source_pixel_y": 428.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (191.00, 428.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-1e40b11349592bdb",
+    "point_id": "pt-3f712c73122ae05c",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 192.0,
+    "source_pixel_y": 408.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (192.00, 408.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-3422f4ce7df76625",
+    "point_id": "pt-280a0a771f98584b",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 197.5,
+    "source_pixel_y": 399.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (197.50, 399.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-ad397a30b05b70a1",
+    "point_id": "pt-85359047dbb14220",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 200.0,
+    "source_pixel_y": 389.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (200.00, 389.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-677507b5d2aa9c8c",
+    "point_id": "pt-f8f3b3908b191e87",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 201.5,
+    "source_pixel_y": 379.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (201.50, 379.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-45015eb51b2fa4ab",
+    "point_id": "pt-5698f4526faa60b4",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 204.5,
+    "source_pixel_y": 369.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (204.50, 369.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-8f8f0e396b087e84",
+    "point_id": "pt-43544c01c67d0413",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 207.5,
+    "source_pixel_y": 359.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (207.50, 359.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5d552a4cd4be4580",
+    "point_id": "pt-904112a8f6f6b6f3",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 211.0,
+    "source_pixel_y": 349.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (211.00, 349.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-c8293e95186d2fb7",
+    "point_id": "pt-4f04a0887902e0fc",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 214.5,
+    "source_pixel_y": 339.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (214.50, 339.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-5fc80bdb605a5b2d",
+    "point_id": "pt-d89bb1571f4c918f",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 218.5,
+    "source_pixel_y": 329.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (218.50, 329.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-b534ef49d80529db",
+    "point_id": "pt-5c02cee5d6c35521",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 224.0,
+    "source_pixel_y": 319.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (224.00, 319.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-2c6abdeb523540e1",
+    "point_id": "pt-a65c91d0a066e5cf",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 233.5,
+    "source_pixel_y": 300.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 9.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (233.50, 300.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-f0309a1ee82a0c1a",
+    "point_id": "pt-6128f0eb11c22aef",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 239.5,
+    "source_pixel_y": 291.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 9.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (239.50, 291.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-38e9119db1fce688",
+    "point_id": "pt-2b821c598f4f85b9",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 245.5,
+    "source_pixel_y": 283.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (245.50, 283.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-60937c36b546d5ca",
+    "point_id": "pt-9fb6079f09682fe6",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 252.5,
+    "source_pixel_y": 275.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (252.50, 275.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-c6f0719c15a5a57d",
+    "point_id": "pt-3fcc8ab83f39d88a",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 260.0,
+    "source_pixel_y": 267.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (260.00, 267.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-039b1f9bfed54a7b",
+    "point_id": "pt-589af537928aea08",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 267.5,
+    "source_pixel_y": 260.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 8.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (267.50, 260.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-f549362571c865f4",
+    "point_id": "pt-c2e368556db42fc6",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 276.0,
+    "source_pixel_y": 254.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 7.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (276.00, 254.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-83a65abf3e36ad07",
+    "point_id": "pt-72c3fcef669a5d29",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 283.0,
+    "source_pixel_y": 246.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 9.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (283.00, 246.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-b424be63c48469f5",
+    "point_id": "pt-df15ccde186764d0",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 289.5,
+    "source_pixel_y": 231.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 1.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (289.50, 231.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-d99b5c040cf16eb1",
+    "point_id": "pt-68b9963e9a38831d",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 290.0,
+    "source_pixel_y": 238.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 5.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Native CO2 323K continuous-band ink at (290.00, 238.00) px, region-1:CO2 323K:1",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-85989beef86d5da0",
+    "point_id": "pt-699ec525a9dc2932",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 290.57,
+    "source_pixel_y": 239.37,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7093a553c638d84b",
+    "point_id": "pt-42395cfdf57cf3dc",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 316.79,
+    "source_pixel_y": 224.81,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7adb7fdeecc21115",
+    "point_id": "pt-cbdba6acdb74e4a0",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 347.55,
+    "source_pixel_y": 214.78,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-76a058ced6035155",
+    "point_id": "pt-99ed8691f43d6251",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 375.82,
+    "source_pixel_y": 203.82,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-411f020acd7d2e76",
+    "point_id": "pt-3c2548d58d057d04",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 405.67,
+    "source_pixel_y": 196.71,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-b22335a4c8cd3469",
+    "point_id": "pt-e631563e7ea1b1af",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 433.82,
+    "source_pixel_y": 190.74,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-1ec8c18fca7b84c1",
+    "point_id": "pt-8bb74b114d3718fb",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 463.0,
+    "source_pixel_y": 183.27,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-4f40bda4187d6d07",
+    "point_id": "pt-e91915bb73d8c9da",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 492.18,
+    "source_pixel_y": 178.35,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-912812074b92f27e",
+    "point_id": "pt-4693d04c80f8513f",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 520.58,
+    "source_pixel_y": 173.89,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-943a0342bb4892eb",
+    "point_id": "pt-f7aead7b2276f683",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 549.27,
+    "source_pixel_y": 168.8,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-14fe54acaf711f41",
+    "point_id": "pt-38b74adf7de08144",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 579.29,
+    "source_pixel_y": 164.06,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-3b43a2a555ec88ea",
+    "point_id": "pt-d965c68daa02e84e",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 607.5,
+    "source_pixel_y": 160.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.50, 160.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-271d7a2d7d021e09",
+    "point_id": "pt-61b64ca26c98c2c3",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 636.68,
+    "source_pixel_y": 154.44,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-eaf119e7c834d93f",
+    "point_id": "pt-d807339a1569cfa2",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 668.64,
+    "source_pixel_y": 151.4,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-03",
+    "point_id": "pt-a04-overlap-03",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 615.5,
+    "source_pixel_y": 157.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (615.50, 157.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-greentrace-01",
+    "point_id": "pt-a04-greentrace-01",
+    "series_id": "figp1b:b:co2-323k-c5e1f4c4",
+    "state": "resolved",
+    "source_pixel_x": 228.5,
+    "source_pixel_y": 309.5,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous CO2 323K band centreline ink at native coordinate (228.50, 309.50) px fills a previously unsampled visible span",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-ea558fb98a31e6fe",
+    "point_id": "pt-bf02f24250e4750a",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 179.26,
+    "source_pixel_y": 490.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-90c9ccd42fb51389",
+    "point_id": "pt-0aab02930e3a6056",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 187.21,
+    "source_pixel_y": 462.54,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-7b21503ad82aa26c",
+    "point_id": "pt-d2c74c3ba892445c",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 201.91,
+    "source_pixel_y": 414.06,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-86ffb46a09c7cf68",
+    "point_id": "pt-ca39563ce54873b7",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 231.47,
+    "source_pixel_y": 339.13,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-5051100ed39e6c7a",
+    "point_id": "pt-d4e7f40121758e49",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 259.13,
+    "source_pixel_y": 300.27,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-de509a7d977499c0",
+    "point_id": "pt-7dbd362e2b2cf81c",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 289.21,
+    "source_pixel_y": 272.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-39f5e4c7c9ce6e9a",
+    "point_id": "pt-d34f54e4c48387a6",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 317.32,
+    "source_pixel_y": 253.39,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-e1409ecdfb4a4f8c",
+    "point_id": "pt-a5f5a9cb61ec761a",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 346.23,
+    "source_pixel_y": 240.91,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-817cbef5b09ba336",
+    "point_id": "pt-a5d2c40409c07a03",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 374.35,
+    "source_pixel_y": 229.02,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-6742567bcf7e03da",
+    "point_id": "pt-986d9f6c11091938",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 405.2,
+    "source_pixel_y": 220.24,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-741b793a82c77597",
+    "point_id": "pt-6f341926b2905350",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 433.09,
+    "source_pixel_y": 212.57,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-4851459a60dd9ca9",
+    "point_id": "pt-98d5aca12f1568eb",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 462.43,
+    "source_pixel_y": 205.81,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-5669e05ce06653f7",
+    "point_id": "pt-2e38590f94da1a9f",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 492.48,
+    "source_pixel_y": 200.09,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-ce923579ef098383",
+    "point_id": "pt-5a91185efbd6b0c7",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 520.49,
+    "source_pixel_y": 195.11,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-987e286802e50f33",
+    "point_id": "pt-212451edee9abc16",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 550.25,
+    "source_pixel_y": 190.33,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-23c9980405b14d4d",
+    "point_id": "pt-63ac9fb455f1e248",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 579.0,
+    "source_pixel_y": 186.48,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-d189aa796e9f4dad",
+    "point_id": "pt-644497c1382cffce",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 607.0,
+    "source_pixel_y": 183.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.00, 183.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-9df492a69def8d8b",
+    "point_id": "pt-b1b4dd8e0853bbea",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 637.12,
+    "source_pixel_y": 178.35,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-26c73fbbdbb5b740",
+    "point_id": "pt-e6c48483fc08e9a3",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 668.08,
+    "source_pixel_y": 174.74,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-04",
+    "point_id": "pt-a04-overlap-04",
+    "series_id": "figp1b:b:co2-333k-94a1f9ba",
+    "state": "resolved",
+    "source_pixel_x": 616.0,
+    "source_pixel_y": 181.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (616.00, 181.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-b161de6b2ad7af60",
+    "point_id": "pt-4369aabadc6ab72c",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 187.95,
+    "source_pixel_y": 484.93,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-22db50bc0ae35637",
+    "point_id": "pt-bb7ca03b50e440bc",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 201.6,
+    "source_pixel_y": 462.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-21b61a532510b239",
+    "point_id": "pt-80910b0af1acde2c",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 231.21,
+    "source_pixel_y": 414.27,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-88c241feb2ce5346",
+    "point_id": "pt-61997cd795c0e8c4",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 257.17,
+    "source_pixel_y": 382.39,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-b81751e7ffe835ee",
+    "point_id": "pt-8cfe3c0c1d590071",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 287.86,
+    "source_pixel_y": 349.28,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-c07c974dc34dbf0e",
+    "point_id": "pt-e9aa4afa026cf60e",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 316.61,
+    "source_pixel_y": 325.71,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-99a321894f30fa4a",
+    "point_id": "pt-1b1f8e65199dfba0",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 346.84,
+    "source_pixel_y": 306.33,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-0c05b61d7027f4d4",
+    "point_id": "pt-afc285c065b16434",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 376.8,
+    "source_pixel_y": 292.15,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-3e6c475385783434",
+    "point_id": "pt-fd9738b7586fc860",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 403.36,
+    "source_pixel_y": 280.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-888e32394a04d658",
+    "point_id": "pt-c0db623908dd1e92",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 433.74,
+    "source_pixel_y": 270.79,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-3f5070563f4d4994",
+    "point_id": "pt-0adc1c10e766407e",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 462.5,
+    "source_pixel_y": 260.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-f7508003401b24dc",
+    "point_id": "pt-df4d26fb366bbd1f",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 492.0,
+    "source_pixel_y": 253.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-bdfa0b8f179013db",
+    "point_id": "pt-1e957d5820c5669e",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 521.07,
+    "source_pixel_y": 247.96,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-dbe8a1c349187249",
+    "point_id": "pt-46f6ca7068f31e6c",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 549.23,
+    "source_pixel_y": 241.02,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-cb5fa1a9009dd9c4",
+    "point_id": "pt-4e9a0e618ca4ce61",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 579.29,
+    "source_pixel_y": 236.95,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-cc7b71a2dea8f50b",
+    "point_id": "pt-02e24e02838834f8",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 607.5,
+    "source_pixel_y": 232.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.50, 232.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-c1b647b7023417c6",
+    "point_id": "pt-7aaae45616549835",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 637.37,
+    "source_pixel_y": 227.79,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-153f9d74a00a1702",
+    "point_id": "pt-75713c70d948c370",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 668.58,
+    "source_pixel_y": 222.66,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-05",
+    "point_id": "pt-a04-overlap-05",
+    "series_id": "figp1b:b:co2-353k-c3530734",
+    "state": "resolved",
+    "source_pixel_x": 615.5,
+    "source_pixel_y": 228.5,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (615.50, 228.50) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-f022f9aeba121b45",
+    "point_id": "pt-3de11dcc7d382f68",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 180.53,
+    "source_pixel_y": 505.62,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (180.53, 505.62) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-53a67d01d8bab07b",
+    "point_id": "pt-c6160ae73d9e7262",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 187.96,
+    "source_pixel_y": 499.17,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (187.96, 499.17) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a11c66e37e0b58a9",
+    "point_id": "pt-c628f729acf008f8",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 198.12,
+    "source_pixel_y": 491.04,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (198.12, 491.04) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-170c31a3763aeffb",
+    "point_id": "pt-216b7ab7cc554913",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 206.07,
+    "source_pixel_y": 483.89,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (206.07, 483.89) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-19ecf4ddde86e8a8",
+    "point_id": "pt-59c8e14dac7dcd70",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 215.16,
+    "source_pixel_y": 476.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (215.16, 476.00) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-3effc356e41aa744",
+    "point_id": "pt-47aa8ec6b2740210",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 227.99,
+    "source_pixel_y": 465.05,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (227.99, 465.05) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-e9e00759cc2bef56",
+    "point_id": "pt-d28c90ffd6606918",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 237.38,
+    "source_pixel_y": 456.87,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (237.38, 456.87) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-e9a22256d61235bd",
+    "point_id": "pt-125fe4de75f8db93",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 243.89,
+    "source_pixel_y": 452.0,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (243.89, 452.00) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-3a7a90695344b6d7",
+    "point_id": "pt-37a358a117cba0ed",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 252.93,
+    "source_pixel_y": 444.12,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (252.93, 444.12) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-f92667b7ded012c7",
+    "point_id": "pt-c66ad85383eee138",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 259.93,
+    "source_pixel_y": 438.94,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (259.93, 438.94) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-375b508e68f324e8",
+    "point_id": "pt-18597efbd1210854",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 270.48,
+    "source_pixel_y": 430.48,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (270.48, 430.48) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-ef92d6bb7a81e2d0",
+    "point_id": "pt-c5a855d39a7cf5d9",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 282.1,
+    "source_pixel_y": 421.98,
+    "evidence_type": "line_sample",
+    "evidence_kind": "native_trace",
+    "uncertainty_px": 3.0,
+    "evidence_ref": "panel.png",
+    "evidence": "Continuous black CO2 373K band ink at (282.10, 421.98) px",
+    "review_only": true
+   },
+   {
+    "source_instance_id": "src-a1f8dec9a2ef21e6",
+    "point_id": "pt-fd6dca886e42800e",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 318.14,
+    "source_pixel_y": 397.16,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-3e451e3996e262c5",
+    "point_id": "pt-5f981a8ca1ef29fc",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 345.5,
+    "source_pixel_y": 380.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-c6112c4c355a3e2a",
+    "point_id": "pt-93b275b85f7b51ee",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 375.5,
+    "source_pixel_y": 364.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-da84b78139c964e8",
+    "point_id": "pt-3f948450e47252bb",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 404.86,
+    "source_pixel_y": 351.16,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-6ff7bbeafe96ae00",
+    "point_id": "pt-7e8c6ea17363f2f5",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 433.5,
+    "source_pixel_y": 338.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a675336a22276bdb",
+    "point_id": "pt-02d86f86374fd8e8",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 462.85,
+    "source_pixel_y": 327.64,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-2c8b3c26b6b2e44f",
+    "point_id": "pt-04e177f524c4e53f",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 492.14,
+    "source_pixel_y": 318.84,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-17125e6ad123ec83",
+    "point_id": "pt-2a2b8d1b32d07723",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 519.5,
+    "source_pixel_y": 309.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-8ad29720fcec9401",
+    "point_id": "pt-fd6f67ffa1bdb3d1",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 550.86,
+    "source_pixel_y": 302.16,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-eaefca7b6b4bd61a",
+    "point_id": "pt-5347d05851b4336c",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 578.0,
+    "source_pixel_y": 296.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a1f0399fca50c97c",
+    "point_id": "pt-cd6f17abf8e3a07a",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 607.5,
+    "source_pixel_y": 289.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Left member of two overlapping same-series glyphs, supported by a distinct left lobe/outline at native centre (607.50, 289.00) px and the local series trajectory",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-86cb32db53560873",
+    "point_id": "pt-fbe591aae08229a8",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 636.5,
+    "source_pixel_y": 283.5,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-5f8c345c0ec0a6b1",
+    "point_id": "pt-7b7e0c0b6fb4f33f",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 665.0,
+    "source_pixel_y": 278.0,
+    "evidence_type": "visible_marker",
+    "evidence_kind": "native_visible",
+    "uncertainty_px": null,
+    "evidence_ref": null,
+    "evidence": "Extractor proposal retained for staged QA.",
+    "review_only": false
+   },
+   {
+    "source_instance_id": "src-a04-overlap-06",
+    "point_id": "pt-a04-overlap-06",
+    "series_id": "figp1b:b:co2-373k-9f2f766d",
+    "state": "resolved",
+    "source_pixel_x": 615.5,
+    "source_pixel_y": 286.0,
+    "evidence_type": "partially_visible_marker",
+    "evidence_kind": "partial_marker",
+    "uncertainty_px": 2.5,
+    "evidence_ref": "panel.png",
+    "evidence": "Right member of two overlapping same-series glyphs, supported by a distinct right lobe/outline at native centre (615.50, 286.00) px and the local series trajectory",
+    "review_only": false
+   }
+  ],
+  "coverage": [
+   {
+    "bbox": [
+     173,
+     60,
+     695,
+     512
+    ],
+    "inspected": false
+   }
+  ],
+  "limitations": [
+   "agent04 remains subject to downstream or human review."
+  ],
+  "rejected_masked_points": 0,
+  "unresolved_slots": {
+   "total": 3,
+   "by_series": {
+    "CO2 303K": 1,
+    "CO2 323K": 1,
+    "CO2 373K": 1
+   },
+   "slots": [
+    {
+     "series_label": "CO2 303K",
+     "reason": "panel.png native span x\u2248174\u2013285 px is a thick continuous red band; same-series ink is measurable, but individual circle contours/centres inside the strip cannot be separated without inventing an experimental count."
+    },
+    {
+     "series_label": "CO2 323K",
+     "reason": "panel.png and review_tiles.json native tiles marker_01\u2013marker_03 show a fused green band over x\u2248174\u2013284 px with crossings/occlusion; trace positions are supported, but additional individual triangle instances are not resolvable."
+    },
+    {
+     "series_label": "CO2 373K",
+     "reason": "panel.png native span x\u2248174\u2013295 px is a continuous black band with no separable star contours; the saved rows sample the ink, while any hidden experimental marker centres remain unresolved."
+    }
+   ]
+  },
+  "unresolved_accounting_valid": false,
+  "row_count": 173,
+  "agent_report": {
+   "reasoning": "Source-only inspection of panel.png established a 173\u2013695 px by 60\u2013512 px linear plot frame, Pressure [kPa] on x, CO2 Loading [mmol/g] on y, and six legend-bound CO2 temperature series. Native legend evidence fixes the styles as filled red circle, orange square, green triangle_up, blue pentagon, magenta diamond, and black star; there are no excluded gas series or inset/mask regions. Independent tick fits used x anchors (173,0), (347,40), (521,80), (695,120) and y anchors (512,0), (437,0.5), (362,1), (286,1.5), (211,2), (135,2.5), (60,3). After that source pass, the complete Agent 03 table and review_tiles.json inventory were audited against tile_01_native.png (boxes 1\u20138), tile_02_native.png (boxes 9\u201316), tile_03_native.png (boxes 17\u201320), region_01_native.png, region_02_native.png, and the unchanged panel. The native tiles confirm that the disputed low-pressure red/green positions are continuous-band ink rather than separable glyphs. Eight green direct/template claims were therefore deleted, while source-backed dense-band samples were retained. Agent 03 also mislabeled low-pressure black line coordinates as visible markers; those coordinates were retained but corrected to review-only line_sample evidence. The major omitted feature was a fused pair near x\u2248607\u2013616 px in every series: two same-series glyph lobes are visible in panel.png, whereas Agent 03 stored one aggregate centroid. Each aggregate row was moved to the left partial centre and one right partial centre was added. Four red and one green native trace samples were added to close over-wide gaps. All saved x/y values were recomputed from the final calibration, the CSV was reloaded, and a reconstruction/overlay made only from the reloaded CSV was inspected. Coverage remains uncertain in the red, green, and black low-pressure strips because continuous ink supports traces but not a count or centres of wholly hidden markers; no estimated_marker rows were fabricated.",
+   "axis_check": {
+    "x": {
+     "printed_min": 0.0,
+     "printed_max": 120.0,
+     "data_min": 0.344828,
+     "data_max": 113.94023,
+     "result": "pass",
+     "reason": "Reloaded CSV centres reproject onto the native 0, 40, 80, and 120 kPa ticks with the independently fitted linear model; all values lie within the printed range."
+    },
+    "y": {
+     "printed_min": 0.0,
+     "printed_max": 3.0,
+     "data_min": 0.044448,
+     "data_max": 2.925282,
+     "result": "pass",
+     "reason": "Reloaded CSV centres reproject onto the native 0.0\u20133.0 mmol/g tick sequence; the saved extrema match the visible curve range."
+    }
+   },
+   "independent_read": {
+    "x_axis": "Pressure [kPa], linear; printed major ticks 0, 40, 80, 120. Plot-frame x tick centres are 173, 347, 521, and 695 px.",
+    "y_axis": "CO2 Loading [mmol/g], linear; printed major ticks 0.0 to 3.0 in 0.5 increments. Plot-frame y tick centres are 512, 437, 362, 286, 211, 135, and 60 px.",
+    "series": [
+     {
+      "label": "CO2 303K",
+      "marker": "circle",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 15,
+      "notes": "Native legend glyph at panel.png approximately (460,426) is a filled red circle. A thick red band hides low-pressure glyph boundaries; 15 circle centres are directly/partially distinguishable after counting the fused pair near x=607\u2013616 px separately."
+     },
+     {
+      "label": "CO2 313K",
+      "marker": "square",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 19,
+      "notes": "Native legend glyph at approximately (583,426) is a filled orange square. Low-pressure squares remain separable; the wide glyph near x=607\u2013616 px contains two overlapping square instances."
+     },
+     {
+      "label": "CO2 323K",
+      "marker": "triangle_up",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 15,
+      "notes": "Native legend glyph at approximately (460,452) has a clear upward apex and filled green triangular base; this overrides the unreliable automated legend polygon measurement. The low-pressure green band obscures additional individual glyphs."
+     },
+     {
+      "label": "CO2 333K",
+      "marker": "pentagon",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 20,
+      "notes": "Native legend glyph at approximately (582,452) is a filled blue pentagon, not an open circle. The overlapping pair near x=607\u2013616 px has two visible pentagonal lobes."
+     },
+     {
+      "label": "CO2 353K",
+      "marker": "diamond",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 19,
+      "notes": "Native legend glyph at approximately (460,480) is a vertically elongated filled magenta diamond; two overlapping diamonds are visible near x=607\u2013616 px."
+     },
+     {
+      "label": "CO2 373K",
+      "marker": "star",
+      "marker_fill": "filled",
+      "visible_markers_estimate": 14,
+      "notes": "Native legend glyph at approximately (584,480) is unequivocally a filled black star. Agent 03's CSV 'diamond' style was corrected to star for every row. The low-pressure black segment is a continuous band without separable star contours."
+     }
+    ],
+    "visual_risks": [
+     "Thick, overlapping low-pressure red, green, and black bands hide individual glyph boundaries.",
+     "At native x\u2248607\u2013616 px each series has two strongly overlapping same-series markers that automated connected-component methods merge.",
+     "The orange 313K markers overlap red/green bands at low pressure but retain square edges.",
+     "Raster antialiasing and dark outlines shift color-only centroids away from geometric glyph centres.",
+     "The in-plot legend covers lower-right data space, but no eligible curve enters the legend rectangle."
+    ]
+   },
+   "verdict": "review",
+   "series": [
+    {
+     "label": "CO2 303K",
+     "coverage": "uncertain",
+     "final_count": 45,
+     "comment": "15 direct/partial circle rows and 30 low-pressure line samples. The native red strip spans about (174,455) to (290,177) px; four trace samples were added in the former 56 px gap. Maximum saved along-band spacing is about 15.0 px. Individual hidden circles within the strip remain unresolved."
+    },
+    {
+     "label": "CO2 313K",
+     "coverage": "complete",
+     "final_count": 19,
+     "comment": "19 direct/partial square rows. Native squares are separable across the plotted range; the fused high-pressure component was split into two partial square centres."
+    },
+    {
+     "label": "CO2 323K",
+     "coverage": "uncertain",
+     "final_count": 44,
+     "comment": "15 direct/partial triangle rows and 29 line samples. Eight Agent 03 marker/template claims inside the fused green strip were deleted because the native tiles show band ink or overlap but no separate triangle. One trace sample closed the only >14 px internal gap; maximum saved trace spacing is about 11.4 px. Hidden strip markers remain unresolved."
+    },
+    {
+     "label": "CO2 333K",
+     "coverage": "complete",
+     "final_count": 20,
+     "comment": "20 direct/partial pentagon rows. Native pentagons are separable, including two overlapping high-pressure glyphs recovered as separate partial centres."
+    },
+    {
+     "label": "CO2 353K",
+     "coverage": "complete",
+     "final_count": 19,
+     "comment": "19 direct/partial diamond rows. Native diamonds are separable, including two overlapping high-pressure glyphs recovered as separate partial centres."
+    },
+    {
+     "label": "CO2 373K",
+     "coverage": "uncertain",
+     "final_count": 26,
+     "comment": "14 direct/partial star rows and 12 low-pressure line samples. The first 12 Agent 03 rows were reclassified from visible markers to line samples because panel.png shows only a thick continuous black band there. The trace spacing is at most about 16.9 px and reaches within about 14 px of the band endpoint; hidden stars remain unresolved."
+    }
+   ],
+   "uncertainties": [
+    "No estimated_marker rows were used. All inferred rows are native line_sample coordinates and therefore keep the result under review.",
+    "The six fused high-pressure pairs are represented by supported partial-glyph centres with approximately 2.5 px positional uncertainty; their two-lobe contours are visible but overlap strongly.",
+    "Red, green, and black low-pressure strips are sampled only where same-series native ink is present. Their hidden experimental marker count is not inferred.",
+    "The final linear y fit has 0.277 px RMS and 0.464 px maximum anchor reprojection error from rasterized tick-centre selection.",
+    "There are no source masks or insets; the legend rectangle was excluded from marker search."
+   ],
+   "row_count": 173,
+   "calibration": {
+    "axis_models": {
+     "x": {
+      "scale": "linear",
+      "slope": 0.22988505747126436,
+      "intercept": -39.770114942528735,
+      "unit": "kPa",
+      "accepted_anchors": [
+       {
+        "pixel": 173.0,
+        "value": 0.0
+       },
+       {
+        "pixel": 347.0,
+        "value": 40.0
+       },
+       {
+        "pixel": 521.0,
+        "value": 80.0
+       },
+       {
+        "pixel": 695.0,
+        "value": 120.0
+       }
+      ],
+      "fit_rms_error_px": 0.0,
+      "max_reprojection_error_px": 0.0,
+      "note": "Accepted the centers of the bottom/top major tick strokes. No x anchor was excluded."
+     },
+     "y": {
+      "scale": "linear",
+      "slope": -0.00663190567318084,
+      "intercept": 3.397672437625888,
+      "unit": "mmol/g",
+      "accepted_anchors": [
+       {
+        "pixel": 512.0,
+        "value": 0.0
+       },
+       {
+        "pixel": 437.0,
+        "value": 0.5
+       },
+       {
+        "pixel": 362.0,
+        "value": 1.0
+       },
+       {
+        "pixel": 286.0,
+        "value": 1.5
+       },
+       {
+        "pixel": 211.0,
+        "value": 2.0
+       },
+       {
+        "pixel": 135.0,
+        "value": 2.5
+       },
+       {
+        "pixel": 60.0,
+        "value": 3.0
+       }
+      ],
+      "fit_rms_error_px": 0.276642,
+      "max_reprojection_error_px": 0.464032,
+      "note": "Accepted the centers of the left/right major tick strokes. No y anchor was excluded; subpixel residuals reflect rasterized stroke widths."
+     }
+    },
+    "frame_px": [
+     173,
+     60,
+     695,
+     512
+    ],
+    "px_per_unit_x": 4.35,
+    "px_per_unit_y": 150.78622183122414,
+    "unit_per_px_x": 0.22988505747126436,
+    "unit_per_px_y": 0.00663190567318084,
+    "tick_fit_resid_x_px": 0.0,
+    "tick_fit_resid_y_px": 0.276642
+   },
+   "unresolved_slots": {
+    "total": 3,
+    "by_series": {
+     "CO2 303K": 1,
+     "CO2 313K": 0,
+     "CO2 323K": 1,
+     "CO2 333K": 0,
+     "CO2 353K": 0,
+     "CO2 373K": 1
+    },
+    "slots": [
+     {
+      "series_label": "CO2 303K",
+      "reason": "panel.png native span x\u2248174\u2013285 px is a thick continuous red band; same-series ink is measurable, but individual circle contours/centres inside the strip cannot be separated without inventing an experimental count."
+     },
+     {
+      "series_label": "CO2 323K",
+      "reason": "panel.png and review_tiles.json native tiles marker_01\u2013marker_03 show a fused green band over x\u2248174\u2013284 px with crossings/occlusion; trace positions are supported, but additional individual triangle instances are not resolvable."
+     },
+     {
+      "series_label": "CO2 373K",
+      "reason": "panel.png native span x\u2248174\u2013295 px is a continuous black band with no separable star contours; the saved rows sample the ink, while any hidden experimental marker centres remain unresolved."
+     }
+    ]
+   },
+   "changes": [
+    {
+     "action": "delete",
+     "point_id": "pt-c01bf5323eb2469c",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-da7d13e82ef6fb3a",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-4c5cc74756866f6b",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-7a2ee0b834dc0641",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-abbc92f6068b6523",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-9cb2f69d1132eaf3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-6c4bac4aa500e7b3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-ed8bcba885d472ca",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-50e22c14a338be88",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-01",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-ceecf317d2042ac8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-02",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-d965c68daa02e84e",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-03",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-644497c1382cffce",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-04",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-02e24e02838834f8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-05",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-cd6f17abf8e3a07a",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-06",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-02",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-03",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-04",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-greentrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    }
+   ]
+  },
+  "edit_audit": {
+   "authoritative_csv": true,
+   "added": [
+    "pt-a04-overlap-01",
+    "pt-a04-overlap-02",
+    "pt-a04-overlap-03",
+    "pt-a04-overlap-04",
+    "pt-a04-overlap-05",
+    "pt-a04-overlap-06",
+    "pt-a04-redtrace-01",
+    "pt-a04-redtrace-02",
+    "pt-a04-redtrace-03",
+    "pt-a04-redtrace-04",
+    "pt-a04-greentrace-01"
+   ],
+   "deleted": [
+    "pt-4c5cc74756866f6b",
+    "pt-6c4bac4aa500e7b3",
+    "pt-7a2ee0b834dc0641",
+    "pt-9cb2f69d1132eaf3",
+    "pt-abbc92f6068b6523",
+    "pt-c01bf5323eb2469c",
+    "pt-da7d13e82ef6fb3a",
+    "pt-ed8bcba885d472ca"
+   ],
+   "moved": [
+    {
+     "point_id": "pt-50e22c14a338be88",
+     "from_px": [
+      612.72,
+      80.86
+     ],
+     "to_px": [
+      607.0,
+      83.0
+     ]
+    },
+    {
+     "point_id": "pt-ceecf317d2042ac8",
+     "from_px": [
+      613.16,
+      121.14
+     ],
+     "to_px": [
+      607.0,
+      122.0
+     ]
+    },
+    {
+     "point_id": "pt-d965c68daa02e84e",
+     "from_px": [
+      613.62,
+      157.72
+     ],
+     "to_px": [
+      607.5,
+      160.0
+     ]
+    },
+    {
+     "point_id": "pt-644497c1382cffce",
+     "from_px": [
+      612.39,
+      181.41
+     ],
+     "to_px": [
+      607.0,
+      183.0
+     ]
+    },
+    {
+     "point_id": "pt-02e24e02838834f8",
+     "from_px": [
+      613.37,
+      229.79
+     ],
+     "to_px": [
+      607.5,
+      232.0
+     ]
+    },
+    {
+     "point_id": "pt-cd6f17abf8e3a07a",
+     "from_px": [
+      611.32,
+      287.91
+     ],
+     "to_px": [
+      607.5,
+      289.0
+     ]
+    }
+   ],
+   "reassigned": [],
+   "candidate_count": 170,
+   "final_count": 173,
+   "normalized_columns": {},
+   "series_counts": {
+    "CO2 303K": {
+     "candidate": 40,
+     "final": 45
+    },
+    "CO2 313K": {
+     "candidate": 18,
+     "final": 19
+    },
+    "CO2 323K": {
+     "candidate": 50,
+     "final": 44
+    },
+    "CO2 333K": {
+     "candidate": 19,
+     "final": 20
+    },
+    "CO2 353K": {
+     "candidate": 18,
+     "final": 19
+    },
+    "CO2 373K": {
+     "candidate": 25,
+     "final": 26
+    }
+   },
+   "reported_changes": [
+    {
+     "action": "delete",
+     "point_id": "pt-c01bf5323eb2469c",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-da7d13e82ef6fb3a",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-4c5cc74756866f6b",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-7a2ee0b834dc0641",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-abbc92f6068b6523",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-9cb2f69d1132eaf3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-6c4bac4aa500e7b3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-ed8bcba885d472ca",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-50e22c14a338be88",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-01",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-ceecf317d2042ac8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-02",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-d965c68daa02e84e",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-03",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-644497c1382cffce",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-04",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-02e24e02838834f8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-05",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+    },
+    {
+     "action": "move",
+     "point_id": "pt-cd6f17abf8e3a07a",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-06",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-02",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-03",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-04",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-greentrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    }
+   ],
+   "requested": 25,
+   "applied": 25,
+   "operations": [
+    {
+     "action": "delete",
+     "point_id": "pt-c01bf5323eb2469c",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-da7d13e82ef6fb3a",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-4c5cc74756866f6b",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-7a2ee0b834dc0641",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-abbc92f6068b6523",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-9cb2f69d1132eaf3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-6c4bac4aa500e7b3",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "delete",
+     "point_id": "pt-ed8bcba885d472ca",
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-50e22c14a338be88",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-01",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-ceecf317d2042ac8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-02",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-d965c68daa02e84e",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-03",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-644497c1382cffce",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-04",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-02e24e02838834f8",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-05",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "move",
+     "point_id": "pt-cd6f17abf8e3a07a",
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-overlap-06",
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-02",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-03",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-redtrace-04",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+     "status": "applied"
+    },
+    {
+     "action": "add",
+     "point_id": "pt-a04-greentrace-01",
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+     "status": "applied"
+    }
+   ],
+   "change_reasons": {
+    "delete:pt-c01bf5323eb2469c": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-da7d13e82ef6fb3a": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-4c5cc74756866f6b": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-7a2ee0b834dc0641": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-abbc92f6068b6523": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-9cb2f69d1132eaf3": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-6c4bac4aa500e7b3": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "delete:pt-ed8bcba885d472ca": {
+     "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+     "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+    },
+    "move:pt-50e22c14a338be88": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+    },
+    "add:pt-a04-overlap-01": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+    },
+    "move:pt-ceecf317d2042ac8": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+    },
+    "add:pt-a04-overlap-02": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+    },
+    "move:pt-d965c68daa02e84e": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+    },
+    "add:pt-a04-overlap-03": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+    },
+    "move:pt-644497c1382cffce": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+    },
+    "add:pt-a04-overlap-04": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+    },
+    "move:pt-02e24e02838834f8": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+    },
+    "add:pt-a04-overlap-05": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+    },
+    "move:pt-cd6f17abf8e3a07a": {
+     "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+     "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+    },
+    "add:pt-a04-overlap-06": {
+     "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+     "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+    },
+    "add:pt-a04-redtrace-01": {
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    "add:pt-a04-redtrace-02": {
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    "add:pt-a04-redtrace-03": {
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    "add:pt-a04-redtrace-04": {
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    },
+    "add:pt-a04-greentrace-01": {
+     "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+     "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+    }
+   },
+   "contains_inferred": true,
+   "requires_review": true
+  },
+  "authority": "agent04_code_interpreter_csv",
+  "artifact_attempt": 2,
+  "authored_csv": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\f2b_02\\figp1b\\agent04\\cited\\attempt-0002\\points.csv",
+  "curve_trace_audit": {
+   "disabled": "Agent 04 points.csv is authoritative; deleted rows are not demoted or restored.",
+   "trace_sample_count": 0
+  }
+ },
+ "hard_checks": {
+  "stage": "agent04",
+  "passed": true,
+  "problems": [],
+  "axis_range": {
+   "passed": true,
+   "problems": [],
+   "margin": 0.05,
+   "max_frame_overhang_steps": 1.0,
+   "x": {
+    "unit": "kPa",
+    "scale": "linear",
+    "printed": [
+     0.0,
+     120.0
+    ],
+    "data": [
+     0.344828,
+     113.94023
+    ],
+    "points_outside": 0,
+    "frame_passed": true,
+    "passed": true,
+    "frame": [
+     0.0,
+     119.99999999999999
+    ],
+    "frame_overhang_steps": [
+     0.0,
+     -0.0
+    ],
+    "allowed": [
+     -6.0,
+     126.0
+    ]
+   },
+   "y": {
+    "unit": "mmol/g",
+    "scale": "linear",
+    "printed": [
+     0.0,
+     3.0
+    ],
+    "data": [
+     0.044448,
+     2.925282
+    ],
+    "points_outside": 0,
+    "frame_passed": true,
+    "passed": true,
+    "frame": [
+     0.002136732957298104,
+     2.9997580972350377
+    ],
+    "frame_overhang_steps": [
+     -0.0,
+     -0.0
+    ],
+    "allowed": [
+     -0.15000000000000002,
+     3.15
+    ]
+   }
+  },
+  "redraw": {
+   "available": true,
+   "series": {
+    "CO2 303K": {
+     "points": 45,
+     "precision": 0.378,
+     "recall": 0.998,
+     "missed_marker_equivalents": 0.0,
+     "same_color_group": [
+      "CO2 303K"
+     ]
+    },
+    "CO2 313K": {
+     "points": 19,
+     "precision": 1.0,
+     "recall": 0.997,
+     "missed_marker_equivalents": 0.1,
+     "same_color_group": [
+      "CO2 313K"
+     ]
+    },
+    "CO2 323K": {
+     "points": 44,
+     "precision": 0.545,
+     "recall": 1.0,
+     "missed_marker_equivalents": 0.0,
+     "same_color_group": [
+      "CO2 323K"
+     ]
+    },
+    "CO2 333K": {
+     "points": 20,
+     "precision": 1.0,
+     "recall": 0.999,
+     "missed_marker_equivalents": 0.0,
+     "same_color_group": [
+      "CO2 333K"
+     ]
+    },
+    "CO2 353K": {
+     "points": 19,
+     "precision": 1.0,
+     "recall": 0.833,
+     "missed_marker_equivalents": 4.5,
+     "same_color_group": [
+      "CO2 353K"
+     ]
+    },
+    "CO2 373K": {
+     "points": 26,
+     "precision": 1.0,
+     "recall": 0.89,
+     "missed_marker_equivalents": 2.7,
+     "same_color_group": [
+      "CO2 373K"
+     ]
+    }
+   },
+   "recall": 0.953,
+   "precision": 0.821
+  },
+  "physics": {
+   "verdict": "auto_accept",
+   "flags": {
+    "CO2 303K": [],
+    "CO2 313K": [],
+    "CO2 323K": [],
+    "CO2 333K": [
+     {
+      "check": "smoothness",
+      "level": "warn",
+      "detail": "ads: local outliers (P,q,resid) [(np.float64(13.441), np.float64(1.149), 0.048)]"
+     },
+     {
+      "check": "smoothness",
+      "level": "warn",
+      "detail": "des: local outliers (P,q,resid) [(np.float64(13.441), np.float64(1.149), 0.048)]"
+     }
+    ],
+    "CO2 353K": [],
+    "CO2 373K": []
+   },
+   "cross_series": []
+  },
+  "limitations": {
+   "unresolved_slots": 3,
+   "dense_regions_with_no_distinct_centres": 0,
+   "note": "ink coverage is not marker completeness; unresolved dense evidence requires review"
+  },
+  "accepted_extraction": false
+ },
+ "edit_audit": {
+  "authoritative_csv": true,
+  "added": [
+   "pt-a04-overlap-01",
+   "pt-a04-overlap-02",
+   "pt-a04-overlap-03",
+   "pt-a04-overlap-04",
+   "pt-a04-overlap-05",
+   "pt-a04-overlap-06",
+   "pt-a04-redtrace-01",
+   "pt-a04-redtrace-02",
+   "pt-a04-redtrace-03",
+   "pt-a04-redtrace-04",
+   "pt-a04-greentrace-01"
+  ],
+  "deleted": [
+   "pt-4c5cc74756866f6b",
+   "pt-6c4bac4aa500e7b3",
+   "pt-7a2ee0b834dc0641",
+   "pt-9cb2f69d1132eaf3",
+   "pt-abbc92f6068b6523",
+   "pt-c01bf5323eb2469c",
+   "pt-da7d13e82ef6fb3a",
+   "pt-ed8bcba885d472ca"
+  ],
+  "moved": [
+   {
+    "point_id": "pt-50e22c14a338be88",
+    "from_px": [
+     612.72,
+     80.86
+    ],
+    "to_px": [
+     607.0,
+     83.0
+    ]
+   },
+   {
+    "point_id": "pt-ceecf317d2042ac8",
+    "from_px": [
+     613.16,
+     121.14
+    ],
+    "to_px": [
+     607.0,
+     122.0
+    ]
+   },
+   {
+    "point_id": "pt-d965c68daa02e84e",
+    "from_px": [
+     613.62,
+     157.72
+    ],
+    "to_px": [
+     607.5,
+     160.0
+    ]
+   },
+   {
+    "point_id": "pt-644497c1382cffce",
+    "from_px": [
+     612.39,
+     181.41
+    ],
+    "to_px": [
+     607.0,
+     183.0
+    ]
+   },
+   {
+    "point_id": "pt-02e24e02838834f8",
+    "from_px": [
+     613.37,
+     229.79
+    ],
+    "to_px": [
+     607.5,
+     232.0
+    ]
+   },
+   {
+    "point_id": "pt-cd6f17abf8e3a07a",
+    "from_px": [
+     611.32,
+     287.91
+    ],
+    "to_px": [
+     607.5,
+     289.0
+    ]
+   }
+  ],
+  "reassigned": [],
+  "candidate_count": 170,
+  "final_count": 173,
+  "normalized_columns": {},
+  "series_counts": {
+   "CO2 303K": {
+    "candidate": 40,
+    "final": 45
+   },
+   "CO2 313K": {
+    "candidate": 18,
+    "final": 19
+   },
+   "CO2 323K": {
+    "candidate": 50,
+    "final": 44
+   },
+   "CO2 333K": {
+    "candidate": 19,
+    "final": 20
+   },
+   "CO2 353K": {
+    "candidate": 18,
+    "final": 19
+   },
+   "CO2 373K": {
+    "candidate": 25,
+    "final": 26
+   }
+  },
+  "reported_changes": [
+   {
+    "action": "delete",
+    "point_id": "pt-c01bf5323eb2469c",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-da7d13e82ef6fb3a",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-4c5cc74756866f6b",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-7a2ee0b834dc0641",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-abbc92f6068b6523",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-9cb2f69d1132eaf3",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-6c4bac4aa500e7b3",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-ed8bcba885d472ca",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-50e22c14a338be88",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-01",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-ceecf317d2042ac8",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-02",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-d965c68daa02e84e",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-03",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-644497c1382cffce",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-04",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-02e24e02838834f8",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-05",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+   },
+   {
+    "action": "move",
+    "point_id": "pt-cd6f17abf8e3a07a",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-06",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-01",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-02",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-03",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-04",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-greentrace-01",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   }
+  ],
+  "requested": 25,
+  "applied": 25,
+  "operations": [
+   {
+    "action": "delete",
+    "point_id": "pt-c01bf5323eb2469c",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-da7d13e82ef6fb3a",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-4c5cc74756866f6b",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-7a2ee0b834dc0641",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-abbc92f6068b6523",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-9cb2f69d1132eaf3",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-6c4bac4aa500e7b3",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "delete",
+    "point_id": "pt-ed8bcba885d472ca",
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-50e22c14a338be88",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-01",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-ceecf317d2042ac8",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-02",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-d965c68daa02e84e",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-03",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-644497c1382cffce",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-04",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-02e24e02838834f8",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-05",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "move",
+    "point_id": "pt-cd6f17abf8e3a07a",
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-overlap-06",
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-01",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-02",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-03",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-redtrace-04",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+    "status": "applied"
+   },
+   {
+    "action": "add",
+    "point_id": "pt-a04-greentrace-01",
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it.",
+    "status": "applied"
+   }
+  ],
+  "change_reasons": {
+   "delete:pt-c01bf5323eb2469c": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-da7d13e82ef6fb3a": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-4c5cc74756866f6b": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-7a2ee0b834dc0641": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-abbc92f6068b6523": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-9cb2f69d1132eaf3": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-6c4bac4aa500e7b3": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "delete:pt-ed8bcba885d472ca": {
+    "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+    "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+   },
+   "move:pt-50e22c14a338be88": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+   },
+   "add:pt-a04-overlap-01": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+   },
+   "move:pt-ceecf317d2042ac8": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+   },
+   "add:pt-a04-overlap-02": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+   },
+   "move:pt-d965c68daa02e84e": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+   },
+   "add:pt-a04-overlap-03": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+   },
+   "move:pt-644497c1382cffce": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+   },
+   "add:pt-a04-overlap-04": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+   },
+   "move:pt-02e24e02838834f8": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+   },
+   "add:pt-a04-overlap-05": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+   },
+   "move:pt-cd6f17abf8e3a07a": {
+    "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+    "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+   },
+   "add:pt-a04-overlap-06": {
+    "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+    "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+   },
+   "add:pt-a04-redtrace-01": {
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   "add:pt-a04-redtrace-02": {
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   "add:pt-a04-redtrace-03": {
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   "add:pt-a04-redtrace-04": {
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   },
+   "add:pt-a04-greentrace-01": {
+    "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+    "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+   }
+  },
+  "contains_inferred": true,
+  "requires_review": true
+ }
+}

@@ -1,0 +1,43 @@
+version: 1
+
+# Files Agent 04 receives. Paths are relative to the panel folder or project root.
+# Uploaded files are placed flat in Code Interpreter's /mnt/data directory.
+files:
+  - root: panel
+    path: spec.json
+    required: true
+
+  - root: panel
+    path: python/supporting_traces.json
+    required: false
+  - root: panel
+    path: agent03/points.csv
+    upload_as: agent03_points.csv
+    required: true
+
+  - root: panel
+    path: agent03/answer.json
+    upload_as: agent03_answer.json
+    required: true
+  - root: panel
+    path: agent03/images/tiles/review_tiles.json
+    upload_as: review_tiles.json
+    required: false
+  - root: panel
+    path: agent04/response.schema.json
+    upload_as: response.schema.json
+    required: true
+
+  - root: project
+    path: schemas/shared.schema.json
+    upload_as: shared.schema.json
+    required: true
+  - root: project
+    path: schemas/points_csv.contract.json
+    upload_as: points_csv.contract.json
+    required: true
+
+  - root: project
+    path: examples/points.example.csv
+    upload_as: points.example.csv
+    required: true

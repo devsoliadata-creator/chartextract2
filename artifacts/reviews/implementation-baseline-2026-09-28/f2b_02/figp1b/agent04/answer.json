@@ -1,0 +1,382 @@
+{
+ "reasoning": "Source-only inspection of panel.png established a 173–695 px by 60–512 px linear plot frame, Pressure [kPa] on x, CO2 Loading [mmol/g] on y, and six legend-bound CO2 temperature series. Native legend evidence fixes the styles as filled red circle, orange square, green triangle_up, blue pentagon, magenta diamond, and black star; there are no excluded gas series or inset/mask regions. Independent tick fits used x anchors (173,0), (347,40), (521,80), (695,120) and y anchors (512,0), (437,0.5), (362,1), (286,1.5), (211,2), (135,2.5), (60,3). After that source pass, the complete Agent 03 table and review_tiles.json inventory were audited against tile_01_native.png (boxes 1–8), tile_02_native.png (boxes 9–16), tile_03_native.png (boxes 17–20), region_01_native.png, region_02_native.png, and the unchanged panel. The native tiles confirm that the disputed low-pressure red/green positions are continuous-band ink rather than separable glyphs. Eight green direct/template claims were therefore deleted, while source-backed dense-band samples were retained. Agent 03 also mislabeled low-pressure black line coordinates as visible markers; those coordinates were retained but corrected to review-only line_sample evidence. The major omitted feature was a fused pair near x≈607–616 px in every series: two same-series glyph lobes are visible in panel.png, whereas Agent 03 stored one aggregate centroid. Each aggregate row was moved to the left partial centre and one right partial centre was added. Four red and one green native trace samples were added to close over-wide gaps. All saved x/y values were recomputed from the final calibration, the CSV was reloaded, and a reconstruction/overlay made only from the reloaded CSV was inspected. Coverage remains uncertain in the red, green, and black low-pressure strips because continuous ink supports traces but not a count or centres of wholly hidden markers; no estimated_marker rows were fabricated.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0.0,
+   "printed_max": 120.0,
+   "data_min": 0.344828,
+   "data_max": 113.94023,
+   "result": "pass",
+   "reason": "Reloaded CSV centres reproject onto the native 0, 40, 80, and 120 kPa ticks with the independently fitted linear model; all values lie within the printed range."
+  },
+  "y": {
+   "printed_min": 0.0,
+   "printed_max": 3.0,
+   "data_min": 0.044448,
+   "data_max": 2.925282,
+   "result": "pass",
+   "reason": "Reloaded CSV centres reproject onto the native 0.0–3.0 mmol/g tick sequence; the saved extrema match the visible curve range."
+  }
+ },
+ "independent_read": {
+  "x_axis": "Pressure [kPa], linear; printed major ticks 0, 40, 80, 120. Plot-frame x tick centres are 173, 347, 521, and 695 px.",
+  "y_axis": "CO2 Loading [mmol/g], linear; printed major ticks 0.0 to 3.0 in 0.5 increments. Plot-frame y tick centres are 512, 437, 362, 286, 211, 135, and 60 px.",
+  "series": [
+   {
+    "label": "CO2 303K",
+    "marker": "circle",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 15,
+    "notes": "Native legend glyph at panel.png approximately (460,426) is a filled red circle. A thick red band hides low-pressure glyph boundaries; 15 circle centres are directly/partially distinguishable after counting the fused pair near x=607–616 px separately."
+   },
+   {
+    "label": "CO2 313K",
+    "marker": "square",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 19,
+    "notes": "Native legend glyph at approximately (583,426) is a filled orange square. Low-pressure squares remain separable; the wide glyph near x=607–616 px contains two overlapping square instances."
+   },
+   {
+    "label": "CO2 323K",
+    "marker": "triangle_up",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 15,
+    "notes": "Native legend glyph at approximately (460,452) has a clear upward apex and filled green triangular base; this overrides the unreliable automated legend polygon measurement. The low-pressure green band obscures additional individual glyphs."
+   },
+   {
+    "label": "CO2 333K",
+    "marker": "pentagon",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 20,
+    "notes": "Native legend glyph at approximately (582,452) is a filled blue pentagon, not an open circle. The overlapping pair near x=607–616 px has two visible pentagonal lobes."
+   },
+   {
+    "label": "CO2 353K",
+    "marker": "diamond",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 19,
+    "notes": "Native legend glyph at approximately (460,480) is a vertically elongated filled magenta diamond; two overlapping diamonds are visible near x=607–616 px."
+   },
+   {
+    "label": "CO2 373K",
+    "marker": "star",
+    "marker_fill": "filled",
+    "visible_markers_estimate": 14,
+    "notes": "Native legend glyph at approximately (584,480) is unequivocally a filled black star. Agent 03's CSV 'diamond' style was corrected to star for every row. The low-pressure black segment is a continuous band without separable star contours."
+   }
+  ],
+  "visual_risks": [
+   "Thick, overlapping low-pressure red, green, and black bands hide individual glyph boundaries.",
+   "At native x≈607–616 px each series has two strongly overlapping same-series markers that automated connected-component methods merge.",
+   "The orange 313K markers overlap red/green bands at low pressure but retain square edges.",
+   "Raster antialiasing and dark outlines shift color-only centroids away from geometric glyph centres.",
+   "The in-plot legend covers lower-right data space, but no eligible curve enters the legend rectangle."
+  ]
+ },
+ "verdict": "review",
+ "series": [
+  {
+   "label": "CO2 303K",
+   "coverage": "uncertain",
+   "final_count": 45,
+   "comment": "15 direct/partial circle rows and 30 low-pressure line samples. The native red strip spans about (174,455) to (290,177) px; four trace samples were added in the former 56 px gap. Maximum saved along-band spacing is about 15.0 px. Individual hidden circles within the strip remain unresolved."
+  },
+  {
+   "label": "CO2 313K",
+   "coverage": "complete",
+   "final_count": 19,
+   "comment": "19 direct/partial square rows. Native squares are separable across the plotted range; the fused high-pressure component was split into two partial square centres."
+  },
+  {
+   "label": "CO2 323K",
+   "coverage": "uncertain",
+   "final_count": 44,
+   "comment": "15 direct/partial triangle rows and 29 line samples. Eight Agent 03 marker/template claims inside the fused green strip were deleted because the native tiles show band ink or overlap but no separate triangle. One trace sample closed the only >14 px internal gap; maximum saved trace spacing is about 11.4 px. Hidden strip markers remain unresolved."
+  },
+  {
+   "label": "CO2 333K",
+   "coverage": "complete",
+   "final_count": 20,
+   "comment": "20 direct/partial pentagon rows. Native pentagons are separable, including two overlapping high-pressure glyphs recovered as separate partial centres."
+  },
+  {
+   "label": "CO2 353K",
+   "coverage": "complete",
+   "final_count": 19,
+   "comment": "19 direct/partial diamond rows. Native diamonds are separable, including two overlapping high-pressure glyphs recovered as separate partial centres."
+  },
+  {
+   "label": "CO2 373K",
+   "coverage": "uncertain",
+   "final_count": 26,
+   "comment": "14 direct/partial star rows and 12 low-pressure line samples. The first 12 Agent 03 rows were reclassified from visible markers to line samples because panel.png shows only a thick continuous black band there. The trace spacing is at most about 16.9 px and reaches within about 14 px of the band endpoint; hidden stars remain unresolved."
+  }
+ ],
+ "uncertainties": [
+  "No estimated_marker rows were used. All inferred rows are native line_sample coordinates and therefore keep the result under review.",
+  "The six fused high-pressure pairs are represented by supported partial-glyph centres with approximately 2.5 px positional uncertainty; their two-lobe contours are visible but overlap strongly.",
+  "Red, green, and black low-pressure strips are sampled only where same-series native ink is present. Their hidden experimental marker count is not inferred.",
+  "The final linear y fit has 0.277 px RMS and 0.464 px maximum anchor reprojection error from rasterized tick-centre selection.",
+  "There are no source masks or insets; the legend rectangle was excluded from marker search."
+ ],
+ "row_count": 173,
+ "calibration": {
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 0.22988505747126436,
+    "intercept": -39.770114942528735,
+    "unit": "kPa",
+    "accepted_anchors": [
+     {
+      "pixel": 173.0,
+      "value": 0.0
+     },
+     {
+      "pixel": 347.0,
+      "value": 40.0
+     },
+     {
+      "pixel": 521.0,
+      "value": 80.0
+     },
+     {
+      "pixel": 695.0,
+      "value": 120.0
+     }
+    ],
+    "fit_rms_error_px": 0.0,
+    "max_reprojection_error_px": 0.0,
+    "note": "Accepted the centers of the bottom/top major tick strokes. No x anchor was excluded."
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.00663190567318084,
+    "intercept": 3.397672437625888,
+    "unit": "mmol/g",
+    "accepted_anchors": [
+     {
+      "pixel": 512.0,
+      "value": 0.0
+     },
+     {
+      "pixel": 437.0,
+      "value": 0.5
+     },
+     {
+      "pixel": 362.0,
+      "value": 1.0
+     },
+     {
+      "pixel": 286.0,
+      "value": 1.5
+     },
+     {
+      "pixel": 211.0,
+      "value": 2.0
+     },
+     {
+      "pixel": 135.0,
+      "value": 2.5
+     },
+     {
+      "pixel": 60.0,
+      "value": 3.0
+     }
+    ],
+    "fit_rms_error_px": 0.276642,
+    "max_reprojection_error_px": 0.464032,
+    "note": "Accepted the centers of the left/right major tick strokes. No y anchor was excluded; subpixel residuals reflect rasterized stroke widths."
+   }
+  },
+  "frame_px": [
+   173,
+   60,
+   695,
+   512
+  ],
+  "px_per_unit_x": 4.35,
+  "px_per_unit_y": 150.78622183122414,
+  "unit_per_px_x": 0.22988505747126436,
+  "unit_per_px_y": 0.00663190567318084,
+  "tick_fit_resid_x_px": 0.0,
+  "tick_fit_resid_y_px": 0.276642
+ },
+ "unresolved_slots": {
+  "total": 3,
+  "by_series": {
+   "CO2 303K": 1,
+   "CO2 313K": 0,
+   "CO2 323K": 1,
+   "CO2 333K": 0,
+   "CO2 353K": 0,
+   "CO2 373K": 1
+  },
+  "slots": [
+   {
+    "series_label": "CO2 303K",
+    "reason": "panel.png native span x≈174–285 px is a thick continuous red band; same-series ink is measurable, but individual circle contours/centres inside the strip cannot be separated without inventing an experimental count."
+   },
+   {
+    "series_label": "CO2 323K",
+    "reason": "panel.png and review_tiles.json native tiles marker_01–marker_03 show a fused green band over x≈174–284 px with crossings/occlusion; trace positions are supported, but additional individual triangle instances are not resolvable."
+   },
+   {
+    "series_label": "CO2 373K",
+    "reason": "panel.png native span x≈174–295 px is a continuous black band with no separable star contours; the saved rows sample the ink, while any hidden experimental marker centres remain unresolved."
+   }
+  ]
+ },
+ "changes": [
+  {
+   "action": "delete",
+   "point_id": "pt-c01bf5323eb2469c",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (186.23, 442.93) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-da7d13e82ef6fb3a",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (188.28, 435.28) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-4c5cc74756866f6b",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (190.69, 423.35) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-7a2ee0b834dc0641",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (196.35, 399.47) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-abbc92f6068b6523",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (199.26, 386.20) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-9cb2f69d1132eaf3",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (204.00, 373.00) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-6c4bac4aa500e7b3",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (266.03, 248.43) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "delete",
+   "point_id": "pt-ed8bcba885d472ca",
+   "reason": "Deleted as a separate marker instance: native pixels at the candidate coordinate are part of the fused continuous green band or another series' overlap, with no separable triangle contour.",
+   "source_evidence": "panel.png native pixels near (277.51, 244.08) show continuous/overlapped ink rather than an independently bounded green triangle."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-50e22c14a338be88",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 303K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 83.00) px, not the candidate aggregate centroid (612.72, 80.86) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-01",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 303K glyph lobe/outline centred approximately at (615.50, 80.00) px, overlapping the left marker."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-ceecf317d2042ac8",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 313K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 122.00) px, not the candidate aggregate centroid (613.16, 121.14) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-02",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 313K glyph lobe/outline centred approximately at (616.00, 120.00) px, overlapping the left marker."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-d965c68daa02e84e",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 323K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 160.00) px, not the candidate aggregate centroid (613.62, 157.72) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-03",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 323K glyph lobe/outline centred approximately at (615.50, 157.00) px, overlapping the left marker."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-644497c1382cffce",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 333K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.00, 183.00) px, not the candidate aggregate centroid (612.39, 181.41) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-04",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 333K glyph lobe/outline centred approximately at (616.00, 181.00) px, overlapping the left marker."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-02e24e02838834f8",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 353K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 232.00) px, not the candidate aggregate centroid (613.37, 229.79) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-05",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 353K glyph lobe/outline centred approximately at (615.50, 228.50) px, overlapping the left marker."
+  },
+  {
+   "action": "move",
+   "point_id": "pt-cd6f17abf8e3a07a",
+   "reason": "The candidate used one centroid for a visibly fused pair; moved the retained source instance to the left partial-glyph centre.",
+   "source_evidence": "panel.png shows two overlapping CO2 373K glyph lobes near x=607 and x=616 px; the left native centre is approximately (607.50, 289.00) px, not the candidate aggregate centroid (611.32, 287.91) px."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-overlap-06",
+   "reason": "Added the second logical marker in the native fused pair that Agent 03 represented with only one aggregate centroid.",
+   "source_evidence": "panel.png shows a separate right-hand CO2 373K glyph lobe/outline centred approximately at (615.50, 286.00) px, overlapping the left marker."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-redtrace-01",
+   "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+   "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (243.00, 207.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-redtrace-02",
+   "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+   "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (255.00, 198.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-redtrace-03",
+   "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+   "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (266.00, 190.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-redtrace-04",
+   "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+   "source_evidence": "panel.png has continuous CO2 303K colored ink centred at (278.50, 183.00) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+  },
+  {
+   "action": "add",
+   "point_id": "pt-a04-greentrace-01",
+   "reason": "Added a native-supported line sample to close an over-wide gap in the continuous same-series band.",
+   "source_evidence": "panel.png has continuous CO2 323K colored ink centred at (228.50, 309.50) px; the coordinate lies within the visible band and does not extrapolate beyond it."
+  }
+ ]
+}

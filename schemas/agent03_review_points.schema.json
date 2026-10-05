@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "agent03_review_points_response",
+  "description": "Agent 03 corrections to the Python proposal, applied mechanically by src/tools/stage_edits.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reasoning",
+    "verdict",
+    "series",
+    "operations",
+    "uncertainties",
+    "coverage"
+  ],
+  "properties": {
+    "reasoning": {
+      "type": "string"
+    },
+    "verdict": {
+      "$ref": "shared.schema.json#/$defs/verdict"
+    },
+    "series": {
+      "type": "array",
+      "items": {
+        "$ref": "shared.schema.json#/$defs/series_coverage"
+      }
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "$ref": "shared.schema.json#/$defs/point_operation"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverage": {
+      "description": "Materially reviewed tiles, contested boxes, ambiguity crops and slots. Omitted items are recorded as unresolved by the host.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "item_type", "status", "detail"],
+        "properties": {
+          "item_id": {"type": "string"},
+          "item_type": {
+            "type": "string",
+            "enum": ["tile", "box", "evidence", "ambiguity", "slot"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["reviewed", "unresolved"]
+          },
+          "detail": {"type": "string"}
+        }
+      }
+    },
+    "dense_measurements": {
+      "description": "Native-pixel center inventory for each measurement_targets.json region; candidate slots and trajectories are search leads, not measured centers.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target_id", "series_label", "source_bbox_px", "status", "source_count_lower", "source_count_upper", "unresolved_count", "native_evidence", "centers"],
+        "properties": {
+          "target_id": {"type": "string"},
+          "series_label": {"type": "string"},
+          "source_bbox_px": {
+            "type": "array", "minItems": 4, "maxItems": 4,
+            "items": {"type": "number"}
+          },
+          "status": {"type": "string", "enum": ["measured", "source_disagrees", "unresolved"]},
+          "source_count_lower": {"type": "integer", "minimum": 0},
+          "source_count_upper": {"type": ["integer", "null"], "minimum": 0},
+          "unresolved_count": {"type": "integer", "minimum": 0},
+          "native_evidence": {"type": "string"},
+          "centers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["source_pixel", "point_id", "operation_id", "evidence_kind", "uncertainty_px", "source_evidence"],
+              "properties": {
+                "source_pixel": {
+                  "type": "array", "minItems": 2, "maxItems": 2,
+                  "items": {"type": "number"}
+                },
+                "point_id": {"type": ["string", "null"]},
+                "operation_id": {"type": ["string", "null"]},
+                "evidence_kind": {"type": "string", "enum": ["native_visible", "partial_marker", "estimated"]},
+                "uncertainty_px": {"type": "number", "exclusiveMinimum": 0},
+                "source_evidence": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

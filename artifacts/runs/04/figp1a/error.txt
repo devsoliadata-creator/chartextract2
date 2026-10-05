@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\steps\base.py", line 64, in handle
+    route = await self.run_panel(run, panel) or CONTINUE
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\steps\agent04_final_check.py", line 313, in run_panel
+    result, artifact_attempt = await ask_for_final()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\steps\agent04_final_check.py", line 301, in ask_for_final
+    result = await self.agent.ask_artifacts(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\agents.py", line 268, in ask_artifacts
+    return await ask_artifacts(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\artifact_agent.py", line 256, in ask_artifacts
+    await _with_progress(invoke(), agent.config.display_name, agent.config.timeout_seconds)
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\artifact_agent.py", line 62, in _with_progress
+    return await task
+           ^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\artifact_agent.py", line 239, in invoke
+    artifacts = await download_cited_files(client, payload, artifact_dir, agent.config.timeout_seconds)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\src\workflow\artifact_agent.py", line 105, in download_cited_files
+    content = await client.containers.files.content.retrieve(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\.venv\Lib\site-packages\openai\resources\containers\files\content.py", line 136, in retrieve
+    return await self._get(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\.venv\Lib\site-packages\openai\_base_client.py", line 1983, in get
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jmckenna\dev-ai\chart_extract_v5\testing-stuff-main\.venv\Lib\site-packages\openai\_base_client.py", line 1837, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'statusCode': 401, 'message': 'Unauthorized. Access token is missing, invalid, audience is incorrect (https://ai.azure.com), or have expired.'}

@@ -1,0 +1,6 @@
+version: 1
+
+files:
+  - root: panel
+    path: panel.png
+    required: true

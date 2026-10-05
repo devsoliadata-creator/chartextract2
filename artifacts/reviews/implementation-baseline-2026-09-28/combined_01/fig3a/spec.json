@@ -1,0 +1,527 @@
+{
+ "image": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig3a\\panel.png",
+ "panel_bbox": [
+  0,
+  0,
+  718,
+  573
+ ],
+ "x": {
+  "title": "Relative Pressure (P/P₀)",
+  "unit": "P/P₀",
+  "scale": "linear",
+  "ticks": [
+   0,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   1
+  ],
+  "x_setpoints_visible": [
+   0.01,
+   0.02,
+   0.03,
+   0.04,
+   0.05,
+   0.06,
+   0.08,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   0.95,
+   1.0
+  ],
+  "grid": [
+   0.01,
+   0.02,
+   0.03,
+   0.04,
+   0.05,
+   0.06,
+   0.08,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   0.95,
+   1.0
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.1992,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.3329,
+    "value": 0.2
+   },
+   {
+    "pixel_norm": 0.468,
+    "value": 0.4
+   },
+   {
+    "pixel_norm": 0.6017,
+    "value": 0.6
+   },
+   {
+    "pixel_norm": 0.7354,
+    "value": 0.8
+   },
+   {
+    "pixel_norm": 0.8705,
+    "value": 1
+   }
+  ],
+  "minimum": -0.05,
+  "maximum": 1.05,
+  "boundary_limits_confirmed": true
+ },
+ "y": {
+  "title": "Uptake",
+  "unit": "cm³ g⁻¹",
+  "scale": "linear",
+  "ticks": [
+   0,
+   20,
+   40,
+   60,
+   80,
+   100,
+   120,
+   140
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.8185,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.719,
+    "value": 20
+   },
+   {
+    "pixel_norm": 0.6195,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.5201,
+    "value": 60
+   },
+   {
+    "pixel_norm": 0.4206,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.3211,
+    "value": 100
+   },
+   {
+    "pixel_norm": 0.2199,
+    "value": 120
+   },
+   {
+    "pixel_norm": 0.1204,
+    "value": 140
+   }
+  ],
+  "minimum": -10.0,
+  "maximum": 140.0,
+  "boundary_limits_confirmed": true
+ },
+ "legend_bbox": [
+  447,
+  111,
+  646,
+  458
+ ],
+ "legend_position": "No separate legend; series are directly labeled in the plot at upper-right and lower-right.",
+ "series": [
+  {
+   "label": "CO2@195K",
+   "extract": true,
+   "gas": "CO2",
+   "species_evidence": "Direct plot label 'CO₂@195 K'; caption states 'CO2 adsorption–desorption isotherm at 195 K for NUM-27a'.",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#5A74F7",
+   "quantity_type": "co2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 127,
+   "y_anchors": {
+    "p25": 123,
+    "p50": 124,
+    "p75": 125,
+    "p100": 127
+   },
+   "n_markers_estimate": 42
+  },
+  {
+   "label": "N2@77K",
+   "extract": false,
+   "gas": "N2",
+   "species_evidence": "Direct plot label 'N₂@77 K'; caption states 'N2 adsorption–desorption isotherm at 77 K for NUM-27a'.",
+   "marker": "circle",
+   "marker_fill": "open",
+   "line_style": "solid",
+   "color_hex": "#F06A69",
+   "quantity_type": "n2_uptake",
+   "loading_basis": "per gram of sorbent",
+   "y_at_xmax": 3,
+   "y_anchors": {
+    "p25": 1,
+    "p50": 1,
+    "p75": 1,
+    "p100": 3
+   },
+   "n_markers_estimate": 27
+  }
+ ],
+ "mask_bboxes": [
+  [
+   190,
+   168,
+   523,
+   403
+  ]
+ ],
+ "context": {
+  "adsorbent": "NUM-27a",
+  "sample_form": "Not specified in the supplied caption or page evidence.",
+  "activation": "Not specified in the supplied caption or page evidence.",
+  "instrument": "Not specified in the supplied caption or page evidence.",
+  "measurement_notes": "CO2 adsorption–desorption was measured at 195 K and plotted versus relative pressure (P/P0); N2 adsorption–desorption was measured at 77 K in the same axis frame. The page text states that N2 and CO2 were used as probe gases to investigate permanent porosity.",
+  "other_parameters": "The uptake axis is in cm³ g⁻¹. The CO2 curve shows a low-relative-pressure region and a plateau beginning around P/P0 = 0.017, with a further pressure threshold near P/P0 = 0.03, as described in the text; no numeric chart extraction is performed here."
+ },
+ "panel_info": {
+  "panel": "a",
+  "is_co2_isotherm": true,
+  "reason": "This physical axis frame plots CO2 adsorption–desorption at 195 K against relative pressure, together with N2 at 77 K. Only the CO2 series is eligible for extraction.",
+  "bbox_norm": [
+   0.02,
+   0.01,
+   0.34,
+   0.32
+  ],
+  "has_inset": true,
+  "inset_bbox_norm": [
+   0.105,
+   0.101,
+   0.253,
+   0.228
+  ]
+ },
+ "panel_mapping": {
+  "runtime_panel_id": "a",
+  "layout_panel_id": "a",
+  "canonical_panel_id": "a"
+ },
+ "llm_spec": {
+  "reasoning": "Single main axis frame with direct in-plot labels rather than a separate legend. The main panel shows open blue-circle CO2 at 195 K and open red-circle N2 at 77 K. The caption explicitly binds the curves to adsorption–desorption isotherms; the inset is excluded from readings and marker counts. Only the CO2 equilibrium uptake series is policy-eligible.",
+  "x": {
+   "title": "Relative Pressure (P/P₀)",
+   "unit": "P/P₀",
+   "scale": "linear",
+   "ticks": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+   ],
+   "x_setpoints_visible": [
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+   ],
+   "grid": [
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+   ],
+   "tick_anchors": [
+    {
+     "pixel_norm": 0.1992,
+     "value": 0
+    },
+    {
+     "pixel_norm": 0.3329,
+     "value": 0.2
+    },
+    {
+     "pixel_norm": 0.468,
+     "value": 0.4
+    },
+    {
+     "pixel_norm": 0.6017,
+     "value": 0.6
+    },
+    {
+     "pixel_norm": 0.7354,
+     "value": 0.8
+    },
+    {
+     "pixel_norm": 0.8705,
+     "value": 1
+    }
+   ],
+   "minimum": -0.05,
+   "maximum": 1.05,
+   "boundary_limits_confirmed": true
+  },
+  "y": {
+   "title": "Uptake",
+   "unit": "cm³ g⁻¹",
+   "scale": "linear",
+   "ticks": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140
+   ],
+   "tick_anchors": [
+    {
+     "pixel_norm": 0.8185,
+     "value": 0
+    },
+    {
+     "pixel_norm": 0.719,
+     "value": 20
+    },
+    {
+     "pixel_norm": 0.6195,
+     "value": 40
+    },
+    {
+     "pixel_norm": 0.5201,
+     "value": 60
+    },
+    {
+     "pixel_norm": 0.4206,
+     "value": 80
+    },
+    {
+     "pixel_norm": 0.3211,
+     "value": 100
+    },
+    {
+     "pixel_norm": 0.2199,
+     "value": 120
+    },
+    {
+     "pixel_norm": 0.1204,
+     "value": 140
+    }
+   ],
+   "minimum": -10.0,
+   "maximum": 140.0,
+   "boundary_limits_confirmed": true
+  },
+  "legend_bbox_norm": [
+   0.633,
+   0.205,
+   0.89,
+   0.79
+  ],
+  "legend_position": "No separate legend; series are directly labeled in the plot at upper-right and lower-right.",
+  "series": [
+   {
+    "label": "CO2@195K",
+    "gas": "CO2",
+    "species_evidence": "Direct plot label 'CO₂@195 K'; caption states 'CO2 adsorption–desorption isotherm at 195 K for NUM-27a'.",
+    "temperature_k": 195,
+    "color_name": "blue",
+    "color_hex": "#5A74F7",
+    "marker": "circle",
+    "marker_fill": "open",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "co2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": true,
+    "y_anchors": {
+     "p25": 123,
+     "p50": 124,
+     "p75": 125,
+     "p100": 127
+    },
+    "n_markers_estimate": 42
+   },
+   {
+    "label": "N2@77K",
+    "gas": "N2",
+    "species_evidence": "Direct plot label 'N₂@77 K'; caption states 'N2 adsorption–desorption isotherm at 77 K for NUM-27a'.",
+    "temperature_k": 77,
+    "color_name": "red",
+    "color_hex": "#F06A69",
+    "marker": "circle",
+    "marker_fill": "open",
+    "line_style": "solid",
+    "has_line": true,
+    "quantity_type": "n2_uptake",
+    "loading_basis": "per gram of sorbent",
+    "extract": false,
+    "y_anchors": {
+     "p25": 1,
+     "p50": 1,
+     "p75": 1,
+     "p100": 3
+    },
+    "n_markers_estimate": 27
+   }
+  ],
+  "branches": "unknown",
+  "notes": "Inset inside the main panel shows the CO2 low-relative-pressure region on a semilogarithmic x-axis, with annotations at P/P₀ = 0.017 and 0.030; inset coordinates and markers are excluded. No separate legend, no dual y-axis, and no visible error bars. The low-pressure CO2 adsorption/desorption branches appear closely overlapping.",
+  "agent02_axis_bounds_validation": {
+   "x": {
+    "minimum": "accepted",
+    "maximum": "accepted"
+   },
+   "y": {
+    "minimum": "accepted",
+    "maximum": "accepted"
+   }
+  },
+  "chart_title": "",
+  "complex_regions": [
+   {
+    "bbox_norm": [
+     0.185,
+     0.185,
+     0.26,
+     0.825
+    ],
+    "kind": "dense_markers",
+    "python_passes": 4
+   },
+   {
+    "bbox_norm": [
+     0.337,
+     0.304,
+     0.709,
+     0.681
+    ],
+    "kind": "inset",
+    "python_passes": 2
+   },
+   {
+    "bbox_norm": [
+     0.19,
+     0.79,
+     0.225,
+     0.835
+    ],
+    "kind": "overlapping_markers",
+    "python_passes": 3
+   }
+  ]
+ },
+ "vector_marks": null,
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.337,
+    0.304,
+    0.709,
+    0.681
+   ],
+   "series_labels": [],
+   "strategy": "ignore",
+   "reason": "Inset plot duplicates the blue CO2 curve and contains independent axes, tick labels, arrows, and two red highlighted annotation points; all of this must be excluded from main-panel calibration and marker extraction.",
+   "bbox_px": [
+    241,
+    174,
+    509,
+    390
+   ]
+  }
+ ],
+ "shared_x_columns": [],
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.185,
+    0.185,
+    0.26,
+    0.825
+   ],
+   "kind": "dense_markers",
+   "python_passes": 4
+  },
+  {
+   "bbox_norm": [
+    0.337,
+    0.304,
+    0.709,
+    0.681
+   ],
+   "kind": "inset",
+   "python_passes": 2
+  },
+  {
+   "bbox_norm": [
+    0.19,
+    0.79,
+    0.225,
+    0.835
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 3
+  }
+ ]
+}

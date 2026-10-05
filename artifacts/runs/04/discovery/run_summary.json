@@ -1,0 +1,247 @@
+{
+ "source": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\data\\input\\04.png",
+ "title": "04",
+ "run_id": "20261001-113702-76cf30",
+ "note": "",
+ "panels": [
+  {
+   "folder": "figp1a",
+   "figure": {
+    "page": 1,
+    "kind": "image",
+    "file": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\discovery\\python_inventory\\figure.png",
+    "source_id": "image",
+    "figure_number": null,
+    "caption": null,
+    "caption_candidates": [],
+    "references": []
+   },
+   "discovery": {
+    "reasoning": "The candidate is a composite graphic with five distinct physical axis frames. Panel A plots CO2 loading versus pressure and also includes N2 curves, so the CO2 series qualify. Panel B plots CO2 loading versus pressure and qualifies. Panels C, D, and E show N2 or H2O loading only and are excluded. No figure caption or printed figure number is provided in the supplied source context, and no information about supplementary tabulated isotherm data is available.",
+    "figure_number": null,
+    "matched_caption": "",
+    "figure_is_relevant": true,
+    "si_has_tabulated_data": "unknown",
+    "panels": [
+     {
+      "panel": "A",
+      "is_co2_isotherm": true,
+      "reason": "CO2 loading [mmol/g] is plotted against pressure [mbar] for multiple temperatures; N2 curves are also present but do not affect CO2 eligibility.",
+      "bbox_norm": [
+       0.095,
+       0.005,
+       0.975,
+       0.385
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "B",
+      "is_co2_isotherm": true,
+      "reason": "CO2 loading [mmol/g] is plotted against pressure [kPa] for temperatures from 303 K to 373 K.",
+      "bbox_norm": [
+       0.095,
+       0.405,
+       0.485,
+       0.68
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "C",
+      "is_co2_isotherm": false,
+      "reason": "The axis is N2 loading [mmol/g] versus pressure [kPa], with no CO2 uptake series.",
+      "bbox_norm": [
+       0.605,
+       0.405,
+       0.985,
+       0.68
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "D",
+      "is_co2_isotherm": false,
+      "reason": "The axis is H2O loading [mmol/g] versus pressure [kPa], not CO2.",
+      "bbox_norm": [
+       0.095,
+       0.705,
+       0.485,
+       0.975
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "E",
+      "is_co2_isotherm": false,
+      "reason": "The axis is H2O loading [mmol/g] versus relative humidity [%], not CO2.",
+      "bbox_norm": [
+       0.605,
+       0.705,
+       0.985,
+       0.975
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     }
+    ],
+    "context": {
+     "adsorbent": "Not specified in the supplied figure or document context.",
+     "sample_form": "Not specified.",
+     "activation": "Not specified.",
+     "instrument": "Not specified.",
+     "measurement_notes": "Panel A shows CO2 isotherms at 273–373 K over pressure in mbar, with additional N2 series. Panel B shows CO2 isotherms at 303–373 K over pressure in kPa. Exact material identity and other measurement conditions are unavailable.",
+     "other_parameters": "Panels C–E are non-CO2 measurements: N2 loading in C and H2O loading in D–E. No caption, figure number, or supplementary-table information was supplied."
+    }
+   },
+   "panel": {
+    "panel": "A",
+    "is_co2_isotherm": true,
+    "reason": "CO2 loading [mmol/g] is plotted against pressure [mbar] for multiple temperatures; N2 curves are also present but do not affect CO2 eligibility.",
+    "bbox_norm": [
+     0.095,
+     0.005,
+     0.975,
+     0.385
+    ],
+    "has_inset": false,
+    "inset_bbox_norm": null
+   },
+   "figure_id": "figp1a",
+   "panel_id": "a",
+   "status": "failed",
+   "message": "agent04_final_check: Error code: 401 - {'statusCode': 401, 'message': 'Unauthorized. Access token is missing, invalid, audience is incorrect (https://ai.azure.com), or have expired.'}",
+   "check_rounds": 2,
+   "agent02_final_patch": false,
+   "extract_error": "",
+   "needs_review": true,
+   "rows": {
+    "python": 347,
+    "agent03": 316
+   },
+   "verdict": ""
+  },
+  {
+   "folder": "figp1b",
+   "figure": {
+    "page": 1,
+    "kind": "image",
+    "file": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\04\\discovery\\python_inventory\\figure.png",
+    "source_id": "image",
+    "figure_number": null,
+    "caption": null,
+    "caption_candidates": [],
+    "references": []
+   },
+   "discovery": {
+    "reasoning": "The candidate is a composite graphic with five distinct physical axis frames. Panel A plots CO2 loading versus pressure and also includes N2 curves, so the CO2 series qualify. Panel B plots CO2 loading versus pressure and qualifies. Panels C, D, and E show N2 or H2O loading only and are excluded. No figure caption or printed figure number is provided in the supplied source context, and no information about supplementary tabulated isotherm data is available.",
+    "figure_number": null,
+    "matched_caption": "",
+    "figure_is_relevant": true,
+    "si_has_tabulated_data": "unknown",
+    "panels": [
+     {
+      "panel": "A",
+      "is_co2_isotherm": true,
+      "reason": "CO2 loading [mmol/g] is plotted against pressure [mbar] for multiple temperatures; N2 curves are also present but do not affect CO2 eligibility.",
+      "bbox_norm": [
+       0.095,
+       0.005,
+       0.975,
+       0.385
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "B",
+      "is_co2_isotherm": true,
+      "reason": "CO2 loading [mmol/g] is plotted against pressure [kPa] for temperatures from 303 K to 373 K.",
+      "bbox_norm": [
+       0.095,
+       0.405,
+       0.485,
+       0.68
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "C",
+      "is_co2_isotherm": false,
+      "reason": "The axis is N2 loading [mmol/g] versus pressure [kPa], with no CO2 uptake series.",
+      "bbox_norm": [
+       0.605,
+       0.405,
+       0.985,
+       0.68
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "D",
+      "is_co2_isotherm": false,
+      "reason": "The axis is H2O loading [mmol/g] versus pressure [kPa], not CO2.",
+      "bbox_norm": [
+       0.095,
+       0.705,
+       0.485,
+       0.975
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     },
+     {
+      "panel": "E",
+      "is_co2_isotherm": false,
+      "reason": "The axis is H2O loading [mmol/g] versus relative humidity [%], not CO2.",
+      "bbox_norm": [
+       0.605,
+       0.705,
+       0.985,
+       0.975
+      ],
+      "has_inset": false,
+      "inset_bbox_norm": null
+     }
+    ],
+    "context": {
+     "adsorbent": "Not specified in the supplied figure or document context.",
+     "sample_form": "Not specified.",
+     "activation": "Not specified.",
+     "instrument": "Not specified.",
+     "measurement_notes": "Panel A shows CO2 isotherms at 273–373 K over pressure in mbar, with additional N2 series. Panel B shows CO2 isotherms at 303–373 K over pressure in kPa. Exact material identity and other measurement conditions are unavailable.",
+     "other_parameters": "Panels C–E are non-CO2 measurements: N2 loading in C and H2O loading in D–E. No caption, figure number, or supplementary-table information was supplied."
+    }
+   },
+   "panel": {
+    "panel": "B",
+    "is_co2_isotherm": true,
+    "reason": "CO2 loading [mmol/g] is plotted against pressure [kPa] for temperatures from 303 K to 373 K.",
+    "bbox_norm": [
+     0.095,
+     0.405,
+     0.485,
+     0.68
+    ],
+    "has_inset": false,
+    "inset_bbox_norm": null
+   },
+   "figure_id": "figp1b",
+   "panel_id": "b",
+   "status": "failed",
+   "message": "agent01_read_chart: Error code: 401 - {'statusCode': 401, 'message': 'Unauthorized. Access token is missing, invalid, audience is incorrect (https://ai.azure.com), or have expired.'}",
+   "check_rounds": 0,
+   "agent02_final_patch": false,
+   "extract_error": "",
+   "needs_review": false,
+   "rows": {},
+   "verdict": ""
+  }
+ ]
+}

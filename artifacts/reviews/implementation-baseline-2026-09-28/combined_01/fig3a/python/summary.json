@@ -1,0 +1,538 @@
+{
+ "series_counts": {
+  "CO2@195K": 52
+ },
+ "trace_sample_counts": {
+  "CO2@195K": 27
+ },
+ "calibration": {
+  "px_per_unit_x": 484.5735062893084,
+  "px_per_unit_y": 2.8559712380158406,
+  "unit_per_px_x": 0.0020636703967941714,
+  "unit_per_px_y": 0.3501435822213464,
+  "axis_models": {
+   "x": {
+    "scale": "linear",
+    "slope": 0.0020636703967941714,
+    "intercept": -0.2938252126334911
+   },
+   "y": {
+    "scale": "linear",
+    "slope": -0.3501435822213464,
+    "intercept": 163.92601593087613
+   }
+  },
+  "tick_fit_resid_x": 0.0014556825971100418,
+  "tick_fit_resid_y": 0.19988396659108787,
+  "tick_fit_resid_x_px": 0.7053852201259396,
+  "tick_fit_resid_y_px": 0.5708628595246662,
+  "frame_px": [
+   118,
+   68,
+   651,
+   497
+  ],
+  "x_ticks_px": [
+   142,
+   240,
+   336,
+   433,
+   530,
+   627
+  ],
+  "y_ticks_px": [
+   68,
+   126,
+   182,
+   240,
+   297,
+   354,
+   411,
+   468
+  ],
+  "tick_anchors": {
+   "x": [
+    {
+     "pixel_norm": 0.1992,
+     "value": 0.0
+    },
+    {
+     "pixel_norm": 0.3329,
+     "value": 0.2
+    },
+    {
+     "pixel_norm": 0.468,
+     "value": 0.4
+    },
+    {
+     "pixel_norm": 0.6017,
+     "value": 0.6
+    },
+    {
+     "pixel_norm": 0.7354,
+     "value": 0.8
+    },
+    {
+     "pixel_norm": 0.8705,
+     "value": 1.0
+    }
+   ],
+   "y": [
+    {
+     "pixel_norm": 0.8185,
+     "value": 0.0
+    },
+    {
+     "pixel_norm": 0.719,
+     "value": 20.0
+    },
+    {
+     "pixel_norm": 0.6195,
+     "value": 40.0
+    },
+    {
+     "pixel_norm": 0.5201,
+     "value": 60.0
+    },
+    {
+     "pixel_norm": 0.4206,
+     "value": 80.0
+    },
+    {
+     "pixel_norm": 0.3211,
+     "value": 100.0
+    },
+    {
+     "pixel_norm": 0.2199,
+     "value": 120.0
+    },
+    {
+     "pixel_norm": 0.1204,
+     "value": 140.0
+    }
+   ]
+  },
+  "color_tolerance_lab": 44.790260314941406,
+  "color_tolerance_per_series": [
+   44.790260314941406,
+   44.790260314941406
+  ],
+  "base_color_passes": 3,
+  "complex_region_passes": 4,
+  "complex_region_count": 3,
+  "legend_reader": "declared_colors_direct_labels",
+  "sample_colors": [],
+  "twins_split_by_lines": 0,
+  "line_split_enabled": false,
+  "color_ambiguity_groups": [],
+  "series_assignment_margin": 0.12,
+  "reclaimed_points": 0,
+  "dense_circle_detector": {
+   "regions": [
+    {
+     "series_label": "CO2@195K",
+     "roi_px": [
+      132.83,
+      106.0,
+      186.68,
+      472.72
+     ],
+     "template_source": "declared_circle_geometry",
+     "searches": 1,
+     "validated_centers": 2,
+     "roi_ink_pixels": 3929,
+     "rejected": {
+      "outside_roi": 24,
+      "boundary": 0,
+      "coverage": 5,
+      "flat_response": 0,
+      "solid_core": 21
+     },
+     "matched_existing": 0,
+     "native_supported_additions": 2
+    },
+    {
+     "series_label": "CO2@195K",
+     "roi_px": [
+      136.42,
+      452.67,
+      161.55,
+      478.45
+     ],
+     "template_source": "declared_circle_geometry",
+     "searches": 1,
+     "validated_centers": 0,
+     "roi_ink_pixels": 297,
+     "rejected": {
+      "outside_roi": 50,
+      "boundary": 0,
+      "coverage": 0,
+      "flat_response": 0,
+      "solid_core": 2
+     },
+     "matched_existing": 0,
+     "native_supported_additions": 0
+    },
+    {
+     "series_label": "N2@77K",
+     "roi_px": [
+      132.83,
+      106.0,
+      186.68,
+      472.72
+     ],
+     "template_source": "isolated_native_rings",
+     "searches": 1,
+     "validated_centers": 6,
+     "roi_ink_pixels": 300,
+     "rejected": {
+      "outside_roi": 78,
+      "boundary": 0,
+      "coverage": 0,
+      "flat_response": 0,
+      "solid_core": 1
+     },
+     "matched_existing": 1,
+     "native_supported_additions": 5
+    },
+    {
+     "series_label": "N2@77K",
+     "roi_px": [
+      136.42,
+      452.67,
+      161.55,
+      478.45
+     ],
+     "template_source": "isolated_native_rings",
+     "searches": 1,
+     "validated_centers": 3,
+     "roi_ink_pixels": 101,
+     "rejected": {
+      "outside_roi": 82,
+      "boundary": 0,
+      "coverage": 0,
+      "flat_response": 0,
+      "solid_core": 0
+     },
+     "matched_existing": 3,
+     "native_supported_additions": 0
+    }
+   ],
+   "native_supported_additions": 7,
+   "unresolved_fused_regions": 3
+  },
+  "dense_region_resolver": {
+   "roi_px": [
+    [
+     132.83,
+     106.0,
+     142.38,
+     472.72
+    ],
+    [
+     136.42,
+     452.67,
+     142.38,
+     478.45
+    ],
+    [
+     142.38,
+     68.0,
+     244.14,
+     497.0
+    ]
+   ],
+   "low_pressure_strip_px": [
+    142.38,
+    68.0,
+    244.14,
+    497.0
+   ],
+   "columns": 2,
+   "native_supported_additions": 0
+  },
+  "global_spatial_ownership": {
+   "enabled": false,
+   "branches": "unknown",
+   "multi_series": true,
+   "all_filled": false,
+   "ambiguity_group_count": 0,
+   "crowded_region_count": 2,
+   "reason": "guard_not_satisfied",
+   "distance_fraction": 0.8,
+   "confidence_margin": 0.08,
+   "candidate_count": 0,
+   "overlap_components": 0,
+   "deduplicated": 0,
+   "unresolved": 0,
+   "components": [],
+   "global_twin_pool": false,
+   "joint_assignment_candidate_source": "raw_candidates",
+   "rescore_single_source": false,
+   "expected_count_pruning": {
+    "enabled": false,
+    "tolerance_fraction": 0.15,
+    "minimum_tolerance": 2,
+    "series": [],
+    "removed": 0
+   }
+  },
+  "region_strategies": [
+   {
+    "strategy": "ignore",
+    "bbox_px": [
+     241,
+     174,
+     509,
+     390
+    ],
+    "series": []
+   }
+  ],
+  "x_grid_columns": 0,
+  "x_grid_supported_columns": 0,
+  "exact_duplicates_dropped": {
+   "CO2@195K": 1
+  },
+  "dense_band_sampling": {
+   "samples": 27,
+   "bands": [
+    {
+     "band_id": "region-1:CO2@195K:1",
+     "series_label": "CO2@195K",
+     "bbox_px": [
+      135,
+      115,
+      187,
+      473
+     ],
+     "native_ink_pixels": 4670,
+     "sample_count": 27,
+     "marker_radius_px": 7.0
+    }
+   ],
+   "method": "native HSV component cross-section medians at marker-width arc spacing",
+   "staged_line_samples": 27
+  },
+  "series_assignment": {
+   "actions": {},
+   "groups": []
+  },
+  "series_gate_moves": [],
+  "template_fill": {
+   "template_fit": 0,
+   "template_fill": 0
+  },
+  "complex_regions": {
+   "accepted": 3,
+   "rejected": 0
+  },
+  "detail": "full per-candidate audit in python/audit.json"
+ },
+ "proposal_quality": {
+  "review_required": true,
+  "warnings": [
+   {
+    "check": "weak_marker_coverage",
+    "series": "CO2@195K",
+    "detail": "36 of 52 markers are low-confidence or overlapping; maximum is 25%"
+   }
+  ]
+ },
+ "color_ambiguity_groups": [],
+ "unresolved_slots": {
+  "total": 2,
+  "by_series": {
+   "CO2@195K": 2
+  },
+  "slots": [
+   {
+    "series_label": "CO2@195K",
+    "series_index": 0,
+    "state": "unresolved",
+    "reason": "dense_ring_search_fused_native_ink",
+    "roi_px": [
+     132.83,
+     106.0,
+     186.68,
+     472.72
+    ]
+   },
+   {
+    "series_label": "CO2@195K",
+    "series_index": 0,
+    "state": "unresolved",
+    "reason": "dense_ring_search_no_distinct_native_centres",
+    "roi_px": [
+     136.42,
+     452.67,
+     161.55,
+     478.45
+    ]
+   }
+  ]
+ },
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.185,
+    0.185,
+    0.26,
+    0.825
+   ],
+   "kind": "dense_markers",
+   "python_passes": 4
+  },
+  {
+   "bbox_norm": [
+    0.337,
+    0.304,
+    0.709,
+    0.681
+   ],
+   "kind": "inset",
+   "python_passes": 2
+  },
+  {
+   "bbox_norm": [
+    0.19,
+    0.79,
+    0.225,
+    0.835
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 3
+  }
+ ],
+ "legend_marker_check": [],
+ "source_integrity": {
+  "path": "C:\\Users\\jmckenna\\dev-ai\\chart_extract_v5\\testing-stuff-main\\artifacts\\runs\\combined_01\\fig3a\\panel.png",
+  "exists": true,
+  "sha256": "e4e06a1b2e9af3c7baf38ece202f49f572953b570a3e642e5a7ba9b29bedeb09",
+  "width": 718,
+  "height": 573
+ },
+ "count_check": [],
+ "sample_colors": [],
+ "region_strategies": [
+  {
+   "strategy": "ignore",
+   "bbox_px": [
+    241,
+    174,
+    509,
+    390
+   ],
+   "series": []
+  }
+ ],
+ "hard_checks": {
+  "stage": "python",
+  "passed": true,
+  "problems": [],
+  "axis_range": {
+   "passed": true,
+   "problems": [],
+   "margin": 0.05,
+   "max_frame_overhang_steps": 1.0,
+   "x": {
+    "unit": "P/P₀",
+    "scale": "linear",
+    "printed": [
+     -0.05,
+     1.05
+    ],
+    "data": [
+     -0.0018,
+     0.9949
+    ],
+    "points_outside": 0,
+    "frame_passed": true,
+    "passed": true,
+    "frame": [
+     -0.05031210581177886,
+     1.0496242156795146
+    ],
+    "frame_overhang_steps": [
+     0.0,
+     -0.0
+    ],
+    "allowed": [
+     -0.10500000000000001,
+     1.105
+    ]
+   },
+   "y": {
+    "unit": "cm³ g⁻¹",
+    "scale": "linear",
+    "printed": [
+     -10.0,
+     140.0
+    ],
+    "data": [
+     -1.3418,
+     126.2856
+    ],
+    "points_outside": 0,
+    "frame_passed": true,
+    "passed": true,
+    "frame": [
+     -10.095344433133022,
+     140.11625233982457
+    ],
+    "frame_overhang_steps": [
+     0.0,
+     0.01
+    ],
+    "allowed": [
+     -17.5,
+     147.5
+    ]
+   }
+  },
+  "redraw": {
+   "available": true,
+   "series": {
+    "CO2@195K": {
+     "points": 79,
+     "precision": 0.975,
+     "recall": 0.894,
+     "missed_marker_equivalents": 5.5,
+     "same_color_group": [
+      "CO2@195K"
+     ]
+    }
+   },
+   "recall": 0.894,
+   "precision": 0.975
+  },
+  "physics": {
+   "verdict": "review",
+   "flags": {
+    "CO2@195K": [
+     {
+      "check": "monotonic",
+      "detail": "ads: uptake decreases at [(np.float64(0.0), np.float64(0.592))]"
+     },
+     {
+      "check": "smoothness",
+      "level": "warn",
+      "detail": "ads: local outliers (P,q,resid) [(np.float64(0.02), np.float64(60.625), 26.794), (np.float64(0.033), np.float64(66.639), -10.314), (np.float64(0.042), np.float64(89.975), 6.772), (np.float64(0.17), np.float64(121.279), -2.213)]"
+     },
+     {
+      "check": "smoothness",
+      "level": "warn",
+      "detail": "des: local outliers (P,q,resid) [(np.float64(0.043), np.float64(94.281), -2.254)]"
+     }
+    ]
+   },
+   "cross_series": []
+  },
+  "limitations": {
+   "unresolved_slots": 2,
+   "dense_regions_with_no_distinct_centres": 3,
+   "note": "ink coverage is not marker completeness; unresolved dense evidence requires review"
+  },
+  "accepted_extraction": false
+ }
+}

@@ -1,0 +1,789 @@
+{
+ "reasoning": "The axis calibration is correct, but the extraction is not yet acceptable. Python has converted the thick red, green, and black low-pressure guide curves into dozens of false marker samples. The CO2 333K sample coordinate falls on white background, causing severe blue-series contamination and almost zero native-ink recall. The legend itself shows filled blue pentagons; the apparent open circle measurement is contamination from the adjacent CO2 legend heading. The declared triangle, diamond, and four-point star identities also agree with the source better than the low-confidence raster classifications. The next pass should remove the bad blue color sample, suppress extraction from the three continuous guide segments, and retain only source-supported marker centers.",
+ "axis_check": {
+  "x": {
+   "printed_min": 0,
+   "printed_max": 120,
+   "data_min": 0,
+   "data_max": 114.0849,
+   "reason": "The source and re-plot both use a linear 0-120 kPa axis, and the curves occupy matching horizontal positions against the printed ticks.",
+   "result": "pass"
+  },
+  "y": {
+   "printed_min": 0,
+   "printed_max": 3,
+   "data_min": 0.0159,
+   "data_max": 2.9288,
+   "reason": "The extracted values align with the source's printed 0-3 mmol/g ticks; the upper red points remain just below 3 as in the source.",
+   "result": "pass"
+  }
+ },
+ "satisfied": false,
+ "issues": [
+  "The red CO2 303K guide curve was sampled as 33 extra low-pressure points rather than discrete markers.",
+  "The green CO2 323K guide curve was sampled as 34 extra low-pressure points rather than discrete markers.",
+  "The black CO2 373K guide curve was sampled as 16 extra low-pressure points rather than discrete markers.",
+  "The CO2 333K sample coordinate is on white background, producing extensive false assignments and only 0.013 redraw recall.",
+  "Several genuine isolated orange, blue, magenta, and high-pressure markers remain missing, including markers in the closely spaced columns near 100 kPa."
+ ],
+ "structure_ok": true,
+ "chart_title": "",
+ "x_axis": {
+  "title": "Pressure",
+  "unit": "kPa",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 120,
+  "boundary_limits_confirmed": false,
+  "ticks": [
+   0,
+   40,
+   80,
+   120
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.0825,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.3641,
+    "value": 40
+   },
+   {
+    "pixel_norm": 0.6456,
+    "value": 80
+   },
+   {
+    "pixel_norm": 0.9272,
+    "value": 120
+   }
+  ]
+ },
+ "y_axis": {
+  "title": "CO2 uptake",
+  "unit": "mmol/g",
+  "scale": "linear",
+  "minimum": 0,
+  "maximum": 3.1,
+  "boundary_limits_confirmed": true,
+  "ticks": [
+   0,
+   0.5,
+   1,
+   1.5,
+   2,
+   2.5,
+   3
+  ],
+  "tick_anchors": [
+   {
+    "pixel_norm": 0.8093,
+    "value": 0
+   },
+   {
+    "pixel_norm": 0.6922,
+    "value": 0.5
+   },
+   {
+    "pixel_norm": 0.5752,
+    "value": 1
+   },
+   {
+    "pixel_norm": 0.4581,
+    "value": 1.5
+   },
+   {
+    "pixel_norm": 0.3411,
+    "value": 2
+   },
+   {
+    "pixel_norm": 0.2256,
+    "value": 2.5
+   },
+   {
+    "pixel_norm": 0.1085,
+    "value": 3
+   }
+  ]
+ },
+ "legend_bbox_norm": [
+  0.4563,
+  0.5581,
+  0.9288,
+  0.8186
+ ],
+ "total_series": 6,
+ "series": [
+  {
+   "label": "CO2 303K",
+   "marker": "circle",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#f21f26",
+   "notes": "Red filled circles. A thick smooth low-pressure guide curve is present but must not be converted into marker samples."
+  },
+  {
+   "label": "CO2 313K",
+   "marker": "square",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#f5ab1e",
+   "notes": "Orange filled squares."
+  },
+  {
+   "label": "CO2 323K",
+   "marker": "triangle_up",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#248d43",
+   "notes": "Green upward triangles; the low-confidence pentagon raster classification is incorrect. The thick low-pressure guide curve is not a sequence of markers."
+  },
+  {
+   "label": "CO2 333K",
+   "marker": "pentagon",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#354c9a",
+   "notes": "Blue filled pentagons. The measured open circle came from the adjacent CO2 legend heading, and the previous plot sample was on white background."
+  },
+  {
+   "label": "CO2 353K",
+   "marker": "diamond",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#d13ea1",
+   "notes": "Magenta filled diamonds; the low-confidence hexagon classification is a raster-shape error."
+  },
+  {
+   "label": "CO2 373K",
+   "marker": "star",
+   "marker_fill": "filled",
+   "line_style": "none",
+   "color_hex": "#060707",
+   "notes": "Black filled four-point stars. Their silhouette can measure as a diamond, but the source symbol is a star. The thick low-pressure guide curve is not a sequence of markers."
+  }
+ ],
+ "branches": "adsorption_only",
+ "complex_regions": [
+  {
+   "bbox_norm": [
+    0.084,
+    0.275,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.084,
+    0.47,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.084,
+    0.64,
+    0.282,
+    0.806
+   ],
+   "kind": "thick_connecting_lines",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.078,
+    0.72,
+    0.17,
+    0.815
+   ],
+   "kind": "overlapping_markers",
+   "python_passes": 6
+  },
+  {
+   "bbox_norm": [
+    0.77,
+    0.25,
+    0.86,
+    0.82
+   ],
+   "kind": "dense_markers",
+   "python_passes": 6
+  }
+ ],
+ "extraction_settings": [
+  {
+   "label": "CO2 303K",
+   "color_tolerance": 28,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 1.7
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 1.35,
+     "y_max": 2.35
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 2.2,
+     "y_max": 3.05
+    }
+   ],
+   "template_fill": "off",
+   "reason": "Do not infer marker centers along the smooth red guide curve. Preserve the shared origin and isolated markers beyond the guide segment.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 2,
+     "y": 0.55
+    },
+    {
+     "x": 5,
+     "y": 1.1
+    },
+    {
+     "x": 8,
+     "y": 1.45
+    },
+    {
+     "x": 12,
+     "y": 1.72
+    },
+    {
+     "x": 20,
+     "y": 2.03
+    },
+    {
+     "x": 28,
+     "y": 2.22
+    },
+    {
+     "x": 40,
+     "y": 2.4
+    },
+    {
+     "x": 60,
+     "y": 2.62
+    },
+    {
+     "x": 80,
+     "y": 2.78
+    },
+    {
+     "x": 100,
+     "y": 2.9
+    },
+    {
+     "x": 117,
+     "y": 2.98
+    }
+   ]
+  },
+  {
+   "label": "CO2 313K",
+   "color_tolerance": 28,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 1.2
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 1.1,
+     "y_max": 2.1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.9,
+     "y_max": 2.75
+    }
+   ],
+   "template_fill": "fit_only",
+   "reason": "Recover the distinct orange low-pressure squares and the missed high-pressure square without adding interpolated points.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 2,
+     "y": 0.3
+    },
+    {
+     "x": 7,
+     "y": 0.75
+    },
+    {
+     "x": 14,
+     "y": 1.25
+    },
+    {
+     "x": 20,
+     "y": 1.55
+    },
+    {
+     "x": 28,
+     "y": 1.9
+    },
+    {
+     "x": 40,
+     "y": 2.2
+    },
+    {
+     "x": 60,
+     "y": 2.38
+    },
+    {
+     "x": 80,
+     "y": 2.5
+    },
+    {
+     "x": 100,
+     "y": 2.59
+    },
+    {
+     "x": 117,
+     "y": 2.67
+    }
+   ]
+  },
+  {
+   "label": "CO2 323K",
+   "color_tolerance": 28,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.9
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.75,
+     "y_max": 1.85
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.65,
+     "y_max": 2.5
+    }
+   ],
+   "template_fill": "off",
+   "reason": "Do not sample the smooth green guide segment as a dense sequence. Retain only distinct source-supported triangles and the shared origin.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 4
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 2,
+     "y": 0.2
+    },
+    {
+     "x": 5,
+     "y": 0.48
+    },
+    {
+     "x": 8,
+     "y": 0.72
+    },
+    {
+     "x": 14,
+     "y": 1.08
+    },
+    {
+     "x": 20,
+     "y": 1.4
+    },
+    {
+     "x": 28,
+     "y": 1.72
+    },
+    {
+     "x": 40,
+     "y": 1.98
+    },
+    {
+     "x": 60,
+     "y": 2.18
+    },
+    {
+     "x": 80,
+     "y": 2.3
+    },
+    {
+     "x": 100,
+     "y": 2.38
+    },
+    {
+     "x": 117,
+     "y": 2.43
+    }
+   ]
+  },
+  {
+   "label": "CO2 333K",
+   "color_tolerance": 28,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.8
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.65,
+     "y_max": 1.75
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 1.5,
+     "y_max": 2.35
+    }
+   ],
+   "template_fill": "fit_only",
+   "reason": "Discard the previous white-background sample and use the blue legend color. Follow the blue pentagon curve rather than unrelated red, green, or magenta ink.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 2,
+     "y": 0.12
+    },
+    {
+     "x": 7,
+     "y": 0.45
+    },
+    {
+     "x": 14,
+     "y": 1.02
+    },
+    {
+     "x": 20,
+     "y": 1.4
+    },
+    {
+     "x": 28,
+     "y": 1.62
+    },
+    {
+     "x": 40,
+     "y": 1.82
+    },
+    {
+     "x": 60,
+     "y": 2
+    },
+    {
+     "x": 80,
+     "y": 2.12
+    },
+    {
+     "x": 100,
+     "y": 2.2
+    },
+    {
+     "x": 117,
+     "y": 2.26
+    }
+   ]
+  },
+  {
+   "label": "CO2 353K",
+   "color_tolerance": 30,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.45
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.3,
+     "y_max": 1.2
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 0.95,
+     "y_max": 2.05
+    }
+   ],
+   "template_fill": "fit_only",
+   "reason": "Recover the remaining distinct magenta diamonds, especially in the low-pressure and closely spaced high-pressure columns.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 6
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 2,
+     "y": 0.08
+    },
+    {
+     "x": 7,
+     "y": 0.25
+    },
+    {
+     "x": 14,
+     "y": 0.55
+    },
+    {
+     "x": 20,
+     "y": 0.78
+    },
+    {
+     "x": 28,
+     "y": 1.08
+    },
+    {
+     "x": 40,
+     "y": 1.35
+    },
+    {
+     "x": 60,
+     "y": 1.58
+    },
+    {
+     "x": 80,
+     "y": 1.75
+    },
+    {
+     "x": 100,
+     "y": 1.87
+    },
+    {
+     "x": 117,
+     "y": 1.95
+    }
+   ]
+  },
+  {
+   "label": "CO2 373K",
+   "color_tolerance": 24,
+   "separate_from": [],
+   "y_bands": [
+    {
+     "x_from": 0,
+     "x_to": 10,
+     "y_min": 0,
+     "y_max": 0.25
+    },
+    {
+     "x_from": 10,
+     "x_to": 30,
+     "y_min": 0.1,
+     "y_max": 0.75
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "y_min": 0.6,
+     "y_max": 1.65
+    }
+   ],
+   "template_fill": "off",
+   "reason": "The smooth black guide segment was mistaken for many star markers. Keep the shared origin and isolated black stars after the guide terminates.",
+   "sample_marker_norm": null,
+   "expected_counts": [
+    {
+     "x_from": 0,
+     "x_to": 30,
+     "count": 1
+    },
+    {
+     "x_from": 30,
+     "x_to": 120,
+     "count": 14
+    }
+   ],
+   "curve_points": [
+    {
+     "x": 0,
+     "y": 0
+    },
+    {
+     "x": 5,
+     "y": 0.12
+    },
+    {
+     "x": 10,
+     "y": 0.24
+    },
+    {
+     "x": 15,
+     "y": 0.36
+    },
+    {
+     "x": 20,
+     "y": 0.48
+    },
+    {
+     "x": 28,
+     "y": 0.64
+    },
+    {
+     "x": 40,
+     "y": 0.88
+    },
+    {
+     "x": 60,
+     "y": 1.15
+    },
+    {
+     "x": 80,
+     "y": 1.35
+    },
+    {
+     "x": 100,
+     "y": 1.49
+    },
+    {
+     "x": 117,
+     "y": 1.57
+    }
+   ]
+  }
+ ],
+ "notes": "All six filled-marker series converge at the visually shared origin. Ownership of the single overprinted origin blob is intrinsically ambiguous, but each plotted isotherm visibly begins there. Thick red, green, and black low-pressure curves are guide lines and must not be represented by dense inferred marker rows.",
+ "region_strategies": [
+  {
+   "bbox_norm": [
+    0.09,
+    0.275,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 303K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous red low-pressure guide segment; no distinct red marker centers should be inferred from its solid ink."
+  },
+  {
+   "bbox_norm": [
+    0.09,
+    0.47,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 323K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous green low-pressure guide segment; suppress the false dense triangle samples."
+  },
+  {
+   "bbox_norm": [
+    0.09,
+    0.64,
+    0.282,
+    0.806
+   ],
+   "series_labels": [
+    "CO2 373K"
+   ],
+   "strategy": "ignore",
+   "reason": "This box follows the continuous black low-pressure guide segment; suppress the false sequence of star samples."
+  }
+ ],
+ "shared_x_columns": []
+}

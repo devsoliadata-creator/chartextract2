@@ -1,0 +1,9 @@
+version: 1
+
+files:
+  - root: panel
+    path: panel.png
+    required: true
+  - root: panel
+    glob: python/images/*.png
+    required: false
